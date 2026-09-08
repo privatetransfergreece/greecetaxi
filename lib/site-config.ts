@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Private Transfer Greece",
   shortName: "Private Transfer Greece",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.greecetaxitransfers.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://privatetransfergreece.com",
   description:
     "Book private taxi transfers in Greece for airports, cities, ports, hotels and popular destinations. Get a fast quote for comfortable door-to-door transfers.",
   descriptionEl:
