@@ -1,0 +1,158 @@
+import { siteConfig } from "@/lib/site-config"
+import type { Locale } from "./config"
+
+/**
+ * Central registry mapping every real page to its URL in each locale.
+ *
+ * To add a future page (airport, city, route, service, blog...), add one
+ * entry here. Everything else — the language switcher, hreflang alternates,
+ * canonical URLs, and the sitemap — is derived from this single source.
+ */
+export const pageRoutes = {
+  home: { en: "/", el: "/el/" },
+  about: { en: "/about-us/", el: "/el/schetika-me-emas/" },
+  privacy: { en: "/privacy-policy/", el: "/el/politiki-aporritou/" },
+  terms: {
+    en: "/terms-and-conditions/",
+    el: "/el/oroi-chrisis/",
+  },
+  airportTransfers: {
+    en: "/airport-transfers/",
+    el: "/el/metafores-aerodromiou/",
+  },
+  services: {
+    en: "/services/",
+    el: "/el/ypiresies/",
+  },
+  cityToCityTransfers: {
+    en: "/city-transfers/",
+    el: "/el/metafores-metaxy-poleon/",
+  },
+  privateTransfers: {
+    en: "/private-transfers/",
+    el: "/el/idiotikes-metafores/",
+  },
+  hourlyHire: {
+    en: "/hourly-hire/",
+    el: "/el/enoikiasi-me-ora/",
+  },
+  cruisePortTransfers: {
+    en: "/port-transfers/",
+    el: "/el/metafores-se-limania/",
+  },
+  corporateTransfers: {
+    en: "/corporate-transfers/",
+    el: "/el/etairikes-metafores/",
+  },
+  groupTransfers: {
+    en: "/group-transfers/",
+    el: "/el/omadikes-metafores/",
+  },
+  getQuote: {
+    en: "/get-quote/",
+    el: "/el/zitisi-prosforas/",
+  },
+  destinationsHub: { en: "/destinations/", el: "/el/proorismoi/" },
+  contact: { en: "/contact/", el: "/el/epikoinonia/" },
+
+  // Airports
+  athensAirport: { en: "/airport/athens-airport/", el: "/el/aerodromio/athina/" },
+  thessalonikiAirport: { en: "/airport/thessaloniki-airport/", el: "/el/aerodromio/thessaloniki/" },
+  heraklionAirport: { en: "/airport/heraklion-airport/", el: "/el/aerodromio/irakleio/" },
+  chaniaAirport: { en: "/airport/chania-airport/", el: "/el/aerodromio/chania/" },
+  rhodesAirport: { en: "/airport/rhodes-airport/", el: "/el/aerodromio/rodos/" },
+  corfuAirport: { en: "/airport/corfu-airport/", el: "/el/aerodromio/kerkyra/" },
+  santoriniAirport: { en: "/airport/santorini-airport/", el: "/el/aerodromio/santorini/" },
+  mykonosAirport: { en: "/airport/mykonos-airport/", el: "/el/aerodromio/mykonos/" },
+
+  // Cities
+  cityAthens: { en: "/city/athens/", el: "/el/poli/athina/" },
+  cityThessaloniki: { en: "/city/thessaloniki/", el: "/el/poli/thessaloniki/" },
+  cityKalamata: { en: "/city/kalamata/", el: "/el/poli/kalamata/" },
+
+  // Regions
+  regionCrete: { en: "/region/crete/", el: "/el/periochi/kriti/" },
+  regionPeloponnese: { en: "/region/peloponnese/", el: "/el/periochi/peloponnisos/" },
+
+  // Islands / destinations
+  destinationSantorini: { en: "/destination/santorini/", el: "/el/proorismos/santorini/" },
+  destinationMykonos: { en: "/destination/mykonos/", el: "/el/proorismos/mykonos/" },
+  destinationRhodes: { en: "/destination/rhodes/", el: "/el/proorismos/rodos/" },
+  destinationCorfu: { en: "/destination/corfu/", el: "/el/proorismos/kerkyra/" },
+  destinationZakynthos: { en: "/destination/zakynthos/", el: "/el/proorismos/zakynthos/" },
+  destinationKos: { en: "/destination/kos/", el: "/el/proorismos/kos/" },
+  destinationNafplio: { en: "/destination/nafplio/", el: "/el/proorismos/nafplio/" },
+  destinationMeteora: { en: "/destination/meteora/", el: "/el/proorismos/meteora/" },
+
+  // Ports
+  portPiraeus: { en: "/port/piraeus/", el: "/el/limani/peiraias/" },
+  portRafina: { en: "/port/rafina/", el: "/el/limani/rafina/" },
+  portLavrio: { en: "/port/lavrio/", el: "/el/limani/lavrio/" },
+  portThessaloniki: { en: "/port/thessaloniki/", el: "/el/limani/thessaloniki/" },
+  portHeraklion: { en: "/port/heraklion/", el: "/el/limani/irakleio/" },
+  portPatras: { en: "/port/patras/", el: "/el/limani/patra/" },
+
+  // Routes
+  routeAthensDelphi: { en: "/route/athens-to-delphi/", el: "/el/diadromi/athina-delfoi/" },
+  routeAthensNafplio: { en: "/route/athens-to-nafplio/", el: "/el/diadromi/athina-nafplio/" },
+  routeAthensMeteora: { en: "/route/athens-to-meteora/", el: "/el/diadromi/athina-meteora/" },
+  routeAthensThessaloniki: { en: "/route/athens-to-thessaloniki/", el: "/el/diadromi/athina-thessaloniki/" },
+  routeThessalonikiHalkidiki: { en: "/route/thessaloniki-to-halkidiki/", el: "/el/diadromi/thessaloniki-chalkidiki/" },
+  routeHeraklionChania: { en: "/route/heraklion-to-chania/", el: "/el/diadromi/irakleio-chania/" },
+} as const
+
+export type PageKey = keyof typeof pageRoutes
+
+export function pathFor(page: PageKey, locale: Locale): string {
+  return pageRoutes[page][locale]
+}
+
+export function absoluteUrl(path: string): string {
+  return new URL(path, siteConfig.url).toString()
+}
+
+/**
+ * Builds the `alternates` block (canonical + hreflang, including
+ * x-default) for a registered page in a given locale.
+ */
+export function localizedAlternates(page: PageKey, locale: Locale) {
+  return {
+    canonical: absoluteUrl(pathFor(page, locale)),
+    languages: {
+      en: absoluteUrl(pageRoutes[page].en),
+      el: absoluteUrl(pageRoutes[page].el),
+      "x-default": absoluteUrl(pageRoutes[page].en),
+    },
+  }
+}
+
+/**
+ * Prefixes (or strips) "/el" on a path that has no registered translation
+ * yet — used for taxonomy pages (services, destinations, etc.) that don't
+ * have real routes in either language yet, so Greek content still links
+ * to a Greek-prefixed URL rather than an English one.
+ */
+export function withLocalePrefix(path: string, locale: Locale): string {
+  if (locale === "en") {
+    if (path === "/el" || path === "/el/") return "/"
+    return path.startsWith("/el/") ? path.slice(3) || "/" : path
+  }
+
+  if (path.startsWith("/el/") || path === "/el") return path
+  return path === "/" ? "/el/" : `/el${path}`
+}
+
+/**
+ * Given the current pathname, returns the equivalent path in the target
+ * locale — used by the language switcher. Falls back to `withLocalePrefix`
+ * for pages not yet registered (e.g. future taxonomy pages).
+ */
+export function getAlternatePath(pathname: string, targetLocale: Locale): string {
+  for (const routes of Object.values(pageRoutes)) {
+    if (routes.en === pathname || routes.el === pathname) {
+      return routes[targetLocale]
+    }
+  }
+
+  return withLocalePrefix(pathname, targetLocale)
+}
