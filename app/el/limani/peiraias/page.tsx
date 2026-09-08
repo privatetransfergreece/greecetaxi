@@ -7,8 +7,8 @@ import {
   Landmark,
   MapPin,
   MessageCircle,
-  PlaneTakeoff,
   Repeat,
+  Route,
   Ship,
   Users,
 } from "lucide-react";
@@ -54,7 +54,7 @@ export default function PiraeusPortPageEl() {
     >
       <ServiceOverview content={content.overview} />
       <ServiceFeatures content={content.transferService} icons={[CalendarCheck, Clock, DoorOpen, Repeat]} />
-      <RelatedLinks eyebrow={content.connections.eyebrow} title={content.connections.title} items={content.connections.items.map((item, i) => ({ ...item, icon: [PlaneTakeoff, Building2][i] }))} />
+      <RelatedLinks eyebrow={content.connections.eyebrow} title={content.connections.title} items={content.connections.items.map((item, i) => ({ ...item, icon: [Route, Building2, MapPin, Route][i] }))} />
       <ServiceOverview content={content.cruiseFerryContext} />
       <RelatedLinks eyebrow={content.popularDestinations.eyebrow} title={content.popularDestinations.title} items={content.popularDestinations.items.map((item, i) => ({ ...item, icon: [Landmark, Landmark, Landmark][i] }))} />
       <ServiceFeatures content={content.bookingInfo} icons={[Ship, MapPin, Users, MessageCircle]} />

@@ -237,6 +237,9 @@ export const regionContent: Record<RegionSlug, Record<Locale, RegionPageContent>
         title: "Popular Transfers to the Peloponnese",
         items: [
           { label: "Athens to Nafplio", href: "/route/athens-to-nafplio/", description: "A private transfer connecting Athens with the Peloponnese's popular waterfront town." },
+          { label: "Athens to Corinth", href: "/route/athens-to-corinth/", description: "A private transfer to Corinth and the Corinth Canal, the main gateway into the Peloponnese." },
+          { label: "Athens Airport to Nafplio", href: "/route/athens-airport-to-nafplio/", description: "A direct transfer bypassing central Athens, for arrivals heading straight to the Peloponnese." },
+          { label: "Piraeus Port to Nafplio", href: "/route/piraeus-port-to-nafplio/", description: "A direct transfer for cruise and ferry passengers continuing to the Peloponnese." },
         ],
       },
       services: {
@@ -313,6 +316,9 @@ export const regionContent: Record<RegionSlug, Record<Locale, RegionPageContent>
         title: "Δημοφιλείς Μεταφορές προς την Πελοπόννησο",
         items: [
           { label: "Αθήνα προς Ναύπλιο", href: "/el/diadromi/athina-nafplio/", description: "Ιδιωτική μεταφορά που συνδέει την Αθήνα με τη δημοφιλή παραθαλάσσια πόλη της Πελοποννήσου." },
+          { label: "Αθήνα προς Κόρινθο", href: "/el/diadromi/athina-korinthos/", description: "Ιδιωτική μεταφορά προς την Κόρινθο και τη Διώρυγα της Κορίνθου, την κύρια πύλη προς την Πελοπόννησο." },
+          { label: "Αεροδρόμιο Αθηνών προς Ναύπλιο", href: "/el/diadromi/aerodromio-athinas-nafplio/", description: "Απευθείας μεταφορά παρακάμπτοντας το κέντρο της Αθήνας, για όσους κατευθύνονται απευθείας στην Πελοπόννησο." },
+          { label: "Πειραιάς προς Ναύπλιο", href: "/el/diadromi/peiraias-nafplio/", description: "Απευθείας μεταφορά για επιβάτες κρουαζιέρας και ferry που συνεχίζουν προς την Πελοπόννησο." },
         ],
       },
       services: {

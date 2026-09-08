@@ -4,6 +4,7 @@ import {
   Building2,
   Car,
   Landmark,
+  MapPin,
   PlaneTakeoff,
   Route,
   Ship,
@@ -53,8 +54,8 @@ export default function AthensCityPage() {
       <ServiceOverview content={content.intro} />
       <RelatedLinks eyebrow={content.gettingHere.eyebrow} title={content.gettingHere.title} items={content.gettingHere.items.map((item, i) => ({ ...item, icon: [PlaneTakeoff, Ship, Anchor][i] }))} />
       <ServiceFeatures content={content.transferOptions} icons={[PlaneTakeoff, Car, Route, Users]} />
-      <RelatedLinks eyebrow={content.popularRoutes.eyebrow} title={content.popularRoutes.title} items={content.popularRoutes.items.map((item, i) => ({ ...item, icon: [Landmark, Landmark, Landmark, Building2][i] }))} />
-      <RelatedLinks eyebrow={content.nearbyDestinations.eyebrow} title={content.nearbyDestinations.title} items={content.nearbyDestinations.items.map((item, i) => ({ ...item, icon: [Landmark, Landmark][i] }))} />
+      <RelatedLinks eyebrow={content.popularRoutes.eyebrow} title={content.popularRoutes.title} items={content.popularRoutes.items.map((item, i) => ({ ...item, icon: [Landmark, Landmark, Landmark, Landmark, Landmark, Building2][i] }))} />
+      <RelatedLinks eyebrow={content.nearbyDestinations.eyebrow} title={content.nearbyDestinations.title} items={content.nearbyDestinations.items.map((item, i) => ({ ...item, icon: [MapPin, Landmark, Landmark, Route][i] }))} />
       <ServiceFaq content={content.faq} />
     </LocationPage>
   );

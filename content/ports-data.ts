@@ -104,8 +104,10 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         eyebrow: "Airport & City Connections",
         title: "Airport and City Connections",
         items: [
-          { label: "Athens Airport", href: "/airport/athens-airport/", description: "Direct transfers between Piraeus and Athens International Airport, useful for cruise connections." },
-          { label: "Central Athens", href: "/city/athens/", description: "Continue your journey directly to a hotel or address in central Athens." },
+          { label: "Athens Airport to Piraeus Port", href: "/route/athens-airport-to-piraeus-port/", description: "A dedicated route page covering direct transfers between the airport and Piraeus, useful for cruise connections." },
+          { label: "Central Athens", href: "/athens/", description: "Continue your journey directly to a hotel or address in central Athens." },
+          { label: "Athens Riviera", href: "/destination/athens-riviera/", description: "Continue from Piraeus to the coastal strip southeast of Athens, including Glyfada and Vouliagmeni." },
+          { label: "Piraeus Port to Nafplio", href: "/route/piraeus-port-to-nafplio/", description: "Continue directly from the port to Nafplio in the Peloponnese, without routing through Athens." },
         ],
       },
       cruiseFerryContext: {
@@ -181,8 +183,10 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         eyebrow: "Συνδέσεις Αεροδρομίου & Πόλης",
         title: "Συνδέσεις με Αεροδρόμιο και Πόλη",
         items: [
-          { label: "Αεροδρόμιο Αθηνών", href: "/el/aerodromio/athina/", description: "Απευθείας μεταφορές μεταξύ Πειραιά και Διεθνούς Αεροδρομίου Αθηνών, χρήσιμες για συνδέσεις κρουαζιέρας." },
-          { label: "Κέντρο Αθήνας", href: "/el/poli/athina/", description: "Συνεχίστε το ταξίδι σας απευθείας προς ξενοδοχείο ή διεύθυνση στο κέντρο της Αθήνας." },
+          { label: "Αεροδρόμιο Αθηνών προς Πειραιά", href: "/el/diadromi/aerodromio-athinas-peiraias/", description: "Ειδική σελίδα διαδρομής για απευθείας μεταφορές μεταξύ αεροδρομίου και Πειραιά, χρήσιμες για συνδέσεις κρουαζιέρας." },
+          { label: "Κέντρο Αθήνας", href: "/el/athina/", description: "Συνεχίστε το ταξίδι σας απευθείας προς ξενοδοχείο ή διεύθυνση στο κέντρο της Αθήνας." },
+          { label: "Παραλιακή Αθήνας", href: "/el/proorismos/paralia-athinas/", description: "Συνεχίστε από τον Πειραιά προς την παράκτια ζώνη νοτιοανατολικά της Αθήνας, με τη Γλυφάδα και τη Βουλιαγμένη." },
+          { label: "Πειραιάς προς Ναύπλιο", href: "/el/diadromi/peiraias-nafplio/", description: "Συνεχίστε απευθείας από το λιμάνι προς το Ναύπλιο στην Πελοπόννησο, χωρίς διέλευση από την Αθήνα." },
         ],
       },
       cruiseFerryContext: {
@@ -262,7 +266,7 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         title: "Airport and City Connections",
         items: [
           { label: "Athens Airport", href: "/airport/athens-airport/", description: "A relatively short transfer connects Rafina with Athens International Airport." },
-          { label: "Central Athens", href: "/city/athens/", description: "Continue your journey directly to a hotel or address in central Athens." },
+          { label: "Central Athens", href: "/athens/", description: "Continue your journey directly to a hotel or address in central Athens." },
         ],
       },
       cruiseFerryContext: {
@@ -336,7 +340,7 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         title: "Συνδέσεις με Αεροδρόμιο και Πόλη",
         items: [
           { label: "Αεροδρόμιο Αθηνών", href: "/el/aerodromio/athina/", description: "Μια σχετικά σύντομη μεταφορά συνδέει τη Ραφήνα με το Διεθνές Αεροδρόμιο Αθηνών." },
-          { label: "Κέντρο Αθήνας", href: "/el/poli/athina/", description: "Συνεχίστε το ταξίδι σας απευθείας προς ξενοδοχείο ή διεύθυνση στο κέντρο της Αθήνας." },
+          { label: "Κέντρο Αθήνας", href: "/el/athina/", description: "Συνεχίστε το ταξίδι σας απευθείας προς ξενοδοχείο ή διεύθυνση στο κέντρο της Αθήνας." },
         ],
       },
       cruiseFerryContext: {
@@ -413,7 +417,7 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         title: "Airport and City Connections",
         items: [
           { label: "Athens Airport", href: "/airport/athens-airport/", description: "Private transfers connect Lavrio with Athens International Airport." },
-          { label: "Central Athens", href: "/city/athens/", description: "Continue your journey directly to a hotel or address in central Athens." },
+          { label: "Central Athens", href: "/athens/", description: "Continue your journey directly to a hotel or address in central Athens." },
         ],
       },
       cruiseFerryContext: {
@@ -428,7 +432,7 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         eyebrow: "Nearby Travel",
         title: "Planning Your Journey From Lavrio",
         items: [
-          { label: "Central Athens", href: "/city/athens/", description: "Most onward journeys from Lavrio connect through central Athens." },
+          { label: "Central Athens", href: "/athens/", description: "Most onward journeys from Lavrio connect through central Athens." },
         ],
       },
       bookingInfo: bookingInfoEn,
@@ -486,7 +490,7 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         title: "Συνδέσεις με Αεροδρόμιο και Πόλη",
         items: [
           { label: "Αεροδρόμιο Αθηνών", href: "/el/aerodromio/athina/", description: "Ιδιωτικές μεταφορές συνδέουν το Λαύριο με το Διεθνές Αεροδρόμιο Αθηνών." },
-          { label: "Κέντρο Αθήνας", href: "/el/poli/athina/", description: "Συνεχίστε το ταξίδι σας απευθείας προς ξενοδοχείο ή διεύθυνση στο κέντρο της Αθήνας." },
+          { label: "Κέντρο Αθήνας", href: "/el/athina/", description: "Συνεχίστε το ταξίδι σας απευθείας προς ξενοδοχείο ή διεύθυνση στο κέντρο της Αθήνας." },
         ],
       },
       cruiseFerryContext: {
@@ -501,7 +505,7 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         eyebrow: "Κοντινές Μετακινήσεις",
         title: "Σχεδιάστε το Ταξίδι σας από το Λαύριο",
         items: [
-          { label: "Κέντρο Αθήνας", href: "/el/poli/athina/", description: "Οι περισσότερες μετακινήσεις από το Λαύριο συνδέονται μέσω του κέντρου της Αθήνας." },
+          { label: "Κέντρο Αθήνας", href: "/el/athina/", description: "Οι περισσότερες μετακινήσεις από το Λαύριο συνδέονται μέσω του κέντρου της Αθήνας." },
         ],
       },
       bookingInfo: bookingInfoEl,

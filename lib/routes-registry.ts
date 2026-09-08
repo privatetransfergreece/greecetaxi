@@ -1,0 +1,316 @@
+import type { PageKey } from "@/lib/i18n/routes"
+
+/**
+ * Structured metadata for every route-type page (the `/route/x-to-y/` pages),
+ * independent of the page content itself. This is the scalable foundation
+ * for computing relevance-based "related routes" — no per-cluster
+ * `if (origin === "Athens")` branching — so the same engine works for
+ * Athens today and for Thessaloniki, Santorini, Crete etc. as those
+ * clusters are built later.
+ *
+ * Add one entry here whenever a new `route` page is created. Everything
+ * else (relatedness scoring) is derived from these fields.
+ */
+export type RouteType =
+  | "airport-city"
+  | "airport-port"
+  | "airport-destination"
+  | "airport-hotel"
+  | "city-port"
+  | "city-destination"
+  | "city-city"
+  | "port-destination"
+
+export type RouteMeta = {
+  pageKey: PageKey
+  originCity: string
+  destinationCity: string
+  originType: "airport" | "port" | "city" | "station"
+  destinationType: "airport" | "port" | "city" | "destination" | "hotel"
+  cluster: string
+  routeType: RouteType
+  isDayTrip?: boolean
+  isHotelRoute?: boolean
+  priority: number
+}
+
+export const routeRegistry: RouteMeta[] = [
+  {
+    pageKey: "routeAthensAirportPiraeus",
+    originCity: "Athens",
+    destinationCity: "Piraeus",
+    originType: "airport",
+    destinationType: "port",
+    cluster: "athens",
+    routeType: "airport-port",
+    priority: 100,
+  },
+  {
+    pageKey: "routeAthensAirportRiviera",
+    originCity: "Athens",
+    destinationCity: "Athens Riviera",
+    originType: "airport",
+    destinationType: "destination",
+    cluster: "athens",
+    routeType: "airport-destination",
+    priority: 90,
+  },
+  {
+    pageKey: "routeAthensCapeSounion",
+    originCity: "Athens",
+    destinationCity: "Cape Sounion",
+    originType: "city",
+    destinationType: "destination",
+    cluster: "athens",
+    routeType: "city-destination",
+    isDayTrip: true,
+    priority: 85,
+  },
+  {
+    pageKey: "routeAthensCorinth",
+    originCity: "Athens",
+    destinationCity: "Corinth",
+    originType: "city",
+    destinationType: "city",
+    cluster: "athens",
+    routeType: "city-city",
+    priority: 80,
+  },
+  {
+    pageKey: "routeAthensNafplio",
+    originCity: "Athens",
+    destinationCity: "Nafplio",
+    originType: "city",
+    destinationType: "destination",
+    cluster: "athens",
+    routeType: "city-destination",
+    priority: 95,
+  },
+  {
+    pageKey: "routeAthensDelphi",
+    originCity: "Athens",
+    destinationCity: "Delphi",
+    originType: "city",
+    destinationType: "destination",
+    cluster: "athens",
+    routeType: "city-destination",
+    isDayTrip: true,
+    priority: 90,
+  },
+  {
+    pageKey: "routeAthensMeteora",
+    originCity: "Athens",
+    destinationCity: "Meteora",
+    originType: "city",
+    destinationType: "destination",
+    cluster: "athens",
+    routeType: "city-destination",
+    priority: 85,
+  },
+  {
+    pageKey: "routeAthensThessaloniki",
+    originCity: "Athens",
+    destinationCity: "Thessaloniki",
+    originType: "city",
+    destinationType: "city",
+    cluster: "athens",
+    routeType: "city-city",
+    priority: 100,
+  },
+  {
+    pageKey: "routeThessalonikiHalkidiki",
+    originCity: "Thessaloniki",
+    destinationCity: "Halkidiki",
+    originType: "city",
+    destinationType: "destination",
+    cluster: "thessaloniki",
+    routeType: "city-destination",
+    priority: 90,
+  },
+  {
+    pageKey: "routeHeraklionChania",
+    originCity: "Heraklion",
+    destinationCity: "Chania",
+    originType: "city",
+    destinationType: "city",
+    cluster: "crete",
+    routeType: "city-city",
+    priority: 90,
+  },
+  {
+    pageKey: "routeAthensAirportGlyfada",
+    originCity: "Athens",
+    destinationCity: "Glyfada",
+    originType: "airport",
+    destinationType: "destination",
+    cluster: "athens",
+    routeType: "airport-destination",
+    priority: 90,
+  },
+  {
+    pageKey: "routeAthensAirportVouliagmeni",
+    originCity: "Athens",
+    destinationCity: "Vouliagmeni",
+    originType: "airport",
+    destinationType: "destination",
+    cluster: "athens",
+    routeType: "airport-destination",
+    priority: 85,
+  },
+  {
+    pageKey: "routeAthensAirportNafplio",
+    originCity: "Athens",
+    destinationCity: "Nafplio",
+    originType: "airport",
+    destinationType: "destination",
+    cluster: "athens",
+    routeType: "airport-destination",
+    priority: 85,
+  },
+  {
+    pageKey: "routeAthensAirportCorinth",
+    originCity: "Athens",
+    destinationCity: "Corinth",
+    originType: "airport",
+    destinationType: "city",
+    cluster: "athens",
+    routeType: "airport-city",
+    priority: 75,
+  },
+  {
+    pageKey: "routeAthensAirportDelphi",
+    originCity: "Athens",
+    destinationCity: "Delphi",
+    originType: "airport",
+    destinationType: "destination",
+    cluster: "athens",
+    routeType: "airport-destination",
+    isDayTrip: true,
+    priority: 75,
+  },
+  {
+    pageKey: "routeAthensAirportLoutraki",
+    originCity: "Athens",
+    destinationCity: "Loutraki",
+    originType: "airport",
+    destinationType: "city",
+    cluster: "athens",
+    routeType: "airport-city",
+    priority: 55,
+  },
+  {
+    pageKey: "routePiraeusNafplio",
+    originCity: "Piraeus",
+    destinationCity: "Nafplio",
+    originType: "port",
+    destinationType: "destination",
+    cluster: "athens",
+    routeType: "port-destination",
+    priority: 65,
+  },
+  {
+    pageKey: "routeAthensAirportGrandeBretagne",
+    originCity: "Athens",
+    destinationCity: "Hotel Grande Bretagne",
+    originType: "airport",
+    destinationType: "hotel",
+    cluster: "athens",
+    routeType: "airport-hotel",
+    isHotelRoute: true,
+    priority: 80,
+  },
+  {
+    pageKey: "routeAthensAirportKingGeorge",
+    originCity: "Athens",
+    destinationCity: "King George Hotel",
+    originType: "airport",
+    destinationType: "hotel",
+    cluster: "athens",
+    routeType: "airport-hotel",
+    isHotelRoute: true,
+    priority: 75,
+  },
+  {
+    pageKey: "routeAthensAirportElectraPalace",
+    originCity: "Athens",
+    destinationCity: "Electra Palace Athens",
+    originType: "airport",
+    destinationType: "hotel",
+    cluster: "athens",
+    routeType: "airport-hotel",
+    isHotelRoute: true,
+    priority: 70,
+  },
+  {
+    pageKey: "routeAthensAirportNjvPlaza",
+    originCity: "Athens",
+    destinationCity: "NJV Athens Plaza",
+    originType: "airport",
+    destinationType: "hotel",
+    cluster: "athens",
+    routeType: "airport-hotel",
+    isHotelRoute: true,
+    priority: 70,
+  },
+  {
+    pageKey: "routeAthensAirportGrandHyatt",
+    originCity: "Athens",
+    destinationCity: "Grand Hyatt Athens",
+    originType: "airport",
+    destinationType: "hotel",
+    cluster: "athens",
+    routeType: "airport-hotel",
+    isHotelRoute: true,
+    priority: 75,
+  },
+  {
+    pageKey: "routeAthensAirportAthenaeumIC",
+    originCity: "Athens",
+    destinationCity: "Athenaeum InterContinental Athens",
+    originType: "airport",
+    destinationType: "hotel",
+    cluster: "athens",
+    routeType: "airport-hotel",
+    isHotelRoute: true,
+    priority: 70,
+  },
+  {
+    pageKey: "routeAthensAirportDivaniCaravel",
+    originCity: "Athens",
+    destinationCity: "Divani Caravel",
+    originType: "airport",
+    destinationType: "hotel",
+    cluster: "athens",
+    routeType: "airport-hotel",
+    isHotelRoute: true,
+    priority: 65,
+  },
+]
+
+/**
+ * Scores every other registered route against `currentPageKey` and returns
+ * the top `limit` by relevance, highest first. Relevance considers (in
+ * order of weight): same cluster, shared origin or destination city, same
+ * route type, and the target route's own priority — never a hardcoded
+ * per-destination list.
+ */
+export function getRelatedRoutes(currentPageKey: PageKey, limit = 3): RouteMeta[] {
+  const current = routeRegistry.find((r) => r.pageKey === currentPageKey)
+  if (!current) return []
+
+  return routeRegistry
+    .filter((r) => r.pageKey !== currentPageKey)
+    .map((route) => {
+      let score = 0
+      if (route.cluster === current.cluster) score += 40
+      if (route.originCity === current.originCity) score += 25
+      if (route.destinationCity === current.destinationCity) score += 25
+      if (route.originCity === current.destinationCity || route.destinationCity === current.originCity) score += 20
+      if (route.routeType === current.routeType) score += 10
+      score += route.priority / 10
+      return { route, score }
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((entry) => entry.route)
+}

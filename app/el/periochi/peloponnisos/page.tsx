@@ -43,7 +43,7 @@ export default function PeloponneseRegionPageEl() {
       <RelatedLinks eyebrow={content.airports.eyebrow} title={content.airports.title} items={content.airports.items.map((item, i) => ({ ...item, icon: [PlaneTakeoff][i] }))} />
       <RelatedLinks eyebrow={content.ports.eyebrow} title={content.ports.title} items={content.ports.items.map((item, i) => ({ ...item, icon: [Anchor][i] }))} />
       <RelatedLinks eyebrow={content.cities.eyebrow} title={content.cities.title} items={content.cities.items.map((item, i) => ({ ...item, icon: [Route, Landmark][i] }))} />
-      <RelatedLinks eyebrow={content.routes.eyebrow} title={content.routes.title} items={content.routes.items.map((item, i) => ({ ...item, icon: [Route][i] }))} />
+      <RelatedLinks eyebrow={content.routes.eyebrow} title={content.routes.title} items={content.routes.items.map((item) => ({ ...item, icon: Route }))} />
       <RelatedLinks eyebrow={content.services.eyebrow} title={content.services.title} items={content.services.items.map((item, i) => ({ ...item, icon: [Car, Users][i] }))} />
       <ServiceFaq content={content.faq} />
     </LocationPage>

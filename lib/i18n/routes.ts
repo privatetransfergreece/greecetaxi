@@ -66,7 +66,7 @@ export const pageRoutes = {
   mykonosAirport: { en: "/airport/mykonos-airport/", el: "/el/aerodromio/mykonos/" },
 
   // Cities
-  cityAthens: { en: "/city/athens/", el: "/el/poli/athina/" },
+  cityAthens: { en: "/athens/", el: "/el/athina/" },
   cityThessaloniki: { en: "/city/thessaloniki/", el: "/el/poli/thessaloniki/" },
   cityKalamata: { en: "/city/kalamata/", el: "/el/poli/kalamata/" },
 
@@ -83,6 +83,10 @@ export const pageRoutes = {
   destinationKos: { en: "/destination/kos/", el: "/el/proorismos/kos/" },
   destinationNafplio: { en: "/destination/nafplio/", el: "/el/proorismos/nafplio/" },
   destinationMeteora: { en: "/destination/meteora/", el: "/el/proorismos/meteora/" },
+  destinationAthensRiviera: { en: "/destination/athens-riviera/", el: "/el/proorismos/paralia-athinas/" },
+  destinationGlyfada: { en: "/destination/glyfada/", el: "/el/proorismos/glyfada/" },
+  destinationVouliagmeni: { en: "/destination/vouliagmeni/", el: "/el/proorismos/vouliagmeni/" },
+  athensDayTrips: { en: "/athens-day-trips/", el: "/el/idiotikes-ekdromes-athina/" },
 
   // Ports
   portPiraeus: { en: "/port/piraeus/", el: "/el/limani/peiraias/" },
@@ -99,6 +103,24 @@ export const pageRoutes = {
   routeAthensThessaloniki: { en: "/route/athens-to-thessaloniki/", el: "/el/diadromi/athina-thessaloniki/" },
   routeThessalonikiHalkidiki: { en: "/route/thessaloniki-to-halkidiki/", el: "/el/diadromi/thessaloniki-chalkidiki/" },
   routeHeraklionChania: { en: "/route/heraklion-to-chania/", el: "/el/diadromi/irakleio-chania/" },
+  routeAthensAirportPiraeus: { en: "/route/athens-airport-to-piraeus-port/", el: "/el/diadromi/aerodromio-athinas-peiraias/" },
+  routeAthensAirportRiviera: { en: "/route/athens-airport-to-athens-riviera/", el: "/el/diadromi/aerodromio-athinas-paralia/" },
+  routeAthensCapeSounion: { en: "/route/athens-to-cape-sounion/", el: "/el/diadromi/athina-sounio/" },
+  routeAthensCorinth: { en: "/route/athens-to-corinth/", el: "/el/diadromi/athina-korinthos/" },
+  routeAthensAirportGlyfada: { en: "/route/athens-airport-to-glyfada/", el: "/el/diadromi/aerodromio-athinas-glyfada/" },
+  routeAthensAirportVouliagmeni: { en: "/route/athens-airport-to-vouliagmeni/", el: "/el/diadromi/aerodromio-athinas-vouliagmeni/" },
+  routeAthensAirportNafplio: { en: "/route/athens-airport-to-nafplio/", el: "/el/diadromi/aerodromio-athinas-nafplio/" },
+  routeAthensAirportCorinth: { en: "/route/athens-airport-to-corinth/", el: "/el/diadromi/aerodromio-athinas-korinthos/" },
+  routeAthensAirportDelphi: { en: "/route/athens-airport-to-delphi/", el: "/el/diadromi/aerodromio-athinas-delfoi/" },
+  routeAthensAirportLoutraki: { en: "/route/athens-airport-to-loutraki/", el: "/el/diadromi/aerodromio-athinas-loutraki/" },
+  routePiraeusNafplio: { en: "/route/piraeus-port-to-nafplio/", el: "/el/diadromi/peiraias-nafplio/" },
+  routeAthensAirportGrandeBretagne: { en: "/route/athens-airport-to-hotel-grande-bretagne/", el: "/el/diadromi/aerodromio-athinas-grande-bretagne/" },
+  routeAthensAirportKingGeorge: { en: "/route/athens-airport-to-king-george-hotel/", el: "/el/diadromi/aerodromio-athinas-king-george/" },
+  routeAthensAirportElectraPalace: { en: "/route/athens-airport-to-electra-palace-athens/", el: "/el/diadromi/aerodromio-athinas-electra-palace/" },
+  routeAthensAirportNjvPlaza: { en: "/route/athens-airport-to-njv-athens-plaza/", el: "/el/diadromi/aerodromio-athinas-njv-plaza/" },
+  routeAthensAirportGrandHyatt: { en: "/route/athens-airport-to-grand-hyatt-athens/", el: "/el/diadromi/aerodromio-athinas-grand-hyatt/" },
+  routeAthensAirportAthenaeumIC: { en: "/route/athens-airport-to-athenaeum-intercontinental/", el: "/el/diadromi/aerodromio-athinas-intercontinental/" },
+  routeAthensAirportDivaniCaravel: { en: "/route/athens-airport-to-divani-caravel/", el: "/el/diadromi/aerodromio-athinas-divani-caravel/" },
 } as const
 
 export type PageKey = keyof typeof pageRoutes

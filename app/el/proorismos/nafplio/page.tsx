@@ -40,7 +40,7 @@ export default function NafplioDestinationPageEl() {
       cta={{ heading: content.cta.heading, description: content.cta.description, primaryLabel: content.cta.primaryLabel, secondaryLabel: content.cta.secondaryLabel, secondaryHref: quoteHref }}
     >
       <ServiceOverview content={content.intro} />
-      <RelatedLinks eyebrow={content.gettingHere.eyebrow} title={content.gettingHere.title} items={content.gettingHere.items.map((item, i) => ({ ...item, icon: [Route, MapPin][i] }))} />
+      <RelatedLinks eyebrow={content.gettingHere.eyebrow} title={content.gettingHere.title} items={content.gettingHere.items.map((item, i) => ({ ...item, icon: [Route, Route, Route, Route, MapPin][i] }))} />
       <RelatedLinks eyebrow={content.transferOptions.eyebrow} title={content.transferOptions.title} items={content.transferOptions.items.map((item, i) => ({ ...item, icon: [Car, Users][i] }))} />
       <ServiceFaq content={content.faq} />
     </LocationPage>

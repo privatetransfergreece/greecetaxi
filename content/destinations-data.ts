@@ -11,6 +11,10 @@ export type DestinationSlug =
   | "destinationKos"
   | "destinationNafplio"
   | "destinationMeteora"
+  | "destinationAthensRiviera"
+  | "destinationGlyfada"
+  | "destinationVouliagmeni"
+  | "athensDayTrips"
 
 export type LinkSection = { eyebrow: string; title: string; items: Omit<RelatedLinkItem, "icon">[] }
 export type ProseSection = { eyebrow: string; title: string; paragraphs: string[] }
@@ -741,6 +745,9 @@ export const destinationContent: Record<DestinationSlug, Record<Locale, Destinat
         title: "Travelling to Nafplio",
         items: [
           { label: "Athens to Nafplio", href: "/route/athens-to-nafplio/", description: "See our dedicated route page for private transfers between Athens and Nafplio." },
+          { label: "Athens Airport to Nafplio", href: "/route/athens-airport-to-nafplio/", description: "A direct transfer from the airport, bypassing central Athens." },
+          { label: "Piraeus Port to Nafplio", href: "/route/piraeus-port-to-nafplio/", description: "A direct transfer for cruise and ferry passengers continuing to Nafplio." },
+          { label: "Athens to Corinth", href: "/route/athens-to-corinth/", description: "Corinth and the Corinth Canal are a common waypoint on the way to Nafplio." },
           { label: "Explore the Peloponnese", href: "/region/peloponnese/", description: "See our regional overview of transportation across the Peloponnese." },
         ],
       },
@@ -795,6 +802,9 @@ export const destinationContent: Record<DestinationSlug, Record<Locale, Destinat
         title: "Ταξίδι προς το Ναύπλιο",
         items: [
           { label: "Αθήνα προς Ναύπλιο", href: "/el/diadromi/athina-nafplio/", description: "Δείτε την ειδική μας σελίδα διαδρομής για ιδιωτικές μεταφορές μεταξύ Αθήνας και Ναυπλίου." },
+          { label: "Αεροδρόμιο Αθηνών προς Ναύπλιο", href: "/el/diadromi/aerodromio-athinas-nafplio/", description: "Απευθείας μεταφορά από το αεροδρόμιο, παρακάμπτοντας το κέντρο της Αθήνας." },
+          { label: "Πειραιάς προς Ναύπλιο", href: "/el/diadromi/peiraias-nafplio/", description: "Απευθείας μεταφορά για επιβάτες κρουαζιέρας και ferry που συνεχίζουν προς το Ναύπλιο." },
+          { label: "Αθήνα προς Κόρινθο", href: "/el/diadromi/athina-korinthos/", description: "Η Κόρινθος και η Διώρυγα της Κορίνθου είναι συνηθισμένη στάση στον δρόμο προς το Ναύπλιο." },
           { label: "Εξερευνήστε την Πελοπόννησο", href: "/el/periochi/peloponnisos/", description: "Δείτε τη γενική μας επισκόπηση μεταφορών σε όλη την Πελοπόννησο." },
         ],
       },
@@ -928,6 +938,468 @@ export const destinationContent: Record<DestinationSlug, Record<Locale, Destinat
         heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στα Μετέωρα;",
         description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
         primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  destinationAthensRiviera: {
+    en: {
+      meta: {
+        title: "Athens Riviera Private Transfers – Glyfada, Vouliagmeni & Sounion",
+        description:
+          "Book a private transfer to the Athens Riviera, covering Glyfada, Voula, Vouliagmeni and the coast toward Cape Sounion. Airport and port pickup available.",
+      },
+      breadcrumbLabel: "Athens Riviera",
+      hero: {
+        eyebrow: "Athens Riviera, Attica",
+        title: "Private Transfers to the Athens Riviera",
+        description: "Book a private transfer to the coastal strip southeast of Athens, from Glyfada to Vouliagmeni and on toward Cape Sounion.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About the Athens Riviera",
+        title: "The Coast Southeast of Athens",
+        paragraphs: [
+          "The Athens Riviera is the coastal stretch running southeast from central Athens along the Saronic Gulf, taking in Glyfada, Voula, Vouliagmeni, Varkiza, Lagonisi, Saronida and Anavyssos before reaching Cape Sounion at the tip of Attica. It's home to beach clubs, marinas and hotels, and is a popular base for visitors who want to combine central Athens with time by the sea.",
+          "Because the Riviera stretches over a long section of coastline, journey times vary considerably depending on exactly where you're headed — Glyfada is close to both central Athens and the airport, while Vouliagmeni and the coast toward Sounion are considerably further. Most visitors arrange a private transfer directly from the airport or port rather than travelling into central Athens first.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To the Athens Riviera",
+        title: "Arriving on the Athens Riviera",
+        items: [
+          { label: "Athens Airport to Athens Riviera", href: "/route/athens-airport-to-athens-riviera/", description: "A direct private transfer from the airport to the Riviera coast." },
+          { label: "Piraeus Port", href: "/port/piraeus/", description: "Continue along the coast from Piraeus if you're arriving by cruise or ferry." },
+          { label: "Athens Airport", href: "/airport/athens-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Glyfada", href: "/destination/glyfada/", description: "The closest Riviera town to the airport, known for its marina and beach clubs." },
+          { label: "Vouliagmeni", href: "/destination/vouliagmeni/", description: "Further along the coast, known for its thermal lake and upscale resorts." },
+          { label: "Athens to Cape Sounion", href: "/route/athens-to-cape-sounion/", description: "Continue along the coast to the Temple of Poseidon at Cape Sounion." },
+          { label: "Private Transfers", href: "/private-transfers/", description: "A private, door-to-door vehicle for any journey along the Riviera." },
+          { label: "Group Transfers", href: "/group-transfers/", description: "Private transportation for families and larger groups." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "What towns are included in the Athens Riviera?", answer: "The coastal strip generally covers Glyfada, Voula, Vouliagmeni, Varkiza, Lagonisi, Saronida and Anavyssos, extending toward Cape Sounion." },
+          { question: "Can I book a private transfer from Athens Airport directly to the Riviera?", answer: "Yes, see our dedicated Athens Airport to Athens Riviera route page for details." },
+          { question: "Does journey time vary along the Riviera?", answer: "Yes, Glyfada is closer to both central Athens and the airport, while Vouliagmeni and the coast toward Sounion take longer to reach." },
+          { question: "Can I combine a Riviera transfer with a visit to Cape Sounion?", answer: "Yes, mention your plans when requesting a quote and this can be arranged as part of your journey." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Athens Riviera Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στην Παραλιακή Αθήνας – Γλυφάδα, Βουλιαγμένη & Σούνιο",
+        description:
+          "Κλείστε ιδιωτική μεταφορά προς την παραλιακή ζώνη της Αθήνας, με Γλυφάδα, Βούλα, Βουλιαγμένη και την ακτή προς το Σούνιο. Παραλαβή από αεροδρόμιο και λιμάνι.",
+      },
+      breadcrumbLabel: "Παραλιακή Αθήνας",
+      hero: {
+        eyebrow: "Παραλιακή Αθήνας, Αττική",
+        title: "Ιδιωτικές Μεταφορές στην Παραλιακή Αθήνας",
+        description: "Κλείστε ιδιωτική μεταφορά προς την παράκτια ζώνη νοτιοανατολικά της Αθήνας, από τη Γλυφάδα έως τη Βουλιαγμένη και προς το Σούνιο.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με την Παραλιακή Αθήνας",
+        title: "Η Ακτή Νοτιοανατολικά της Αθήνας",
+        paragraphs: [
+          "Η Παραλιακή Αθήνας είναι η παράκτια ζώνη που εκτείνεται νοτιοανατολικά από το κέντρο της Αθήνας κατά μήκος του Σαρωνικού Κόλπου, περιλαμβάνοντας τη Γλυφάδα, τη Βούλα, τη Βουλιαγμένη, τη Βάρκιζα, το Λαγονήσι, τη Σαρωνίδα και την Ανάβυσσο, πριν φτάσει στο Σούνιο στο άκρο της Αττικής. Φιλοξενεί beach clubs, μαρίνες και ξενοδοχεία, και είναι δημοφιλής βάση για επισκέπτες που θέλουν να συνδυάσουν το κέντρο της Αθήνας με χρόνο δίπλα στη θάλασσα.",
+          "Επειδή η παραλιακή ζώνη εκτείνεται σε μεγάλο τμήμα ακτογραμμής, οι χρόνοι διαδρομής διαφέρουν σημαντικά ανάλογα με τον ακριβή προορισμό σας — η Γλυφάδα είναι κοντά τόσο στο κέντρο της Αθήνας όσο και στο αεροδρόμιο, ενώ η Βουλιαγμένη και η ακτή προς το Σούνιο απέχουν αρκετά περισσότερο. Οι περισσότεροι επισκέπτες οργανώνουν ιδιωτική μεταφορά απευθείας από το αεροδρόμιο ή το λιμάνι αντί να περάσουν πρώτα από το κέντρο της Αθήνας.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στην Παραλιακή Αθήνας",
+        title: "Άφιξη στην Παραλιακή Αθήνας",
+        items: [
+          { label: "Αεροδρόμιο Αθηνών προς Παραλιακή", href: "/el/diadromi/aerodromio-athinas-paralia/", description: "Απευθείας ιδιωτική μεταφορά από το αεροδρόμιο προς την παραλιακή ακτή." },
+          { label: "Λιμάνι Πειραιά", href: "/el/limani/peiraias/", description: "Συνεχίστε κατά μήκος της ακτής από τον Πειραιά αν φτάνετε με κρουαζιέρα ή ferry." },
+          { label: "Αεροδρόμιο Αθηνών", href: "/el/aerodromio/athina/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Γλυφάδα", href: "/el/proorismos/glyfada/", description: "Το πλησιέστερο σημείο της Παραλιακής στο αεροδρόμιο, γνωστό για τη μαρίνα και τα beach clubs του." },
+          { label: "Βουλιαγμένη", href: "/el/proorismos/vouliagmeni/", description: "Πιο μακριά στην ακτή, γνωστή για τη λίμνη της και τα πολυτελή θέρετρα." },
+          { label: "Αθήνα προς Σούνιο", href: "/el/diadromi/athina-sounio/", description: "Συνεχίστε κατά μήκος της ακτής προς τον Ναό του Ποσειδώνα στο Σούνιο." },
+          { label: "Ιδιωτικές Μεταφορές", href: "/el/idiotikes-metafores/", description: "Ένα ιδιωτικό όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή στην παραλιακή ζώνη." },
+          { label: "Ομαδικές Μεταφορές", href: "/el/omadikes-metafores/", description: "Ιδιωτική μεταφορά για οικογένειες και μεγαλύτερες ομάδες." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Ποιες περιοχές περιλαμβάνει η Παραλιακή Αθήνας;", answer: "Η παράκτια ζώνη περιλαμβάνει γενικά τη Γλυφάδα, τη Βούλα, τη Βουλιαγμένη, τη Βάρκιζα, το Λαγονήσι, τη Σαρωνίδα και την Ανάβυσσο, επεκτεινόμενη προς το Σούνιο." },
+          { question: "Μπορώ να κλείσω ιδιωτική μεταφορά από το Αεροδρόμιο Αθηνών απευθείας προς την παραλιακή;", answer: "Ναι, δείτε την ειδική μας σελίδα διαδρομής Αεροδρόμιο Αθηνών προς Παραλιακή για λεπτομέρειες." },
+          { question: "Διαφέρει ο χρόνος διαδρομής κατά μήκος της παραλιακής;", answer: "Ναι, η Γλυφάδα είναι πιο κοντά τόσο στο κέντρο της Αθήνας όσο και στο αεροδρόμιο, ενώ η Βουλιαγμένη και η ακτή προς το Σούνιο απαιτούν περισσότερο χρόνο." },
+          { question: "Μπορώ να συνδυάσω μεταφορά στην παραλιακή με επίσκεψη στο Σούνιο;", answer: "Ναι, αναφέρετε τα σχέδιά σας κατά την αίτηση προσφοράς και αυτό μπορεί να οργανωθεί ως μέρος του ταξιδιού σας." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στην Παραλιακή Αθήνας;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  destinationGlyfada: {
+    en: {
+      meta: {
+        title: "Private Transfers to Glyfada – Athens Riviera",
+        description:
+          "Book a private transfer to Glyfada, the closest Athens Riviera town to the airport, known for its marina, beach clubs and shopping street.",
+      },
+      breadcrumbLabel: "Glyfada",
+      hero: {
+        eyebrow: "Glyfada, Athens Riviera",
+        title: "Private Transfers to Glyfada",
+        description: "Book a private transfer to Glyfada, the closest part of the Athens Riviera to both the airport and central Athens.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Glyfada",
+        title: "Glyfada on the Athens Riviera",
+        paragraphs: [
+          "Glyfada is an affluent coastal suburb southeast of central Athens, generally considered the entry point to the Athens Riviera. It's known for its marina, beach clubs, and Metaxa Street, a well-known shopping and dining strip, and is a popular base for both leisure and business visitors.",
+          "Glyfada is the closest Riviera destination to Athens Airport, making it a common direct transfer for arriving visitors who want to reach the coast without stopping in central Athens first.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To Glyfada",
+        title: "Arriving in Glyfada",
+        items: [
+          { label: "Athens Airport to Glyfada", href: "/route/athens-airport-to-glyfada/", description: "A direct private transfer from the airport, the shortest of the Riviera routes." },
+          { label: "Athens Riviera", href: "/destination/athens-riviera/", description: "See our overview of the wider Athens Riviera coastline." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Vouliagmeni", href: "/destination/vouliagmeni/", description: "Continue further along the coast to Vouliagmeni." },
+          { label: "Private Transfers", href: "/private-transfers/", description: "A private, door-to-door vehicle for any journey in Glyfada." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How far is Glyfada from Athens Airport?", answer: "Glyfada is the closest Athens Riviera destination to the airport — see our dedicated Athens Airport to Glyfada route page for journey details." },
+          { question: "Can I book a private transfer from central Athens to Glyfada?", answer: "Yes, mention your pickup location when requesting a quote." },
+          { question: "Can I continue to Vouliagmeni or Cape Sounion from Glyfada?", answer: "Yes, mention your full itinerary when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Glyfada Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στη Γλυφάδα – Παραλιακή Αθήνας",
+        description:
+          "Κλείστε ιδιωτική μεταφορά προς τη Γλυφάδα, το πλησιέστερο σημείο της Παραλιακής Αθήνας στο αεροδρόμιο, γνωστό για τη μαρίνα και τα beach clubs της.",
+      },
+      breadcrumbLabel: "Γλυφάδα",
+      hero: {
+        eyebrow: "Γλυφάδα, Παραλιακή Αθήνας",
+        title: "Ιδιωτικές Μεταφορές στη Γλυφάδα",
+        description: "Κλείστε ιδιωτική μεταφορά προς τη Γλυφάδα, το πλησιέστερο σημείο της Παραλιακής τόσο στο αεροδρόμιο όσο και στο κέντρο της Αθήνας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τη Γλυφάδα",
+        title: "Η Γλυφάδα στην Παραλιακή Αθήνας",
+        paragraphs: [
+          "Η Γλυφάδα είναι ένα εύπορο παράκτιο προάστιο νοτιοανατολικά του κέντρου της Αθήνας, που θεωρείται γενικά η είσοδος στην Παραλιακή Αθήνας. Είναι γνωστή για τη μαρίνα της, τα beach clubs και την οδό Μεταξά, μια γνωστή εμπορική και γαστρονομική οδό, και αποτελεί δημοφιλή βάση τόσο για αναψυχή όσο και για επαγγελματικούς επισκέπτες.",
+          "Η Γλυφάδα είναι ο πλησιέστερος προορισμός της Παραλιακής στο Αεροδρόμιο Αθηνών, καθιστώντας την συνηθισμένη απευθείας μεταφορά για επισκέπτες που φτάνουν και θέλουν να φτάσουν στην ακτή χωρίς να περάσουν πρώτα από το κέντρο.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στη Γλυφάδα",
+        title: "Άφιξη στη Γλυφάδα",
+        items: [
+          { label: "Αεροδρόμιο Αθηνών προς Γλυφάδα", href: "/el/diadromi/aerodromio-athinas-glyfada/", description: "Απευθείας ιδιωτική μεταφορά από το αεροδρόμιο, η συντομότερη διαδρομή προς την Παραλιακή." },
+          { label: "Παραλιακή Αθήνας", href: "/el/proorismos/paralia-athinas/", description: "Δείτε την επισκόπησή μας για την ευρύτερη ακτή της Παραλιακής Αθήνας." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Βουλιαγμένη", href: "/el/proorismos/vouliagmeni/", description: "Συνεχίστε περαιτέρω κατά μήκος της ακτής προς τη Βουλιαγμένη." },
+          { label: "Ιδιωτικές Μεταφορές", href: "/el/idiotikes-metafores/", description: "Ένα ιδιωτικό όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή στη Γλυφάδα." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο απέχει η Γλυφάδα από το Αεροδρόμιο Αθηνών;", answer: "Η Γλυφάδα είναι ο πλησιέστερος προορισμός της Παραλιακής στο αεροδρόμιο — δείτε την ειδική μας σελίδα διαδρομής Αεροδρόμιο Αθηνών προς Γλυφάδα για λεπτομέρειες." },
+          { question: "Μπορώ να κλείσω ιδιωτική μεταφορά από το κέντρο της Αθήνας προς τη Γλυφάδα;", answer: "Ναι, αναφέρετε το σημείο παραλαβής σας κατά την αίτηση προσφοράς." },
+          { question: "Μπορώ να συνεχίσω προς τη Βουλιαγμένη ή το Σούνιο από τη Γλυφάδα;", answer: "Ναι, αναφέρετε το πλήρες πρόγραμμά σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στη Γλυφάδα;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  destinationVouliagmeni: {
+    en: {
+      meta: {
+        title: "Private Transfers to Vouliagmeni – Athens Riviera",
+        description:
+          "Book a private transfer to Vouliagmeni, known for its thermal lake and upscale resorts on the Athens Riviera. Airport and city pickup available.",
+      },
+      breadcrumbLabel: "Vouliagmeni",
+      hero: {
+        eyebrow: "Vouliagmeni, Athens Riviera",
+        title: "Private Transfers to Vouliagmeni",
+        description: "Book a private transfer to Vouliagmeni, further along the Athens Riviera coast beyond Glyfada.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Vouliagmeni",
+        title: "Vouliagmeni on the Athens Riviera",
+        paragraphs: [
+          "Vouliagmeni lies further along the Athens Riviera coast beyond Glyfada and Voula, known for Lake Vouliagmeni, a natural thermal lake, and a stretch of upscale resorts and beach clubs. It sits on a small peninsula with views across the Saronic Gulf.",
+          "Because it's further from the airport and central Athens than Glyfada, most visitors arrange a private transfer directly rather than connecting through the city first, particularly when arriving with luggage for a resort stay.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To Vouliagmeni",
+        title: "Arriving in Vouliagmeni",
+        items: [
+          { label: "Athens Airport to Vouliagmeni", href: "/route/athens-airport-to-vouliagmeni/", description: "A direct private transfer from the airport to Vouliagmeni." },
+          { label: "Athens Riviera", href: "/destination/athens-riviera/", description: "See our overview of the wider Athens Riviera coastline." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Glyfada", href: "/destination/glyfada/", description: "Explore Glyfada, closer to the airport along the same coast." },
+          { label: "Athens to Cape Sounion", href: "/route/athens-to-cape-sounion/", description: "Continue further along the coast to Cape Sounion." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Athens Airport to Vouliagmeni?", answer: "See our dedicated Athens Airport to Vouliagmeni route page for journey details." },
+          { question: "Is Vouliagmeni further from the airport than Glyfada?", answer: "Yes, Vouliagmeni is further along the Riviera coast than Glyfada, so the journey takes a little longer." },
+          { question: "Can I continue on to Cape Sounion from Vouliagmeni?", answer: "Yes, mention your plans when requesting a quote and this can be arranged." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Vouliagmeni Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στη Βουλιαγμένη – Παραλιακή Αθήνας",
+        description:
+          "Κλείστε ιδιωτική μεταφορά προς τη Βουλιαγμένη, γνωστή για τη λίμνη της και τα πολυτελή θέρετρα στην Παραλιακή Αθήνας. Παραλαβή από αεροδρόμιο και πόλη.",
+      },
+      breadcrumbLabel: "Βουλιαγμένη",
+      hero: {
+        eyebrow: "Βουλιαγμένη, Παραλιακή Αθήνας",
+        title: "Ιδιωτικές Μεταφορές στη Βουλιαγμένη",
+        description: "Κλείστε ιδιωτική μεταφορά προς τη Βουλιαγμένη, πιο μακριά στην ακτή της Παραλιακής Αθήνας πέρα από τη Γλυφάδα.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τη Βουλιαγμένη",
+        title: "Η Βουλιαγμένη στην Παραλιακή Αθήνας",
+        paragraphs: [
+          "Η Βουλιαγμένη βρίσκεται πιο μακριά στην ακτή της Παραλιακής Αθήνας πέρα από τη Γλυφάδα και τη Βούλα, γνωστή για τη Λίμνη Βουλιαγμένης, μια φυσική θερμή λίμνη, και μια σειρά από πολυτελή θέρετρα και beach clubs. Βρίσκεται σε μια μικρή χερσόνησο με θέα στον Σαρωνικό Κόλπο.",
+          "Επειδή απέχει περισσότερο από το αεροδρόμιο και το κέντρο της Αθήνας σε σχέση με τη Γλυφάδα, οι περισσότεροι επισκέπτες οργανώνουν ιδιωτική μεταφορά απευθείας αντί να περάσουν πρώτα από την πόλη, ιδιαίτερα όταν φτάνουν με αποσκευές για διαμονή σε θέρετρο.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στη Βουλιαγμένη",
+        title: "Άφιξη στη Βουλιαγμένη",
+        items: [
+          { label: "Αεροδρόμιο Αθηνών προς Βουλιαγμένη", href: "/el/diadromi/aerodromio-athinas-vouliagmeni/", description: "Απευθείας ιδιωτική μεταφορά από το αεροδρόμιο προς τη Βουλιαγμένη." },
+          { label: "Παραλιακή Αθήνας", href: "/el/proorismos/paralia-athinas/", description: "Δείτε την επισκόπησή μας για την ευρύτερη ακτή της Παραλιακής Αθήνας." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Γλυφάδα", href: "/el/proorismos/glyfada/", description: "Εξερευνήστε τη Γλυφάδα, πιο κοντά στο αεροδρόμιο στην ίδια ακτή." },
+          { label: "Αθήνα προς Σούνιο", href: "/el/diadromi/athina-sounio/", description: "Συνεχίστε περαιτέρω κατά μήκος της ακτής προς το Σούνιο." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς πηγαίνω από το Αεροδρόμιο Αθηνών στη Βουλιαγμένη;", answer: "Δείτε την ειδική μας σελίδα διαδρομής Αεροδρόμιο Αθηνών προς Βουλιαγμένη για λεπτομέρειες." },
+          { question: "Απέχει η Βουλιαγμένη περισσότερο από το αεροδρόμιο σε σχέση με τη Γλυφάδα;", answer: "Ναι, η Βουλιαγμένη βρίσκεται πιο μακριά στην ακτή της Παραλιακής από τη Γλυφάδα, οπότε το ταξίδι διαρκεί λίγο περισσότερο." },
+          { question: "Μπορώ να συνεχίσω προς το Σούνιο από τη Βουλιαγμένη;", answer: "Ναι, αναφέρετε τα σχέδιά σας κατά την αίτηση προσφοράς και αυτό μπορεί να οργανωθεί." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στη Βουλιαγμένη;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  athensDayTrips: {
+    en: {
+      meta: {
+        title: "Private Day Trips from Athens – Book Your Excursion",
+        description:
+          "Explore private day trips from Athens to Cape Sounion, Delphi, Nafplio, Corinth and Meteora. Private vehicle, flexible itinerary. Get a quote.",
+      },
+      breadcrumbLabel: "Day Trips",
+      hero: {
+        eyebrow: "Private Day Trips",
+        title: "Private Day Trips from Athens",
+        description: "A private vehicle and driver for a day trip from Athens, with a flexible itinerary and return journey included.",
+        primaryLabel: "Book Your Day Trip",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Our Day Trips",
+        title: "How a Private Day Trip Works",
+        paragraphs: [
+          "A private day trip is different from a one-way transfer: it includes your pickup in Athens, private transportation to the destination, time to explore, and the return journey, typically with the same vehicle and driver waiting or returning at an agreed time. This gives you a flexible, unhurried itinerary compared to a fixed-schedule group tour.",
+          "The most popular day trips from Athens cover the Attica coast, the mountains of central Greece, and the nearby Peloponnese — each with a different character and journey length, so it's worth choosing based on how much time you have and what interests you most.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Popular Day Trips",
+        title: "Choose Your Day Trip",
+        items: [
+          { label: "Athens to Cape Sounion", href: "/route/athens-to-cape-sounion/", description: "A half-day or sunset trip to the Temple of Poseidon, the shortest of these excursions." },
+          { label: "Athens to Delphi", href: "/route/athens-to-delphi/", description: "A full-day mountain-road trip to the archaeological site of Delphi." },
+          { label: "Athens to Nafplio", href: "/route/athens-to-nafplio/", description: "A day trip to the Peloponnese, often combined with Mycenae and Epidaurus along the way." },
+          { label: "Athens to Corinth", href: "/route/athens-to-corinth/", description: "A shorter trip to the Corinth Canal, sometimes combined with a longer Peloponnese itinerary." },
+          { label: "Athens to Meteora", href: "/route/athens-to-meteora/", description: "A long full-day (or overnight) trip to the rock-pillar monasteries of Meteora." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Private Transfers", href: "/private-transfers/", description: "A private, door-to-door vehicle for any journey, including day trips." },
+          { label: "Group Transfers", href: "/group-transfers/", description: "Private transportation for families and larger groups on a day trip." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "What's the difference between a day trip and a one-way transfer?", answer: "A day trip includes your return journey and time at the destination, with the vehicle waiting or returning for you, rather than a single one-way journey." },
+          { question: "Can I visit Mycenae and Epidaurus as part of a Nafplio day trip?", answer: "Yes, mention this when requesting a quote so it can be included in your itinerary." },
+          { question: "How much time do I get at the destination?", answer: "This depends on the destination and your preferences — mention how much time you'd like when requesting a quote." },
+          { question: "Can you arrange a day trip for a group?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote so a suitable vehicle can be arranged." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Athens Day Trip?",
+        description: "Tell us which destination interests you and your passenger details, and request your private day trip quote.",
+        primaryLabel: "Book Your Day Trip",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Ημερήσιες Εκδρομές από την Αθήνα – Κλείστε Τώρα",
+        description:
+          "Εξερευνήστε ιδιωτικές ημερήσιες εκδρομές από την Αθήνα προς Σούνιο, Δελφούς, Ναύπλιο, Κόρινθο και Μετέωρα. Ιδιωτικό όχημα, ευέλικτο πρόγραμμα.",
+      },
+      breadcrumbLabel: "Ημερήσιες Εκδρομές",
+      hero: {
+        eyebrow: "Ιδιωτικές Εκδρομές",
+        title: "Ιδιωτικές Ημερήσιες Εκδρομές από την Αθήνα",
+        description: "Ένα ιδιωτικό όχημα και οδηγός για μια ημερήσια εκδρομή από την Αθήνα, με ευέλικτο πρόγραμμα και την επιστροφή σας συμπεριλαμβανόμενη.",
+        primaryLabel: "Κλείστε την Εκδρομή σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τις Εκδρομές μας",
+        title: "Πώς Λειτουργεί μια Ιδιωτική Ημερήσια Εκδρομή",
+        paragraphs: [
+          "Μια ιδιωτική ημερήσια εκδρομή διαφέρει από μια απλή μεταφορά: περιλαμβάνει την παραλαβή σας στην Αθήνα, ιδιωτική μεταφορά προς τον προορισμό, χρόνο για εξερεύνηση, και την επιστροφή σας, συνήθως με το ίδιο όχημα και οδηγό που περιμένει ή επιστρέφει σε συμφωνημένη ώρα. Αυτό σας δίνει ένα ευέλικτο, χωρίς βιασύνη πρόγραμμα σε σύγκριση με μια οργανωμένη εκδρομή με σταθερό πρόγραμμα.",
+          "Οι πιο δημοφιλείς ημερήσιες εκδρομές από την Αθήνα καλύπτουν την ακτή της Αττικής, τα βουνά της κεντρικής Ελλάδας και την κοντινή Πελοπόννησο — καθεμία με διαφορετικό χαρακτήρα και διάρκεια ταξιδιού, οπότε αξίζει να επιλέξετε ανάλογα με τον διαθέσιμο χρόνο σας και τα ενδιαφέροντά σας.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Δημοφιλείς Εκδρομές",
+        title: "Επιλέξτε την Εκδρομή σας",
+        items: [
+          { label: "Αθήνα προς Σούνιο", href: "/el/diadromi/athina-sounio/", description: "Μια εκδρομή μισής ημέρας ή ηλιοβασιλέματος στον Ναό του Ποσειδώνα, η συντομότερη από αυτές τις εκδρομές." },
+          { label: "Αθήνα προς Δελφούς", href: "/el/diadromi/athina-delfoi/", description: "Μια ολοήμερη ορεινή εκδρομή προς τον αρχαιολογικό χώρο των Δελφών." },
+          { label: "Αθήνα προς Ναύπλιο", href: "/el/diadromi/athina-nafplio/", description: "Μια εκδρομή προς την Πελοπόννησο, συχνά σε συνδυασμό με τις Μυκήνες και την Επίδαυρο στη διαδρομή." },
+          { label: "Αθήνα προς Κόρινθο", href: "/el/diadromi/athina-korinthos/", description: "Μια συντομότερη εκδρομή προς τη Διώρυγα της Κορίνθου, μερικές φορές σε συνδυασμό με μεγαλύτερο πρόγραμμα στην Πελοπόννησο." },
+          { label: "Αθήνα προς Μετέωρα", href: "/el/diadromi/athina-meteora/", description: "Μια μεγάλη ολοήμερη (ή με διανυκτέρευση) εκδρομή προς τα μοναστήρια πάνω σε βράχους των Μετεώρων." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Ιδιωτικές Μεταφορές", href: "/el/idiotikes-metafores/", description: "Ένα ιδιωτικό όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή, συμπεριλαμβανομένων εκδρομών." },
+          { label: "Ομαδικές Μεταφορές", href: "/el/omadikes-metafores/", description: "Ιδιωτική μεταφορά για οικογένειες και μεγαλύτερες ομάδες σε ημερήσια εκδρομή." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Ποια είναι η διαφορά μεταξύ ημερήσιας εκδρομής και απλής μεταφοράς;", answer: "Μια ημερήσια εκδρομή περιλαμβάνει την επιστροφή σας και χρόνο στον προορισμό, με το όχημα να περιμένει ή να επιστρέφει για εσάς, αντί για ένα απλό μονόδρομο ταξίδι." },
+          { question: "Μπορώ να επισκεφθώ τις Μυκήνες και την Επίδαυρο ως μέρος εκδρομής στο Ναύπλιο;", answer: "Ναι, αναφέρετέ το κατά την αίτηση προσφοράς ώστε να συμπεριληφθεί στο πρόγραμμά σας." },
+          { question: "Πόσο χρόνο έχω στον προορισμό;", answer: "Αυτό εξαρτάται από τον προορισμό και τις προτιμήσεις σας — αναφέρετε πόσο χρόνο θα θέλατε κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να οργανώσετε εκδρομή για ομάδα;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε την Εκδρομή σας από την Αθήνα;",
+        description: "Πείτε μας ποιος προορισμός σας ενδιαφέρει και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής εκδρομής σας.",
+        primaryLabel: "Κλείστε την Εκδρομή σας",
         secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
       },
     },

@@ -9,11 +9,11 @@ import {
   DoorOpen,
   Landmark,
   Luggage,
+  MapPin,
   MessageCircle,
   PlaneTakeoff,
   Repeat,
   Route,
-  Ship,
   Users,
 } from "lucide-react";
 
@@ -83,13 +83,20 @@ export default function AthensAirportPage() {
       <RelatedLinks
         eyebrow={content.destinations.eyebrow}
         title={content.destinations.title}
-        items={content.destinations.items.map((item, i) => ({ ...item, icon: [Landmark, Route, Landmark][i] }))}
+        items={content.destinations.items.map((item, i) => ({ ...item, icon: [MapPin, Landmark, Route, Route, Landmark, Landmark, Landmark][i] }))}
       />
       <RelatedLinks
         eyebrow={content.connections.eyebrow}
         title={content.connections.title}
-        items={content.connections.items.map((item, i) => ({ ...item, icon: [Building2, Ship, Anchor][i] }))}
+        items={content.connections.items.map((item, i) => ({ ...item, icon: [Building2, Route, Anchor][i] }))}
       />
+      {content.hotelTransfers && (
+        <RelatedLinks
+          eyebrow={content.hotelTransfers.eyebrow}
+          title={content.hotelTransfers.title}
+          items={content.hotelTransfers.items.map((item) => ({ ...item, icon: Building2 }))}
+        />
+      )}
       <ServiceHowItWorks content={content.howPickupWorks} />
       <ServiceFeatures content={content.travelPlanning} icons={[CalendarClock, PlaneTakeoff, Route, MessageCircle]} />
       <ServiceFeatures content={content.vehicleConsiderations} icons={[Users, Users, Luggage, Clock]} />

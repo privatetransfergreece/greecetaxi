@@ -84,10 +84,12 @@ export const cityContent: Record<CitySlug, Record<Locale, CityPageContent>> = {
       },
       popularRoutes: {
         eyebrow: "Popular Routes",
-        title: "Popular City-to-City Transfers From Athens",
+        title: "Private Day Trips & City-to-City Transfers From Athens",
         items: [
+          { label: "Athens to Cape Sounion", href: "/route/athens-to-cape-sounion/", description: "A private day trip or one-way transfer to the Temple of Poseidon on the southern tip of Attica." },
           { label: "Athens to Delphi", href: "/route/athens-to-delphi/", description: "A private transfer to the archaeological site of Delphi in central Greece." },
           { label: "Athens to Nafplio", href: "/route/athens-to-nafplio/", description: "A private transfer to the Peloponnese's popular waterfront town." },
+          { label: "Athens to Corinth", href: "/route/athens-to-corinth/", description: "A private transfer to Corinth and the Corinth Canal, a common stop en route to the Peloponnese." },
           { label: "Athens to Meteora", href: "/route/athens-to-meteora/", description: "A long-distance private transfer to the rock-pillar monasteries of Meteora." },
           { label: "Athens to Thessaloniki", href: "/route/athens-to-thessaloniki/", description: "A long-distance private transfer connecting Greece's two largest cities." },
         ],
@@ -96,8 +98,10 @@ export const cityContent: Record<CitySlug, Record<Locale, CityPageContent>> = {
         eyebrow: "Nearby Destinations",
         title: "Destinations Reachable From Athens",
         items: [
+          { label: "Athens Riviera", href: "/destination/athens-riviera/", description: "The coastal strip southeast of Athens, including Glyfada, Vouliagmeni and Cape Sounion." },
           { label: "Nafplio", href: "/destination/nafplio/", description: "A popular Peloponnese waterfront town, reachable by private transfer from Athens." },
           { label: "Meteora", href: "/destination/meteora/", description: "The rock-pillar monasteries of Thessaly, reachable by long-distance transfer." },
+          { label: "Athens Day Trips", href: "/athens-day-trips/", description: "Browse our full range of private day trips from Athens, including Cape Sounion, Delphi and Nafplio." },
         ],
       },
       faq: {
@@ -161,10 +165,12 @@ export const cityContent: Record<CitySlug, Record<Locale, CityPageContent>> = {
       },
       popularRoutes: {
         eyebrow: "Δημοφιλείς Διαδρομές",
-        title: "Δημοφιλείς Μεταφορές Μεταξύ Πόλεων από την Αθήνα",
+        title: "Ιδιωτικές Εκδρομές & Μεταφορές Μεταξύ Πόλεων από την Αθήνα",
         items: [
+          { label: "Αθήνα προς Σούνιο", href: "/el/diadromi/athina-sounio/", description: "Ιδιωτική ημερήσια εκδρομή ή μεταφορά προς τον Ναό του Ποσειδώνα στο νότιο άκρο της Αττικής." },
           { label: "Αθήνα προς Δελφούς", href: "/el/diadromi/athina-delfoi/", description: "Ιδιωτική μεταφορά προς τον αρχαιολογικό χώρο των Δελφών στην κεντρική Ελλάδα." },
           { label: "Αθήνα προς Ναύπλιο", href: "/el/diadromi/athina-nafplio/", description: "Ιδιωτική μεταφορά προς τη δημοφιλή παραθαλάσσια πόλη της Πελοποννήσου." },
+          { label: "Αθήνα προς Κόρινθο", href: "/el/diadromi/athina-korinthos/", description: "Ιδιωτική μεταφορά προς την Κόρινθο και τη Διώρυγα της Κορίνθου, συνηθισμένη στάση προς την Πελοπόννησο." },
           { label: "Αθήνα προς Μετέωρα", href: "/el/diadromi/athina-meteora/", description: "Ιδιωτική μεταφορά μεγάλης απόστασης προς τα μοναστήρια πάνω σε βράχους των Μετεώρων." },
           { label: "Αθήνα προς Θεσσαλονίκη", href: "/el/diadromi/athina-thessaloniki/", description: "Ιδιωτική μεταφορά μεγάλης απόστασης που συνδέει τις δύο μεγαλύτερες πόλεις της Ελλάδας." },
         ],
@@ -173,8 +179,10 @@ export const cityContent: Record<CitySlug, Record<Locale, CityPageContent>> = {
         eyebrow: "Κοντινοί Προορισμοί",
         title: "Προορισμοί Προσβάσιμοι από την Αθήνα",
         items: [
+          { label: "Παραλιακή Αθήνας", href: "/el/proorismos/paralia-athinas/", description: "Η παράκτια ζώνη νοτιοανατολικά της Αθήνας, με τη Γλυφάδα, τη Βουλιαγμένη και το Σούνιο." },
           { label: "Ναύπλιο", href: "/el/proorismos/nafplio/", description: "Μια δημοφιλής παραθαλάσσια πόλη της Πελοποννήσου, προσβάσιμη με ιδιωτική μεταφορά από την Αθήνα." },
           { label: "Μετέωρα", href: "/el/proorismos/meteora/", description: "Τα μοναστήρια πάνω σε βράχους της Θεσσαλίας, προσβάσιμα με μεταφορά μεγάλης απόστασης." },
+          { label: "Ημερήσιες Εκδρομές από την Αθήνα", href: "/el/idiotikes-ekdromes-athina/", description: "Δείτε όλες τις ιδιωτικές ημερήσιες εκδρομές μας από την Αθήνα, με Σούνιο, Δελφούς και Ναύπλιο." },
         ],
       },
       faq: {

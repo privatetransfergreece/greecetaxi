@@ -27,6 +27,7 @@ export type AirportPageContent = {
   transferService: IconTextSection
   destinations: LinkSection
   connections: LinkSection
+  hotelTransfers?: LinkSection
   howPickupWorks: StepsSection
   travelPlanning: IconTextSection
   vehicleConsiderations: IconTextSection
@@ -177,8 +178,12 @@ export const airportContent: Record<AirportSlug, Record<Locale, AirportPageConte
         eyebrow: "Onward Travel",
         title: "Popular Destinations From Athens Airport",
         items: [
-          { label: "Nafplio", href: "/destination/nafplio/", description: "A private transfer to the Peloponnese's popular waterfront town, reachable directly from the airport." },
-          { label: "Delphi", href: "/route/athens-to-delphi/", description: "Continue directly from the airport to the archaeological site of Delphi in central Greece." },
+          { label: "Athens Riviera", href: "/destination/athens-riviera/", description: "Continue directly from the airport to the coastal strip southeast of Athens, including Glyfada and Vouliagmeni." },
+          { label: "Cape Sounion", href: "/route/athens-to-cape-sounion/", description: "Travel from the airport to the Temple of Poseidon on the southern tip of Attica." },
+          { label: "Nafplio", href: "/route/athens-airport-to-nafplio/", description: "A private transfer to the Peloponnese's popular waterfront town, bypassing central Athens." },
+          { label: "Corinth", href: "/route/athens-airport-to-corinth/", description: "A shorter transfer to Corinth and the Corinth Canal, direct from the airport." },
+          { label: "Delphi", href: "/route/athens-airport-to-delphi/", description: "Continue directly from the airport to the archaeological site of Delphi in central Greece." },
+          { label: "Loutraki", href: "/route/athens-airport-to-loutraki/", description: "A transfer to the spa and casino town of Loutraki, near Corinth." },
           { label: "Meteora", href: "/destination/meteora/", description: "Travel from the airport to the rock-pillar monasteries of Meteora in Thessaly." },
         ],
       },
@@ -186,9 +191,22 @@ export const airportContent: Record<AirportSlug, Record<Locale, AirportPageConte
         eyebrow: "City & Port Connections",
         title: "Airport, City and Port Connections",
         items: [
-          { label: "Central Athens", href: "/city/athens/", description: "Direct transfers between the airport and hotels or addresses across the city." },
-          { label: "Piraeus Port", href: "/port/piraeus/", description: "Connect directly between the airport and Greece's main cruise and ferry port." },
+          { label: "Central Athens", href: "/athens/", description: "Direct transfers between the airport and hotels or addresses across the city." },
+          { label: "Athens Airport to Piraeus Port", href: "/route/athens-airport-to-piraeus-port/", description: "A dedicated route page for cruise and ferry connections between the airport and Piraeus." },
           { label: "Rafina Port", href: "/port/rafina/", description: "A transfer option for travellers connecting to Cycladic ferries departing from Rafina." },
+        ],
+      },
+      hotelTransfers: {
+        eyebrow: "Hotel Transfers",
+        title: "Popular Athens Hotel Transfers",
+        items: [
+          { label: "Hotel Grande Bretagne", href: "/route/athens-airport-to-hotel-grande-bretagne/", description: "Syntagma Square, central Athens." },
+          { label: "King George Hotel", href: "/route/athens-airport-to-king-george-hotel/", description: "Syntagma Square, central Athens." },
+          { label: "Electra Palace Athens", href: "/route/athens-airport-to-electra-palace-athens/", description: "Plaka, beneath the Acropolis." },
+          { label: "NJV Athens Plaza", href: "/route/athens-airport-to-njv-athens-plaza/", description: "Syntagma Square, central Athens." },
+          { label: "Grand Hyatt Athens", href: "/route/athens-airport-to-grand-hyatt-athens/", description: "Syngrou Avenue." },
+          { label: "Athenaeum InterContinental Athens", href: "/route/athens-airport-to-athenaeum-intercontinental/", description: "Syngrou Avenue." },
+          { label: "Divani Caravel", href: "/route/athens-airport-to-divani-caravel/", description: "Near the Megaron and Hilton area." },
         ],
       },
       howPickupWorks: sharedHowItWorksEn,
@@ -271,8 +289,12 @@ export const airportContent: Record<AirportSlug, Record<Locale, AirportPageConte
         eyebrow: "Συνέχεια Ταξιδιού",
         title: "Δημοφιλείς Προορισμοί από το Αεροδρόμιο Αθηνών",
         items: [
-          { label: "Ναύπλιο", href: "/el/proorismos/nafplio/", description: "Ιδιωτική μεταφορά προς τη δημοφιλή παραθαλάσσια πόλη της Πελοποννήσου, απευθείας από το αεροδρόμιο." },
-          { label: "Δελφοί", href: "/el/diadromi/athina-delfoi/", description: "Συνεχίστε απευθείας από το αεροδρόμιο προς τον αρχαιολογικό χώρο των Δελφών στην κεντρική Ελλάδα." },
+          { label: "Παραλιακή Αθήνας", href: "/el/proorismos/paralia-athinas/", description: "Συνεχίστε απευθείας από το αεροδρόμιο προς την παράκτια ζώνη νοτιοανατολικά της Αθήνας, με τη Γλυφάδα και τη Βουλιαγμένη." },
+          { label: "Σούνιο", href: "/el/diadromi/athina-sounio/", description: "Ταξιδέψτε από το αεροδρόμιο προς τον Ναό του Ποσειδώνα στο νότιο άκρο της Αττικής." },
+          { label: "Ναύπλιο", href: "/el/diadromi/aerodromio-athinas-nafplio/", description: "Ιδιωτική μεταφορά προς τη δημοφιλή παραθαλάσσια πόλη της Πελοποννήσου, παρακάμπτοντας το κέντρο της Αθήνας." },
+          { label: "Κόρινθος", href: "/el/diadromi/aerodromio-athinas-korinthos/", description: "Μια συντομότερη μεταφορά προς την Κόρινθο και τη Διώρυγα, απευθείας από το αεροδρόμιο." },
+          { label: "Δελφοί", href: "/el/diadromi/aerodromio-athinas-delfoi/", description: "Συνεχίστε απευθείας από το αεροδρόμιο προς τον αρχαιολογικό χώρο των Δελφών στην κεντρική Ελλάδα." },
+          { label: "Λουτράκι", href: "/el/diadromi/aerodromio-athinas-loutraki/", description: "Μεταφορά προς την πόλη ιαματικών λουτρών και καζίνο του Λουτρακίου, κοντά στην Κόρινθο." },
           { label: "Μετέωρα", href: "/el/proorismos/meteora/", description: "Ταξιδέψτε από το αεροδρόμιο προς τα μοναστήρια πάνω σε βράχους των Μετεώρων στη Θεσσαλία." },
         ],
       },
@@ -280,9 +302,22 @@ export const airportContent: Record<AirportSlug, Record<Locale, AirportPageConte
         eyebrow: "Συνδέσεις Πόλης & Λιμανιού",
         title: "Συνδέσεις με Πόλη και Λιμάνια",
         items: [
-          { label: "Κέντρο Αθήνας", href: "/el/poli/athina/", description: "Απευθείας μεταφορές μεταξύ του αεροδρομίου και ξενοδοχείων ή διευθύνσεων σε όλη την πόλη." },
-          { label: "Λιμάνι Πειραιά", href: "/el/limani/peiraias/", description: "Συνδεθείτε απευθείας μεταξύ του αεροδρομίου και του κύριου λιμανιού κρουαζιέρας και ferry της Ελλάδας." },
+          { label: "Κέντρο Αθήνας", href: "/el/athina/", description: "Απευθείας μεταφορές μεταξύ του αεροδρομίου και ξενοδοχείων ή διευθύνσεων σε όλη την πόλη." },
+          { label: "Αεροδρόμιο Αθηνών προς Πειραιά", href: "/el/diadromi/aerodromio-athinas-peiraias/", description: "Ειδική σελίδα διαδρομής για συνδέσεις κρουαζιέρας και ferry μεταξύ αεροδρομίου και Πειραιά." },
           { label: "Λιμάνι Ραφήνας", href: "/el/limani/rafina/", description: "Μια επιλογή μεταφοράς για ταξιδιώτες που συνδέονται με ferry προς τις Κυκλάδες από τη Ραφήνα." },
+        ],
+      },
+      hotelTransfers: {
+        eyebrow: "Μεταφορές σε Ξενοδοχεία",
+        title: "Δημοφιλείς Μεταφορές σε Ξενοδοχεία της Αθήνας",
+        items: [
+          { label: "Hotel Grande Bretagne", href: "/el/diadromi/aerodromio-athinas-grande-bretagne/", description: "Πλατεία Συντάγματος, κέντρο Αθήνας." },
+          { label: "King George Hotel", href: "/el/diadromi/aerodromio-athinas-king-george/", description: "Πλατεία Συντάγματος, κέντρο Αθήνας." },
+          { label: "Electra Palace Athens", href: "/el/diadromi/aerodromio-athinas-electra-palace/", description: "Πλάκα, στους πρόποδες της Ακρόπολης." },
+          { label: "NJV Athens Plaza", href: "/el/diadromi/aerodromio-athinas-njv-plaza/", description: "Πλατεία Συντάγματος, κέντρο Αθήνας." },
+          { label: "Grand Hyatt Athens", href: "/el/diadromi/aerodromio-athinas-grand-hyatt/", description: "Λεωφόρος Συγγρού." },
+          { label: "Athenaeum InterContinental Athens", href: "/el/diadromi/aerodromio-athinas-intercontinental/", description: "Λεωφόρος Συγγρού." },
+          { label: "Divani Caravel", href: "/el/diadromi/aerodromio-athinas-divani-caravel/", description: "Κοντά στο Μέγαρο Μουσικής και το Hilton." },
         ],
       },
       howPickupWorks: sharedHowItWorksEl,
