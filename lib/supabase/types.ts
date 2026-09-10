@@ -1,6 +1,8 @@
 export type LeadStatus = "pending" | "quoted" | "confirmed" | "completed" | "cancelled"
 export type DriverStatus = "active" | "inactive"
 export type PaymentStatus = "unpaid" | "paid" | "refunded"
+export type BlogStatus = "draft" | "published"
+export type BlogLanguage = "en" | "el"
 
 export type Lead = {
   id: string
@@ -124,6 +126,49 @@ export type InvoiceInsert = Omit<Invoice, "id" | "created_at" | "updated_at" | "
 
 export type InvoiceUpdate = Partial<Omit<Invoice, "id" | "invoice_number" | "access_token" | "created_at">>
 
+export type Blogger = {
+  id: string
+  full_name: string
+  email: string
+  avatar_url: string | null
+  bio: string | null
+  is_active: boolean
+  created_at: string
+  updated_at: string
+  last_login: string | null
+}
+
+export type BloggerInsert = Omit<Blogger, "created_at" | "updated_at" | "last_login" | "is_active"> &
+  Partial<Pick<Blogger, "is_active" | "last_login">>
+
+export type Blog = {
+  id: string
+  title: string
+  slug: string
+  excerpt: string | null
+  content: string
+  featured_image_url: string | null
+  category: string
+  tags: string[]
+  status: BlogStatus
+  author_id: string | null
+  read_time: string | null
+  seo_title: string | null
+  seo_description: string | null
+  focus_keyword: string | null
+  toc: boolean | null
+  scheduled_at: string | null
+  language: BlogLanguage
+  translation_of: string | null
+  created_at: string
+  updated_at: string
+  published_at: string | null
+}
+
+export type BlogInsert = Omit<Blog, "id" | "created_at" | "updated_at">
+
+export type BlogUpdate = Partial<Omit<Blog, "id" | "created_at">>
+
 export type Database = {
   public: {
     Tables: {
@@ -156,6 +201,21 @@ export type Database = {
         ]
       }
       invoices: { Row: Invoice; Insert: InvoiceInsert; Update: InvoiceUpdate; Relationships: [] }
+      bloggers: { Row: Blogger; Insert: BloggerInsert; Update: Partial<BloggerInsert>; Relationships: [] }
+      blogs: {
+        Row: Blog
+        Insert: BlogInsert
+        Update: BlogUpdate
+        Relationships: [
+          {
+            foreignKeyName: "blogs_author_id_fkey"
+            columns: ["author_id"]
+            isOneToOne: false
+            referencedRelation: "bloggers"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: Record<string, never>
     Functions: Record<string, never>

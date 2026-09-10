@@ -54,6 +54,7 @@ export const pageRoutes = {
   },
   destinationsHub: { en: "/destinations/", el: "/el/proorismoi/" },
   contact: { en: "/contact/", el: "/el/epikoinonia/" },
+  blog: { en: "/blog/", el: "/el/blog/" },
 
   // Airports
   athensAirport: { en: "/airport/athens-airport/", el: "/el/aerodromio/athina/" },

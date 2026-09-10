@@ -135,3 +135,112 @@
     @apply font-sans;
   }
 }
+
+/* Scoped to blog article bodies (raw HTML from scripts/seed-blog.mjs) so
+   these rules can never leak into the rest of the site. */
+.blog-content h2,
+.blog-content h3,
+.blog-content h4 {
+  scroll-margin-top: 7rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  color: var(--color-charcoal);
+}
+
+.blog-content h2 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin: 3rem 0 1.25rem;
+}
+
+.blog-content h3 {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin: 2rem 0 0.875rem;
+}
+
+.blog-content p {
+  color: var(--color-slate);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  font-size: 1.0625rem;
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.blog-content ul {
+  list-style-type: disc;
+}
+
+.blog-content ol {
+  list-style-type: decimal;
+}
+
+.blog-content ul li,
+.blog-content ol li {
+  color: var(--color-slate);
+  line-height: 1.75;
+  margin-bottom: 0.375rem;
+}
+
+.blog-content a {
+  color: var(--color-teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.blog-content a:hover {
+  text-decoration: underline;
+}
+
+.blog-content strong {
+  font-weight: 700;
+  color: var(--color-charcoal);
+}
+
+.blog-content blockquote {
+  border-left: 4px solid var(--color-coral);
+  background: var(--color-sand);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+  margin: 1.5rem 0;
+  color: var(--color-charcoal);
+}
+
+.blog-content img {
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: 1.5rem 0;
+}
+
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9375rem;
+  display: block;
+  overflow-x: auto;
+}
+
+.blog-content th {
+  background: var(--color-teal-deep);
+  color: var(--color-ivory);
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 700;
+}
+
+.blog-content td {
+  border: 1px solid var(--border);
+  padding: 0.625rem 1rem;
+  color: var(--color-slate);
+}
+
+.blog-content tr:nth-child(even) td {
+  background: var(--color-sand);
+}

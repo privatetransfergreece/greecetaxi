@@ -27,8 +27,10 @@ function LocationPage({
   extraSchema = [],
   cta,
   children,
+  url: urlOverride,
 }: {
-  pageKey: PageKey
+  /** A registered PageKey for static pages; any string id (e.g. a blog slug) when passing `url` explicitly. */
+  pageKey: PageKey | (string & {})
   locale: Locale
   title: string
   description: string
@@ -38,8 +40,10 @@ function LocationPage({
   extraSchema?: object[]
   cta: LocationPageCta
   children: ReactNode
+  /** Explicit canonical URL — required for dynamically-slugged pages that have no PageKey in the registry. */
+  url?: string
 }) {
-  const url = absoluteUrl(pathFor(pageKey, locale))
+  const url = urlOverride ?? absoluteUrl(pathFor(pageKey as PageKey, locale))
   const quoteHref = pathFor("getQuote", locale)
 
   const webPageJsonLd = {

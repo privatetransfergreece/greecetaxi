@@ -48,6 +48,7 @@ export const layoutContent: Record<Locale, LayoutContent> = {
         viewAllLabel: "View All Services",
       },
       { label: "Destinations", href: pageRoutes.destinationsHub.en },
+      { label: "Blog", href: pageRoutes.blog.en },
       { label: "About", href: pageRoutes.about.en },
     ],
     footer: {
@@ -70,6 +71,7 @@ export const layoutContent: Record<Locale, LayoutContent> = {
       ],
       information: [
         { label: "About", href: pageRoutes.about.en },
+        { label: "Blog", href: pageRoutes.blog.en },
         { label: "FAQ", href: "/#faq" },
         { label: "Contact", href: pageRoutes.contact.en },
         { label: "Terms & Conditions", href: pageRoutes.terms.en },
@@ -93,6 +95,7 @@ export const layoutContent: Record<Locale, LayoutContent> = {
         viewAllLabel: "Όλες οι Υπηρεσίες",
       },
       { label: "Προορισμοί", href: pageRoutes.destinationsHub.el },
+      { label: "Blog", href: pageRoutes.blog.el },
       { label: "Σχετικά με Εμάς", href: pageRoutes.about.el },
     ],
     footer: {
@@ -115,6 +118,7 @@ export const layoutContent: Record<Locale, LayoutContent> = {
       ],
       information: [
         { label: "Σχετικά με Εμάς", href: pageRoutes.about.el },
+        { label: "Blog", href: pageRoutes.blog.el },
         { label: "Συχνές Ερωτήσεις", href: "/el/#faq" },
         { label: "Επικοινωνία", href: pageRoutes.contact.el },
         { label: "Όροι Χρήσης", href: pageRoutes.terms.el },
