@@ -565,7 +565,7 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         eyebrow: "Airport & City Connections",
         title: "Airport and City Connections",
         items: [
-          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "Direct transfers between the port and Thessaloniki Airport." },
+          { label: "Thessaloniki Airport to Port", href: "/route/thessaloniki-airport-to-port/", description: "A dedicated route page for direct transfers between the airport and the port, useful for cruise connections." },
           { label: "Thessaloniki City", href: "/city/thessaloniki/", description: "Continue your journey directly to a hotel or address in the city." },
         ],
       },
@@ -581,7 +581,8 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         eyebrow: "Onward Travel",
         title: "Continue Your Journey From Thessaloniki",
         items: [
-          { label: "Halkidiki", href: "/route/thessaloniki-to-halkidiki/", description: "A popular onward route from Thessaloniki to the beaches of Halkidiki." },
+          { label: "Halkidiki", href: "/route/thessaloniki-port-to-halkidiki/", description: "A direct route from the port to the beaches of Halkidiki, for cruise and ferry passengers." },
+          { label: "Halkidiki (from the city)", href: "/route/thessaloniki-to-halkidiki/", description: "The equivalent route from central Thessaloniki." },
         ],
       },
       bookingInfo: bookingInfoEn,
@@ -638,7 +639,7 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         eyebrow: "Συνδέσεις Αεροδρομίου & Πόλης",
         title: "Συνδέσεις με Αεροδρόμιο και Πόλη",
         items: [
-          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Απευθείας μεταφορές μεταξύ του λιμανιού και του Αεροδρομίου Θεσσαλονίκης." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Λιμάνι", href: "/el/diadromi/aerodromio-thessalonikis-limani/", description: "Ειδική σελίδα διαδρομής για απευθείας μεταφορές μεταξύ αεροδρομίου και λιμανιού, χρήσιμες για συνδέσεις κρουαζιέρας." },
           { label: "Πόλη Θεσσαλονίκης", href: "/el/poli/thessaloniki/", description: "Συνεχίστε το ταξίδι σας απευθείας προς ξενοδοχείο ή διεύθυνση στην πόλη." },
         ],
       },
@@ -654,7 +655,8 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         eyebrow: "Συνέχεια Ταξιδιού",
         title: "Συνεχίστε το Ταξίδι σας από τη Θεσσαλονίκη",
         items: [
-          { label: "Χαλκιδική", href: "/el/diadromi/thessaloniki-chalkidiki/", description: "Μια δημοφιλής διαδρομή συνέχειας από τη Θεσσαλονίκη προς τις παραλίες της Χαλκιδικής." },
+          { label: "Χαλκιδική", href: "/el/diadromi/limani-thessalonikis-chalkidiki/", description: "Απευθείας διαδρομή από το λιμάνι προς τις παραλίες της Χαλκιδικής, για επιβάτες κρουαζιέρας και ferry." },
+          { label: "Χαλκιδική (από την πόλη)", href: "/el/diadromi/thessaloniki-chalkidiki/", description: "Η αντίστοιχη διαδρομή από το κέντρο της Θεσσαλονίκης." },
         ],
       },
       bookingInfo: bookingInfoEl,

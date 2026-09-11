@@ -403,8 +403,12 @@ export const airportContent: Record<AirportSlug, Record<Locale, AirportPageConte
         eyebrow: "Onward Travel",
         title: "Popular Destinations From Thessaloniki Airport",
         items: [
-          { label: "Halkidiki", href: "/route/thessaloniki-to-halkidiki/", description: "Continue directly from the airport to the beaches of the Halkidiki peninsula." },
+          { label: "Halkidiki", href: "/route/thessaloniki-airport-to-halkidiki/", description: "Continue directly from the airport to the beaches of the Halkidiki peninsula." },
+          { label: "Kassandra", href: "/route/thessaloniki-airport-to-kassandra/", description: "A direct transfer to Halkidiki's closest and most accessible peninsula." },
+          { label: "Sithonia", href: "/route/thessaloniki-airport-to-sithonia/", description: "A direct transfer to Halkidiki's more forested central peninsula." },
+          { label: "Nea Moudania", href: "/route/thessaloniki-airport-to-nea-moudania/", description: "The shortest of the Halkidiki airport transfer routes." },
           { label: "Athens", href: "/route/athens-to-thessaloniki/", description: "A long-distance private transfer connecting Thessaloniki with the capital." },
+          { label: "Thessaloniki Day Trips", href: "/thessaloniki-day-trips/", description: "See our full range of private day trips from Thessaloniki." },
         ],
       },
       connections: {
@@ -412,7 +416,21 @@ export const airportContent: Record<AirportSlug, Record<Locale, AirportPageConte
         title: "Airport, City and Port Connections",
         items: [
           { label: "Thessaloniki City Centre", href: "/city/thessaloniki/", description: "Direct transfers between the airport and hotels or addresses across the city." },
-          { label: "Port of Thessaloniki", href: "/port/thessaloniki/", description: "Connect between the airport and the city's port for cruise or ferry travel." },
+          { label: "Thessaloniki Airport to Port", href: "/route/thessaloniki-airport-to-port/", description: "A dedicated route page for cruise and ferry connections between the airport and the port." },
+          { label: "Railway & KTEL Bus Station", href: "/route/thessaloniki-train-bus-station-transfers/", description: "Connect between the airport and Thessaloniki's railway or intercity bus station." },
+        ],
+      },
+      hotelTransfers: {
+        eyebrow: "Hotel Transfers",
+        title: "Popular Thessaloniki Hotel Transfers",
+        items: [
+          { label: "Electra Palace Thessaloniki", href: "/route/thessaloniki-airport-to-electra-palace/", description: "Aristotelous Square, city centre." },
+          { label: "Makedonia Palace", href: "/route/thessaloniki-airport-to-makedonia-palace/", description: "Eastern waterfront, Thermaic Gulf." },
+          { label: "ON Residence", href: "/route/thessaloniki-airport-to-on-residence/", description: "Nikis Avenue waterfront, near the White Tower." },
+          { label: "The Met Hotel", href: "/route/thessaloniki-airport-to-met-hotel/", description: "Near the New Harbor." },
+          { label: "Mediterranean Palace", href: "/route/thessaloniki-airport-to-mediterranean-palace/", description: "Adjacent to the Ladadika district." },
+          { label: "Domotel Olympia", href: "/route/thessaloniki-airport-to-domotel-olympia/", description: "Historic centre, next to the Roman Agora." },
+          { label: "Hyatt Regency Thessaloniki", href: "/route/thessaloniki-airport-to-hyatt-regency/", description: "In Thermi, close to the airport itself." },
         ],
       },
       howPickupWorks: sharedHowItWorksEn,
@@ -494,8 +512,12 @@ export const airportContent: Record<AirportSlug, Record<Locale, AirportPageConte
         eyebrow: "Συνέχεια Ταξιδιού",
         title: "Δημοφιλείς Προορισμοί από το Αεροδρόμιο Θεσσαλονίκης",
         items: [
-          { label: "Χαλκιδική", href: "/el/diadromi/thessaloniki-chalkidiki/", description: "Συνεχίστε απευθείας από το αεροδρόμιο προς τις παραλίες της χερσονήσου της Χαλκιδικής." },
+          { label: "Χαλκιδική", href: "/el/diadromi/aerodromio-thessalonikis-chalkidiki/", description: "Συνεχίστε απευθείας από το αεροδρόμιο προς τις παραλίες της χερσονήσου της Χαλκιδικής." },
+          { label: "Κασσάνδρα", href: "/el/diadromi/aerodromio-thessalonikis-kassandra/", description: "Απευθείας μεταφορά προς την πλησιέστερη και πιο προσβάσιμη χερσόνησο της Χαλκιδικής." },
+          { label: "Σιθωνία", href: "/el/diadromi/aerodromio-thessalonikis-sithonia/", description: "Απευθείας μεταφορά προς την πιο δασώδη κεντρική χερσόνησο της Χαλκιδικής." },
+          { label: "Νέα Μουδανιά", href: "/el/diadromi/aerodromio-thessalonikis-nea-moudania/", description: "Η συντομότερη από τις διαδρομές μεταφοράς αεροδρομίου προς τη Χαλκιδική." },
           { label: "Αθήνα", href: "/el/diadromi/athina-thessaloniki/", description: "Μια ιδιωτική μεταφορά μεγάλης απόστασης που συνδέει τη Θεσσαλονίκη με την πρωτεύουσα." },
+          { label: "Ημερήσιες Εκδρομές από τη Θεσσαλονίκη", href: "/el/idiotikes-ekdromes-thessaloniki/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας από τη Θεσσαλονίκη." },
         ],
       },
       connections: {
@@ -503,7 +525,21 @@ export const airportContent: Record<AirportSlug, Record<Locale, AirportPageConte
         title: "Συνδέσεις με Πόλη και Λιμάνι",
         items: [
           { label: "Κέντρο Θεσσαλονίκης", href: "/el/poli/thessaloniki/", description: "Απευθείας μεταφορές μεταξύ του αεροδρομίου και ξενοδοχείων ή διευθύνσεων σε όλη την πόλη." },
-          { label: "Λιμάνι Θεσσαλονίκης", href: "/el/limani/thessaloniki/", description: "Συνδεθείτε μεταξύ του αεροδρομίου και του λιμανιού της πόλης για ταξίδι με κρουαζιέρα ή ferry." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Λιμάνι", href: "/el/diadromi/aerodromio-thessalonikis-limani/", description: "Ειδική σελίδα διαδρομής για συνδέσεις κρουαζιέρας και ferry μεταξύ αεροδρομίου και λιμανιού." },
+          { label: "Σιδηροδρομικός Σταθμός & ΚΤΕΛ", href: "/el/diadromi/thessaloniki-stathmos-ktel/", description: "Σύνδεση μεταξύ του αεροδρομίου και του σιδηροδρομικού σταθμού ή του ΚΤΕΛ της Θεσσαλονίκης." },
+        ],
+      },
+      hotelTransfers: {
+        eyebrow: "Μεταφορές σε Ξενοδοχεία",
+        title: "Δημοφιλείς Μεταφορές σε Ξενοδοχεία της Θεσσαλονίκης",
+        items: [
+          { label: "Electra Palace Thessaloniki", href: "/el/diadromi/aerodromio-thessalonikis-electra-palace/", description: "Πλατεία Αριστοτέλους, κέντρο της πόλης." },
+          { label: "Makedonia Palace", href: "/el/diadromi/aerodromio-thessalonikis-makedonia-palace/", description: "Ανατολική παραλιακή, Θερμαϊκός Κόλπος." },
+          { label: "ON Residence", href: "/el/diadromi/aerodromio-thessalonikis-on-residence/", description: "Παραλιακή λεωφόρος Νίκης, κοντά στον Λευκό Πύργο." },
+          { label: "The Met Hotel", href: "/el/diadromi/aerodromio-thessalonikis-met-hotel/", description: "Κοντά στο Νέο Λιμάνι." },
+          { label: "Mediterranean Palace", href: "/el/diadromi/aerodromio-thessalonikis-mediterranean-palace/", description: "Δίπλα στη συνοικία των Λαδάδικων." },
+          { label: "Domotel Olympia", href: "/el/diadromi/aerodromio-thessalonikis-domotel-olympia/", description: "Ιστορικό κέντρο, δίπλα στη Ρωμαϊκή Αγορά." },
+          { label: "Hyatt Regency Θεσσαλονίκης", href: "/el/diadromi/aerodromio-thessalonikis-hyatt-regency/", description: "Στη Θέρμη, κοντά στο ίδιο το αεροδρόμιο." },
         ],
       },
       howPickupWorks: sharedHowItWorksEl,

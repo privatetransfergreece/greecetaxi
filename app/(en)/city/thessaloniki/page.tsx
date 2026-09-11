@@ -4,6 +4,7 @@ import {
   Car,
   Landmark,
   MapPinned,
+  Mountain,
   PlaneTakeoff,
   Route,
   Ship,
@@ -53,8 +54,8 @@ export default function ThessalonikiCityPage() {
       <ServiceOverview content={content.intro} />
       <RelatedLinks eyebrow={content.gettingHere.eyebrow} title={content.gettingHere.title} items={content.gettingHere.items.map((item, i) => ({ ...item, icon: [PlaneTakeoff, Ship][i] }))} />
       <ServiceFeatures content={content.transferOptions} icons={[PlaneTakeoff, Car, Route, Users]} />
-      <RelatedLinks eyebrow={content.popularRoutes.eyebrow} title={content.popularRoutes.title} items={content.popularRoutes.items.map((item, i) => ({ ...item, icon: [Landmark, Building2][i] }))} />
-      <RelatedLinks eyebrow={content.nearbyDestinations.eyebrow} title={content.nearbyDestinations.title} items={content.nearbyDestinations.items.map((item, i) => ({ ...item, icon: [MapPinned][i] }))} />
+      <RelatedLinks eyebrow={content.popularRoutes.eyebrow} title={content.popularRoutes.title} items={content.popularRoutes.items.map((item, i) => ({ ...item, icon: [Landmark, Building2, Mountain, Mountain, Landmark, Route][i] }))} />
+      <RelatedLinks eyebrow={content.nearbyDestinations.eyebrow} title={content.nearbyDestinations.title} items={content.nearbyDestinations.items.map((item, i) => ({ ...item, icon: [MapPinned, Route, MapPinned][i] }))} />
       <ServiceFaq content={content.faq} />
     </LocationPage>
   );

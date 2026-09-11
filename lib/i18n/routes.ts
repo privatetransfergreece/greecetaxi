@@ -88,6 +88,11 @@ export const pageRoutes = {
   destinationGlyfada: { en: "/destination/glyfada/", el: "/el/proorismos/glyfada/" },
   destinationVouliagmeni: { en: "/destination/vouliagmeni/", el: "/el/proorismos/vouliagmeni/" },
   athensDayTrips: { en: "/athens-day-trips/", el: "/el/idiotikes-ekdromes-athina/" },
+  destinationHalkidiki: { en: "/destination/halkidiki/", el: "/el/proorismos/chalkidiki/" },
+  destinationKassandra: { en: "/destination/kassandra/", el: "/el/proorismos/kassandra/" },
+  destinationSithonia: { en: "/destination/sithonia/", el: "/el/proorismos/sithonia/" },
+  destinationNeaMoudania: { en: "/destination/nea-moudania/", el: "/el/proorismos/nea-moudania/" },
+  thessalonikiDayTrips: { en: "/thessaloniki-day-trips/", el: "/el/idiotikes-ekdromes-thessaloniki/" },
 
   // Ports
   portPiraeus: { en: "/port/piraeus/", el: "/el/limani/peiraias/" },
@@ -122,6 +127,28 @@ export const pageRoutes = {
   routeAthensAirportGrandHyatt: { en: "/route/athens-airport-to-grand-hyatt-athens/", el: "/el/diadromi/aerodromio-athinas-grand-hyatt/" },
   routeAthensAirportAthenaeumIC: { en: "/route/athens-airport-to-athenaeum-intercontinental/", el: "/el/diadromi/aerodromio-athinas-intercontinental/" },
   routeAthensAirportDivaniCaravel: { en: "/route/athens-airport-to-divani-caravel/", el: "/el/diadromi/aerodromio-athinas-divani-caravel/" },
+
+  // Thessaloniki cluster
+  routeThessalonikiAirportHalkidiki: { en: "/route/thessaloniki-airport-to-halkidiki/", el: "/el/diadromi/aerodromio-thessalonikis-chalkidiki/" },
+  routeThessalonikiAirportKassandra: { en: "/route/thessaloniki-airport-to-kassandra/", el: "/el/diadromi/aerodromio-thessalonikis-kassandra/" },
+  routeThessalonikiAirportSithonia: { en: "/route/thessaloniki-airport-to-sithonia/", el: "/el/diadromi/aerodromio-thessalonikis-sithonia/" },
+  routeThessalonikiAirportNeaMoudania: { en: "/route/thessaloniki-airport-to-nea-moudania/", el: "/el/diadromi/aerodromio-thessalonikis-nea-moudania/" },
+  routeThessalonikiPortHalkidiki: { en: "/route/thessaloniki-port-to-halkidiki/", el: "/el/diadromi/limani-thessalonikis-chalkidiki/" },
+  routeThessalonikiAirportPort: { en: "/route/thessaloniki-airport-to-port/", el: "/el/diadromi/aerodromio-thessalonikis-limani/" },
+  routeThessalonikiMeteora: { en: "/route/thessaloniki-to-meteora/", el: "/el/diadromi/thessaloniki-meteora/" },
+  routeThessalonikiMountOlympus: { en: "/route/thessaloniki-to-mount-olympus/", el: "/el/diadromi/thessaloniki-olympos/" },
+  routeThessalonikiVerginaPella: { en: "/route/thessaloniki-to-vergina-pella/", el: "/el/diadromi/thessaloniki-vergina-pella/" },
+  routeThessalonikiKavala: { en: "/route/thessaloniki-to-kavala/", el: "/el/diadromi/thessaloniki-kavala/" },
+  routeThessalonikiAirportSaniResort: { en: "/route/thessaloniki-airport-to-sani-resort/", el: "/el/diadromi/aerodromio-thessalonikis-sani-resort/" },
+  routeThessalonikiAirportPortoCarras: { en: "/route/thessaloniki-airport-to-porto-carras/", el: "/el/diadromi/aerodromio-thessalonikis-porto-carras/" },
+  routeThessalonikiStations: { en: "/route/thessaloniki-train-bus-station-transfers/", el: "/el/diadromi/thessaloniki-stathmos-ktel/" },
+  routeThessalonikiAirportElectraPalace: { en: "/route/thessaloniki-airport-to-electra-palace/", el: "/el/diadromi/aerodromio-thessalonikis-electra-palace/" },
+  routeThessalonikiAirportMakedoniaPalace: { en: "/route/thessaloniki-airport-to-makedonia-palace/", el: "/el/diadromi/aerodromio-thessalonikis-makedonia-palace/" },
+  routeThessalonikiAirportOnResidence: { en: "/route/thessaloniki-airport-to-on-residence/", el: "/el/diadromi/aerodromio-thessalonikis-on-residence/" },
+  routeThessalonikiAirportMetHotel: { en: "/route/thessaloniki-airport-to-met-hotel/", el: "/el/diadromi/aerodromio-thessalonikis-met-hotel/" },
+  routeThessalonikiAirportMediterraneanPalace: { en: "/route/thessaloniki-airport-to-mediterranean-palace/", el: "/el/diadromi/aerodromio-thessalonikis-mediterranean-palace/" },
+  routeThessalonikiAirportDomotelOlympia: { en: "/route/thessaloniki-airport-to-domotel-olympia/", el: "/el/diadromi/aerodromio-thessalonikis-domotel-olympia/" },
+  routeThessalonikiAirportHyattRegency: { en: "/route/thessaloniki-airport-to-hyatt-regency/", el: "/el/diadromi/aerodromio-thessalonikis-hyatt-regency/" },
 } as const
 
 export type PageKey = keyof typeof pageRoutes

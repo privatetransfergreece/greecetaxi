@@ -15,6 +15,11 @@ export type DestinationSlug =
   | "destinationGlyfada"
   | "destinationVouliagmeni"
   | "athensDayTrips"
+  | "destinationHalkidiki"
+  | "destinationKassandra"
+  | "destinationSithonia"
+  | "destinationNeaMoudania"
+  | "thessalonikiDayTrips"
 
 export type LinkSection = { eyebrow: string; title: string; items: Omit<RelatedLinkItem, "icon">[] }
 export type ProseSection = { eyebrow: string; title: string; paragraphs: string[] }
@@ -1398,6 +1403,587 @@ export const destinationContent: Record<DestinationSlug, Record<Locale, Destinat
       },
       cta: {
         heading: "Έτοιμοι να Κλείσετε την Εκδρομή σας από την Αθήνα;",
+        description: "Πείτε μας ποιος προορισμός σας ενδιαφέρει και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής εκδρομής σας.",
+        primaryLabel: "Κλείστε την Εκδρομή σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  destinationHalkidiki: {
+    en: {
+      meta: {
+        title: "Private Transfers to Halkidiki – Kassandra, Sithonia & Beyond",
+        description:
+          "Book a private transfer to Halkidiki from Thessaloniki Airport or the Port of Thessaloniki, covering Kassandra, Sithonia and Nea Moudania. Get a quote.",
+      },
+      breadcrumbLabel: "Halkidiki",
+      hero: {
+        eyebrow: "Halkidiki, Central Macedonia",
+        title: "Private Transfers to Halkidiki",
+        description: "Book a private transfer to the Halkidiki peninsula from Thessaloniki Airport or the Port of Thessaloniki.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Halkidiki",
+        title: "The Three Peninsulas of Halkidiki",
+        paragraphs: [
+          "Halkidiki is a peninsula region southeast of Thessaloniki that splits into three smaller peninsulas: Kassandra, the closest and most developed for tourism; Sithonia, further along the coast with a more forested, laid-back character; and the Athos peninsula, home to the monastic community of Mount Athos, reached via the gateway town of Ouranoupoli. Most visitors arriving from abroad land at Thessaloniki Airport and continue directly to their resort.",
+          "The road into Halkidiki passes through Nea Moudania, a town on the isthmus where the peninsula meets the mainland, before the route splits toward Kassandra or continues further to Sithonia. Journey times vary considerably depending on which part of Halkidiki you're headed to, so it's worth checking your specific destination rather than assuming a single fixed transfer time for the whole region.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To Halkidiki",
+        title: "Arriving in Halkidiki",
+        items: [
+          { label: "Thessaloniki Airport to Halkidiki", href: "/route/thessaloniki-airport-to-halkidiki/", description: "A direct private transfer from the airport, the most common way visitors arrive." },
+          { label: "Thessaloniki Port to Halkidiki", href: "/route/thessaloniki-port-to-halkidiki/", description: "For cruise and ferry passengers continuing on to Halkidiki." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our main airport transfer information." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Explore Halkidiki",
+        title: "Halkidiki's Sub-Destinations",
+        items: [
+          { label: "Kassandra", href: "/destination/kassandra/", description: "The closest and most accessible peninsula, with a long stretch of resort towns." },
+          { label: "Sithonia", href: "/destination/sithonia/", description: "A quieter, more forested peninsula further along the coast." },
+          { label: "Nea Moudania", href: "/destination/nea-moudania/", description: "The gateway town on the isthmus, where the road into Halkidiki begins." },
+          { label: "Thessaloniki Day Trips", href: "/thessaloniki-day-trips/", description: "See our full range of private day trips from Thessaloniki." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "What are the three peninsulas of Halkidiki?", answer: "Kassandra, Sithonia, and the Athos peninsula, home to the monastic community of Mount Athos. Kassandra and Sithonia are the two peninsulas open to general tourism." },
+          { question: "Can I book a private transfer from Thessaloniki Airport directly to Halkidiki?", answer: "Yes, see our dedicated Thessaloniki Airport to Halkidiki route page for details." },
+          { question: "Does journey time vary depending on where in Halkidiki I'm staying?", answer: "Yes, Kassandra is generally closer to Thessaloniki than Sithonia, and journey times within each peninsula vary by exact village or resort." },
+          { question: "Can I visit Mount Athos as part of a Halkidiki trip?", answer: "Mount Athos itself is a monastic community with restricted, permit-based access. Ouranoupoli, the gateway town on the Athos peninsula, is open to visitors." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Halkidiki Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στη Χαλκιδική – Κασσάνδρα, Σιθωνία & Πέρα",
+        description:
+          "Κλείστε ιδιωτική μεταφορά προς τη Χαλκιδική από το Αεροδρόμιο ή το Λιμάνι Θεσσαλονίκης, με κάλυψη Κασσάνδρας, Σιθωνίας και Νέων Μουδανιών.",
+      },
+      breadcrumbLabel: "Χαλκιδική",
+      hero: {
+        eyebrow: "Χαλκιδική, Κεντρική Μακεδονία",
+        title: "Ιδιωτικές Μεταφορές στη Χαλκιδική",
+        description: "Κλείστε ιδιωτική μεταφορά προς τη χερσόνησο της Χαλκιδικής από το Αεροδρόμιο ή το Λιμάνι Θεσσαλονίκης.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τη Χαλκιδική",
+        title: "Οι Τρεις Χερσόνησοι της Χαλκιδικής",
+        paragraphs: [
+          "Η Χαλκιδική είναι μια περιοχή νοτιοανατολικά της Θεσσαλονίκης που χωρίζεται σε τρεις μικρότερες χερσονήσους: την Κασσάνδρα, την πλησιέστερη και πιο αναπτυγμένη τουριστικά· τη Σιθωνία, πιο μακριά στην ακτή με πιο δασώδη, ήρεμο χαρακτήρα· και τη χερσόνησο του Άθω, έδρα της μοναστικής κοινότητας του Αγίου Όρους, προσβάσιμη μέσω της πύλης της Ουρανούπολης. Οι περισσότεροι επισκέπτες από το εξωτερικό φτάνουν στο Αεροδρόμιο Θεσσαλονίκης και συνεχίζουν απευθείας προς το θέρετρό τους.",
+          "Ο δρόμος προς τη Χαλκιδική περνά από τα Νέα Μουδανιά, μια πόλη στον ισθμό όπου η χερσόνησος συναντά την ηπειρωτική χώρα, πριν η διαδρομή χωριστεί προς την Κασσάνδρα ή συνεχίσει προς τη Σιθωνία. Οι χρόνοι διαδρομής διαφέρουν σημαντικά ανάλογα με το ακριβές τμήμα της Χαλκιδικής που κατευθύνεστε, οπότε αξίζει να ελέγξετε τον συγκεκριμένο προορισμό σας αντί να υποθέσετε έναν ενιαίο σταθερό χρόνο μεταφοράς για ολόκληρη την περιοχή.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στη Χαλκιδική",
+        title: "Άφιξη στη Χαλκιδική",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Χαλκιδική", href: "/el/diadromi/aerodromio-thessalonikis-chalkidiki/", description: "Απευθείας ιδιωτική μεταφορά από το αεροδρόμιο, ο πιο συνηθισμένος τρόπος άφιξης." },
+          { label: "Λιμάνι Θεσσαλονίκης προς Χαλκιδική", href: "/el/diadromi/limani-thessalonikis-chalkidiki/", description: "Για επιβάτες κρουαζιέρας και ferry που συνεχίζουν προς τη Χαλκιδική." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις κύριες πληροφορίες μεταφοράς αεροδρομίου μας." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Εξερευνήστε τη Χαλκιδική",
+        title: "Υπο-Προορισμοί της Χαλκιδικής",
+        items: [
+          { label: "Κασσάνδρα", href: "/el/proorismos/kassandra/", description: "Η πλησιέστερη και πιο προσβάσιμη χερσόνησος, με μεγάλη σειρά τουριστικών θέρετρων." },
+          { label: "Σιθωνία", href: "/el/proorismos/sithonia/", description: "Μια πιο ήρεμη, δασώδης χερσόνησος πιο μακριά στην ακτή." },
+          { label: "Νέα Μουδανιά", href: "/el/proorismos/nea-moudania/", description: "Η πύλη-πόλη στον ισθμό, όπου ξεκινά ο δρόμος προς τη Χαλκιδική." },
+          { label: "Ημερήσιες Εκδρομές από τη Θεσσαλονίκη", href: "/el/idiotikes-ekdromes-thessaloniki/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας από τη Θεσσαλονίκη." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Ποιες είναι οι τρεις χερσόνησοι της Χαλκιδικής;", answer: "Η Κασσάνδρα, η Σιθωνία, και η χερσόνησος του Άθω, έδρα της μοναστικής κοινότητας του Αγίου Όρους. Η Κασσάνδρα και η Σιθωνία είναι οι δύο χερσόνησοι ανοιχτές στον γενικό τουρισμό." },
+          { question: "Μπορώ να κλείσω ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης απευθείας προς τη Χαλκιδική;", answer: "Ναι, δείτε την ειδική μας σελίδα διαδρομής Αεροδρόμιο Θεσσαλονίκης προς Χαλκιδική για λεπτομέρειες." },
+          { question: "Διαφέρει ο χρόνος διαδρομής ανάλογα με το πού μένω στη Χαλκιδική;", answer: "Ναι, η Κασσάνδρα είναι γενικά πιο κοντά στη Θεσσαλονίκη από τη Σιθωνία, και οι χρόνοι διαδρομής εντός κάθε χερσονήσου διαφέρουν ανάλογα με το ακριβές χωριό ή θέρετρο." },
+          { question: "Μπορώ να επισκεφθώ το Άγιο Όρος ως μέρος ταξιδιού στη Χαλκιδική;", answer: "Το Άγιο Όρος είναι μοναστική κοινότητα με περιορισμένη πρόσβαση μέσω άδειας. Η Ουρανούπολη, η πύλη-πόλη στη χερσόνησο του Άθω, είναι ανοιχτή σε επισκέπτες." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στη Χαλκιδική;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  destinationKassandra: {
+    en: {
+      meta: {
+        title: "Private Transfers to Kassandra – Halkidiki",
+        description:
+          "Book a private transfer to Kassandra, the closest Halkidiki peninsula to Thessaloniki, covering Kallithea, Pefkochori, Hanioti and Sani.",
+      },
+      breadcrumbLabel: "Kassandra",
+      hero: {
+        eyebrow: "Kassandra, Halkidiki",
+        title: "Private Transfers to Kassandra",
+        description: "Book a private transfer to Kassandra, the westernmost and most accessible of Halkidiki's three peninsulas.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Kassandra",
+        title: "Kassandra on the Halkidiki Coast",
+        paragraphs: [
+          "Kassandra is the closest of Halkidiki's peninsulas to Thessaloniki, reached via Nea Moudania on the isthmus. It has the longest-established tourism infrastructure in the region, with a string of resort towns along its coastline including Kallithea, Polychrono, Hanioti and Pefkochori, as well as the Sani Resort enclave on its western shore.",
+          "Because Kassandra covers a fairly long stretch of coast, journey times from Thessaloniki Airport vary depending on which part of the peninsula you're travelling to — villages nearer the isthmus are reached sooner than those further south.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To Kassandra",
+        title: "Arriving in Kassandra",
+        items: [
+          { label: "Thessaloniki Airport to Kassandra", href: "/route/thessaloniki-airport-to-kassandra/", description: "A direct private transfer from the airport." },
+          { label: "Halkidiki", href: "/destination/halkidiki/", description: "See our overview of the wider Halkidiki region." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Sithonia", href: "/destination/sithonia/", description: "Continue further along the coast to the neighbouring Sithonia peninsula." },
+          { label: "Thessaloniki Airport to Sani Resort", href: "/route/thessaloniki-airport-to-sani-resort/", description: "A dedicated transfer to the Sani Resort enclave on Kassandra's western coast." },
+          { label: "Private Transfers", href: "/private-transfers/", description: "A private, door-to-door vehicle for any journey in Kassandra." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Thessaloniki Airport to Kassandra?", answer: "See our dedicated Thessaloniki Airport to Kassandra route page for journey details." },
+          { question: "What towns are on the Kassandra peninsula?", answer: "Kassandra includes towns such as Nea Moudania at its entrance, and resort areas including Kallithea, Polychrono, Hanioti and Pefkochori further along the coast, as well as the Sani Resort enclave." },
+          { question: "Is Kassandra closer to Thessaloniki than Sithonia?", answer: "Yes, Kassandra is generally the closer of the two main Halkidiki peninsulas to Thessaloniki." },
+          { question: "Can I be dropped directly at my resort in Kassandra?", answer: "Yes, mention your exact hotel or resort when requesting a quote so the drop-off can be planned accordingly." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Kassandra Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στην Κασσάνδρα – Χαλκιδική",
+        description:
+          "Κλείστε ιδιωτική μεταφορά προς την Κασσάνδρα, την πλησιέστερη χερσόνησο της Χαλκιδικής στη Θεσσαλονίκη, με κάλυψη Καλλιθέας, Πευκοχωρίου, Χανιώτη και Sani.",
+      },
+      breadcrumbLabel: "Κασσάνδρα",
+      hero: {
+        eyebrow: "Κασσάνδρα, Χαλκιδική",
+        title: "Ιδιωτικές Μεταφορές στην Κασσάνδρα",
+        description: "Κλείστε ιδιωτική μεταφορά προς την Κασσάνδρα, τη δυτικότερη και πιο προσβάσιμη από τις τρεις χερσονήσους της Χαλκιδικής.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με την Κασσάνδρα",
+        title: "Η Κασσάνδρα στην Ακτή της Χαλκιδικής",
+        paragraphs: [
+          "Η Κασσάνδρα είναι η πλησιέστερη στη Θεσσαλονίκη από τις χερσονήσους της Χαλκιδικής, προσβάσιμη μέσω των Νέων Μουδανιών στον ισθμό. Διαθέτει τη μακροβιότερη τουριστική υποδομή της περιοχής, με μια σειρά θέρετρων κατά μήκος της ακτής της, όπως η Καλλιθέα, το Πολύχρονο, ο Χανιώτης και το Πευκοχώρι, καθώς και τον θύλακα του Sani Resort στη δυτική της ακτή.",
+          "Επειδή η Κασσάνδρα καλύπτει ένα αρκετά μεγάλο τμήμα ακτής, οι χρόνοι διαδρομής από το Αεροδρόμιο Θεσσαλονίκης διαφέρουν ανάλογα με το τμήμα της χερσονήσου προς το οποίο ταξιδεύετε — τα χωριά πιο κοντά στον ισθμό προσεγγίζονται νωρίτερα από εκείνα πιο νότια.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στην Κασσάνδρα",
+        title: "Άφιξη στην Κασσάνδρα",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Κασσάνδρα", href: "/el/diadromi/aerodromio-thessalonikis-kassandra/", description: "Απευθείας ιδιωτική μεταφορά από το αεροδρόμιο." },
+          { label: "Χαλκιδική", href: "/el/proorismos/chalkidiki/", description: "Δείτε την επισκόπησή μας για την ευρύτερη περιοχή της Χαλκιδικής." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Σιθωνία", href: "/el/proorismos/sithonia/", description: "Συνεχίστε περαιτέρω κατά μήκος της ακτής προς τη γειτονική χερσόνησο της Σιθωνίας." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Sani Resort", href: "/el/diadromi/aerodromio-thessalonikis-sani-resort/", description: "Ειδική μεταφορά προς τον θύλακα του Sani Resort στη δυτική ακτή της Κασσάνδρας." },
+          { label: "Ιδιωτικές Μεταφορές", href: "/el/idiotikes-metafores/", description: "Ένα ιδιωτικό όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή στην Κασσάνδρα." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Θεσσαλονίκης στην Κασσάνδρα;", answer: "Δείτε την ειδική μας σελίδα διαδρομής Αεροδρόμιο Θεσσαλονίκης προς Κασσάνδρα για λεπτομέρειες ταξιδιού." },
+          { question: "Ποια χωριά βρίσκονται στη χερσόνησο της Κασσάνδρας;", answer: "Η Κασσάνδρα περιλαμβάνει τα Νέα Μουδανιά στην είσοδό της, και τουριστικές περιοχές όπως η Καλλιθέα, το Πολύχρονο, ο Χανιώτης και το Πευκοχώρι πιο μακριά στην ακτή, καθώς και τον θύλακα του Sani Resort." },
+          { question: "Είναι η Κασσάνδρα πιο κοντά στη Θεσσαλονίκη από τη Σιθωνία;", answer: "Ναι, η Κασσάνδρα είναι γενικά η πλησιέστερη από τις δύο κύριες χερσονήσους της Χαλκιδικής στη Θεσσαλονίκη." },
+          { question: "Μπορώ να παραδοθώ απευθείας στο θέρετρό μου στην Κασσάνδρα;", answer: "Ναι, αναφέρετε το ακριβές ξενοδοχείο ή θέρετρό σας κατά την αίτηση προσφοράς ώστε να σχεδιαστεί ανάλογα η παράδοση." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στην Κασσάνδρα;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  destinationSithonia: {
+    en: {
+      meta: {
+        title: "Private Transfers to Sithonia – Halkidiki",
+        description:
+          "Book a private transfer to Sithonia, Halkidiki's more forested central peninsula, covering Neos Marmaras, Nikiti and Porto Carras.",
+      },
+      breadcrumbLabel: "Sithonia",
+      hero: {
+        eyebrow: "Sithonia, Halkidiki",
+        title: "Private Transfers to Sithonia",
+        description: "Book a private transfer to Sithonia, Halkidiki's central peninsula, further along the coast than Kassandra.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Sithonia",
+        title: "Sithonia on the Halkidiki Coast",
+        paragraphs: [
+          "Sithonia is the middle of Halkidiki's three peninsulas, known for its pine forests and a generally quieter, less built-up character than Kassandra. Its main towns are Nikiti, near the peninsula's entrance, and Neos Marmaras further along the west coast, home to the large Porto Carras Grand Resort.",
+          "Because Sithonia sits further from Thessaloniki than Kassandra, journey times are longer — most visitors arrange a direct private transfer from the airport rather than a bus or public transport connection, particularly when travelling with resort luggage.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To Sithonia",
+        title: "Arriving in Sithonia",
+        items: [
+          { label: "Thessaloniki Airport to Sithonia", href: "/route/thessaloniki-airport-to-sithonia/", description: "A direct private transfer from the airport." },
+          { label: "Halkidiki", href: "/destination/halkidiki/", description: "See our overview of the wider Halkidiki region." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Kassandra", href: "/destination/kassandra/", description: "Explore Kassandra, closer to the airport along the same region." },
+          { label: "Thessaloniki Airport to Porto Carras Grand Resort", href: "/route/thessaloniki-airport-to-porto-carras/", description: "A dedicated transfer to the Porto Carras resort near Neos Marmaras." },
+          { label: "Private Transfers", href: "/private-transfers/", description: "A private, door-to-door vehicle for any journey in Sithonia." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Thessaloniki Airport to Sithonia?", answer: "See our dedicated Thessaloniki Airport to Sithonia route page for journey details." },
+          { question: "What are the main towns in Sithonia?", answer: "Nikiti, near the entrance to the peninsula, and Neos Marmaras further along the coast, home to the Porto Carras Grand Resort." },
+          { question: "Is Sithonia further from the airport than Kassandra?", answer: "Yes, Sithonia is generally further along the coast than Kassandra, so the journey takes longer." },
+          { question: "Can I continue to Kassandra from Sithonia?", answer: "Yes, mention your plans when requesting a quote and this can be arranged." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Sithonia Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στη Σιθωνία – Χαλκιδική",
+        description:
+          "Κλείστε ιδιωτική μεταφορά προς τη Σιθωνία, την πιο δασώδη κεντρική χερσόνησο της Χαλκιδικής, με κάλυψη Νέων Μαρμαρών, Νικήτης και Porto Carras.",
+      },
+      breadcrumbLabel: "Σιθωνία",
+      hero: {
+        eyebrow: "Σιθωνία, Χαλκιδική",
+        title: "Ιδιωτικές Μεταφορές στη Σιθωνία",
+        description: "Κλείστε ιδιωτική μεταφορά προς τη Σιθωνία, την κεντρική χερσόνησο της Χαλκιδικής, πιο μακριά στην ακτή από την Κασσάνδρα.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τη Σιθωνία",
+        title: "Η Σιθωνία στην Ακτή της Χαλκιδικής",
+        paragraphs: [
+          "Η Σιθωνία είναι η μεσαία από τις τρεις χερσονήσους της Χαλκιδικής, γνωστή για τα πευκοδάση της και έναν γενικά πιο ήρεμο, λιγότερο δομημένο χαρακτήρα από την Κασσάνδρα. Οι κύριες πόλεις της είναι η Νικήτη, κοντά στην είσοδο της χερσονήσου, και οι Νέες Μαρμαράς πιο μακριά στη δυτική ακτή, όπου βρίσκεται το μεγάλο θέρετρο Porto Carras Grand Resort.",
+          "Επειδή η Σιθωνία βρίσκεται πιο μακριά από τη Θεσσαλονίκη σε σχέση με την Κασσάνδρα, οι χρόνοι διαδρομής είναι μεγαλύτεροι — οι περισσότεροι επισκέπτες οργανώνουν απευθείας ιδιωτική μεταφορά από το αεροδρόμιο αντί για σύνδεση με λεωφορείο ή μέσα μαζικής μεταφοράς, ιδιαίτερα όταν ταξιδεύουν με αποσκευές για θέρετρο.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στη Σιθωνία",
+        title: "Άφιξη στη Σιθωνία",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Σιθωνία", href: "/el/diadromi/aerodromio-thessalonikis-sithonia/", description: "Απευθείας ιδιωτική μεταφορά από το αεροδρόμιο." },
+          { label: "Χαλκιδική", href: "/el/proorismos/chalkidiki/", description: "Δείτε την επισκόπησή μας για την ευρύτερη περιοχή της Χαλκιδικής." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Κασσάνδρα", href: "/el/proorismos/kassandra/", description: "Εξερευνήστε την Κασσάνδρα, πιο κοντά στο αεροδρόμιο στην ίδια περιοχή." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Porto Carras Grand Resort", href: "/el/diadromi/aerodromio-thessalonikis-porto-carras/", description: "Ειδική μεταφορά προς το θέρετρο Porto Carras κοντά στις Νέες Μαρμαράς." },
+          { label: "Ιδιωτικές Μεταφορές", href: "/el/idiotikes-metafores/", description: "Ένα ιδιωτικό όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή στη Σιθωνία." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Θεσσαλονίκης στη Σιθωνία;", answer: "Δείτε την ειδική μας σελίδα διαδρομής Αεροδρόμιο Θεσσαλονίκης προς Σιθωνία για λεπτομέρειες ταξιδιού." },
+          { question: "Ποιες είναι οι κύριες πόλεις της Σιθωνίας;", answer: "Η Νικήτη, κοντά στην είσοδο της χερσονήσου, και οι Νέες Μαρμαράς πιο μακριά στην ακτή, όπου βρίσκεται το θέρετρο Porto Carras Grand Resort." },
+          { question: "Είναι η Σιθωνία πιο μακριά από το αεροδρόμιο σε σχέση με την Κασσάνδρα;", answer: "Ναι, η Σιθωνία βρίσκεται γενικά πιο μακριά στην ακτή από την Κασσάνδρα, οπότε το ταξίδι διαρκεί περισσότερο." },
+          { question: "Μπορώ να συνεχίσω προς την Κασσάνδρα από τη Σιθωνία;", answer: "Ναι, αναφέρετε τα σχέδιά σας κατά την αίτηση προσφοράς και αυτό μπορεί να οργανωθεί." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στη Σιθωνία;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  destinationNeaMoudania: {
+    en: {
+      meta: {
+        title: "Private Transfers to Nea Moudania – Halkidiki Gateway",
+        description:
+          "Book a private transfer to Nea Moudania, the gateway town on the isthmus where the road into Halkidiki's Kassandra and Sithonia peninsulas begins.",
+      },
+      breadcrumbLabel: "Nea Moudania",
+      hero: {
+        eyebrow: "Nea Moudania, Halkidiki",
+        title: "Private Transfers to Nea Moudania",
+        description: "Book a private transfer to Nea Moudania, the commercial hub on the isthmus and the entry point to Halkidiki.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Nea Moudania",
+        title: "Nea Moudania on the Halkidiki Isthmus",
+        paragraphs: [
+          "Nea Moudania sits on the isthmus at the northern neck of Halkidiki, where the mainland road splits toward the Kassandra and Sithonia peninsulas. It's the region's commercial hub, and for many visitors it's the first town reached after leaving Thessaloniki, making it the closest of Halkidiki's destinations to the airport.",
+          "Because of its position, Nea Moudania is also a practical base for visitors who want easy access to Halkidiki without travelling all the way to the tip of Kassandra or Sithonia.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To Nea Moudania",
+        title: "Arriving in Nea Moudania",
+        items: [
+          { label: "Thessaloniki Airport to Nea Moudania", href: "/route/thessaloniki-airport-to-nea-moudania/", description: "The shortest of the Halkidiki airport transfer routes." },
+          { label: "Halkidiki", href: "/destination/halkidiki/", description: "See our overview of the wider Halkidiki region." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Kassandra", href: "/destination/kassandra/", description: "Continue further along the Kassandra peninsula." },
+          { label: "Sithonia", href: "/destination/sithonia/", description: "Continue further along the coast to Sithonia." },
+          { label: "Private Transfers", href: "/private-transfers/", description: "A private, door-to-door vehicle for any journey in Nea Moudania." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How far is Nea Moudania from Thessaloniki Airport?", answer: "Nea Moudania is the closest Halkidiki destination to the airport — see our dedicated Thessaloniki Airport to Nea Moudania route page for journey details." },
+          { question: "Is Nea Moudania part of Kassandra or Sithonia?", answer: "Nea Moudania sits on the isthmus at the entrance to Halkidiki, before the road splits toward either the Kassandra or Sithonia peninsulas." },
+          { question: "Can I continue to Kassandra or Sithonia from Nea Moudania?", answer: "Yes, mention your full itinerary when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Nea Moudania Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στα Νέα Μουδανιά – Πύλη της Χαλκιδικής",
+        description:
+          "Κλείστε ιδιωτική μεταφορά προς τα Νέα Μουδανιά, την πύλη-πόλη στον ισθμό όπου ξεκινά ο δρόμος προς τις χερσονήσους Κασσάνδρα και Σιθωνία.",
+      },
+      breadcrumbLabel: "Νέα Μουδανιά",
+      hero: {
+        eyebrow: "Νέα Μουδανιά, Χαλκιδική",
+        title: "Ιδιωτικές Μεταφορές στα Νέα Μουδανιά",
+        description: "Κλείστε ιδιωτική μεταφορά προς τα Νέα Μουδανιά, το εμπορικό κέντρο του ισθμού και την πύλη εισόδου στη Χαλκιδική.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τα Νέα Μουδανιά",
+        title: "Τα Νέα Μουδανιά στον Ισθμό της Χαλκιδικής",
+        paragraphs: [
+          "Τα Νέα Μουδανιά βρίσκονται στον ισθμό, στον βόρειο λαιμό της Χαλκιδικής, όπου ο ηπειρωτικός δρόμος χωρίζεται προς τις χερσονήσους Κασσάνδρα και Σιθωνία. Είναι το εμπορικό κέντρο της περιοχής, και για πολλούς επισκέπτες είναι η πρώτη πόλη που συναντούν μετά τη Θεσσαλονίκη, καθιστώντας τα τον πλησιέστερο προορισμό της Χαλκιδικής στο αεροδρόμιο.",
+          "Λόγω της θέσης τους, τα Νέα Μουδανιά αποτελούν επίσης πρακτική βάση για επισκέπτες που θέλουν εύκολη πρόσβαση στη Χαλκιδική χωρίς να ταξιδέψουν μέχρι την άκρη της Κασσάνδρας ή της Σιθωνίας.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στα Νέα Μουδανιά",
+        title: "Άφιξη στα Νέα Μουδανιά",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Νέα Μουδανιά", href: "/el/diadromi/aerodromio-thessalonikis-nea-moudania/", description: "Η συντομότερη από τις διαδρομές μεταφοράς αεροδρομίου προς τη Χαλκιδική." },
+          { label: "Χαλκιδική", href: "/el/proorismos/chalkidiki/", description: "Δείτε την επισκόπησή μας για την ευρύτερη περιοχή της Χαλκιδικής." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Κασσάνδρα", href: "/el/proorismos/kassandra/", description: "Συνεχίστε περαιτέρω κατά μήκος της χερσονήσου της Κασσάνδρας." },
+          { label: "Σιθωνία", href: "/el/proorismos/sithonia/", description: "Συνεχίστε περαιτέρω κατά μήκος της ακτής προς τη Σιθωνία." },
+          { label: "Ιδιωτικές Μεταφορές", href: "/el/idiotikes-metafores/", description: "Ένα ιδιωτικό όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή στα Νέα Μουδανιά." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο απέχουν τα Νέα Μουδανιά από το Αεροδρόμιο Θεσσαλονίκης;", answer: "Τα Νέα Μουδανιά είναι ο πλησιέστερος προορισμός της Χαλκιδικής στο αεροδρόμιο — δείτε την ειδική μας σελίδα διαδρομής για λεπτομέρειες." },
+          { question: "Ανήκουν τα Νέα Μουδανιά στην Κασσάνδρα ή στη Σιθωνία;", answer: "Τα Νέα Μουδανιά βρίσκονται στον ισθμό, στην είσοδο της Χαλκιδικής, πριν ο δρόμος χωριστεί προς την Κασσάνδρα ή τη Σιθωνία." },
+          { question: "Μπορώ να συνεχίσω προς την Κασσάνδρα ή τη Σιθωνία από τα Νέα Μουδανιά;", answer: "Ναι, αναφέρετε το πλήρες πρόγραμμά σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στα Νέα Μουδανιά;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  thessalonikiDayTrips: {
+    en: {
+      meta: {
+        title: "Private Day Trips from Thessaloniki – Book Your Excursion",
+        description:
+          "Explore private day trips from Thessaloniki to Meteora, Mount Olympus, Vergina, Pella and Kavala. Private vehicle, flexible itinerary. Get a quote.",
+      },
+      breadcrumbLabel: "Day Trips",
+      hero: {
+        eyebrow: "Private Day Trips",
+        title: "Private Day Trips from Thessaloniki",
+        description: "A private vehicle and driver for a day trip from Thessaloniki, with a flexible itinerary and return journey included.",
+        primaryLabel: "Book Your Day Trip",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Our Day Trips",
+        title: "How a Private Day Trip Works",
+        paragraphs: [
+          "A private day trip is different from a one-way transfer: it includes your pickup in Thessaloniki, private transportation to the destination, time to explore, and the return journey, typically with the same vehicle and driver waiting or returning at an agreed time.",
+          "Northern Greece offers a wide range of day-trip destinations from Thessaloniki, from the rock-pillar monasteries of Meteora to the ancient Macedonian sites of Vergina and Pella and the peak of Mount Olympus — each with a different character and journey length, so it's worth choosing based on how much time you have.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Popular Day Trips",
+        title: "Choose Your Day Trip",
+        items: [
+          { label: "Thessaloniki to Meteora", href: "/route/thessaloniki-to-meteora/", description: "A long full-day (or overnight) trip to the rock-pillar monasteries of Meteora." },
+          { label: "Thessaloniki to Mount Olympus", href: "/route/thessaloniki-to-mount-olympus/", description: "A day trip to Litochoro, the gateway town at the foot of Mount Olympus." },
+          { label: "Thessaloniki to Vergina & Pella", href: "/route/thessaloniki-to-vergina-pella/", description: "A day trip to the ancient Macedonian sites of Vergina and Pella." },
+          { label: "Thessaloniki to Kavala", href: "/route/thessaloniki-to-kavala/", description: "A longer intercity transfer to the port city of Kavala." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Halkidiki", href: "/destination/halkidiki/", description: "See our overview of transfers to the Halkidiki peninsula." },
+          { label: "Private Transfers", href: "/private-transfers/", description: "A private, door-to-door vehicle for any journey, including day trips." },
+          { label: "Group Transfers", href: "/group-transfers/", description: "Private transportation for families and larger groups on a day trip." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "What's the difference between a day trip and a one-way transfer?", answer: "A day trip includes your return journey and time at the destination, with the vehicle waiting or returning for you, rather than a single one-way journey." },
+          { question: "Can I visit both Vergina and Pella in one day trip?", answer: "Yes, the two sites are commonly combined into a single day trip — mention this when requesting a quote." },
+          { question: "How much time do I get at the destination?", answer: "This depends on the destination and your preferences — mention how much time you'd like when requesting a quote." },
+          { question: "Can you arrange a day trip for a group?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote so a suitable vehicle can be arranged." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Thessaloniki Day Trip?",
+        description: "Tell us which destination interests you and your passenger details, and request your private day trip quote.",
+        primaryLabel: "Book Your Day Trip",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Ημερήσιες Εκδρομές από τη Θεσσαλονίκη – Κλείστε Τώρα",
+        description:
+          "Εξερευνήστε ιδιωτικές ημερήσιες εκδρομές από τη Θεσσαλονίκη προς Μετέωρα, Όλυμπο, Βεργίνα, Πέλλα και Καβάλα. Ιδιωτικό όχημα, ευέλικτο πρόγραμμα.",
+      },
+      breadcrumbLabel: "Ημερήσιες Εκδρομές",
+      hero: {
+        eyebrow: "Ιδιωτικές Εκδρομές",
+        title: "Ιδιωτικές Ημερήσιες Εκδρομές από τη Θεσσαλονίκη",
+        description: "Ένα ιδιωτικό όχημα και οδηγός για μια ημερήσια εκδρομή από τη Θεσσαλονίκη, με ευέλικτο πρόγραμμα και την επιστροφή σας συμπεριλαμβανόμενη.",
+        primaryLabel: "Κλείστε την Εκδρομή σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τις Εκδρομές μας",
+        title: "Πώς Λειτουργεί μια Ιδιωτική Ημερήσια Εκδρομή",
+        paragraphs: [
+          "Μια ιδιωτική ημερήσια εκδρομή διαφέρει από μια απλή μεταφορά: περιλαμβάνει την παραλαβή σας στη Θεσσαλονίκη, ιδιωτική μεταφορά προς τον προορισμό, χρόνο για εξερεύνηση, και την επιστροφή σας, συνήθως με το ίδιο όχημα και οδηγό που περιμένει ή επιστρέφει σε συμφωνημένη ώρα.",
+          "Η βόρεια Ελλάδα προσφέρει ένα ευρύ φάσμα προορισμών ημερήσιας εκδρομής από τη Θεσσαλονίκη, από τα μοναστήρια πάνω σε βράχους των Μετεώρων έως τους αρχαίους μακεδονικούς χώρους της Βεργίνας και της Πέλλας και την κορυφή του Ολύμπου — καθεμία με διαφορετικό χαρακτήρα και διάρκεια ταξιδιού.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Δημοφιλείς Εκδρομές",
+        title: "Επιλέξτε την Εκδρομή σας",
+        items: [
+          { label: "Θεσσαλονίκη προς Μετέωρα", href: "/el/diadromi/thessaloniki-meteora/", description: "Μια μεγάλη ολοήμερη (ή με διανυκτέρευση) εκδρομή προς τα μοναστήρια πάνω σε βράχους των Μετεώρων." },
+          { label: "Θεσσαλονίκη προς Όλυμπο", href: "/el/diadromi/thessaloniki-olympos/", description: "Μια εκδρομή προς το Λιτόχωρο, την πύλη-πόλη στους πρόποδες του Ολύμπου." },
+          { label: "Θεσσαλονίκη προς Βεργίνα & Πέλλα", href: "/el/diadromi/thessaloniki-vergina-pella/", description: "Μια εκδρομή προς τους αρχαίους μακεδονικούς χώρους της Βεργίνας και της Πέλλας." },
+          { label: "Θεσσαλονίκη προς Καβάλα", href: "/el/diadromi/thessaloniki-kavala/", description: "Μια μεγαλύτερη μεταφορά μεταξύ πόλεων προς τη λιμανιού πόλη της Καβάλας." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Χαλκιδική", href: "/el/proorismos/chalkidiki/", description: "Δείτε την επισκόπησή μας για μεταφορές προς τη χερσόνησο της Χαλκιδικής." },
+          { label: "Ιδιωτικές Μεταφορές", href: "/el/idiotikes-metafores/", description: "Ένα ιδιωτικό όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή, συμπεριλαμβανομένων εκδρομών." },
+          { label: "Ομαδικές Μεταφορές", href: "/el/omadikes-metafores/", description: "Ιδιωτική μεταφορά για οικογένειες και μεγαλύτερες ομάδες σε ημερήσια εκδρομή." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Ποια είναι η διαφορά μεταξύ ημερήσιας εκδρομής και απλής μεταφοράς;", answer: "Μια ημερήσια εκδρομή περιλαμβάνει την επιστροφή σας και χρόνο στον προορισμό, με το όχημα να περιμένει ή να επιστρέφει για εσάς, αντί για ένα απλό μονόδρομο ταξίδι." },
+          { question: "Μπορώ να επισκεφθώ και τη Βεργίνα και την Πέλλα σε μία εκδρομή;", answer: "Ναι, οι δύο χώροι συνήθως συνδυάζονται σε μία ημερήσια εκδρομή — αναφέρετέ το κατά την αίτηση προσφοράς." },
+          { question: "Πόσο χρόνο έχω στον προορισμό;", answer: "Αυτό εξαρτάται από τον προορισμό και τις προτιμήσεις σας — αναφέρετε πόσο χρόνο θα θέλατε κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να οργανώσετε εκδρομή για ομάδα;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε την Εκδρομή σας από τη Θεσσαλονίκη;",
         description: "Πείτε μας ποιος προορισμός σας ενδιαφέρει και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής εκδρομής σας.",
         primaryLabel: "Κλείστε την Εκδρομή σας",
         secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",

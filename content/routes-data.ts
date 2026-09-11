@@ -27,6 +27,26 @@ export type RouteSlug =
   | "routeAthensAirportGrandHyatt"
   | "routeAthensAirportAthenaeumIC"
   | "routeAthensAirportDivaniCaravel"
+  | "routeThessalonikiAirportHalkidiki"
+  | "routeThessalonikiAirportKassandra"
+  | "routeThessalonikiAirportSithonia"
+  | "routeThessalonikiAirportNeaMoudania"
+  | "routeThessalonikiPortHalkidiki"
+  | "routeThessalonikiAirportPort"
+  | "routeThessalonikiMeteora"
+  | "routeThessalonikiMountOlympus"
+  | "routeThessalonikiVerginaPella"
+  | "routeThessalonikiKavala"
+  | "routeThessalonikiAirportSaniResort"
+  | "routeThessalonikiAirportPortoCarras"
+  | "routeThessalonikiStations"
+  | "routeThessalonikiAirportElectraPalace"
+  | "routeThessalonikiAirportMakedoniaPalace"
+  | "routeThessalonikiAirportOnResidence"
+  | "routeThessalonikiAirportMetHotel"
+  | "routeThessalonikiAirportMediterraneanPalace"
+  | "routeThessalonikiAirportDomotelOlympia"
+  | "routeThessalonikiAirportHyattRegency"
 
 export type LinkSection = { eyebrow: string; title: string; items: Omit<RelatedLinkItem, "icon">[] }
 export type ProseSection = { eyebrow: string; title: string; paragraphs: string[] }
@@ -3585,6 +3605,2946 @@ export const routeContent: Record<RouteSlug, Record<"en" | "el", RoutePageConten
       cta: {
         heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας προς το Divani Caravel;",
         description: "Πείτε μας τα στοιχεία πτήσης και επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportHalkidiki: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to Halkidiki Transfer – Private Car",
+        description: "Book a private transfer between Thessaloniki Airport and Halkidiki, direct to Kassandra, Sithonia or Nea Moudania without a stop in the city.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to Halkidiki",
+      hero: {
+        eyebrow: "Thessaloniki Airport → Halkidiki",
+        title: "Thessaloniki Airport to Halkidiki Transfer",
+        description: "A direct private transfer from Thessaloniki Airport to the Halkidiki peninsula, without routing through the city centre.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to Halkidiki",
+        paragraphs: [
+          "Thessaloniki Airport sits southeast of the city, on the same side as the road toward Halkidiki, so a direct transfer to the peninsula doesn't need to pass through central Thessaloniki. The route runs via Nea Moudania on the isthmus before continuing to either the Kassandra or Sithonia peninsula.",
+          "Because Halkidiki covers a long stretch of coastline, journey time depends heavily on exactly where you're headed — the isthmus area is reached well before the tip of Kassandra or the villages of Sithonia. Share your exact resort or address when requesting a quote so the journey can be planned accurately.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Varies by destination — Nea Moudania is reached first, with Kassandra and Sithonia villages further on." },
+          { title: "Route", description: "Bypasses central Thessaloniki, heading directly from the airport toward the Halkidiki isthmus." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Resort Details", description: "Let us know your exact hotel or resort when requesting a quote." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Beach Holiday Arrivals", description: "Head straight to your Halkidiki resort without a stop in Thessaloniki." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Resort Stays", description: "A common choice for visitors starting a resort-based holiday directly from the airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Halkidiki",
+        items: [
+          { label: "Halkidiki", href: "/destination/halkidiki/", description: "See our destination overview of Halkidiki." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to Kassandra", href: "/route/thessaloniki-airport-to-kassandra/", description: "A more specific route to the Kassandra peninsula." },
+          { label: "Thessaloniki Airport to Sithonia", href: "/route/thessaloniki-airport-to-sithonia/", description: "A more specific route to the Sithonia peninsula." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Thessaloniki Airport to Halkidiki take?", answer: "It depends on exactly where in Halkidiki you're headed — journey time increases the further along the peninsula your destination is." },
+          { question: "Does this route pass through central Thessaloniki?", answer: "No, it heads directly from the airport toward Halkidiki without a stop in the city centre." },
+          { question: "Can you arrange a transfer for a group arriving on the same flight?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Halkidiki Transfer?",
+        description: "Tell us your flight details, resort and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Χαλκιδική – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Θεσσαλονίκης και Χαλκιδικής, απευθείας προς Κασσάνδρα, Σιθωνία ή Νέα Μουδανιά χωρίς στάση στην πόλη.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς Χαλκιδική",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → Χαλκιδική",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Χαλκιδική",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς τη χερσόνησο της Χαλκιδικής, χωρίς διέλευση από το κέντρο της πόλης.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς τη Χαλκιδική",
+        paragraphs: [
+          "Το Αεροδρόμιο Θεσσαλονίκης βρίσκεται νοτιοανατολικά της πόλης, στην ίδια πλευρά με τον δρόμο προς τη Χαλκιδική, οπότε μια απευθείας μεταφορά προς τη χερσόνησο δεν χρειάζεται να περάσει από το κέντρο της Θεσσαλονίκης. Η διαδρομή περνά από τα Νέα Μουδανιά στον ισθμό πριν συνεχίσει προς την Κασσάνδρα ή τη Σιθωνία.",
+          "Επειδή η Χαλκιδική καλύπτει μεγάλο τμήμα ακτογραμμής, ο χρόνος διαδρομής εξαρτάται σε μεγάλο βαθμό από τον ακριβή προορισμό σας — η περιοχή του ισθμού προσεγγίζεται πολύ πριν από την άκρη της Κασσάνδρας ή τα χωριά της Σιθωνίας. Αναφέρετε το ακριβές θέρετρο ή διεύθυνσή σας κατά την αίτηση προσφοράς.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Διαφέρει ανάλογα με τον προορισμό — τα Νέα Μουδανιά προσεγγίζονται πρώτα, με τα χωριά της Κασσάνδρας και της Σιθωνίας πιο μακριά." },
+          { title: "Διαδρομή", description: "Παρακάμπτει το κέντρο της Θεσσαλονίκης, κατευθυνόμενη απευθείας από το αεροδρόμιο προς τον ισθμό της Χαλκιδικής." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Στοιχεία Θέρετρου", description: "Ενημερώστε μας για το ακριβές ξενοδοχείο ή θέρετρό σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις για Παραθαλάσσιες Διακοπές", description: "Κατευθυνθείτε απευθείας στο θέρετρό σας στη Χαλκιδική χωρίς στάση στη Θεσσαλονίκη." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Διαμονή σε Θέρετρο", description: "Συνηθισμένη επιλογή για επισκέπτες που ξεκινούν διακοπές σε θέρετρο απευθείας από το αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Χαλκιδική",
+        items: [
+          { label: "Χαλκιδική", href: "/el/proorismos/chalkidiki/", description: "Δείτε την επισκόπηση προορισμού μας για τη Χαλκιδική." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Κασσάνδρα", href: "/el/diadromi/aerodromio-thessalonikis-kassandra/", description: "Μια πιο συγκεκριμένη διαδρομή προς την Κασσάνδρα." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Σιθωνία", href: "/el/diadromi/aerodromio-thessalonikis-sithonia/", description: "Μια πιο συγκεκριμένη διαδρομή προς τη Σιθωνία." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Αεροδρόμιο Θεσσαλονίκης στη Χαλκιδική;", answer: "Εξαρτάται από το ακριβές σημείο της Χαλκιδικής — ο χρόνος διαδρομής αυξάνεται όσο πιο μακριά στη χερσόνησο βρίσκεται ο προορισμός σας." },
+          { question: "Περνάει αυτή η διαδρομή από το κέντρο της Θεσσαλονίκης;", answer: "Όχι, κατευθύνεται απευθείας από το αεροδρόμιο προς τη Χαλκιδική χωρίς στάση στο κέντρο της πόλης." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που φτάνει με την ίδια πτήση;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Χαλκιδική;",
+        description: "Πείτε μας τα στοιχεία πτήσης, το θέρετρο και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportKassandra: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to Kassandra Transfer – Private Car",
+        description: "Book a private transfer between Thessaloniki Airport and the Kassandra peninsula, covering Kallithea, Polychrono, Hanioti, Pefkochori and Sani.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to Kassandra",
+      hero: {
+        eyebrow: "Thessaloniki Airport → Kassandra",
+        title: "Thessaloniki Airport to Kassandra Transfer",
+        description: "A direct private transfer from Thessaloniki Airport to the Kassandra peninsula, the closest of Halkidiki's resort areas.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to Kassandra",
+        paragraphs: [
+          "Kassandra is the closest of Halkidiki's peninsulas to Thessaloniki Airport, reached via Nea Moudania on the isthmus before continuing down the peninsula's coast. Because Kassandra covers a long stretch of coastline — from Kallithea near the isthmus to Pefkochori further south, and the Sani Resort enclave on the western shore — journey time depends on exactly which village or resort you're heading to.",
+          "Most visitors to Kassandra arrange a direct transfer from the airport rather than a bus connection, particularly when travelling with beach-holiday luggage or as a family.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Varies by village — areas nearer the isthmus are reached sooner than those further down the peninsula." },
+          { title: "Route", description: "Via Nea Moudania and the Kassandra coast road." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Resort Details", description: "Let us know your exact hotel or resort when requesting a quote." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Beach Holiday Arrivals", description: "Head straight to your Kassandra resort after landing." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Resort Stays", description: "Including the Sani Resort enclave on Kassandra's western coast." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Kassandra",
+        items: [
+          { label: "Kassandra", href: "/destination/kassandra/", description: "See our destination overview of Kassandra." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to Sani Resort", href: "/route/thessaloniki-airport-to-sani-resort/", description: "A dedicated route to the Sani Resort enclave." },
+          { label: "Thessaloniki Airport to Sithonia", href: "/route/thessaloniki-airport-to-sithonia/", description: "The equivalent route to the neighbouring Sithonia peninsula." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Thessaloniki Airport to Kassandra take?", answer: "It varies by village — areas nearer the isthmus, such as Kallithea, are reached sooner than villages further south such as Pefkochori." },
+          { question: "Can I be dropped directly at my resort in Kassandra?", answer: "Yes, mention your exact hotel or resort when requesting a quote." },
+          { question: "Can you arrange a transfer for a family arriving on the same flight?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Kassandra Transfer?",
+        description: "Tell us your flight details, resort and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Κασσάνδρα – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Θεσσαλονίκης και της χερσονήσου της Κασσάνδρας, με κάλυψη Καλλιθέας, Πολυχρόνου, Χανιώτη, Πευκοχωρίου και Sani.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς Κασσάνδρα",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → Κασσάνδρα",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Κασσάνδρα",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς τη χερσόνησο της Κασσάνδρας, την πλησιέστερη τουριστική περιοχή της Χαλκιδικής.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς την Κασσάνδρα",
+        paragraphs: [
+          "Η Κασσάνδρα είναι η πλησιέστερη στο Αεροδρόμιο Θεσσαλονίκης από τις χερσονήσους της Χαλκιδικής, προσβάσιμη μέσω των Νέων Μουδανιών στον ισθμό πριν συνεχίσει κατά μήκος της ακτής της χερσονήσου. Επειδή η Κασσάνδρα καλύπτει μεγάλο τμήμα ακτογραμμής — από την Καλλιθέα κοντά στον ισθμό έως το Πευκοχώρι πιο νότια, και τον θύλακα του Sani Resort στη δυτική ακτή — ο χρόνος διαδρομής εξαρτάται από το ακριβές χωριό ή θέρετρο.",
+          "Οι περισσότεροι επισκέπτες της Κασσάνδρας οργανώνουν απευθείας μεταφορά από το αεροδρόμιο αντί για σύνδεση με λεωφορείο, ιδιαίτερα όταν ταξιδεύουν με αποσκευές για παραθαλάσσιες διακοπές ή ως οικογένεια.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Διαφέρει ανάλογα με το χωριό — οι περιοχές πιο κοντά στον ισθμό προσεγγίζονται νωρίτερα από εκείνες πιο νότια στη χερσόνησο." },
+          { title: "Διαδρομή", description: "Μέσω των Νέων Μουδανιών και του παράκτιου δρόμου της Κασσάνδρας." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Στοιχεία Θέρετρου", description: "Ενημερώστε μας για το ακριβές ξενοδοχείο ή θέρετρό σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις για Παραθαλάσσιες Διακοπές", description: "Κατευθυνθείτε απευθείας στο θέρετρό σας στην Κασσάνδρα μετά την προσγείωση." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Διαμονή σε Θέρετρο", description: "Συμπεριλαμβανομένου του θύλακα του Sani Resort στη δυτική ακτή της Κασσάνδρας." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε την Κασσάνδρα",
+        items: [
+          { label: "Κασσάνδρα", href: "/el/proorismos/kassandra/", description: "Δείτε την επισκόπηση προορισμού μας για την Κασσάνδρα." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Sani Resort", href: "/el/diadromi/aerodromio-thessalonikis-sani-resort/", description: "Ειδική διαδρομή προς τον θύλακα του Sani Resort." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Σιθωνία", href: "/el/diadromi/aerodromio-thessalonikis-sithonia/", description: "Η αντίστοιχη διαδρομή προς τη γειτονική χερσόνησο της Σιθωνίας." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Αεροδρόμιο Θεσσαλονίκης στην Κασσάνδρα;", answer: "Διαφέρει ανάλογα με το χωριό — περιοχές κοντά στον ισθμό, όπως η Καλλιθέα, προσεγγίζονται νωρίτερα από χωριά πιο νότια όπως το Πευκοχώρι." },
+          { question: "Μπορώ να παραδοθώ απευθείας στο θέρετρό μου στην Κασσάνδρα;", answer: "Ναι, αναφέρετε το ακριβές ξενοδοχείο ή θέρετρό σας κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για οικογένεια που φτάνει με την ίδια πτήση;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Κασσάνδρα;",
+        description: "Πείτε μας τα στοιχεία πτήσης, το θέρετρο και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportSithonia: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to Sithonia Transfer – Private Car",
+        description: "Book a private transfer between Thessaloniki Airport and Sithonia, Halkidiki's central peninsula, covering Nikiti and Neos Marmaras.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to Sithonia",
+      hero: {
+        eyebrow: "Thessaloniki Airport → Sithonia",
+        title: "Thessaloniki Airport to Sithonia Transfer",
+        description: "A direct private transfer from Thessaloniki Airport to Sithonia, further along the Halkidiki coast than Kassandra.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to Sithonia",
+        paragraphs: [
+          "Sithonia is the middle of Halkidiki's three peninsulas, reached from the airport via Nea Moudania and a longer stretch of coast road than the journey to Kassandra. Its main towns are Nikiti, near the peninsula's entrance, and Neos Marmaras further along the west coast.",
+          "Because of the extra distance, most visitors to Sithonia arrange a direct private transfer from the airport rather than a bus or public transport connection, particularly when travelling with resort luggage.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Longer than the equivalent Kassandra route, given Sithonia's position further along the coast." },
+          { title: "Route", description: "Via Nea Moudania and the Sithonia coast road." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Resort Details", description: "Let us know your exact hotel or resort when requesting a quote." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Beach Holiday Arrivals", description: "Head straight to your Sithonia resort after landing." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Resort Stays", description: "Including the Porto Carras Grand Resort near Neos Marmaras." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Sithonia",
+        items: [
+          { label: "Sithonia", href: "/destination/sithonia/", description: "See our destination overview of Sithonia." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to Porto Carras Grand Resort", href: "/route/thessaloniki-airport-to-porto-carras/", description: "A dedicated route to the Porto Carras resort." },
+          { label: "Thessaloniki Airport to Kassandra", href: "/route/thessaloniki-airport-to-kassandra/", description: "A shorter transfer to the neighbouring Kassandra peninsula." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Thessaloniki Airport to Sithonia take?", answer: "It's generally longer than the equivalent Kassandra transfer, given Sithonia's position further along the coast — exact time depends on your destination village." },
+          { question: "Can I be dropped directly at my resort in Sithonia?", answer: "Yes, mention your exact hotel or resort when requesting a quote." },
+          { question: "Can you arrange a transfer for a group arriving on the same flight?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Sithonia Transfer?",
+        description: "Tell us your flight details, resort and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Σιθωνία – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Θεσσαλονίκης και Σιθωνίας, της κεντρικής χερσονήσου της Χαλκιδικής, με κάλυψη Νικήτης και Νέων Μαρμαρών.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς Σιθωνία",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → Σιθωνία",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Σιθωνία",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς τη Σιθωνία, πιο μακριά στην ακτή της Χαλκιδικής από την Κασσάνδρα.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς τη Σιθωνία",
+        paragraphs: [
+          "Η Σιθωνία είναι η μεσαία από τις τρεις χερσονήσους της Χαλκιδικής, προσβάσιμη από το αεροδρόμιο μέσω των Νέων Μουδανιών και ενός μεγαλύτερου τμήματος παράκτιου δρόμου από τη διαδρομή προς την Κασσάνδρα. Οι κύριες πόλεις της είναι η Νικήτη, κοντά στην είσοδο της χερσονήσου, και οι Νέες Μαρμαράς πιο μακριά στη δυτική ακτή.",
+          "Λόγω της επιπλέον απόστασης, οι περισσότεροι επισκέπτες της Σιθωνίας οργανώνουν απευθείας ιδιωτική μεταφορά από το αεροδρόμιο αντί για σύνδεση με λεωφορείο, ιδιαίτερα όταν ταξιδεύουν με αποσκευές για θέρετρο.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μεγαλύτερη από την αντίστοιχη διαδρομή προς την Κασσάνδρα, δεδομένης της θέσης της Σιθωνίας πιο μακριά στην ακτή." },
+          { title: "Διαδρομή", description: "Μέσω των Νέων Μουδανιών και του παράκτιου δρόμου της Σιθωνίας." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Στοιχεία Θέρετρου", description: "Ενημερώστε μας για το ακριβές ξενοδοχείο ή θέρετρό σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις για Παραθαλάσσιες Διακοπές", description: "Κατευθυνθείτε απευθείας στο θέρετρό σας στη Σιθωνία μετά την προσγείωση." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Διαμονή σε Θέρετρο", description: "Συμπεριλαμβανομένου του θέρετρου Porto Carras Grand Resort κοντά στις Νέες Μαρμαράς." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Σιθωνία",
+        items: [
+          { label: "Σιθωνία", href: "/el/proorismos/sithonia/", description: "Δείτε την επισκόπηση προορισμού μας για τη Σιθωνία." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Porto Carras Grand Resort", href: "/el/diadromi/aerodromio-thessalonikis-porto-carras/", description: "Ειδική διαδρομή προς το θέρετρο Porto Carras." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Κασσάνδρα", href: "/el/diadromi/aerodromio-thessalonikis-kassandra/", description: "Μια συντομότερη μεταφορά προς τη γειτονική χερσόνησο της Κασσάνδρας." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Αεροδρόμιο Θεσσαλονίκης στη Σιθωνία;", answer: "Γενικά μεγαλύτερη από την αντίστοιχη μεταφορά προς την Κασσάνδρα, δεδομένης της θέσης της Σιθωνίας πιο μακριά στην ακτή — ο ακριβής χρόνος εξαρτάται από το χωριό προορισμού." },
+          { question: "Μπορώ να παραδοθώ απευθείας στο θέρετρό μου στη Σιθωνία;", answer: "Ναι, αναφέρετε το ακριβές ξενοδοχείο ή θέρετρό σας κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που φτάνει με την ίδια πτήση;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Σιθωνία;",
+        description: "Πείτε μας τα στοιχεία πτήσης, το θέρετρο και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportNeaMoudania: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to Nea Moudania Transfer – Private Car",
+        description: "Book a private transfer between Thessaloniki Airport and Nea Moudania, the closest Halkidiki gateway town to the airport.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to Nea Moudania",
+      hero: {
+        eyebrow: "Thessaloniki Airport → Nea Moudania",
+        title: "Thessaloniki Airport to Nea Moudania Transfer",
+        description: "A direct private transfer from Thessaloniki Airport to Nea Moudania, typically the shortest of the Halkidiki airport routes.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to Nea Moudania",
+        paragraphs: [
+          "Nea Moudania sits on the isthmus at the entrance to Halkidiki, making it the closest of the region's destinations to Thessaloniki Airport. The route runs from the airport, around the city, toward the isthmus without needing to continue further down the Kassandra or Sithonia peninsulas.",
+          "This is a common direct transfer for visitors staying in or near Nea Moudania itself, or continuing onward into Halkidiki after a short stop.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically the shortest of the Halkidiki airport transfer routes, given Nea Moudania's position on the isthmus." },
+          { title: "Route", description: "From the airport toward the Halkidiki isthmus, bypassing central Thessaloniki." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Direct Halkidiki Arrivals", description: "Reach Nea Moudania quickly after landing, without a long onward drive." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Onward Halkidiki Trips", description: "Use this route as the start of a longer stay elsewhere in Halkidiki." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Nea Moudania",
+        items: [
+          { label: "Nea Moudania", href: "/destination/nea-moudania/", description: "See our destination overview of Nea Moudania." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to Kassandra", href: "/route/thessaloniki-airport-to-kassandra/", description: "A longer transfer further down the Kassandra peninsula." },
+          { label: "Thessaloniki Airport to Halkidiki", href: "/route/thessaloniki-airport-to-halkidiki/", description: "Our general Halkidiki airport transfer page." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Thessaloniki Airport to Nea Moudania take?", answer: "It's typically the shortest of the Halkidiki airport routes, given Nea Moudania's position on the isthmus close to the airport." },
+          { question: "Is Nea Moudania a good base for exploring Halkidiki?", answer: "Its position at the entrance to the region makes it a practical base, though most beach resorts are further along the Kassandra or Sithonia peninsulas." },
+          { question: "Can you arrange a transfer for a group arriving on the same flight?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Nea Moudania Transfer?",
+        description: "Tell us your flight details, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Νέα Μουδανιά – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Θεσσαλονίκης και Νέων Μουδανιών, της πλησιέστερης πύλης της Χαλκιδικής στο αεροδρόμιο.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς Νέα Μουδανιά",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → Νέα Μουδανιά",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Νέα Μουδανιά",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς τα Νέα Μουδανιά, συνήθως η συντομότερη από τις διαδρομές προς τη Χαλκιδική.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς τα Νέα Μουδανιά",
+        paragraphs: [
+          "Τα Νέα Μουδανιά βρίσκονται στον ισθμό, στην είσοδο της Χαλκιδικής, καθιστώντας τα τον πλησιέστερο προορισμό της περιοχής στο Αεροδρόμιο Θεσσαλονίκης. Η διαδρομή ξεκινά από το αεροδρόμιο, γύρω από την πόλη, προς τον ισθμό, χωρίς να χρειάζεται να συνεχίσει περαιτέρω στις χερσονήσους της Κασσάνδρας ή της Σιθωνίας.",
+          "Αυτή είναι μια συνηθισμένη απευθείας μεταφορά για επισκέπτες που μένουν στα ή κοντά στα Νέα Μουδανιά, ή συνεχίζουν προς τη Χαλκιδική μετά από σύντομη στάση.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως η συντομότερη από τις διαδρομές μεταφοράς αεροδρομίου προς τη Χαλκιδική, δεδομένης της θέσης των Νέων Μουδανιών στον ισθμό." },
+          { title: "Διαδρομή", description: "Από το αεροδρόμιο προς τον ισθμό της Χαλκιδικής, παρακάμπτοντας το κέντρο της Θεσσαλονίκης." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Απευθείας Αφίξεις στη Χαλκιδική", description: "Φτάστε γρήγορα στα Νέα Μουδανιά μετά την προσγείωση, χωρίς μεγάλη περαιτέρω διαδρομή." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Συνέχεια Ταξιδιού στη Χαλκιδική", description: "Χρησιμοποιήστε αυτή τη διαδρομή ως αρχή για μεγαλύτερη διαμονή αλλού στη Χαλκιδική." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τα Νέα Μουδανιά",
+        items: [
+          { label: "Νέα Μουδανιά", href: "/el/proorismos/nea-moudania/", description: "Δείτε την επισκόπηση προορισμού μας για τα Νέα Μουδανιά." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Κασσάνδρα", href: "/el/diadromi/aerodromio-thessalonikis-kassandra/", description: "Μια μεγαλύτερη μεταφορά πιο μακριά στη χερσόνησο της Κασσάνδρας." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Χαλκιδική", href: "/el/diadromi/aerodromio-thessalonikis-chalkidiki/", description: "Η γενική μας σελίδα μεταφοράς αεροδρομίου προς τη Χαλκιδική." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Αεροδρόμιο Θεσσαλονίκης στα Νέα Μουδανιά;", answer: "Είναι συνήθως η συντομότερη από τις διαδρομές προς τη Χαλκιδική, δεδομένης της θέσης των Νέων Μουδανιών στον ισθμό, κοντά στο αεροδρόμιο." },
+          { question: "Είναι τα Νέα Μουδανιά καλή βάση για εξερεύνηση της Χαλκιδικής;", answer: "Η θέση τους στην είσοδο της περιοχής τα καθιστά πρακτική βάση, αν και τα περισσότερα παραθαλάσσια θέρετρα βρίσκονται πιο μακριά στις χερσονήσους της Κασσάνδρας ή της Σιθωνίας." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που φτάνει με την ίδια πτήση;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Νέα Μουδανιά;",
+        description: "Πείτε μας τα στοιχεία πτήσης, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiPortHalkidiki: {
+    en: {
+      meta: {
+        title: "Thessaloniki Port to Halkidiki Transfer – Private Car",
+        description: "Book a private transfer from Thessaloniki Port to Halkidiki, for cruise and ferry passengers continuing to Kassandra or Sithonia.",
+      },
+      breadcrumbLabel: "Thessaloniki Port to Halkidiki",
+      hero: {
+        eyebrow: "Thessaloniki Port → Halkidiki",
+        title: "Thessaloniki Port to Halkidiki Transfer",
+        description: "A direct private transfer from the Port of Thessaloniki to Halkidiki, for cruise and ferry passengers continuing their trip.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Port to Halkidiki",
+        paragraphs: [
+          "Some visitors arrive in Thessaloniki by cruise or ferry and continue directly to a Halkidiki resort rather than staying in the city. A private transfer from the port avoids relying on public transport with luggage, and can be timed around your disembarkation.",
+          "As with the airport route, journey time depends on exactly where in Halkidiki you're headed — share your resort or address, along with your sailing details, when requesting a quote.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Varies by destination within Halkidiki — mention your exact resort when requesting a quote." },
+          { title: "Timing", description: "Pickup is planned around your actual disembarkation time." },
+          { title: "Cruise or Ferry Details", description: "Share your line and sailing details when requesting your quote." },
+          { title: "Luggage Space", description: "Let us know your luggage so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Cruise Passengers", description: "Continue directly to a Halkidiki resort after disembarking, without a stop in the city." },
+          { title: "Ferry Passengers", description: "A private transfer for travellers connecting onward to Halkidiki." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Halkidiki",
+        items: [
+          { label: "Halkidiki", href: "/destination/halkidiki/", description: "See our destination overview of Halkidiki." },
+          { label: "Thessaloniki Port", href: "/port/thessaloniki/", description: "See our dedicated port transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to Halkidiki", href: "/route/thessaloniki-airport-to-halkidiki/", description: "The equivalent route for air arrivals." },
+          { label: "Thessaloniki Airport to Port", href: "/route/thessaloniki-airport-to-port/", description: "For travellers connecting between the airport and the port." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "Can I book a transfer from the port directly to a Halkidiki resort?", answer: "Yes, mention your resort and sailing details when requesting a quote." },
+          { question: "Can you time my transfer around my disembarkation?", answer: "Yes, share your cruise or ferry line and expected arrival time when requesting a quote." },
+          { question: "How long does the transfer to Halkidiki take from the port?", answer: "It depends on your exact destination within Halkidiki — journey time is broadly similar to the equivalent airport route." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Port to Halkidiki Transfer?",
+        description: "Tell us your sailing details, resort and passenger numbers, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Λιμάνι Θεσσαλονίκης – Χαλκιδική – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά από το Λιμάνι της Θεσσαλονίκης προς τη Χαλκιδική, για επιβάτες κρουαζιέρας και ferry που συνεχίζουν προς Κασσάνδρα ή Σιθωνία.",
+      },
+      breadcrumbLabel: "Λιμάνι Θεσσαλονίκης προς Χαλκιδική",
+      hero: {
+        eyebrow: "Λιμάνι Θεσσαλονίκης → Χαλκιδική",
+        title: "Μεταφορά Λιμάνι Θεσσαλονίκης – Χαλκιδική",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Λιμάνι της Θεσσαλονίκης προς τη Χαλκιδική, για επιβάτες κρουαζιέρας και ferry που συνεχίζουν το ταξίδι τους.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Λιμάνι Θεσσαλονίκης προς τη Χαλκιδική",
+        paragraphs: [
+          "Ορισμένοι επισκέπτες φτάνουν στη Θεσσαλονίκη με κρουαζιέρα ή ferry και συνεχίζουν απευθείας προς θέρετρο στη Χαλκιδική αντί να μείνουν στην πόλη. Μια ιδιωτική μεταφορά από το λιμάνι αποφεύγει την εξάρτηση από μέσα μαζικής μεταφοράς με αποσκευές, και μπορεί να προσαρμοστεί στην αποβίβασή σας.",
+          "Όπως και στη διαδρομή αεροδρομίου, ο χρόνος διαδρομής εξαρτάται από το ακριβές σημείο της Χαλκιδικής που κατευθύνεστε — αναφέρετε το θέρετρο ή τη διεύθυνσή σας, μαζί με τα στοιχεία απόπλου, κατά την αίτηση προσφοράς.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Διαφέρει ανάλογα με τον προορισμό εντός της Χαλκιδικής — αναφέρετε το ακριβές θέρετρό σας κατά την αίτηση προσφοράς." },
+          { title: "Χρονισμός", description: "Η παραλαβή σχεδιάζεται σύμφωνα με την πραγματική ώρα αποβίβασής σας." },
+          { title: "Στοιχεία Κρουαζιέρας ή Ferry", description: "Δώστε μας την εταιρεία και τα στοιχεία απόπλου κατά την αίτηση προσφοράς." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Επιβάτες Κρουαζιέρας", description: "Συνεχίστε απευθείας προς θέρετρο στη Χαλκιδική μετά την αποβίβαση, χωρίς στάση στην πόλη." },
+          { title: "Επιβάτες Ferry", description: "Μια ιδιωτική μεταφορά για ταξιδιώτες που συνδέονται προς τη Χαλκιδική." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Χαλκιδική",
+        items: [
+          { label: "Χαλκιδική", href: "/el/proorismos/chalkidiki/", description: "Δείτε την επισκόπηση προορισμού μας για τη Χαλκιδική." },
+          { label: "Λιμάνι Θεσσαλονίκης", href: "/el/limani/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς λιμανιού." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Χαλκιδική", href: "/el/diadromi/aerodromio-thessalonikis-chalkidiki/", description: "Η αντίστοιχη διαδρομή για αεροπορικές αφίξεις." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Λιμάνι", href: "/el/diadromi/aerodromio-thessalonikis-limani/", description: "Για ταξιδιώτες που συνδέονται μεταξύ αεροδρομίου και λιμανιού." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Μπορώ να κλείσω μεταφορά από το λιμάνι απευθείας προς θέρετρο στη Χαλκιδική;", answer: "Ναι, αναφέρετε το θέρετρο και τα στοιχεία απόπλου σας κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να προσαρμόσετε τη μεταφορά μου στην αποβίβασή μου;", answer: "Ναι, δώστε μας την εταιρεία κρουαζιέρας ή ferry και την αναμενόμενη ώρα άφιξης κατά την αίτηση προσφοράς." },
+          { question: "Πόσο διαρκεί η μεταφορά προς τη Χαλκιδική από το λιμάνι;", answer: "Εξαρτάται από τον ακριβή προορισμό σας εντός της Χαλκιδικής — ο χρόνος διαδρομής είναι γενικά παρόμοιος με την αντίστοιχη διαδρομή αεροδρομίου." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Λιμάνι – Χαλκιδική;",
+        description: "Πείτε μας τα στοιχεία απόπλου, το θέρετρο και τον αριθμό επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportPort: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to Port Transfer – Private Car",
+        description: "Book a private transfer between Thessaloniki Airport and the Port of Thessaloniki, useful for cruise and ferry connections.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to Port",
+      hero: {
+        eyebrow: "Thessaloniki Airport → Port",
+        title: "Thessaloniki Airport to Port Transfer",
+        description: "A direct private transfer between Thessaloniki Airport and the city's port, for cruise and ferry connections.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to the Port",
+        paragraphs: [
+          "Thessaloniki Airport sits southeast of the city, while the Port of Thessaloniki is within the city itself, so this route runs into central Thessaloniki rather than bypassing it. It's a common connection for cruise passengers flying in before their sailing, or arriving by sea and continuing on a flight.",
+          "Sharing your flight and cruise or ferry details when requesting a quote helps your pickup be planned around both ends of the journey.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A city-adjacent transfer, generally shorter than the routes onward to Halkidiki." },
+          { title: "Route", description: "From the airport into central Thessaloniki, to the port area." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Cruise or Ferry Details", description: "Share your sailing time so the transfer can be timed accordingly." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Cruise Embarkation", description: "Fly in and head directly to your ship, without a stop elsewhere in the city." },
+          { title: "Cruise Disembarkation", description: "Head straight from the port to the airport for your onward flight." },
+          { title: "Groups & Families", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Thessaloniki",
+        items: [
+          { label: "Thessaloniki Port", href: "/port/thessaloniki/", description: "See our dedicated port transfer information." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Port to Halkidiki", href: "/route/thessaloniki-port-to-halkidiki/", description: "For cruise passengers continuing onward to Halkidiki." },
+          { label: "Thessaloniki Airport to Halkidiki", href: "/route/thessaloniki-airport-to-halkidiki/", description: "For air arrivals continuing onward to Halkidiki." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "Can I book a transfer from Thessaloniki Airport to the port for a cruise?", answer: "Yes, share your flight and cruise details when requesting a quote so your pickup can be timed accordingly." },
+          { question: "Can I travel from the port to the airport after disembarking?", answer: "Yes, this transfer works in both directions — mention your onward flight when requesting a quote." },
+          { question: "How long does the transfer between the airport and port take?", answer: "It's a city-adjacent journey, generally shorter than the routes onward to Halkidiki." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Port Transfer?",
+        description: "Tell us your flight and sailing details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Λιμάνι – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Θεσσαλονίκης και του Λιμανιού της Θεσσαλονίκης, χρήσιμη για συνδέσεις κρουαζιέρας και ferry.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς Λιμάνι",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → Λιμάνι",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Λιμάνι",
+        description: "Μια απευθείας ιδιωτική μεταφορά μεταξύ του Αεροδρομίου Θεσσαλονίκης και του λιμανιού της πόλης, για συνδέσεις κρουαζιέρας και ferry.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς το Λιμάνι",
+        paragraphs: [
+          "Το Αεροδρόμιο Θεσσαλονίκης βρίσκεται νοτιοανατολικά της πόλης, ενώ το Λιμάνι της Θεσσαλονίκης βρίσκεται μέσα στην ίδια την πόλη, οπότε αυτή η διαδρομή περνά από το κέντρο της Θεσσαλονίκης αντί να το παρακάμπτει. Είναι μια συνηθισμένη σύνδεση για επιβάτες κρουαζιέρας που πετούν πριν τον απόπλου τους, ή που φτάνουν από τη θάλασσα και συνεχίζουν με πτήση.",
+          "Η αναφορά των στοιχείων πτήσης και κρουαζιέρας ή ferry σας κατά την αίτηση προσφοράς βοηθά η παραλαβή σας να σχεδιαστεί γύρω από και τις δύο πλευρές του ταξιδιού.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια μεταφορά κοντά στην πόλη, γενικά συντομότερη από τις διαδρομές προς τη Χαλκιδική." },
+          { title: "Διαδρομή", description: "Από το αεροδρόμιο προς το κέντρο της Θεσσαλονίκης, στην περιοχή του λιμανιού." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Στοιχεία Κρουαζιέρας ή Ferry", description: "Δώστε μας την ώρα απόπλου σας ώστε η μεταφορά να προγραμματιστεί ανάλογα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Επιβίβαση σε Κρουαζιέρα", description: "Πετάξτε και κατευθυνθείτε απευθείας στο πλοίο σας, χωρίς στάση αλλού στην πόλη." },
+          { title: "Αποβίβαση από Κρουαζιέρα", description: "Κατευθυνθείτε απευθείας από το λιμάνι στο αεροδρόμιο για την πτήση επιστροφής σας." },
+          { title: "Ομάδες & Οικογένειες", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Θεσσαλονίκη",
+        items: [
+          { label: "Λιμάνι Θεσσαλονίκης", href: "/el/limani/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς λιμανιού." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Λιμάνι Θεσσαλονίκης προς Χαλκιδική", href: "/el/diadromi/limani-thessalonikis-chalkidiki/", description: "Για επιβάτες κρουαζιέρας που συνεχίζουν προς τη Χαλκιδική." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Χαλκιδική", href: "/el/diadromi/aerodromio-thessalonikis-chalkidiki/", description: "Για αεροπορικές αφίξεις που συνεχίζουν προς τη Χαλκιδική." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Μπορώ να κλείσω μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το λιμάνι για κρουαζιέρα;", answer: "Ναι, δώστε μας τα στοιχεία πτήσης και κρουαζιέρας κατά την αίτηση προσφοράς ώστε η παραλαβή σας να προγραμματιστεί ανάλογα." },
+          { question: "Μπορώ να ταξιδέψω από το λιμάνι προς το αεροδρόμιο μετά την αποβίβαση;", answer: "Ναι, αυτή η μεταφορά λειτουργεί και προς τις δύο κατευθύνσεις — αναφέρετε την πτήση επιστροφής σας κατά την αίτηση προσφοράς." },
+          { question: "Πόσο διαρκεί η μεταφορά μεταξύ αεροδρομίου και λιμανιού;", answer: "Είναι ένα ταξίδι κοντά στην πόλη, γενικά συντομότερο από τις διαδρομές προς τη Χαλκιδική." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Λιμάνι;",
+        description: "Πείτε μας τα στοιχεία πτήσης και απόπλου σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiStations: {
+    en: {
+      meta: {
+        title: "Thessaloniki Railway Station & KTEL Bus Station Transfers",
+        description: "Book a private transfer to or from Thessaloniki's railway station or the KTEL Macedonia intercity bus station. Request a quote for your journey.",
+      },
+      breadcrumbLabel: "Railway & Bus Station Transfers",
+      hero: {
+        eyebrow: "Thessaloniki Stations",
+        title: "Thessaloniki Railway Station & KTEL Bus Station Transfers",
+        description: "A private transfer to or from Thessaloniki's railway station or the KTEL Macedonia intercity bus station.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling To or From Thessaloniki's Stations",
+        paragraphs: [
+          "Travellers arriving in Thessaloniki by train or intercity bus can arrange a private pickup rather than relying on a taxi rank or local transport with luggage. This covers both the city's railway station and the KTEL Macedonia terminal, which serves intercity coach routes across northern Greece.",
+          "A private transfer is arranged around your actual arrival or departure time, and can take you directly to your hotel, onward to Halkidiki, or to Thessaloniki Airport for a connecting flight.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A short, city-based transfer to your hotel or onward destination." },
+          { title: "Which Station", description: "Let us know whether you're arriving at the railway station or the KTEL bus station." },
+          { title: "Arrival Details", description: "Share your train or bus arrival time so pickup can be planned around it." },
+          { title: "Onward Plans", description: "Mention if you're continuing to Halkidiki, the airport, or elsewhere when requesting your quote." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Train Arrivals", description: "A direct pickup from Thessaloniki's railway station." },
+          { title: "Intercity Bus Arrivals", description: "A direct pickup from the KTEL Macedonia terminal." },
+          { title: "Onward Connections", description: "Continue directly to your hotel, Halkidiki, or the airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Thessaloniki",
+        items: [
+          { label: "Thessaloniki", href: "/city/thessaloniki/", description: "See our overview of transfers across Thessaloniki." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to Halkidiki", href: "/route/thessaloniki-airport-to-halkidiki/", description: "Continuing onward to Halkidiki." },
+          { label: "Thessaloniki to Athens", href: "/route/athens-to-thessaloniki/", description: "A long-distance transfer connecting Greece's two largest cities." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "Can I book a private pickup from Thessaloniki's railway station?", answer: "Yes, share your train arrival time when requesting a quote." },
+          { question: "Do you cover the KTEL Macedonia bus station?", answer: "Yes, private pickups from the KTEL Macedonia intercity bus terminal can be arranged the same way." },
+          { question: "Can I be taken directly to Halkidiki from the station?", answer: "Yes, mention your onward destination when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Station Transfer?",
+        description: "Tell us your arrival details, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορές Σιδηροδρομικού Σταθμού & ΚΤΕΛ Μακεδονίας Θεσσαλονίκης",
+        description: "Κλείστε ιδιωτική μεταφορά από ή προς τον σιδηροδρομικό σταθμό της Θεσσαλονίκης ή το ΚΤΕΛ Μακεδονίας. Ζητήστε προσφορά για το ταξίδι σας.",
+      },
+      breadcrumbLabel: "Μεταφορές Σταθμού & ΚΤΕΛ",
+      hero: {
+        eyebrow: "Σταθμοί Θεσσαλονίκης",
+        title: "Μεταφορές Σιδηροδρομικού Σταθμού & ΚΤΕΛ Μακεδονίας",
+        description: "Μια ιδιωτική μεταφορά από ή προς τον σιδηροδρομικό σταθμό της Θεσσαλονίκης ή το τερματικό ΚΤΕΛ Μακεδονίας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι Από ή Προς τους Σταθμούς της Θεσσαλονίκης",
+        paragraphs: [
+          "Ταξιδιώτες που φτάνουν στη Θεσσαλονίκη με τρένο ή υπεραστικό λεωφορείο μπορούν να οργανώσουν ιδιωτική παραλαβή αντί να βασιστούν σε πιάτσα ταξί ή τοπικά μέσα μεταφοράς με αποσκευές. Αυτό καλύπτει τόσο τον σιδηροδρομικό σταθμό της πόλης όσο και το τερματικό ΚΤΕΛ Μακεδονίας, που εξυπηρετεί υπεραστικές διαδρομές σε όλη τη βόρεια Ελλάδα.",
+          "Μια ιδιωτική μεταφορά οργανώνεται σύμφωνα με την πραγματική ώρα άφιξης ή αναχώρησής σας, και μπορεί να σας μεταφέρει απευθείας στο ξενοδοχείο σας, προς τη Χαλκιδική, ή στο Αεροδρόμιο Θεσσαλονίκης για ανταπόκριση πτήσης.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια σύντομη μεταφορά εντός της πόλης προς το ξενοδοχείο σας ή περαιτέρω προορισμό." },
+          { title: "Ποιος Σταθμός", description: "Ενημερώστε μας αν φτάνετε στον σιδηροδρομικό σταθμό ή στο ΚΤΕΛ." },
+          { title: "Στοιχεία Άφιξης", description: "Δώστε μας την ώρα άφιξης του τρένου ή του λεωφορείου ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Επόμενα Σχέδια", description: "Αναφέρετε αν συνεχίζετε προς τη Χαλκιδική, το αεροδρόμιο, ή αλλού κατά την αίτηση προσφοράς." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις με Τρένο", description: "Απευθείας παραλαβή από τον σιδηροδρομικό σταθμό της Θεσσαλονίκης." },
+          { title: "Αφίξεις με Υπεραστικό Λεωφορείο", description: "Απευθείας παραλαβή από το τερματικό ΚΤΕΛ Μακεδονίας." },
+          { title: "Περαιτέρω Συνδέσεις", description: "Συνεχίστε απευθείας προς το ξενοδοχείο σας, τη Χαλκιδική, ή το αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Θεσσαλονίκη",
+        items: [
+          { label: "Θεσσαλονίκη", href: "/el/poli/thessaloniki/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλη τη Θεσσαλονίκη." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Χαλκιδική", href: "/el/diadromi/aerodromio-thessalonikis-chalkidiki/", description: "Συνέχεια προς τη Χαλκιδική." },
+          { label: "Θεσσαλονίκη προς Αθήνα", href: "/el/diadromi/athina-thessaloniki/", description: "Μια μεταφορά μεγάλης απόστασης που συνδέει τις δύο μεγαλύτερες πόλεις της Ελλάδας." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Μπορώ να κλείσω ιδιωτική παραλαβή από τον σιδηροδρομικό σταθμό της Θεσσαλονίκης;", answer: "Ναι, δώστε μας την ώρα άφιξης του τρένου σας κατά την αίτηση προσφοράς." },
+          { question: "Καλύπτετε το ΚΤΕΛ Μακεδονίας;", answer: "Ναι, ιδιωτικές παραλαβές από το τερματικό ΚΤΕΛ Μακεδονίας μπορούν να οργανωθούν με τον ίδιο τρόπο." },
+          { question: "Μπορώ να μεταφερθώ απευθείας στη Χαλκιδική από τον σταθμό;", answer: "Ναι, αναφέρετε τον περαιτέρω προορισμό σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας από τον Σταθμό;",
+        description: "Πείτε μας τα στοιχεία άφιξης, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiMeteora: {
+    en: {
+      meta: {
+        title: "Thessaloniki to Meteora Private Transfer – Book Your Ride",
+        description: "Book a private transfer or day trip from Thessaloniki to the rock-pillar monasteries of Meteora. Comfortable door-to-door travel.",
+      },
+      breadcrumbLabel: "Thessaloniki to Meteora",
+      hero: {
+        eyebrow: "Thessaloniki → Meteora",
+        title: "Thessaloniki to Meteora Private Transfer",
+        description: "A private transfer from Thessaloniki to the rock-pillar monasteries of Meteora, near Kalambaka in Thessaly.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki to Meteora",
+        paragraphs: [
+          "Meteora is a long-distance destination from Thessaloniki, reached via the A2/E92 motorway west toward Kalambaka. It's generally considered a full-day trip or an overnight stay rather than a short excursion, given the distance involved.",
+          "Because of the journey length, most visitors either arrange a one-way private transfer as part of a longer itinerary, or a full private day trip with time to explore the monasteries before returning. Mention which you'd prefer when requesting a quote."
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A long-distance journey, generally planned as a full day given the distance from Thessaloniki." },
+          { title: "Route", description: "Via the A2/E92 motorway west toward Kalambaka and the Meteora monasteries." },
+          { title: "One-Way or Day Trip", description: "Let us know whether you need a one-way transfer or a return day trip when requesting a quote." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Multi-Stop Itineraries", description: "Use this transfer as part of a wider Greece trip, continuing on from Thessaloniki." },
+          { title: "Day-Trip Visitors", description: "See the monasteries and return to Thessaloniki the same day, with the vehicle waiting." },
+          { title: "Families & Groups", description: "A private vehicle keeps your group and luggage together for the long journey." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Meteora",
+        items: [
+          { label: "Meteora", href: "/destination/meteora/", description: "See our destination overview of Meteora." },
+          { label: "Thessaloniki Day Trips", href: "/thessaloniki-day-trips/", description: "See our full range of private day trips from Thessaloniki." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki to Mount Olympus", href: "/route/thessaloniki-to-mount-olympus/", description: "A shorter day trip toward the coast en route south." },
+          { label: "Athens to Meteora", href: "/route/athens-to-meteora/", description: "The equivalent route from Athens." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Thessaloniki to Meteora take?", answer: "It's a long-distance journey, generally planned as a full day given the distance involved." },
+          { question: "Can I do Meteora as a day trip from Thessaloniki?", answer: "Yes, though given the distance many visitors prefer an overnight stay — mention your preference when requesting a quote." },
+          { question: "Can you arrange a transfer for a group visiting Meteora?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote so a suitable vehicle can be arranged." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Thessaloniki to Meteora Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτική Μεταφορά Θεσσαλονίκη – Μετέωρα – Κλείστε το Ταξίδι σας",
+        description: "Κλείστε ιδιωτική μεταφορά ή εκδρομή από τη Θεσσαλονίκη προς τα μοναστήρια πάνω σε βράχους των Μετεώρων. Άνετη μεταφορά από πόρτα σε πόρτα.",
+      },
+      breadcrumbLabel: "Θεσσαλονίκη προς Μετέωρα",
+      hero: {
+        eyebrow: "Θεσσαλονίκη → Μετέωρα",
+        title: "Ιδιωτική Μεταφορά Θεσσαλονίκη – Μετέωρα",
+        description: "Μια ιδιωτική μεταφορά από τη Θεσσαλονίκη προς τα μοναστήρια πάνω σε βράχους των Μετεώρων, κοντά στην Καλαμπάκα στη Θεσσαλία.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από τη Θεσσαλονίκη προς τα Μετέωρα",
+        paragraphs: [
+          "Τα Μετέωρα είναι προορισμός μεγάλης απόστασης από τη Θεσσαλονίκη, προσβάσιμος μέσω του αυτοκινητόδρομου Α2/Ε92 προς δυσμάς και την Καλαμπάκα. Θεωρείται γενικά ολοήμερη εκδρομή ή διανυκτέρευση παρά σύντομη εξόρμηση, δεδομένης της απόστασης.",
+          "Λόγω της διάρκειας του ταξιδιού, οι περισσότεροι επισκέπτες είτε οργανώνουν μονόδρομη ιδιωτική μεταφορά ως μέρος ενός μεγαλύτερου προγράμματος, είτε μια πλήρη ιδιωτική ημερήσια εκδρομή με χρόνο για εξερεύνηση των μοναστηριών πριν την επιστροφή. Αναφέρετε ποια προτιμάτε κατά την αίτηση προσφοράς.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Ένα ταξίδι μεγάλης απόστασης, που συνήθως σχεδιάζεται ως ολόκληρη ημέρα δεδομένης της απόστασης από τη Θεσσαλονίκη." },
+          { title: "Διαδρομή", description: "Μέσω του αυτοκινητόδρομου Α2/Ε92 προς δυσμάς και την Καλαμπάκα και τα μοναστήρια των Μετεώρων." },
+          { title: "Μονόδρομη ή Εκδρομή", description: "Ενημερώστε μας αν χρειάζεστε μονόδρομη μεταφορά ή εκδρομή με επιστροφή κατά την αίτηση προσφοράς." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Ταξίδια με Πολλαπλές Στάσεις", description: "Χρησιμοποιήστε αυτή τη μεταφορά ως μέρος ενός ευρύτερου ταξιδιού στην Ελλάδα, συνεχίζοντας από τη Θεσσαλονίκη." },
+          { title: "Επισκέπτες Ημερήσιας Εκδρομής", description: "Δείτε τα μοναστήρια και επιστρέψτε στη Θεσσαλονίκη την ίδια μέρα, με το όχημα να περιμένει." },
+          { title: "Οικογένειες & Ομάδες", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για το μεγάλο ταξίδι." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τα Μετέωρα",
+        items: [
+          { label: "Μετέωρα", href: "/el/proorismos/meteora/", description: "Δείτε την επισκόπηση προορισμού μας για τα Μετέωρα." },
+          { label: "Ημερήσιες Εκδρομές από τη Θεσσαλονίκη", href: "/el/idiotikes-ekdromes-thessaloniki/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας από τη Θεσσαλονίκη." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Θεσσαλονίκη προς Όλυμπο", href: "/el/diadromi/thessaloniki-olympos/", description: "Μια συντομότερη εκδρομή προς τα παράλια στη διαδρομή νότια." },
+          { label: "Αθήνα προς Μετέωρα", href: "/el/diadromi/athina-meteora/", description: "Η αντίστοιχη διαδρομή από την Αθήνα." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από τη Θεσσαλονίκη στα Μετέωρα;", answer: "Είναι ταξίδι μεγάλης απόστασης, που συνήθως σχεδιάζεται ως ολόκληρη ημέρα δεδομένης της απόστασης." },
+          { question: "Μπορώ να κάνω τα Μετέωρα ως ημερήσια εκδρομή από τη Θεσσαλονίκη;", answer: "Ναι, αν και δεδομένης της απόστασης πολλοί επισκέπτες προτιμούν διανυκτέρευση — αναφέρετε την προτίμησή σας κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που επισκέπτεται τα Μετέωρα;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Θεσσαλονίκη – Μετέωρα;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiMountOlympus: {
+    en: {
+      meta: {
+        title: "Thessaloniki to Mount Olympus Transfer – Book Your Day Trip",
+        description: "Book a private transfer or day trip from Thessaloniki to Litochoro, the gateway town at the foot of Mount Olympus.",
+      },
+      breadcrumbLabel: "Thessaloniki to Mount Olympus",
+      hero: {
+        eyebrow: "Thessaloniki → Mount Olympus",
+        title: "Thessaloniki to Mount Olympus Transfer",
+        description: "A private transfer from Thessaloniki to Litochoro, the gateway town at the foot of Mount Olympus.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki to Mount Olympus",
+        paragraphs: [
+          "Mount Olympus, Greece's highest mountain, is reached from Thessaloniki via the A1 motorway south toward Litochoro, the town that serves as the main gateway for visitors. It's a popular day trip, whether for hiking the lower trails, visiting the town itself, or simply seeing the mountain up close.",
+          "This transfer can be booked as a one-way journey — useful if you're continuing further south afterward — or as a return day trip with the vehicle waiting while you explore."
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Around an hour's drive from Thessaloniki via the A1 motorway, tolls apply." },
+          { title: "Route", description: "South along the A1 motorway toward Litochoro." },
+          { title: "One-Way or Day Trip", description: "Let us know whether you need a one-way transfer or a return day trip." },
+          { title: "Hiking Plans", description: "Mention if you're planning to hike so pickup timing can be planned around it." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Day-Trip Visitors", description: "See Litochoro and the lower slopes of Mount Olympus and return to Thessaloniki the same day." },
+          { title: "Hikers", description: "A private transfer to the trailhead area, with flexible timing around your hike." },
+          { title: "Onward Travellers", description: "A one-way transfer for those continuing further south afterward." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Northern Greece",
+        items: [
+          { label: "Thessaloniki Day Trips", href: "/thessaloniki-day-trips/", description: "See our full range of private day trips from Thessaloniki." },
+          { label: "Thessaloniki", href: "/city/thessaloniki/", description: "See our overview of transfers across Thessaloniki." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki to Meteora", href: "/route/thessaloniki-to-meteora/", description: "A longer day trip further west." },
+          { label: "Thessaloniki to Vergina & Pella", href: "/route/thessaloniki-to-vergina-pella/", description: "A shorter historical day trip." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Thessaloniki to Mount Olympus take?", answer: "Around an hour's drive via the A1 motorway to Litochoro, depending on traffic." },
+          { question: "Can this be booked as a day trip with a return journey?", answer: "Yes, mention that you'd like a return day trip when requesting a quote." },
+          { question: "Can you wait while I hike?", answer: "Mention your hiking plans when requesting a quote so pickup timing can be arranged accordingly." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Thessaloniki to Mount Olympus Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Θεσσαλονίκη – Όλυμπος – Κλείστε την Εκδρομή σας",
+        description: "Κλείστε ιδιωτική μεταφορά ή εκδρομή από τη Θεσσαλονίκη προς το Λιτόχωρο, την πύλη-πόλη στους πρόποδες του Ολύμπου.",
+      },
+      breadcrumbLabel: "Θεσσαλονίκη προς Όλυμπο",
+      hero: {
+        eyebrow: "Θεσσαλονίκη → Όλυμπος",
+        title: "Μεταφορά Θεσσαλονίκη – Όλυμπος",
+        description: "Μια ιδιωτική μεταφορά από τη Θεσσαλονίκη προς το Λιτόχωρο, την πύλη-πόλη στους πρόποδες του Ολύμπου.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από τη Θεσσαλονίκη προς τον Όλυμπο",
+        paragraphs: [
+          "Ο Όλυμπος, το ψηλότερο βουνό της Ελλάδας, προσεγγίζεται από τη Θεσσαλονίκη μέσω του αυτοκινητόδρομου Α1 προς νότο, προς το Λιτόχωρο, την πόλη που λειτουργεί ως κύρια πύλη για τους επισκέπτες. Είναι δημοφιλής ημερήσια εκδρομή, είτε για πεζοπορία στα χαμηλότερα μονοπάτια, είτε για επίσκεψη στην ίδια την πόλη, είτε απλά για να δείτε το βουνό από κοντά.",
+          "Αυτή η μεταφορά μπορεί να κλειστεί ως μονόδρομο ταξίδι — χρήσιμο αν συνεχίζετε πιο νότια μετά — ή ως εκδρομή με επιστροφή, με το όχημα να περιμένει όσο εξερευνάτε.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Περίπου μία ώρα οδήγησης από τη Θεσσαλονίκη μέσω του αυτοκινητόδρομου Α1, με διόδια." },
+          { title: "Διαδρομή", description: "Νότια κατά μήκος του αυτοκινητόδρομου Α1 προς το Λιτόχωρο." },
+          { title: "Μονόδρομη ή Εκδρομή", description: "Ενημερώστε μας αν χρειάζεστε μονόδρομη μεταφορά ή εκδρομή με επιστροφή." },
+          { title: "Σχέδια Πεζοπορίας", description: "Αναφέρετε αν σχεδιάζετε πεζοπορία ώστε ο χρονισμός παραλαβής να προγραμματιστεί ανάλογα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Επισκέπτες Ημερήσιας Εκδρομής", description: "Δείτε το Λιτόχωρο και τις χαμηλότερες πλαγιές του Ολύμπου και επιστρέψτε στη Θεσσαλονίκη την ίδια μέρα." },
+          { title: "Πεζοπόροι", description: "Ιδιωτική μεταφορά προς την περιοχή εκκίνησης μονοπατιών, με ευέλικτο χρονισμό γύρω από την πεζοπορία σας." },
+          { title: "Ταξιδιώτες σε Συνέχεια", description: "Μονόδρομη μεταφορά για όσους συνεχίζουν πιο νότια μετά." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Βόρεια Ελλάδα",
+        items: [
+          { label: "Ημερήσιες Εκδρομές από τη Θεσσαλονίκη", href: "/el/idiotikes-ekdromes-thessaloniki/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας από τη Θεσσαλονίκη." },
+          { label: "Θεσσαλονίκη", href: "/el/poli/thessaloniki/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλη τη Θεσσαλονίκη." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Θεσσαλονίκη προς Μετέωρα", href: "/el/diadromi/thessaloniki-meteora/", description: "Μια μεγαλύτερη εκδρομή πιο δυτικά." },
+          { label: "Θεσσαλονίκη προς Βεργίνα & Πέλλα", href: "/el/diadromi/thessaloniki-vergina-pella/", description: "Μια συντομότερη ιστορική εκδρομή." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από τη Θεσσαλονίκη στον Όλυμπο;", answer: "Περίπου μία ώρα οδήγησης μέσω του αυτοκινητόδρομου Α1 προς το Λιτόχωρο, ανάλογα με την κίνηση." },
+          { question: "Μπορεί αυτό να κλειστεί ως εκδρομή με επιστροφή;", answer: "Ναι, αναφέρετε ότι θέλετε εκδρομή με επιστροφή κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να περιμένετε όσο κάνω πεζοπορία;", answer: "Αναφέρετε τα σχέδια πεζοπορίας σας κατά την αίτηση προσφοράς ώστε ο χρονισμός παραλαβής να οργανωθεί ανάλογα." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Θεσσαλονίκη – Όλυμπος;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiVerginaPella: {
+    en: {
+      meta: {
+        title: "Thessaloniki to Vergina & Pella Day Trip – Ancient Macedonia",
+        description: "Book a private day trip from Thessaloniki to the ancient Macedonian sites of Vergina and Pella. Comfortable door-to-door travel.",
+      },
+      breadcrumbLabel: "Thessaloniki to Vergina & Pella",
+      hero: {
+        eyebrow: "Thessaloniki → Vergina & Pella",
+        title: "Thessaloniki to Vergina & Pella Day Trip",
+        description: "A private day trip from Thessaloniki to the ancient Macedonian sites of Vergina and Pella.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki to Vergina & Pella",
+        paragraphs: [
+          "Vergina, site of the royal tombs of ancient Macedonia, and Pella, birthplace of Alexander the Great and once the Macedonian capital, are both within reach of Thessaloniki and commonly visited together as a single history-focused day trip.",
+          "Since the two sites are in different directions from central Thessaloniki, a private transfer lets you visit both in one day without relying on separate public transport connections, with the vehicle and driver available for the whole itinerary."
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Both sites are within a roughly 40 to 80 minute drive of Thessaloniki, depending on the route taken." },
+          { title: "Itinerary", description: "Most visitors combine both sites into a single day, though either can be visited on its own." },
+          { title: "Time at Each Site", description: "Let us know how much time you'd like at each location when requesting a quote." },
+          { title: "Return Timing", description: "The vehicle waits or returns at an agreed time to bring you back to Thessaloniki." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "History & Archaeology Visitors", description: "See two of Macedonia's most significant ancient sites in a single day." },
+          { title: "Flexible Itineraries", description: "Visit both sites, or focus on just one, depending on your interests and time." },
+          { title: "Families & Groups", description: "A private vehicle keeps your group together for the whole day." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Northern Greece",
+        items: [
+          { label: "Thessaloniki Day Trips", href: "/thessaloniki-day-trips/", description: "See our full range of private day trips from Thessaloniki." },
+          { label: "Thessaloniki", href: "/city/thessaloniki/", description: "See our overview of transfers across Thessaloniki." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki to Mount Olympus", href: "/route/thessaloniki-to-mount-olympus/", description: "Another popular day trip from Thessaloniki." },
+          { label: "Thessaloniki to Kavala", href: "/route/thessaloniki-to-kavala/", description: "A longer intercity transfer further east." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "Can I visit both Vergina and Pella in one day trip?", answer: "Yes, the two sites are commonly combined into a single day trip — mention this when requesting a quote." },
+          { question: "Can I visit just one of the two sites?", answer: "Yes, mention your preference when requesting a quote and the itinerary can be adjusted." },
+          { question: "How much time do I get at each site?", answer: "This depends on your preferences — mention how much time you'd like at each location when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Vergina & Pella Day Trip?",
+        description: "Tell us your itinerary preferences and passenger details, and request your private day trip quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Εκδρομή Θεσσαλονίκη – Βεργίνα & Πέλλα – Αρχαία Μακεδονία",
+        description: "Κλείστε ιδιωτική ημερήσια εκδρομή από τη Θεσσαλονίκη προς τους αρχαίους μακεδονικούς χώρους της Βεργίνας και της Πέλλας.",
+      },
+      breadcrumbLabel: "Θεσσαλονίκη προς Βεργίνα & Πέλλα",
+      hero: {
+        eyebrow: "Θεσσαλονίκη → Βεργίνα & Πέλλα",
+        title: "Εκδρομή Θεσσαλονίκη – Βεργίνα & Πέλλα",
+        description: "Μια ιδιωτική ημερήσια εκδρομή από τη Θεσσαλονίκη προς τους αρχαίους μακεδονικούς χώρους της Βεργίνας και της Πέλλας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από τη Θεσσαλονίκη προς τη Βεργίνα & την Πέλλα",
+        paragraphs: [
+          "Η Βεργίνα, χώρος των βασιλικών τάφων της αρχαίας Μακεδονίας, και η Πέλλα, γενέτειρα του Μεγάλου Αλεξάνδρου και πρώην μακεδονική πρωτεύουσα, βρίσκονται και οι δύο σε προσιτή απόσταση από τη Θεσσαλονίκη και συχνά επισκέπτονται μαζί ως μία ιστορική ημερήσια εκδρομή.",
+          "Καθώς οι δύο χώροι βρίσκονται σε διαφορετικές κατευθύνσεις από το κέντρο της Θεσσαλονίκης, μια ιδιωτική μεταφορά σας επιτρέπει να επισκεφθείτε και τους δύο σε μία ημέρα χωρίς να βασιστείτε σε ξεχωριστές συνδέσεις δημόσιων μέσων, με το όχημα και τον οδηγό διαθέσιμα για ολόκληρο το πρόγραμμα.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Και οι δύο χώροι βρίσκονται σε περίπου 40 έως 80 λεπτά οδήγησης από τη Θεσσαλονίκη, ανάλογα με τη διαδρομή." },
+          { title: "Πρόγραμμα", description: "Οι περισσότεροι επισκέπτες συνδυάζουν και τους δύο χώρους σε μία ημέρα, αν και ο καθένας μπορεί να επισκεφθεί ξεχωριστά." },
+          { title: "Χρόνος σε Κάθε Χώρο", description: "Ενημερώστε μας πόσο χρόνο θα θέλατε σε κάθε τοποθεσία κατά την αίτηση προσφοράς." },
+          { title: "Χρονισμός Επιστροφής", description: "Το όχημα περιμένει ή επιστρέφει σε συμφωνημένη ώρα για να σας φέρει πίσω στη Θεσσαλονίκη." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Επισκέπτες Ιστορίας & Αρχαιολογίας", description: "Δείτε δύο από τους σημαντικότερους αρχαίους χώρους της Μακεδονίας σε μία μέρα." },
+          { title: "Ευέλικτο Πρόγραμμα", description: "Επισκεφθείτε και τους δύο χώρους, ή εστιάστε μόνο σε έναν, ανάλογα με τα ενδιαφέροντα και τον χρόνο σας." },
+          { title: "Οικογένειες & Ομάδες", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα σας μαζί για ολόκληρη την ημέρα." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Βόρεια Ελλάδα",
+        items: [
+          { label: "Ημερήσιες Εκδρομές από τη Θεσσαλονίκη", href: "/el/idiotikes-ekdromes-thessaloniki/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας από τη Θεσσαλονίκη." },
+          { label: "Θεσσαλονίκη", href: "/el/poli/thessaloniki/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλη τη Θεσσαλονίκη." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Θεσσαλονίκη προς Όλυμπο", href: "/el/diadromi/thessaloniki-olympos/", description: "Μια άλλη δημοφιλής εκδρομή από τη Θεσσαλονίκη." },
+          { label: "Θεσσαλονίκη προς Καβάλα", href: "/el/diadromi/thessaloniki-kavala/", description: "Μια μεγαλύτερη μεταφορά μεταξύ πόλεων πιο ανατολικά." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Μπορώ να επισκεφθώ και τη Βεργίνα και την Πέλλα σε μία εκδρομή;", answer: "Ναι, οι δύο χώροι συνήθως συνδυάζονται σε μία ημερήσια εκδρομή — αναφέρετέ το κατά την αίτηση προσφοράς." },
+          { question: "Μπορώ να επισκεφθώ μόνο έναν από τους δύο χώρους;", answer: "Ναι, αναφέρετε την προτίμησή σας κατά την αίτηση προσφοράς και το πρόγραμμα μπορεί να προσαρμοστεί." },
+          { question: "Πόσο χρόνο έχω σε κάθε χώρο;", answer: "Αυτό εξαρτάται από τις προτιμήσεις σας — αναφέρετε πόσο χρόνο θα θέλατε σε κάθε τοποθεσία κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε την Εκδρομή σας Βεργίνα & Πέλλα;",
+        description: "Πείτε μας τις προτιμήσεις προγράμματος και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής εκδρομής σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiKavala: {
+    en: {
+      meta: {
+        title: "Thessaloniki to Kavala Private Transfer – Book Your Ride",
+        description: "Book a private long-distance transfer from Thessaloniki to the port city of Kavala. Comfortable door-to-door travel.",
+      },
+      breadcrumbLabel: "Thessaloniki to Kavala",
+      hero: {
+        eyebrow: "Thessaloniki → Kavala",
+        title: "Thessaloniki to Kavala Private Transfer",
+        description: "A private long-distance transfer from Thessaloniki to the port city of Kavala in eastern Macedonia.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki to Kavala",
+        paragraphs: [
+          "Kavala is a port city east of Thessaloniki, reached via the Egnatia Odos motorway. It's known for its old town and harbour, and also serves as a ferry gateway to the northeastern Aegean islands including Thasos.",
+          "Given the distance, this is a long-distance private transfer rather than a short city hop — most travellers book it as part of a wider itinerary connecting Thessaloniki with destinations further east.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A long-distance journey via the Egnatia Odos motorway, typically around an hour and a half to two hours depending on traffic." },
+          { title: "Route", description: "East along the Egnatia Odos toward Kavala." },
+          { title: "Onward Ferry Connections", description: "Mention if you're connecting to a ferry from Kavala when requesting a quote." },
+          { title: "Luggage Space", description: "Let us know your luggage so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Ferry Connections", description: "Travellers continuing on to Thasos or other northeastern Aegean islands from Kavala." },
+          { title: "Multi-Stop Itineraries", description: "Use this transfer as part of a wider trip across northern Greece." },
+          { title: "Families & Groups", description: "A private vehicle keeps your group and luggage together for the long journey." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Northern Greece",
+        items: [
+          { label: "Thessaloniki Day Trips", href: "/thessaloniki-day-trips/", description: "See our full range of private day trips from Thessaloniki." },
+          { label: "Thessaloniki", href: "/city/thessaloniki/", description: "See our overview of transfers across Thessaloniki." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki to Vergina & Pella", href: "/route/thessaloniki-to-vergina-pella/", description: "A shorter historical day trip." },
+          { label: "Thessaloniki to Athens", href: "/route/athens-to-thessaloniki/", description: "A long-distance transfer connecting Greece's two largest cities." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Thessaloniki to Kavala take?", answer: "It's a long-distance journey via the Egnatia Odos motorway, typically around an hour and a half to two hours depending on traffic." },
+          { question: "Can I be dropped at the ferry port in Kavala?", answer: "Yes, mention if you're connecting to a ferry when requesting a quote." },
+          { question: "Can you arrange a transfer for a group?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote so a suitable vehicle can be arranged." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Thessaloniki to Kavala Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτική Μεταφορά Θεσσαλονίκη – Καβάλα – Κλείστε το Ταξίδι σας",
+        description: "Κλείστε ιδιωτική μεταφορά μεγάλης απόστασης από τη Θεσσαλονίκη προς τη λιμανιού πόλη της Καβάλας. Άνετη μεταφορά από πόρτα σε πόρτα.",
+      },
+      breadcrumbLabel: "Θεσσαλονίκη προς Καβάλα",
+      hero: {
+        eyebrow: "Θεσσαλονίκη → Καβάλα",
+        title: "Ιδιωτική Μεταφορά Θεσσαλονίκη – Καβάλα",
+        description: "Μια ιδιωτική μεταφορά μεγάλης απόστασης από τη Θεσσαλονίκη προς τη λιμανιού πόλη της Καβάλας στην ανατολική Μακεδονία.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από τη Θεσσαλονίκη προς την Καβάλα",
+        paragraphs: [
+          "Η Καβάλα είναι λιμανιού πόλη ανατολικά της Θεσσαλονίκης, προσβάσιμη μέσω της Εγνατίας Οδού. Είναι γνωστή για την παλιά πόλη και το λιμάνι της, και λειτουργεί επίσης ως πύλη ferry προς τα νησιά του βορειοανατολικού Αιγαίου, συμπεριλαμβανομένης της Θάσου.",
+          "Δεδομένης της απόστασης, αυτή είναι ιδιωτική μεταφορά μεγάλης απόστασης παρά σύντομη μετακίνηση μεταξύ πόλεων — οι περισσότεροι ταξιδιώτες την κλείνουν ως μέρος ενός ευρύτερου προγράμματος που συνδέει τη Θεσσαλονίκη με προορισμούς πιο ανατολικά.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Ταξίδι μεγάλης απόστασης μέσω της Εγνατίας Οδού, συνήθως περίπου μιάμιση έως δύο ώρες ανάλογα με την κίνηση." },
+          { title: "Διαδρομή", description: "Ανατολικά κατά μήκος της Εγνατίας Οδού προς την Καβάλα." },
+          { title: "Σύνδεση με Ferry", description: "Αναφέρετε αν συνδέεστε με ferry από την Καβάλα κατά την αίτηση προσφοράς." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Συνδέσεις με Ferry", description: "Ταξιδιώτες που συνεχίζουν προς τη Θάσο ή άλλα νησιά του βορειοανατολικού Αιγαίου από την Καβάλα." },
+          { title: "Ταξίδια με Πολλαπλές Στάσεις", description: "Χρησιμοποιήστε αυτή τη μεταφορά ως μέρος ενός ευρύτερου ταξιδιού στη βόρεια Ελλάδα." },
+          { title: "Οικογένειες & Ομάδες", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για το μεγάλο ταξίδι." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Βόρεια Ελλάδα",
+        items: [
+          { label: "Ημερήσιες Εκδρομές από τη Θεσσαλονίκη", href: "/el/idiotikes-ekdromes-thessaloniki/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας από τη Θεσσαλονίκη." },
+          { label: "Θεσσαλονίκη", href: "/el/poli/thessaloniki/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλη τη Θεσσαλονίκη." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Θεσσαλονίκη προς Βεργίνα & Πέλλα", href: "/el/diadromi/thessaloniki-vergina-pella/", description: "Μια συντομότερη ιστορική εκδρομή." },
+          { label: "Θεσσαλονίκη προς Αθήνα", href: "/el/diadromi/athina-thessaloniki/", description: "Μια μεταφορά μεγάλης απόστασης που συνδέει τις δύο μεγαλύτερες πόλεις της Ελλάδας." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από τη Θεσσαλονίκη στην Καβάλα;", answer: "Είναι ταξίδι μεγάλης απόστασης μέσω της Εγνατίας Οδού, συνήθως περίπου μιάμιση έως δύο ώρες ανάλογα με την κίνηση." },
+          { question: "Μπορώ να παραδοθώ στο λιμάνι ferry στην Καβάλα;", answer: "Ναι, αναφέρετε αν συνδέεστε με ferry κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Θεσσαλονίκη – Καβάλα;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportSaniResort: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to Sani Resort Transfer – Private Car",
+        description: "Book a private transfer between Thessaloniki Airport and Sani Resort on the Kassandra coast, home to Sani Beach, Porto Sani and Sani Dunes.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to Sani Resort",
+      hero: {
+        eyebrow: "Thessaloniki Airport → Sani Resort",
+        title: "Thessaloniki Airport to Sani Resort Transfer",
+        description: "A direct private transfer from Thessaloniki Airport to Sani Resort, a large resort complex on Kassandra's western coast.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to Sani Resort",
+        paragraphs: [
+          "Sani Resort is a large beachfront complex on the western coast of the Kassandra peninsula, made up of several hotels — including Sani Beach, Porto Sani, Sani Club, Sani Dunes and Sani Asterias — set around a marina and pine-forested grounds. It's a common direct-transfer destination for visitors flying into Thessaloniki for a resort-based holiday.",
+          "Because it sits on Kassandra's western side, the route to Sani Resort follows the same isthmus road as other Kassandra transfers before branching toward the coast. Let us know which of the resort's hotels you're staying at so your drop-off can be planned accordingly.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Broadly similar to other transfers along the Kassandra coast — mention your exact hotel within the resort when requesting a quote." },
+          { title: "Route", description: "Via Nea Moudania and the Kassandra coast road toward the resort's western shore." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Which Sani Hotel", description: "Sani Resort includes several separate hotels — let us know which one you're staying at." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Resort Holiday Arrivals", description: "Head straight to Sani Resort after landing, without a stop elsewhere." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-resort or resort-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Kassandra",
+        items: [
+          { label: "Kassandra", href: "/destination/kassandra/", description: "See our destination overview of Kassandra." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to Kassandra", href: "/route/thessaloniki-airport-to-kassandra/", description: "Our general transfer route to the Kassandra peninsula." },
+          { label: "Thessaloniki Airport to Porto Carras Grand Resort", href: "/route/thessaloniki-airport-to-porto-carras/", description: "The equivalent transfer to Sithonia's major resort." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Thessaloniki Airport to Sani Resort?", answer: "Book a direct private transfer — let us know which of the resort's hotels you're staying at when requesting a quote." },
+          { question: "Does Sani Resort have more than one hotel?", answer: "Yes, it's a complex of several separate hotels around a shared marina — mention your specific hotel so your drop-off can be planned accurately." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — resort to airport as well as airport to resort." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Sani Resort Transfer?",
+        description: "Tell us your flight details, hotel within the resort and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Sani Resort – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Θεσσαλονίκης και του Sani Resort στην ακτή της Κασσάνδρας, με Sani Beach, Porto Sani και Sani Dunes.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς Sani Resort",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → Sani Resort",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Sani Resort",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το Sani Resort, ένα μεγάλο θέρετρο στη δυτική ακτή της Κασσάνδρας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς το Sani Resort",
+        paragraphs: [
+          "Το Sani Resort είναι ένα μεγάλο παραθαλάσσιο συγκρότημα στη δυτική ακτή της χερσονήσου της Κασσάνδρας, αποτελούμενο από πολλά ξενοδοχεία — μεταξύ αυτών τα Sani Beach, Porto Sani, Sani Club, Sani Dunes και Sani Asterias — γύρω από μια μαρίνα και δασωμένη έκταση. Είναι συνηθισμένος προορισμός απευθείας μεταφοράς για επισκέπτες που πετούν προς τη Θεσσαλονίκη για διακοπές σε θέρετρο.",
+          "Καθώς βρίσκεται στη δυτική πλευρά της Κασσάνδρας, η διαδρομή προς το Sani Resort ακολουθεί τον ίδιο δρόμο του ισθμού με άλλες μεταφορές προς την Κασσάνδρα πριν στραφεί προς την ακτή. Ενημερώστε μας σε ποιο από τα ξενοδοχεία του θέρετρου μένετε ώστε να σχεδιαστεί ανάλογα η παράδοσή σας.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Γενικά παρόμοια με άλλες μεταφορές κατά μήκος της ακτής της Κασσάνδρας — αναφέρετε το ακριβές ξενοδοχείο εντός του θέρετρου κατά την αίτηση προσφοράς." },
+          { title: "Διαδρομή", description: "Μέσω των Νέων Μουδανιών και του παράκτιου δρόμου της Κασσάνδρας προς τη δυτική ακτή του θέρετρου." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Ποιο Ξενοδοχείο Sani", description: "Το Sani Resort περιλαμβάνει πολλά ξεχωριστά ξενοδοχεία — ενημερώστε μας σε ποιο μένετε." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις για Διακοπές σε Θέρετρο", description: "Κατευθυνθείτε απευθείας στο Sani Resort μετά την προσγείωση, χωρίς στάση αλλού." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς θέρετρο ή θέρετρο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε την Κασσάνδρα",
+        items: [
+          { label: "Κασσάνδρα", href: "/el/proorismos/kassandra/", description: "Δείτε την επισκόπηση προορισμού μας για την Κασσάνδρα." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Κασσάνδρα", href: "/el/diadromi/aerodromio-thessalonikis-kassandra/", description: "Η γενική μας διαδρομή μεταφοράς προς τη χερσόνησο της Κασσάνδρας." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Porto Carras Grand Resort", href: "/el/diadromi/aerodromio-thessalonikis-porto-carras/", description: "Η αντίστοιχη μεταφορά προς το μεγάλο θέρετρο της Σιθωνίας." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Θεσσαλονίκης στο Sani Resort;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — ενημερώστε μας σε ποιο από τα ξενοδοχεία του θέρετρου μένετε κατά την αίτηση προσφοράς." },
+          { question: "Έχει το Sani Resort περισσότερα από ένα ξενοδοχεία;", answer: "Ναι, είναι ένα συγκρότημα πολλών ξεχωριστών ξενοδοχείων γύρω από κοινή μαρίνα — αναφέρετε το συγκεκριμένο ξενοδοχείο σας ώστε η παράδοσή σας να σχεδιαστεί με ακρίβεια." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις — θέρετρο προς αεροδρόμιο καθώς και αεροδρόμιο προς θέρετρο." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Sani Resort;",
+        description: "Πείτε μας τα στοιχεία πτήσης, το ξενοδοχείο εντός του θέρετρου και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportPortoCarras: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to Porto Carras Grand Resort Transfer",
+        description: "Book a private transfer between Thessaloniki Airport and Porto Carras Grand Resort near Neos Marmaras on the Sithonia peninsula.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to Porto Carras",
+      hero: {
+        eyebrow: "Thessaloniki Airport → Porto Carras",
+        title: "Thessaloniki Airport to Porto Carras Grand Resort Transfer",
+        description: "A direct private transfer from Thessaloniki Airport to Porto Carras Grand Resort, near Neos Marmaras on Sithonia's west coast.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to Porto Carras",
+        paragraphs: [
+          "Porto Carras Grand Resort is a large integrated resort on Sithonia's western coast, near the town of Neos Marmaras, with its own marina and grounds. As with other Sithonia destinations, it's further from the airport than Kassandra, so most visitors arrange a direct private transfer rather than relying on public transport with resort luggage.",
+          "The route follows the same road toward Sithonia as other transfers to the peninsula, continuing to the resort's location near Neos Marmaras on the west coast.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Broadly similar to other transfers to the Neos Marmaras area of Sithonia." },
+          { title: "Route", description: "Via Nea Moudania and the Sithonia coast road toward Neos Marmaras." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Resort Holiday Arrivals", description: "Head straight to Porto Carras after landing, without a stop elsewhere." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-resort or resort-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Sithonia",
+        items: [
+          { label: "Sithonia", href: "/destination/sithonia/", description: "See our destination overview of Sithonia." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to Sithonia", href: "/route/thessaloniki-airport-to-sithonia/", description: "Our general transfer route to the Sithonia peninsula." },
+          { label: "Thessaloniki Airport to Sani Resort", href: "/route/thessaloniki-airport-to-sani-resort/", description: "The equivalent transfer to Kassandra's major resort." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Thessaloniki Airport to Porto Carras Grand Resort?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Is Porto Carras near Neos Marmaras?", answer: "Yes, the resort sits on Sithonia's west coast near the town of Neos Marmaras." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — resort to airport as well as airport to resort." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Porto Carras Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Porto Carras Grand Resort",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Θεσσαλονίκης και του Porto Carras Grand Resort κοντά στις Νέες Μαρμαράς στη χερσόνησο της Σιθωνίας.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς Porto Carras",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → Porto Carras",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Porto Carras Grand Resort",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το Porto Carras Grand Resort, κοντά στις Νέες Μαρμαράς στη δυτική ακτή της Σιθωνίας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς το Porto Carras",
+        paragraphs: [
+          "Το Porto Carras Grand Resort είναι ένα μεγάλο ολοκληρωμένο θέρετρο στη δυτική ακτή της Σιθωνίας, κοντά στην πόλη των Νέων Μαρμαρών, με δική του μαρίνα και έκταση. Όπως και με άλλους προορισμούς της Σιθωνίας, βρίσκεται πιο μακριά από το αεροδρόμιο σε σχέση με την Κασσάνδρα, οπότε οι περισσότεροι επισκέπτες οργανώνουν απευθείας ιδιωτική μεταφορά αντί να βασιστούν σε δημόσια μέσα με αποσκευές θέρετρου.",
+          "Η διαδρομή ακολουθεί τον ίδιο δρόμο προς τη Σιθωνία με άλλες μεταφορές προς τη χερσόνησο, συνεχίζοντας προς τη θέση του θέρετρου κοντά στις Νέες Μαρμαράς στη δυτική ακτή.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Γενικά παρόμοια με άλλες μεταφορές προς την περιοχή των Νέων Μαρμαρών στη Σιθωνία." },
+          { title: "Διαδρομή", description: "Μέσω των Νέων Μουδανιών και του παράκτιου δρόμου της Σιθωνίας προς τις Νέες Μαρμαράς." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις για Διακοπές σε Θέρετρο", description: "Κατευθυνθείτε απευθείας στο Porto Carras μετά την προσγείωση, χωρίς στάση αλλού." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς θέρετρο ή θέρετρο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Σιθωνία",
+        items: [
+          { label: "Σιθωνία", href: "/el/proorismos/sithonia/", description: "Δείτε την επισκόπηση προορισμού μας για τη Σιθωνία." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Σιθωνία", href: "/el/diadromi/aerodromio-thessalonikis-sithonia/", description: "Η γενική μας διαδρομή μεταφοράς προς τη χερσόνησο της Σιθωνίας." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Sani Resort", href: "/el/diadromi/aerodromio-thessalonikis-sani-resort/", description: "Η αντίστοιχη μεταφορά προς το μεγάλο θέρετρο της Κασσάνδρας." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Θεσσαλονίκης στο Porto Carras Grand Resort;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Είναι το Porto Carras κοντά στις Νέες Μαρμαράς;", answer: "Ναι, το θέρετρο βρίσκεται στη δυτική ακτή της Σιθωνίας κοντά στην πόλη των Νέων Μαρμαρών." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις — θέρετρο προς αεροδρόμιο καθώς και αεροδρόμιο προς θέρετρο." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Porto Carras;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportElectraPalace: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to Electra Palace Transfer – Private Car",
+        description: "Book a private transfer from Thessaloniki Airport to Electra Palace Thessaloniki, on Aristotelous Square in the city centre.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to Electra Palace",
+      hero: {
+        eyebrow: "Thessaloniki Airport → Electra Palace",
+        title: "Thessaloniki Airport to Electra Palace Transfer",
+        description: "A direct private transfer from Thessaloniki Airport to Electra Palace, on Aristotelous Square in the heart of the city.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to Electra Palace",
+        paragraphs: [
+          "Electra Palace sits directly on Aristotelous Square, Thessaloniki's central waterfront square, within walking distance of the Church of Agia Sophia and the White Tower. It's one of the most central hotel addresses in the city, making it a common choice for visitors who want to be within easy reach of the main sights on foot.",
+          "A private transfer from the airport takes you directly to the hotel's entrance on the square, avoiding the need to navigate the city centre with luggage after your flight.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A city-centre transfer from the airport into central Thessoniki — share your flight details for accurate planning." },
+          { title: "Drop-Off", description: "Directly at the hotel's entrance on Aristotelous Square." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "City-Centre Stays", description: "For visitors who want to explore Thessoniki's main sights on foot." },
+          { title: "Business & Leisure Travellers", description: "A comfortable, direct transfer to one of the city's most central addresses." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Thessaloniki",
+        items: [
+          { label: "Thessaloniki", href: "/city/thessaloniki/", description: "See our overview of transfers across Thessaloniki." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to Mediterranean Palace", href: "/route/thessaloniki-airport-to-mediterranean-palace/", description: "Another central Thessaloniki hotel transfer." },
+          { label: "Thessaloniki Airport to Makedonia Palace", href: "/route/thessaloniki-airport-to-makedonia-palace/", description: "A waterfront hotel transfer further east." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Thessaloniki Airport to Electra Palace?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Is Electra Palace within walking distance of the main sights?", answer: "Yes, it sits directly on Aristotelous Square, within walking distance of the Church of Agia Sophia and the White Tower." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — hotel to airport as well as airport to hotel." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Electra Palace Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Electra Palace – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το Electra Palace, στην Πλατεία Αριστοτέλους στο κέντρο της πόλης.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς Electra Palace",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → Electra Palace",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Electra Palace",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το Electra Palace, στην Πλατεία Αριστοτέλους στην καρδιά της πόλης.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς το Electra Palace",
+        paragraphs: [
+          "Το Electra Palace βρίσκεται απευθείας στην Πλατεία Αριστοτέλους, την κεντρική παραθαλάσσια πλατεία της Θεσσαλονίκης, σε απόσταση βαδίσματος από τον Ιερό Ναό της Αγίας Σοφίας και τον Λευκό Πύργο. Είναι μία από τις πιο κεντρικές διευθύνσεις ξενοδοχείων στην πόλη.",
+          "Μια ιδιωτική μεταφορά από το αεροδρόμιο σας μεταφέρει απευθείας στην είσοδο του ξενοδοχείου στην πλατεία, αποφεύγοντας την ανάγκη πλοήγησης στο κέντρο της πόλης με αποσκευές μετά την πτήση σας.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια μεταφορά από το αεροδρόμιο προς το κέντρο της Θεσσαλονίκης — αναφέρετε τα στοιχεία πτήσης σας για ακριβή προγραμματισμό." },
+          { title: "Παράδοση", description: "Απευθείας στην είσοδο του ξενοδοχείου στην Πλατεία Αριστοτέλους." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Διαμονή στο Κέντρο", description: "Για επισκέπτες που θέλουν να εξερευνήσουν τα κύρια αξιοθέατα της Θεσσαλονίκης με τα πόδια." },
+          { title: "Επαγγελματικοί & Ψυχαγωγικοί Ταξιδιώτες", description: "Μια άνετη, απευθείας μεταφορά προς μία από τις πιο κεντρικές διευθύνσεις της πόλης." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Θεσσαλονίκη",
+        items: [
+          { label: "Θεσσαλονίκη", href: "/el/poli/thessaloniki/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλη τη Θεσσαλονίκη." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Mediterranean Palace", href: "/el/diadromi/aerodromio-thessalonikis-mediterranean-palace/", description: "Άλλη κεντρική μεταφορά ξενοδοχείου της Θεσσαλονίκης." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Makedonia Palace", href: "/el/diadromi/aerodromio-thessalonikis-makedonia-palace/", description: "Μια παραθαλάσσια μεταφορά ξενοδοχείου πιο ανατολικά." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Θεσσαλονίκης στο Electra Palace;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Είναι το Electra Palace σε απόσταση βαδίσματος από τα κύρια αξιοθέατα;", answer: "Ναι, βρίσκεται απευθείας στην Πλατεία Αριστοτέλους, σε απόσταση βαδίσματος από την Αγία Σοφία και τον Λευκό Πύργο." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Electra Palace;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportMakedoniaPalace: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to Makedonia Palace Transfer",
+        description: "Book a private transfer from Thessaloniki Airport to Makedonia Palace, on the eastern waterfront overlooking the Thermaic Gulf.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to Makedonia Palace",
+      hero: {
+        eyebrow: "Thessaloniki Airport → Makedonia Palace",
+        title: "Thessaloniki Airport to Makedonia Palace Transfer",
+        description: "A direct private transfer from Thessaloniki Airport to Makedonia Palace, on the eastern waterfront of the city.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to Makedonia Palace",
+        paragraphs: [
+          "Makedonia Palace sits on Megalou Alexandrou Avenue on Thessaloniki's eastern waterfront, with a full frontage onto the Thermaic Gulf. It's a longer-established landmark hotel, set apart from the Aristotelous Square hotel cluster by its waterfront position further along the coast.",
+          "A private transfer from the airport takes you directly to the hotel, a straightforward route given the airport's own position southeast of the city along the same coastline.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A direct transfer along the coast from the airport to the eastern waterfront." },
+          { title: "Drop-Off", description: "Directly at the hotel on Megalou Alexandrou Avenue." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Waterfront Stays", description: "For visitors who want a Thermaic Gulf-facing hotel rather than a square-based address." },
+          { title: "Business & Leisure Travellers", description: "A comfortable, direct transfer to a long-established landmark hotel." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Thessaloniki",
+        items: [
+          { label: "Thessaloniki", href: "/city/thessaloniki/", description: "See our overview of transfers across Thessaloniki." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to ON Residence", href: "/route/thessaloniki-airport-to-on-residence/", description: "Another waterfront hotel transfer." },
+          { label: "Thessaloniki Airport to Electra Palace", href: "/route/thessaloniki-airport-to-electra-palace/", description: "A central square hotel transfer." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Thessaloniki Airport to Makedonia Palace?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Is Makedonia Palace on the waterfront?", answer: "Yes, it sits on Megalou Alexandrou Avenue with a frontage onto the Thermaic Gulf." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — hotel to airport as well as airport to hotel." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Makedonia Palace Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Makedonia Palace",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το Makedonia Palace, στην ανατολική παραλιακή με θέα στον Θερμαϊκό Κόλπο.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς Makedonia Palace",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → Makedonia Palace",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Makedonia Palace",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το Makedonia Palace, στην ανατολική παραλιακή της πόλης.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς το Makedonia Palace",
+        paragraphs: [
+          "Το Makedonia Palace βρίσκεται στη Λεωφόρο Μεγάλου Αλεξάνδρου, στην ανατολική παραλιακή της Θεσσαλονίκης, με πλήρη θέα στον Θερμαϊκό Κόλπο. Είναι ένα ξενοδοχείο-ορόσημο μεγαλύτερης παράδοσης, ξεχωριστό από το σύμπλεγμα ξενοδοχείων της Πλατείας Αριστοτέλους λόγω της παραλιακής του θέσης πιο μακριά στην ακτή.",
+          "Μια ιδιωτική μεταφορά από το αεροδρόμιο σας μεταφέρει απευθείας στο ξενοδοχείο, μια απλή διαδρομή δεδομένης της θέσης του ίδιου του αεροδρομίου νοτιοανατολικά της πόλης κατά μήκος της ίδιας ακτογραμμής.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια απευθείας μεταφορά κατά μήκος της ακτής από το αεροδρόμιο προς την ανατολική παραλιακή." },
+          { title: "Παράδοση", description: "Απευθείας στο ξενοδοχείο στη Λεωφόρο Μεγάλου Αλεξάνδρου." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Παραλιακή Διαμονή", description: "Για επισκέπτες που θέλουν ξενοδοχείο με θέα στον Θερμαϊκό αντί για διεύθυνση σε πλατεία." },
+          { title: "Επαγγελματικοί & Ψυχαγωγικοί Ταξιδιώτες", description: "Μια άνετη, απευθείας μεταφορά προς ένα ξενοδοχείο-ορόσημο μεγάλης παράδοσης." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Θεσσαλονίκη",
+        items: [
+          { label: "Θεσσαλονίκη", href: "/el/poli/thessaloniki/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλη τη Θεσσαλονίκη." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς ON Residence", href: "/el/diadromi/aerodromio-thessalonikis-on-residence/", description: "Άλλη παραλιακή μεταφορά ξενοδοχείου." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Electra Palace", href: "/el/diadromi/aerodromio-thessalonikis-electra-palace/", description: "Μια κεντρική μεταφορά ξενοδοχείου στην πλατεία." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Θεσσαλονίκης στο Makedonia Palace;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Είναι το Makedonia Palace στην παραλιακή;", answer: "Ναι, βρίσκεται στη Λεωφόρο Μεγάλου Αλεξάνδρου με θέα στον Θερμαϊκό Κόλπο." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Makedonia Palace;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportOnResidence: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to ON Residence Transfer – Private Car",
+        description: "Book a private transfer from Thessaloniki Airport to ON Residence, set in a restored 1920s mansion on the Nikis Avenue waterfront.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to ON Residence",
+      hero: {
+        eyebrow: "Thessaloniki Airport → ON Residence",
+        title: "Thessaloniki Airport to ON Residence Transfer",
+        description: "A direct private transfer from Thessaloniki Airport to ON Residence, on the Nikis Avenue waterfront.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to ON Residence",
+        paragraphs: [
+          "ON Residence occupies a restored 1920s mansion on Leoforos Nikis, Thessaloniki's waterfront promenade, giving it a character distinct from the city's larger hotel towers. Its location puts it within walking distance of the White Tower and the wider waterfront.",
+          "A private transfer from the airport takes you directly to the hotel's entrance, avoiding the need to navigate the city centre with luggage.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A direct transfer from the airport to the Nikis Avenue waterfront." },
+          { title: "Drop-Off", description: "Directly at the hotel on Leoforos Nikis." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Boutique Hotel Stays", description: "For visitors who prefer a smaller, character property over a larger hotel." },
+          { title: "Waterfront Access", description: "Within walking distance of the White Tower and the promenade." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Thessaloniki",
+        items: [
+          { label: "Thessaloniki", href: "/city/thessaloniki/", description: "See our overview of transfers across Thessaloniki." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to Makedonia Palace", href: "/route/thessaloniki-airport-to-makedonia-palace/", description: "Another eastern waterfront hotel transfer." },
+          { label: "Thessaloniki Airport to The Met Hotel", href: "/route/thessaloniki-airport-to-met-hotel/", description: "A boutique-design hotel near the New Harbor." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Thessaloniki Airport to ON Residence?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Is ON Residence within walking distance of the White Tower?", answer: "Yes, it sits on the Nikis Avenue waterfront within walking distance of the White Tower." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — hotel to airport as well as airport to hotel." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to ON Residence Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – ON Residence – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το ON Residence, σε ανακαινισμένο αρχοντικό του 1920 στην παραλιακή Νίκης.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς ON Residence",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → ON Residence",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – ON Residence",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το ON Residence, στην παραλιακή λεωφόρο Νίκης.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς το ON Residence",
+        paragraphs: [
+          "Το ON Residence στεγάζεται σε ανακαινισμένο αρχοντικό του 1920 στη Λεωφόρο Νίκης, την παραλιακή προμενάδα της Θεσσαλονίκης, δίνοντάς του χαρακτήρα διαφορετικό από τους μεγαλύτερους ξενοδοχειακούς πύργους της πόλης. Η θέση του το φέρνει σε απόσταση βαδίσματος από τον Λευκό Πύργο και την ευρύτερη παραλιακή.",
+          "Μια ιδιωτική μεταφορά από το αεροδρόμιο σας μεταφέρει απευθείας στην είσοδο του ξενοδοχείου, αποφεύγοντας την ανάγκη πλοήγησης στο κέντρο της πόλης με αποσκευές.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια απευθείας μεταφορά από το αεροδρόμιο προς την παραλιακή λεωφόρο Νίκης." },
+          { title: "Παράδοση", description: "Απευθείας στο ξενοδοχείο στη Λεωφόρο Νίκης." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Διαμονή σε Boutique Ξενοδοχείο", description: "Για επισκέπτες που προτιμούν μικρότερο κατάλυμα με χαρακτήρα αντί για μεγάλο ξενοδοχείο." },
+          { title: "Πρόσβαση στην Παραλιακή", description: "Σε απόσταση βαδίσματος από τον Λευκό Πύργο και την προμενάδα." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Θεσσαλονίκη",
+        items: [
+          { label: "Θεσσαλονίκη", href: "/el/poli/thessaloniki/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλη τη Θεσσαλονίκη." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Makedonia Palace", href: "/el/diadromi/aerodromio-thessalonikis-makedonia-palace/", description: "Άλλη ανατολική παραλιακή μεταφορά ξενοδοχείου." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς The Met Hotel", href: "/el/diadromi/aerodromio-thessalonikis-met-hotel/", description: "Ένα boutique-design ξενοδοχείο κοντά στο Νέο Λιμάνι." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Θεσσαλονίκης στο ON Residence;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Είναι το ON Residence σε απόσταση βαδίσματος από τον Λευκό Πύργο;", answer: "Ναι, βρίσκεται στην παραλιακή λεωφόρο Νίκης σε απόσταση βαδίσματος από τον Λευκό Πύργο." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – ON Residence;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportMetHotel: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to The Met Hotel Transfer – Private Car",
+        description: "Book a private transfer from Thessaloniki Airport to The Met Hotel, a Design Hotels member near the city's New Harbor.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to The Met Hotel",
+      hero: {
+        eyebrow: "Thessaloniki Airport → The Met Hotel",
+        title: "Thessaloniki Airport to The Met Hotel Transfer",
+        description: "A direct private transfer from Thessaloniki Airport to The Met Hotel, near the city's New Harbor.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to The Met Hotel",
+        paragraphs: [
+          "The Met Hotel sits near Thessaloniki's New Harbor (26is Oktovriou area), a Design Hotels member known for its contemporary, design-led positioning rather than a historic-building angle. It's slightly outside the immediate Aristotelous Square cluster, closer to the port district.",
+          "A private transfer from the airport takes you directly to the hotel, avoiding the need to navigate the city centre with luggage after your flight.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A direct transfer from the airport into the New Harbor area of the city." },
+          { title: "Drop-Off", description: "Directly at the hotel entrance." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Design-Focused Stays", description: "For visitors who prefer a contemporary, design-led hotel." },
+          { title: "Port-Area Access", description: "Convenient for the New Harbor and nearby port district." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Thessaloniki",
+        items: [
+          { label: "Thessaloniki Port", href: "/port/thessaloniki/", description: "See our dedicated port transfer information." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to ON Residence", href: "/route/thessaloniki-airport-to-on-residence/", description: "A waterfront boutique hotel transfer." },
+          { label: "Thessaloniki Airport to Mediterranean Palace", href: "/route/thessaloniki-airport-to-mediterranean-palace/", description: "A central hotel near the Ladadika district." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Thessaloniki Airport to The Met Hotel?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Where is The Met Hotel located?", answer: "It sits near Thessaloniki's New Harbor, close to the 26is Oktovriou area and the port district." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — hotel to airport as well as airport to hotel." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to The Met Hotel Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – The Met Hotel – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το The Met Hotel, μέλος των Design Hotels κοντά στο Νέο Λιμάνι της πόλης.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς The Met Hotel",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → The Met Hotel",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – The Met Hotel",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το The Met Hotel, κοντά στο Νέο Λιμάνι της πόλης.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς το The Met Hotel",
+        paragraphs: [
+          "Το The Met Hotel βρίσκεται κοντά στο Νέο Λιμάνι της Θεσσαλονίκης (περιοχή 26ης Οκτωβρίου), μέλος των Design Hotels γνωστό για τη σύγχρονη, design-led τοποθέτησή του αντί για ιστορικό κτίριο. Βρίσκεται ελαφρώς έξω από το άμεσο σύμπλεγμα της Πλατείας Αριστοτέλους, πιο κοντά στην περιοχή του λιμανιού.",
+          "Μια ιδιωτική μεταφορά από το αεροδρόμιο σας μεταφέρει απευθείας στο ξενοδοχείο, αποφεύγοντας την ανάγκη πλοήγησης στο κέντρο της πόλης με αποσκευές μετά την πτήση σας.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια απευθείας μεταφορά από το αεροδρόμιο προς την περιοχή του Νέου Λιμανιού της πόλης." },
+          { title: "Παράδοση", description: "Απευθείας στην είσοδο του ξενοδοχείου." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Διαμονή με Έμφαση στο Design", description: "Για επισκέπτες που προτιμούν σύγχρονο, design-led ξενοδοχείο." },
+          { title: "Πρόσβαση στην Περιοχή Λιμανιού", description: "Βολικό για το Νέο Λιμάνι και τη γειτονική περιοχή λιμανιού." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Θεσσαλονίκη",
+        items: [
+          { label: "Λιμάνι Θεσσαλονίκης", href: "/el/limani/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς λιμανιού." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς ON Residence", href: "/el/diadromi/aerodromio-thessalonikis-on-residence/", description: "Μια παραλιακή boutique μεταφορά ξενοδοχείου." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Mediterranean Palace", href: "/el/diadromi/aerodromio-thessalonikis-mediterranean-palace/", description: "Ένα κεντρικό ξενοδοχείο κοντά στα Λαδάδικα." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Θεσσαλονίκης στο The Met Hotel;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Πού βρίσκεται το The Met Hotel;", answer: "Βρίσκεται κοντά στο Νέο Λιμάνι της Θεσσαλονίκης, κοντά στην περιοχή της 26ης Οκτωβρίου και το λιμάνι." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – The Met Hotel;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportMediterraneanPalace: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to Mediterranean Palace Transfer",
+        description: "Book a private transfer from Thessaloniki Airport to Mediterranean Palace, next to the historic Ladadika district.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to Mediterranean Palace",
+      hero: {
+        eyebrow: "Thessaloniki Airport → Mediterranean Palace",
+        title: "Thessaloniki Airport to Mediterranean Palace Transfer",
+        description: "A direct private transfer from Thessaloniki Airport to Mediterranean Palace, adjacent to the Ladadika district.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to Mediterranean Palace",
+        paragraphs: [
+          "Mediterranean Palace sits adjacent to Ladadika, Thessaloniki's historic warehouse district turned nightlife and dining quarter, with views over the Thermaic Gulf. It offers a different character from the Aristotelous Square hotels, closer to the port and the old commercial centre.",
+          "A private transfer from the airport takes you directly to the hotel, avoiding the need to navigate the city centre with luggage after your flight.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A direct transfer from the airport into central Thessaloniki, near Ladadika." },
+          { title: "Drop-Off", description: "Directly at the hotel entrance." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Ladadika Nightlife & Dining", description: "For visitors who want easy access to Thessaloniki's historic dining and nightlife district." },
+          { title: "Gulf Views", description: "A hotel with views over the Thermaic Gulf." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Thessaloniki",
+        items: [
+          { label: "Thessaloniki", href: "/city/thessaloniki/", description: "See our overview of transfers across Thessaloniki." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to Electra Palace", href: "/route/thessaloniki-airport-to-electra-palace/", description: "A central square hotel transfer." },
+          { label: "Thessaloniki Airport to Domotel Olympia", href: "/route/thessaloniki-airport-to-domotel-olympia/", description: "A hotel near the Roman Agora archaeological site." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Thessaloniki Airport to Mediterranean Palace?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Is Mediterranean Palace near Ladadika?", answer: "Yes, it sits adjacent to the historic Ladadika district, with views over the Thermaic Gulf." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — hotel to airport as well as airport to hotel." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Mediterranean Palace Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Mediterranean Palace",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το Mediterranean Palace, δίπλα στην ιστορική συνοικία των Λαδάδικων.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς Mediterranean Palace",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → Mediterranean Palace",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Mediterranean Palace",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το Mediterranean Palace, δίπλα στη συνοικία των Λαδάδικων.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς το Mediterranean Palace",
+        paragraphs: [
+          "Το Mediterranean Palace βρίσκεται δίπλα στα Λαδάδικα, την ιστορική συνοικία αποθηκών της Θεσσαλονίκης που έχει μετατραπεί σε συνοικία διασκέδασης και εστίασης, με θέα στον Θερμαϊκό Κόλπο. Προσφέρει διαφορετικό χαρακτήρα από τα ξενοδοχεία της Πλατείας Αριστοτέλους, πιο κοντά στο λιμάνι και το παλιό εμπορικό κέντρο.",
+          "Μια ιδιωτική μεταφορά από το αεροδρόμιο σας μεταφέρει απευθείας στο ξενοδοχείο, αποφεύγοντας την ανάγκη πλοήγησης στο κέντρο της πόλης με αποσκευές μετά την πτήση σας.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια απευθείας μεταφορά από το αεροδρόμιο προς το κέντρο της Θεσσαλονίκης, κοντά στα Λαδάδικα." },
+          { title: "Παράδοση", description: "Απευθείας στην είσοδο του ξενοδοχείου." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Διασκέδαση & Εστίαση στα Λαδάδικα", description: "Για επισκέπτες που θέλουν εύκολη πρόσβαση στην ιστορική συνοικία εστίασης και διασκέδασης της Θεσσαλονίκης." },
+          { title: "Θέα στον Κόλπο", description: "Ένα ξενοδοχείο με θέα στον Θερμαϊκό Κόλπο." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Θεσσαλονίκη",
+        items: [
+          { label: "Θεσσαλονίκη", href: "/el/poli/thessaloniki/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλη τη Θεσσαλονίκη." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Electra Palace", href: "/el/diadromi/aerodromio-thessalonikis-electra-palace/", description: "Μια κεντρική μεταφορά ξενοδοχείου στην πλατεία." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Domotel Olympia", href: "/el/diadromi/aerodromio-thessalonikis-domotel-olympia/", description: "Ένα ξενοδοχείο κοντά στη Ρωμαϊκή Αγορά." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Θεσσαλονίκης στο Mediterranean Palace;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Είναι το Mediterranean Palace κοντά στα Λαδάδικα;", answer: "Ναι, βρίσκεται δίπλα στην ιστορική συνοικία των Λαδάδικων, με θέα στον Θερμαϊκό Κόλπο." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Mediterranean Palace;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportDomotelOlympia: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to Domotel Olympia Transfer",
+        description: "Book a private transfer from Thessaloniki Airport to Domotel Olympia, adjacent to the Roman Agora in the historic centre.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to Domotel Olympia",
+      hero: {
+        eyebrow: "Thessaloniki Airport → Domotel Olympia",
+        title: "Thessaloniki Airport to Domotel Olympia Transfer",
+        description: "A direct private transfer from Thessaloniki Airport to Domotel Olympia, next to the Roman Agora archaeological site.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to Domotel Olympia",
+        paragraphs: [
+          "Domotel Olympia sits on Olympou Street in Thessaloniki's historic centre, directly adjacent to the Roman Agora archaeological site. It's a genuinely different location from the waterfront hotel cluster, appealing to visitors who want to be close to the city's ancient and Byzantine landmarks.",
+          "A private transfer from the airport takes you directly to the hotel, avoiding the need to navigate the historic centre's narrower streets with luggage.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A direct transfer from the airport into Thessaloniki's historic centre." },
+          { title: "Drop-Off", description: "Directly at the hotel on Olympou Street, next to the Roman Agora." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "History & Archaeology Visitors", description: "For visitors who want to be close to the Roman Agora and the historic centre's landmarks." },
+          { title: "Historic Centre Stays", description: "A different character from the waterfront hotel area." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Thessaloniki",
+        items: [
+          { label: "Thessaloniki", href: "/city/thessaloniki/", description: "See our overview of transfers across Thessaloniki." },
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to Mediterranean Palace", href: "/route/thessaloniki-airport-to-mediterranean-palace/", description: "A hotel near Ladadika, closer to the port." },
+          { label: "Thessaloniki Airport to Electra Palace", href: "/route/thessaloniki-airport-to-electra-palace/", description: "A central square hotel transfer." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Thessaloniki Airport to Domotel Olympia?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Is Domotel Olympia near the Roman Agora?", answer: "Yes, it sits directly adjacent to the Roman Agora archaeological site in the historic centre." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — hotel to airport as well as airport to hotel." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Domotel Olympia Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Domotel Olympia",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το Domotel Olympia, δίπλα στη Ρωμαϊκή Αγορά στο ιστορικό κέντρο.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς Domotel Olympia",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → Domotel Olympia",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Domotel Olympia",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το Domotel Olympia, δίπλα στη Ρωμαϊκή Αγορά.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς το Domotel Olympia",
+        paragraphs: [
+          "Το Domotel Olympia βρίσκεται στην οδό Ολύμπου, στο ιστορικό κέντρο της Θεσσαλονίκης, ακριβώς δίπλα στον αρχαιολογικό χώρο της Ρωμαϊκής Αγοράς. Είναι μια πραγματικά διαφορετική τοποθεσία από το σύμπλεγμα παραλιακών ξενοδοχείων, ελκυστική για επισκέπτες που θέλουν να είναι κοντά στα αρχαία και βυζαντινά μνημεία της πόλης.",
+          "Μια ιδιωτική μεταφορά από το αεροδρόμιο σας μεταφέρει απευθείας στο ξενοδοχείο, αποφεύγοντας την ανάγκη πλοήγησης στους στενότερους δρόμους του ιστορικού κέντρου με αποσκευές.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια απευθείας μεταφορά από το αεροδρόμιο προς το ιστορικό κέντρο της Θεσσαλονίκης." },
+          { title: "Παράδοση", description: "Απευθείας στο ξενοδοχείο στην οδό Ολύμπου, δίπλα στη Ρωμαϊκή Αγορά." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Επισκέπτες Ιστορίας & Αρχαιολογίας", description: "Για επισκέπτες που θέλουν να είναι κοντά στη Ρωμαϊκή Αγορά και τα μνημεία του ιστορικού κέντρου." },
+          { title: "Διαμονή στο Ιστορικό Κέντρο", description: "Διαφορετικός χαρακτήρας από την παραλιακή περιοχή ξενοδοχείων." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Θεσσαλονίκη",
+        items: [
+          { label: "Θεσσαλονίκη", href: "/el/poli/thessaloniki/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλη τη Θεσσαλονίκη." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Mediterranean Palace", href: "/el/diadromi/aerodromio-thessalonikis-mediterranean-palace/", description: "Ένα ξενοδοχείο κοντά στα Λαδάδικα, πιο κοντά στο λιμάνι." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Electra Palace", href: "/el/diadromi/aerodromio-thessalonikis-electra-palace/", description: "Μια κεντρική μεταφορά ξενοδοχείου στην πλατεία." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Θεσσαλονίκης στο Domotel Olympia;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Είναι το Domotel Olympia κοντά στη Ρωμαϊκή Αγορά;", answer: "Ναι, βρίσκεται ακριβώς δίπλα στον αρχαιολογικό χώρο της Ρωμαϊκής Αγοράς στο ιστορικό κέντρο." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Domotel Olympia;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeThessalonikiAirportHyattRegency: {
+    en: {
+      meta: {
+        title: "Thessaloniki Airport to Hyatt Regency Transfer – Private Car",
+        description: "Book a private transfer from Thessaloniki Airport to Hyatt Regency Thessaloniki, in Thermi near the airport itself.",
+      },
+      breadcrumbLabel: "Thessaloniki Airport to Hyatt Regency",
+      hero: {
+        eyebrow: "Thessaloniki Airport → Hyatt Regency",
+        title: "Thessaloniki Airport to Hyatt Regency Transfer",
+        description: "A short private transfer from Thessaloniki Airport to Hyatt Regency Thessaloniki, one of the closest 5-star hotels to the airport.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Thessaloniki Airport to Hyatt Regency",
+        paragraphs: [
+          "Hyatt Regency Thessaloniki is located in Thermi, close to the airport itself rather than in the city centre — a genuinely different story from the other hotels on our list. It suits visitors attending events at the hotel's own convention centre, or anyone who prefers to stay near the airport rather than travelling into Thessaloniki.",
+          "Because of the short distance involved, this is one of the quickest transfers on our Thessaloniki network, though a private vehicle is still the most comfortable way to cover it with luggage.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "One of the shortest hotel transfers from the airport, given the hotel's proximity in Thermi." },
+          { title: "Route", description: "A short, direct transfer without entering central Thessaloniki." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Event or Conference Details", description: "Mention if you're attending an event at the hotel's convention centre." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Conference & Event Attendees", description: "For visitors attending events at the hotel's own convention centre." },
+          { title: "Short Layovers", description: "A quick, comfortable transfer for those who prefer to stay near the airport." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Thessaloniki",
+        items: [
+          { label: "Thessaloniki Airport", href: "/airport/thessaloniki-airport/", description: "See our dedicated airport transfer information." },
+          { label: "Thessaloniki", href: "/city/thessaloniki/", description: "See our overview of transfers into the city centre." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Thessaloniki Airport to Electra Palace", href: "/route/thessaloniki-airport-to-electra-palace/", description: "For visitors heading into the city centre instead." },
+          { label: "Thessaloniki Airport to Makedonia Palace", href: "/route/thessaloniki-airport-to-makedonia-palace/", description: "A waterfront hotel further into the city." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "Is Hyatt Regency Thessaloniki close to the airport?", answer: "Yes, it's located in Thermi, close to the airport rather than in the city centre." },
+          { question: "How long does the transfer take?", answer: "It's one of the shortest hotel transfers on our Thessaloniki network, given the short distance involved." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — hotel to airport as well as airport to hotel." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Hyatt Regency Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Hyatt Regency – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το Hyatt Regency Θεσσαλονίκης, στη Θέρμη κοντά στο ίδιο το αεροδρόμιο.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Θεσσαλονίκης προς Hyatt Regency",
+      hero: {
+        eyebrow: "Αεροδρόμιο Θεσσαλονίκης → Hyatt Regency",
+        title: "Μεταφορά Αεροδρόμιο Θεσσαλονίκης – Hyatt Regency",
+        description: "Μια σύντομη ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το Hyatt Regency, ένα από τα πλησιέστερα 5-star ξενοδοχεία στο αεροδρόμιο.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Θεσσαλονίκης προς το Hyatt Regency",
+        paragraphs: [
+          "Το Hyatt Regency Θεσσαλονίκης βρίσκεται στη Θέρμη, κοντά στο ίδιο το αεροδρόμιο και όχι στο κέντρο της πόλης — μια πραγματικά διαφορετική περίπτωση από τα υπόλοιπα ξενοδοχεία της λίστας μας. Ταιριάζει σε επισκέπτες που παρακολουθούν εκδηλώσεις στο δικό του συνεδριακό κέντρο, ή σε όποιον προτιμά να μείνει κοντά στο αεροδρόμιο αντί να ταξιδέψει προς τη Θεσσαλονίκη.",
+          "Λόγω της μικρής απόστασης, αυτή είναι μία από τις ταχύτερες μεταφορές στο δίκτυό μας στη Θεσσαλονίκη, αν και ένα ιδιωτικό όχημα παραμένει ο πιο άνετος τρόπος να την καλύψετε με αποσκευές.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μία από τις συντομότερες μεταφορές ξενοδοχείου από το αεροδρόμιο, δεδομένης της εγγύτητας του ξενοδοχείου στη Θέρμη." },
+          { title: "Διαδρομή", description: "Μια σύντομη, απευθείας μεταφορά χωρίς είσοδο στο κέντρο της Θεσσαλονίκης." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Στοιχεία Εκδήλωσης ή Συνεδρίου", description: "Αναφέρετε αν παρακολουθείτε εκδήλωση στο συνεδριακό κέντρο του ξενοδοχείου." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Συμμετέχοντες σε Συνέδρια & Εκδηλώσεις", description: "Για επισκέπτες που παρακολουθούν εκδηλώσεις στο συνεδριακό κέντρο του ξενοδοχείου." },
+          { title: "Σύντομες Στάσεις", description: "Μια γρήγορη, άνετη μεταφορά για όσους προτιμούν να μείνουν κοντά στο αεροδρόμιο." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Θεσσαλονίκη",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης", href: "/el/aerodromio/thessaloniki/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+          { label: "Θεσσαλονίκη", href: "/el/poli/thessaloniki/", description: "Δείτε την επισκόπησή μας για μεταφορές προς το κέντρο της πόλης." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Electra Palace", href: "/el/diadromi/aerodromio-thessalonikis-electra-palace/", description: "Για επισκέπτες που κατευθύνονται προς το κέντρο της πόλης." },
+          { label: "Αεροδρόμιο Θεσσαλονίκης προς Makedonia Palace", href: "/el/diadromi/aerodromio-thessalonikis-makedonia-palace/", description: "Ένα παραλιακό ξενοδοχείο πιο μέσα στην πόλη." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Είναι το Hyatt Regency Θεσσαλονίκης κοντά στο αεροδρόμιο;", answer: "Ναι, βρίσκεται στη Θέρμη, κοντά στο αεροδρόμιο και όχι στο κέντρο της πόλης." },
+          { question: "Πόσο διαρκεί η μεταφορά;", answer: "Είναι μία από τις συντομότερες μεταφορές ξενοδοχείου στο δίκτυό μας στη Θεσσαλονίκη, δεδομένης της μικρής απόστασης." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Hyatt Regency;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
         primaryLabel: "Κλείστε αυτή τη Διαδρομή",
         secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
       },

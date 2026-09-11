@@ -252,12 +252,18 @@ export const cityContent: Record<CitySlug, Record<Locale, CityPageContent>> = {
         items: [
           { label: "Thessaloniki to Halkidiki", href: "/route/thessaloniki-to-halkidiki/", description: "A private transfer to the beaches of the Halkidiki peninsula." },
           { label: "Athens to Thessaloniki", href: "/route/athens-to-thessaloniki/", description: "A long-distance private transfer connecting Greece's two largest cities." },
+          { label: "Thessaloniki to Meteora", href: "/route/thessaloniki-to-meteora/", description: "A long-distance transfer to the rock-pillar monasteries of Meteora." },
+          { label: "Thessaloniki to Mount Olympus", href: "/route/thessaloniki-to-mount-olympus/", description: "A day trip to Litochoro, the gateway town at the foot of Mount Olympus." },
+          { label: "Thessaloniki to Vergina & Pella", href: "/route/thessaloniki-to-vergina-pella/", description: "A day trip to the ancient Macedonian sites of Vergina and Pella." },
+          { label: "Thessaloniki to Kavala", href: "/route/thessaloniki-to-kavala/", description: "A long-distance transfer to the port city of Kavala." },
         ],
       },
       nearbyDestinations: {
         eyebrow: "Nearby Destinations",
         title: "Destinations Reachable From Thessaloniki",
         items: [
+          { label: "Halkidiki", href: "/destination/halkidiki/", description: "The three-peninsula coastal region east of Thessaloniki, including Kassandra and Sithonia." },
+          { label: "Thessaloniki Day Trips", href: "/thessaloniki-day-trips/", description: "See our full range of private day trips from Thessaloniki." },
           { label: "Explore All Destinations", href: "/destinations/", description: "See our full directory of destinations, airports, ports and routes across Greece." },
         ],
       },
@@ -268,6 +274,7 @@ export const cityContent: Record<CitySlug, Record<Locale, CityPageContent>> = {
           { question: "Can I book a private transfer from Thessaloniki Airport to my hotel?", answer: "Yes, airport-to-hotel transfers in Thessaloniki are one of our most common requests." },
           { question: "Can I travel from Thessaloniki directly to Halkidiki?", answer: "Yes, private transfers from Thessaloniki to Halkidiki can be requested through the quote form." },
           { question: "Can I book a long-distance transfer from Thessaloniki to Athens?", answer: "Yes, this long-distance private transfer can be arranged — describe your journey when requesting a quote." },
+          { question: "Do you offer day trips from Thessaloniki?", answer: "Yes, see our Thessaloniki day trips page for private excursions to Meteora, Mount Olympus, Vergina, Pella and Kavala." },
           { question: "Can you arrange a transfer for a group visiting Thessaloniki?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote so a suitable vehicle can be arranged." },
           { question: "What information do I need to provide when booking a transfer in Thessaloniki?", answer: "Your pickup location, destination, travel date and time, and passenger and luggage numbers." },
         ],
@@ -325,12 +332,18 @@ export const cityContent: Record<CitySlug, Record<Locale, CityPageContent>> = {
         items: [
           { label: "Θεσσαλονίκη προς Χαλκιδική", href: "/el/diadromi/thessaloniki-chalkidiki/", description: "Ιδιωτική μεταφορά προς τις παραλίες της χερσονήσου της Χαλκιδικής." },
           { label: "Αθήνα προς Θεσσαλονίκη", href: "/el/diadromi/athina-thessaloniki/", description: "Ιδιωτική μεταφορά μεγάλης απόστασης που συνδέει τις δύο μεγαλύτερες πόλεις της Ελλάδας." },
+          { label: "Θεσσαλονίκη προς Μετέωρα", href: "/el/diadromi/thessaloniki-meteora/", description: "Μια μεταφορά μεγάλης απόστασης προς τα μοναστήρια πάνω σε βράχους των Μετεώρων." },
+          { label: "Θεσσαλονίκη προς Όλυμπο", href: "/el/diadromi/thessaloniki-olympos/", description: "Μια εκδρομή προς το Λιτόχωρο, την πύλη-πόλη στους πρόποδες του Ολύμπου." },
+          { label: "Θεσσαλονίκη προς Βεργίνα & Πέλλα", href: "/el/diadromi/thessaloniki-vergina-pella/", description: "Μια εκδρομή προς τους αρχαίους μακεδονικούς χώρους της Βεργίνας και της Πέλλας." },
+          { label: "Θεσσαλονίκη προς Καβάλα", href: "/el/diadromi/thessaloniki-kavala/", description: "Μια μεταφορά μεγάλης απόστασης προς τη λιμανιού πόλη της Καβάλας." },
         ],
       },
       nearbyDestinations: {
         eyebrow: "Κοντινοί Προορισμοί",
         title: "Προορισμοί Προσβάσιμοι από τη Θεσσαλονίκη",
         items: [
+          { label: "Χαλκιδική", href: "/el/proorismos/chalkidiki/", description: "Η τρίπτυχη παράκτια περιοχή ανατολικά της Θεσσαλονίκης, με Κασσάνδρα και Σιθωνία." },
+          { label: "Ημερήσιες Εκδρομές από τη Θεσσαλονίκη", href: "/el/idiotikes-ekdromes-thessaloniki/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας από τη Θεσσαλονίκη." },
           { label: "Δείτε Όλους τους Προορισμούς", href: "/el/proorismoi/", description: "Δείτε τον πλήρη κατάλογο προορισμών, αεροδρομίων, λιμανιών και διαδρομών σε όλη την Ελλάδα." },
         ],
       },
@@ -341,6 +354,7 @@ export const cityContent: Record<CitySlug, Record<Locale, CityPageContent>> = {
           { question: "Μπορώ να κλείσω ιδιωτική μεταφορά από το Αεροδρόμιο Θεσσαλονίκης προς το ξενοδοχείο μου;", answer: "Ναι, οι μεταφορές από το αεροδρόμιο προς το ξενοδοχείο στη Θεσσαλονίκη είναι από τα πιο συνηθισμένα αιτήματά μας." },
           { question: "Μπορώ να ταξιδέψω από τη Θεσσαλονίκη απευθείας προς τη Χαλκιδική;", answer: "Ναι, ιδιωτικές μεταφορές από τη Θεσσαλονίκη προς τη Χαλκιδική μπορούν να ζητηθούν μέσω της φόρμας προσφοράς." },
           { question: "Μπορώ να κλείσω μεταφορά μεγάλης απόστασης από τη Θεσσαλονίκη προς την Αθήνα;", answer: "Ναι, αυτή η μεταφορά μεγάλης απόστασης μπορεί να οργανωθεί — περιγράψτε το ταξίδι σας κατά την αίτηση προσφοράς." },
+          { question: "Προσφέρετε ημερήσιες εκδρομές από τη Θεσσαλονίκη;", answer: "Ναι, δείτε τη σελίδα ημερήσιων εκδρομών μας από τη Θεσσαλονίκη για ιδιωτικές εκδρομές προς Μετέωρα, Όλυμπο, Βεργίνα, Πέλλα και Καβάλα." },
           { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που επισκέπτεται τη Θεσσαλονίκη;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
           { question: "Ποιες πληροφορίες χρειάζεται να δώσω για μια μεταφορά στη Θεσσαλονίκη;", answer: "Το σημείο παραλαβής, τον προορισμό, την ημερομηνία και ώρα ταξιδιού, και τον αριθμό επιβατών και αποσκευών." },
         ],

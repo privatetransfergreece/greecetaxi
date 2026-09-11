@@ -55,7 +55,7 @@ export default function ThessalonikiPortPageEl() {
       <ServiceFeatures content={content.transferService} icons={[CalendarCheck, Clock, DoorOpen, Repeat]} />
       <RelatedLinks eyebrow={content.connections.eyebrow} title={content.connections.title} items={content.connections.items.map((item, i) => ({ ...item, icon: [PlaneTakeoff, Building2][i] }))} />
       <ServiceOverview content={content.cruiseFerryContext} />
-      <RelatedLinks eyebrow={content.popularDestinations.eyebrow} title={content.popularDestinations.title} items={content.popularDestinations.items.map((item, i) => ({ ...item, icon: [Route][i] }))} />
+      <RelatedLinks eyebrow={content.popularDestinations.eyebrow} title={content.popularDestinations.title} items={content.popularDestinations.items.map((item, i) => ({ ...item, icon: [Route, Route][i] }))} />
       <ServiceFeatures content={content.bookingInfo} icons={[Ship, MapPin, Users, MessageCircle]} />
       <ServiceFaq content={content.faq} />
     </LocationPage>
