@@ -14,16 +14,18 @@ type RelatedLinkItem = {
 function RelatedLinks({
   eyebrow,
   title,
+  description,
   items,
 }: {
   eyebrow: string
   title: string
+  description?: string
   items: RelatedLinkItem[]
 }) {
   return (
     <section className="bg-ivory py-20 sm:py-24">
       <Container className="flex flex-col gap-10">
-        <SectionHeading eyebrow={eyebrow} title={title} className="max-w-2xl" />
+        <SectionHeading eyebrow={eyebrow} title={title} description={description} className="max-w-2xl" />
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map(({ label, href, description, icon: Icon }) => (

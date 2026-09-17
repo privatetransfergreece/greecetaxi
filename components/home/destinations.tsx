@@ -13,7 +13,7 @@ const destinationMeta: { pageKey: PageKey; image: string }[] = [
   { pageKey: "destinationSantorini", image: "/destinations/santorini.webp" },
   { pageKey: "destinationMykonos", image: "/destinations/mykonos.webp" },
   { pageKey: "cityThessaloniki", image: "/destinations/thessaloniki.webp" },
-  { pageKey: "heraklionAirport", image: "/destinations/heraklion.webp" },
+  { pageKey: "cityHeraklion", image: "/destinations/heraklion.webp" },
   { pageKey: "destinationRhodes", image: "/destinations/rhodes.webp" },
 ]
 

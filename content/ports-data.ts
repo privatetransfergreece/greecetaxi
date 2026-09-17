@@ -10,6 +10,7 @@ export type PortSlug =
   | "portThessaloniki"
   | "portHeraklion"
   | "portPatras"
+  | "portSouda"
 
 export type LinkSection = { eyebrow: string; title: string; items: Omit<RelatedLinkItem, "icon">[] }
 export type ProseSection = { eyebrow: string; title: string; paragraphs: string[] }
@@ -716,7 +717,8 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         eyebrow: "Airport & Region Connections",
         title: "Airport and Region Connections",
         items: [
-          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "The port sits close to Heraklion Airport, useful for flight-to-ferry connections." },
+          { label: "Heraklion Airport to Port", href: "/route/heraklion-airport-to-port/", description: "A dedicated route page for flight-to-ferry connections between the airport and the port." },
+          { label: "Heraklion City Centre", href: "/city/heraklion/", description: "Continue your journey directly to a hotel or address in Heraklion." },
           { label: "Explore Crete", href: "/region/crete/", description: "See our regional overview of transportation across Crete." },
         ],
       },
@@ -789,7 +791,8 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
         eyebrow: "Συνδέσεις Αεροδρομίου & Περιοχής",
         title: "Συνδέσεις με Αεροδρόμιο και Περιοχή",
         items: [
-          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Το λιμάνι βρίσκεται κοντά στο Αεροδρόμιο Ηρακλείου, χρήσιμο για συνδέσεις πτήσης-ferry." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Λιμάνι", href: "/el/diadromi/aerodromio-irakleiou-limani/", description: "Ειδική σελίδα διαδρομής για συνδέσεις πτήσης-ferry μεταξύ αεροδρομίου και λιμανιού." },
+          { label: "Κέντρο Ηρακλείου", href: "/el/poli/irakleio/", description: "Συνεχίστε το ταξίδι σας απευθείας προς ξενοδοχείο ή διεύθυνση στο Ηράκλειο." },
           { label: "Εξερευνήστε την Κρήτη", href: "/el/periochi/kriti/", description: "Δείτε τη γενική μας επισκόπηση μεταφορών σε όλη την Κρήτη." },
         ],
       },
@@ -968,6 +971,155 @@ export const portContent: Record<PortSlug, Record<Locale, PortPageContent>> = {
       },
       cta: {
         heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στο Λιμάνι της Πάτρας;",
+        description: "Πείτε μας τα στοιχεία απόπλου, τον προορισμό και τον αριθμό επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  portSouda: {
+    en: {
+      meta: {
+        title: "Souda Port Transfers – Private Taxi in Western Crete",
+        description:
+          "Book a private transfer to or from Souda Port, the ferry port serving Chania and western Crete. Request a quote for your journey.",
+      },
+      breadcrumbLabel: "Souda Port",
+      hero: {
+        eyebrow: "Port of Souda",
+        title: "Private Transfers to Souda Port",
+        description: "Book a private transfer to or from Souda Port, a short distance from Chania, connecting western Crete with Piraeus by ferry.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Overview",
+        title: "About Souda Port",
+        paragraphs: [
+          "Souda Port is the ferry port serving Chania and western Crete, located a short distance east of Chania town itself rather than within it. It provides a ferry connection to Piraeus and also receives occasional cruise calls.",
+          "A private transfer connects Souda Port directly with Chania town, Chania Airport nearby, or your accommodation elsewhere in western Crete, without relying on public transport after disembarking.",
+        ],
+      },
+      transferService: {
+        eyebrow: "What's Included",
+        title: "Private Souda Port Transfer",
+        items: [
+          { title: "Embarkation & Disembarkation", description: "Transfers can be arranged for your arrival at or departure from the port." },
+          { title: "Timed Around Your Sailing", description: "Pickup is planned around your actual embarkation or disembarkation time." },
+          { title: "Door-to-Door Service", description: "Direct transfers between the port and your exact hotel, address or destination." },
+          { title: "Private, Not Shared", description: "Your vehicle is booked exclusively for you and your group." },
+        ],
+      },
+      connections: {
+        eyebrow: "Airport & City Connections",
+        title: "Airport and City Connections",
+        items: [
+          { label: "Chania Airport", href: "/airport/chania-airport/", description: "Souda Port sits close to Chania Airport, useful for flight-to-ferry connections." },
+          { label: "Chania City Centre", href: "/city/chania/", description: "Continue your journey directly to a hotel or address in Chania." },
+        ],
+      },
+      cruiseFerryContext: {
+        eyebrow: "Ferry & Cruise Travel",
+        title: "Ferry and Cruise Passengers",
+        paragraphs: [
+          "Souda Port's main service is the ferry connection to and from Piraeus, alongside occasional cruise calls. Share your line and sailing time when requesting a quote so your pickup can be planned around it.",
+          "Exact meeting point details are confirmed as part of your booking rather than published generally.",
+        ],
+      },
+      popularDestinations: {
+        eyebrow: "Onward Travel",
+        title: "Continue Your Journey From Souda",
+        items: [
+          { label: "Rethymno", href: "/route/chania-airport-to-rethymno/", description: "Continue east toward Rethymno, roughly midway to Heraklion." },
+        ],
+      },
+      bookingInfo: bookingInfoEn,
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "Is Souda Port the same as Chania?", answer: "No, Souda is a separate port town a short distance east of Chania's old town, though the two are commonly grouped together for travel purposes." },
+          { question: "Can I book a transfer from Chania Airport to Souda Port?", answer: "Yes, this short transfer can be arranged around your sailing time." },
+          { question: "Can you time my transfer around my ferry to or from Piraeus?", answer: "Yes, share your embarkation or disembarkation time when requesting a quote." },
+          { question: "What information should I provide for a port transfer?", answer: "Your ferry or cruise line, sailing time, onward destination, and passenger and luggage numbers." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Souda Port Transfer?",
+        description: "Tell us your sailing details, destination and passenger numbers, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορές στο Λιμάνι της Σούδας – Ιδιωτικό Ταξί στη Δυτική Κρήτη",
+        description:
+          "Κλείστε ιδιωτική μεταφορά από ή προς το Λιμάνι της Σούδας, το λιμάνι ferry που εξυπηρετεί τα Χανιά και τη δυτική Κρήτη. Ζητήστε προσφορά.",
+      },
+      breadcrumbLabel: "Λιμάνι Σούδας",
+      hero: {
+        eyebrow: "Λιμάνι Σούδας",
+        title: "Ιδιωτικές Μεταφορές στο Λιμάνι της Σούδας",
+        description: "Κλείστε ιδιωτική μεταφορά από ή προς το Λιμάνι της Σούδας, σε μικρή απόσταση από τα Χανιά, με σύνδεση ferry προς τον Πειραιά.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση",
+        title: "Σχετικά με το Λιμάνι της Σούδας",
+        paragraphs: [
+          "Το Λιμάνι της Σούδας είναι το λιμάνι ferry που εξυπηρετεί τα Χανιά και τη δυτική Κρήτη, βρίσκεται σε μικρή απόσταση ανατολικά της πόλης των Χανίων και όχι μέσα σε αυτή. Παρέχει σύνδεση ferry προς τον Πειραιά και δέχεται περιστασιακά κρουαζιέρες.",
+          "Μια ιδιωτική μεταφορά συνδέει το Λιμάνι της Σούδας απευθείας με την πόλη των Χανίων, το κοντινό Αεροδρόμιο Χανίων, ή το κατάλυμά σας αλλού στη δυτική Κρήτη, χωρίς να εξαρτάστε από τα μέσα μαζικής μεταφοράς μετά την αποβίβαση.",
+        ],
+      },
+      transferService: {
+        eyebrow: "Τι Περιλαμβάνει",
+        title: "Ιδιωτική Μεταφορά στο Λιμάνι της Σούδας",
+        items: [
+          { title: "Επιβίβαση & Αποβίβαση", description: "Οι μεταφορές μπορούν να οργανωθούν τόσο για την άφιξή σας όσο και για την αναχώρησή σας από το λιμάνι." },
+          { title: "Προσαρμοσμένο στον Απόπλου σας", description: "Η παραλαβή σχεδιάζεται σύμφωνα με την πραγματική ώρα επιβίβασης ή αποβίβασής σας." },
+          { title: "Υπηρεσία Από Πόρτα σε Πόρτα", description: "Απευθείας μεταφορές μεταξύ του λιμανιού και του ακριβούς ξενοδοχείου, διεύθυνσης ή προορισμού σας." },
+          { title: "Ιδιωτικό, Όχι Κοινόχρηστο", description: "Το όχημά σας κλείνεται αποκλειστικά για εσάς και την ομάδα σας." },
+        ],
+      },
+      connections: {
+        eyebrow: "Συνδέσεις Αεροδρομίου & Πόλης",
+        title: "Συνδέσεις με Αεροδρόμιο και Πόλη",
+        items: [
+          { label: "Αεροδρόμιο Χανίων", href: "/el/aerodromio/chania/", description: "Το Λιμάνι της Σούδας βρίσκεται κοντά στο Αεροδρόμιο Χανίων, χρήσιμο για συνδέσεις πτήσης-ferry." },
+          { label: "Κέντρο Χανίων", href: "/el/poli/chania/", description: "Συνεχίστε το ταξίδι σας απευθείας προς ξενοδοχείο ή διεύθυνση στα Χανιά." },
+        ],
+      },
+      cruiseFerryContext: {
+        eyebrow: "Ταξίδι με Ferry & Κρουαζιέρα",
+        title: "Επιβάτες Ferry και Κρουαζιέρας",
+        paragraphs: [
+          "Η κύρια υπηρεσία του Λιμανιού της Σούδας είναι η σύνδεση ferry προς και από τον Πειραιά, μαζί με περιστασιακές κρουαζιέρες. Δώστε μας την εταιρεία και την ώρα απόπλου κατά την αίτηση προσφοράς ώστε η παραλαβή σας να σχεδιαστεί αναλόγως.",
+          "Οι ακριβείς λεπτομέρειες σημείου συνάντησης επιβεβαιώνονται ως μέρος της κράτησής σας αντί να δημοσιεύονται γενικά.",
+        ],
+      },
+      popularDestinations: {
+        eyebrow: "Συνέχεια Ταξιδιού",
+        title: "Συνεχίστε το Ταξίδι σας από τη Σούδα",
+        items: [
+          { label: "Ρέθυμνο", href: "/el/diadromi/aerodromio-chanion-rethymno/", description: "Συνεχίστε ανατολικά προς το Ρέθυμνο, περίπου στη μέση της διαδρομής προς το Ηράκλειο." },
+        ],
+      },
+      bookingInfo: bookingInfoEl,
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Είναι το Λιμάνι της Σούδας το ίδιο με τα Χανιά;", answer: "Όχι, η Σούδα είναι ξεχωριστή πόλη-λιμάνι σε μικρή απόσταση ανατολικά της παλιάς πόλης των Χανίων, αν και οι δύο συχνά ομαδοποιούνται για ταξιδιωτικούς σκοπούς." },
+          { question: "Μπορώ να κλείσω μεταφορά από το Αεροδρόμιο Χανίων προς το Λιμάνι της Σούδας;", answer: "Ναι, αυτή η σύντομη μεταφορά μπορεί να οργανωθεί σύμφωνα με την ώρα απόπλου σας." },
+          { question: "Μπορείτε να προσαρμόσετε τη μεταφορά μου στο ferry μου προς ή από τον Πειραιά;", answer: "Ναι, δώστε μας την ώρα επιβίβασης ή αποβίβασής σας κατά την αίτηση προσφοράς." },
+          { question: "Ποιες πληροφορίες πρέπει να δώσω για μεταφορά σε λιμάνι;", answer: "Την εταιρεία ferry ή κρουαζιέρας, την ώρα απόπλου, τον επόμενο προορισμό, και τον αριθμό επιβατών και αποσκευών." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στο Λιμάνι της Σούδας;",
         description: "Πείτε μας τα στοιχεία απόπλου, τον προορισμό και τον αριθμό επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
         primaryLabel: "Κλείστε τη Μεταφορά σας",
         secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",

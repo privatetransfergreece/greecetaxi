@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
-import { LegalPageLayout, LegalNote } from "@/components/legal/legal-page-layout";
-import { localizedAlternates } from "@/lib/i18n/routes";
+import { LegalPageLayout } from "@/components/legal/legal-page-layout";
+import { localizedAlternates, pathFor } from "@/lib/i18n/routes";
 import { siteConfig } from "@/lib/site-config";
 
 const title = `Terms and Conditions | ${siteConfig.name} Greece Private Transfers`;
 const description = `Read the Terms and Conditions governing use of this website and the booking of private taxi and transfer services with ${siteConfig.name} in Greece.`;
-const lastUpdated = "[Effective Date]";
+const lastUpdated = "September 17, 2026";
 
 export const metadata: Metadata = {
   title: {
@@ -127,11 +128,13 @@ export default function TermsAndConditionsPage() {
                 process. Please review the pricing and payment details
                 provided to you before confirming a booking.
               </p>
-              <LegalNote>
-                This section should be completed with the business&apos;s
-                actual accepted payment methods, any deposit requirements,
-                and applicable VAT treatment before publishing.
-              </LegalNote>
+              <p>
+                The accepted payment method for your transfer will be
+                confirmed to you during the quote or booking process.
+              </p>
+              {/* TODO (business owner): confirm here the actual accepted
+                  payment methods, any deposit requirements, and applicable
+                  VAT treatment once finalised, then update this section. */}
             </>
           ),
         },
@@ -158,14 +161,13 @@ export default function TermsAndConditionsPage() {
                 cancel a booking, please contact us as soon as possible.
               </p>
               <p>
-                [Cancellation and refund terms will depend on the confirmed
-                booking and applicable booking policy.]
+                Cancellation and refund terms depend on your confirmed
+                booking and will be communicated to you at the time your
+                booking is confirmed.
               </p>
-              <LegalNote>
-                This section should be completed with the business&apos;s
-                specific cancellation deadlines and refund terms before
-                publishing.
-              </LegalNote>
+              {/* TODO (business owner): once a standard cancellation window
+                  and refund policy is finalised, state the specific
+                  deadlines and refund terms here. */}
             </>
           ),
         },
@@ -260,13 +262,10 @@ export default function TermsAndConditionsPage() {
                 negligence, fraud, or any other liability that cannot be
                 excluded or limited under applicable law.
               </p>
-              <LegalNote>
-                This section outlines general limitation of liability
-                language and should be reviewed by a qualified legal
-                professional to ensure it accurately reflects the
-                business&apos;s operations and complies with applicable
-                Greek and EU consumer protection law before publishing.
-              </LegalNote>
+              {/* TODO (business owner): have this general limitation-of-
+                  liability clause reviewed by a qualified legal advisor to
+                  confirm it reflects the business's operations and complies
+                  with applicable Greek and EU consumer protection law. */}
             </>
           ),
         },
@@ -285,8 +284,22 @@ export default function TermsAndConditionsPage() {
           ),
         },
         {
+          id: "personal-data",
+          title: "15. Personal Data",
+          body: (
+            <p>
+              How your personal data is handled when you use this website
+              and request a service is described in detail in our{" "}
+              <Link href={pathFor("privacy", "en")} className="font-semibold text-teal-deep hover:text-coral">
+                Privacy Policy
+              </Link>
+              , which forms an integral part of these Terms and Conditions.
+            </p>
+          ),
+        },
+        {
           id: "contact-information",
-          title: "15. Contact Information",
+          title: "16. Contact Information",
           body: (
             <>
               <p>

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
-import { LegalPageLayout, LegalNote } from "@/components/legal/legal-page-layout";
-import { localizedAlternates } from "@/lib/i18n/routes";
+import { LegalPageLayout } from "@/components/legal/legal-page-layout";
+import { localizedAlternates, pathFor } from "@/lib/i18n/routes";
 import { siteConfig } from "@/lib/site-config";
 
 const title = `Όροι Χρήσης | ${siteConfig.name} Ιδιωτικές Μεταφορές Ελλάδα`;
 const description = `Διαβάστε τους Όρους Χρήσης που διέπουν τη χρήση αυτού του ιστότοπου και την κράτηση υπηρεσιών ιδιωτικού ταξί και μεταφοράς με την ${siteConfig.name} στην Ελλάδα.`;
-const lastUpdated = "[Ημερομηνία Έναρξης Ισχύος]";
+const lastUpdated = "17 Σεπτεμβρίου 2026";
 
 export const metadata: Metadata = {
   title: {
@@ -133,12 +134,13 @@ export default function TermsAndConditionsPageEl() {
                 τις λεπτομέρειες τιμολόγησης και πληρωμής που σας παρέχονται
                 πριν επιβεβαιώσετε μια κράτηση.
               </p>
-              <LegalNote label="Σημείωση για επιχειρηματική αναθεώρηση:">
-                Αυτή η ενότητα θα πρέπει να συμπληρωθεί με τις πραγματικές
-                αποδεκτές μεθόδους πληρωμής της επιχείρησης, τυχόν απαιτήσεις
-                προκαταβολής, και την ισχύουσα μεταχείριση ΦΠΑ πριν τη
-                δημοσίευση.
-              </LegalNote>
+              <p>
+                Ο αποδεκτός τρόπος πληρωμής για τη μεταφορά σας θα σας
+                γνωστοποιείται κατά τη διαδικασία προσφοράς ή κράτησης.
+              </p>
+              {/* TODO (business owner): confirm here the actual accepted
+                  payment methods, any deposit requirements, and applicable
+                  VAT treatment once finalised, then update this section. */}
             </>
           ),
         },
@@ -167,15 +169,13 @@ export default function TermsAndConditionsPageEl() {
                 συντομότερο δυνατόν.
               </p>
               <p>
-                [Οι όροι ακύρωσης και επιστροφής χρημάτων θα εξαρτηθούν από
-                την επιβεβαιωμένη κράτηση και την ισχύουσα πολιτική
-                κρατήσεων.]
+                Οι όροι ακύρωσης και επιστροφής χρημάτων εξαρτώνται από την
+                επιβεβαιωμένη κράτησή σας και θα σας γνωστοποιούνται κατά την
+                επιβεβαίωση της κράτησης.
               </p>
-              <LegalNote label="Σημείωση για επιχειρηματική αναθεώρηση:">
-                Αυτή η ενότητα θα πρέπει να συμπληρωθεί με τις συγκεκριμένες
-                προθεσμίες ακύρωσης και τους όρους επιστροφής χρημάτων της
-                επιχείρησης πριν τη δημοσίευση.
-              </LegalNote>
+              {/* TODO (business owner): once a standard cancellation window
+                  and refund policy is finalised, state the specific
+                  deadlines and refund terms here. */}
             </>
           ),
         },
@@ -276,14 +276,10 @@ export default function TermsAndConditionsPageEl() {
                 ή οποιαδήποτε άλλη ευθύνη που δεν μπορεί να αποκλειστεί ή να
                 περιοριστεί βάσει της ισχύουσας νομοθεσίας.
               </p>
-              <LegalNote label="Σημείωση για επιχειρηματική αναθεώρηση:">
-                Αυτή η ενότητα περιγράφει γενική διατύπωση περιορισμού
-                ευθύνης και θα πρέπει να επανεξεταστεί από εξειδικευμένο
-                νομικό σύμβουλο ώστε να διασφαλιστεί ότι αντικατοπτρίζει με
-                ακρίβεια τη λειτουργία της επιχείρησης και συμμορφώνεται με
-                την ισχύουσα ελληνική και ενωσιακή νομοθεσία προστασίας
-                καταναλωτή πριν τη δημοσίευση.
-              </LegalNote>
+              {/* TODO (business owner): have this general limitation-of-
+                  liability clause reviewed by a qualified legal advisor to
+                  confirm it reflects the business's operations and complies
+                  with applicable Greek and EU consumer protection law. */}
             </>
           ),
         },
@@ -303,8 +299,23 @@ export default function TermsAndConditionsPageEl() {
           ),
         },
         {
+          id: "prosopika-dedomena",
+          title: "15. Προσωπικά Δεδομένα",
+          body: (
+            <p>
+              Η επεξεργασία των προσωπικών σας δεδομένων κατά τη χρήση αυτού
+              του ιστότοπου και την υποβολή αιτήματος για υπηρεσία περιγράφεται
+              αναλυτικά στην{" "}
+              <Link href={pathFor("privacy", "el")} className="font-semibold text-teal-deep hover:text-coral">
+                Πολιτική Απορρήτου
+              </Link>{" "}
+              μας, η οποία αποτελεί αναπόσπαστο μέρος αυτών των Όρων Χρήσης.
+            </p>
+          ),
+        },
+        {
           id: "stoixeia-epikoinonias",
-          title: "15. Στοιχεία Επικοινωνίας",
+          title: "16. Στοιχεία Επικοινωνίας",
           body: (
             <>
               <p>

@@ -7,6 +7,10 @@ function Accordion({ className, ...props }: AccordionPrimitive.Root.Props) {
   return (
     <AccordionPrimitive.Root
       data-slot="accordion"
+      // Keep closed panels mounted (collapsed via CSS height, not unmounted)
+      // so FAQ answers exist in the server-rendered HTML for crawlers/SEO,
+      // matching the FAQPage structured data emitted alongside this content.
+      keepMounted
       className={cn("flex w-full flex-col", className)}
       {...props}
     />

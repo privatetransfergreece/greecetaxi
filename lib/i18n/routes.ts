@@ -70,6 +70,10 @@ export const pageRoutes = {
   cityAthens: { en: "/athens/", el: "/el/athina/" },
   cityThessaloniki: { en: "/city/thessaloniki/", el: "/el/poli/thessaloniki/" },
   cityKalamata: { en: "/city/kalamata/", el: "/el/poli/kalamata/" },
+  cityHeraklion: { en: "/city/heraklion/", el: "/el/poli/irakleio/" },
+  cityChania: { en: "/city/chania/", el: "/el/poli/chania/" },
+  cityRethymno: { en: "/city/rethymno/", el: "/el/poli/rethymno/" },
+  cityAgiosNikolaos: { en: "/city/agios-nikolaos/", el: "/el/poli/agios-nikolaos/" },
 
   // Regions
   regionCrete: { en: "/region/crete/", el: "/el/periochi/kriti/" },
@@ -93,6 +97,12 @@ export const pageRoutes = {
   destinationSithonia: { en: "/destination/sithonia/", el: "/el/proorismos/sithonia/" },
   destinationNeaMoudania: { en: "/destination/nea-moudania/", el: "/el/proorismos/nea-moudania/" },
   thessalonikiDayTrips: { en: "/thessaloniki-day-trips/", el: "/el/idiotikes-ekdromes-thessaloniki/" },
+  destinationElounda: { en: "/destination/elounda/", el: "/el/proorismos/elounda/" },
+  destinationHersonissos: { en: "/destination/hersonissos/", el: "/el/proorismos/chersonisos/" },
+  destinationMalia: { en: "/destination/malia/", el: "/el/proorismos/malia/" },
+  destinationPlatanias: { en: "/destination/platanias/", el: "/el/proorismos/platanias/" },
+  destinationGeorgioupolis: { en: "/destination/georgioupolis/", el: "/el/proorismos/georgioupolis/" },
+  creteDayTrips: { en: "/crete-day-trips/", el: "/el/idiotikes-ekdromes-kriti/" },
 
   // Ports
   portPiraeus: { en: "/port/piraeus/", el: "/el/limani/peiraias/" },
@@ -101,6 +111,7 @@ export const pageRoutes = {
   portThessaloniki: { en: "/port/thessaloniki/", el: "/el/limani/thessaloniki/" },
   portHeraklion: { en: "/port/heraklion/", el: "/el/limani/irakleio/" },
   portPatras: { en: "/port/patras/", el: "/el/limani/patra/" },
+  portSouda: { en: "/port/souda/", el: "/el/limani/souda/" },
 
   // Routes
   routeAthensDelphi: { en: "/route/athens-to-delphi/", el: "/el/diadromi/athina-delfoi/" },
@@ -149,6 +160,33 @@ export const pageRoutes = {
   routeThessalonikiAirportMediterraneanPalace: { en: "/route/thessaloniki-airport-to-mediterranean-palace/", el: "/el/diadromi/aerodromio-thessalonikis-mediterranean-palace/" },
   routeThessalonikiAirportDomotelOlympia: { en: "/route/thessaloniki-airport-to-domotel-olympia/", el: "/el/diadromi/aerodromio-thessalonikis-domotel-olympia/" },
   routeThessalonikiAirportHyattRegency: { en: "/route/thessaloniki-airport-to-hyatt-regency/", el: "/el/diadromi/aerodromio-thessalonikis-hyatt-regency/" },
+
+  // Crete cluster
+  routeHeraklionAirportHersonissos: { en: "/route/heraklion-airport-to-hersonissos/", el: "/el/diadromi/aerodromio-irakleiou-chersonisos/" },
+  routeHeraklionAirportMalia: { en: "/route/heraklion-airport-to-malia/", el: "/el/diadromi/aerodromio-irakleiou-malia/" },
+  routeHeraklionAirportAgiosNikolaos: { en: "/route/heraklion-airport-to-agios-nikolaos/", el: "/el/diadromi/aerodromio-irakleiou-agios-nikolaos/" },
+  routeHeraklionAirportElounda: { en: "/route/heraklion-airport-to-elounda/", el: "/el/diadromi/aerodromio-irakleiou-elounda/" },
+  routeHeraklionAirportRethymno: { en: "/route/heraklion-airport-to-rethymno/", el: "/el/diadromi/aerodromio-irakleiou-rethymno/" },
+  routeHeraklionAirportChania: { en: "/route/heraklion-airport-to-chania/", el: "/el/diadromi/aerodromio-irakleiou-chania/" },
+  routeHeraklionAirportPort: { en: "/route/heraklion-airport-to-port/", el: "/el/diadromi/aerodromio-irakleiou-limani/" },
+  routeChaniaAirportRethymno: { en: "/route/chania-airport-to-rethymno/", el: "/el/diadromi/aerodromio-chanion-rethymno/" },
+  routeChaniaAirportPlatanias: { en: "/route/chania-airport-to-platanias/", el: "/el/diadromi/aerodromio-chanion-platanias/" },
+  routeChaniaAirportGeorgioupolis: { en: "/route/chania-airport-to-georgioupolis/", el: "/el/diadromi/aerodromio-chanion-georgioupolis/" },
+  routeHeraklionKnossos: { en: "/route/heraklion-to-knossos/", el: "/el/diadromi/irakleio-knosos/" },
+  routeChaniaElafonissi: { en: "/route/chania-to-elafonissi/", el: "/el/diadromi/chania-elafonisi/" },
+  routeChaniaBalos: { en: "/route/chania-to-balos/", el: "/el/diadromi/chania-balos/" },
+  routeChaniaSamariaGorge: { en: "/route/chania-to-samaria-gorge/", el: "/el/diadromi/chania-farangi-samarias/" },
+  routeHeraklionAirportGdmMegaron: { en: "/route/heraklion-airport-to-gdm-megaron/", el: "/el/diadromi/aerodromio-irakleiou-gdm-megaron/" },
+  routeHeraklionAirportGalaxyIraklio: { en: "/route/heraklion-airport-to-galaxy-iraklio/", el: "/el/diadromi/aerodromio-irakleiou-galaxy-iraklio/" },
+  routeHeraklionAirportAquilaAtlantis: { en: "/route/heraklion-airport-to-aquila-atlantis/", el: "/el/diadromi/aerodromio-irakleiou-aquila-atlantis/" },
+  routeHeraklionAirportOliveGreen: { en: "/route/heraklion-airport-to-olive-green/", el: "/el/diadromi/aerodromio-irakleiou-olive-green/" },
+  routeHeraklionAirportLegacyGastroSuites: { en: "/route/heraklion-airport-to-legacy-gastro-suites/", el: "/el/diadromi/aerodromio-irakleiou-legacy-gastro-suites/" },
+  routeHeraklionAirportCretaMaris: { en: "/route/heraklion-airport-to-creta-maris/", el: "/el/diadromi/aerodromio-irakleiou-creta-maris/" },
+  routeHeraklionAirportNanaPrincess: { en: "/route/heraklion-airport-to-nana-princess/", el: "/el/diadromi/aerodromio-irakleiou-nana-princess/" },
+  routeHeraklionAirportAlexanderBeach: { en: "/route/heraklion-airport-to-alexander-beach/", el: "/el/diadromi/aerodromio-irakleiou-alexander-beach/" },
+  routeHeraklionAirportEloundaBayPalace: { en: "/route/heraklion-airport-to-elounda-bay-palace/", el: "/el/diadromi/aerodromio-irakleiou-elounda-bay-palace/" },
+  routeHeraklionAirportEloundaBeach: { en: "/route/heraklion-airport-to-elounda-beach/", el: "/el/diadromi/aerodromio-irakleiou-elounda-beach/" },
+  routeHeraklionAirportMinosBeachArt: { en: "/route/heraklion-airport-to-minos-beach-art/", el: "/el/diadromi/aerodromio-irakleiou-minos-beach-art/" },
 } as const
 
 export type PageKey = keyof typeof pageRoutes

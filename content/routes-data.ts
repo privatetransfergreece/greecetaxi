@@ -47,6 +47,31 @@ export type RouteSlug =
   | "routeThessalonikiAirportMediterraneanPalace"
   | "routeThessalonikiAirportDomotelOlympia"
   | "routeThessalonikiAirportHyattRegency"
+  | "routeHeraklionAirportHersonissos"
+  | "routeHeraklionAirportMalia"
+  | "routeHeraklionAirportAgiosNikolaos"
+  | "routeHeraklionAirportElounda"
+  | "routeHeraklionAirportRethymno"
+  | "routeHeraklionAirportChania"
+  | "routeHeraklionAirportPort"
+  | "routeChaniaAirportRethymno"
+  | "routeChaniaAirportPlatanias"
+  | "routeChaniaAirportGeorgioupolis"
+  | "routeHeraklionKnossos"
+  | "routeChaniaElafonissi"
+  | "routeChaniaBalos"
+  | "routeChaniaSamariaGorge"
+  | "routeHeraklionAirportGdmMegaron"
+  | "routeHeraklionAirportGalaxyIraklio"
+  | "routeHeraklionAirportAquilaAtlantis"
+  | "routeHeraklionAirportOliveGreen"
+  | "routeHeraklionAirportLegacyGastroSuites"
+  | "routeHeraklionAirportCretaMaris"
+  | "routeHeraklionAirportNanaPrincess"
+  | "routeHeraklionAirportAlexanderBeach"
+  | "routeHeraklionAirportEloundaBayPalace"
+  | "routeHeraklionAirportEloundaBeach"
+  | "routeHeraklionAirportMinosBeachArt"
 
 export type LinkSection = { eyebrow: string; title: string; items: Omit<RelatedLinkItem, "icon">[] }
 export type ProseSection = { eyebrow: string; title: string; paragraphs: string[] }
@@ -6544,6 +6569,3681 @@ export const routeContent: Record<RouteSlug, Record<"en" | "el", RoutePageConten
       },
       cta: {
         heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Hyatt Regency;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportHersonissos: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Hersonissos Transfer – Private Car",
+        description: "Book a private transfer between Heraklion Airport and Hersonissos, one of Crete's largest resort areas, roughly 25 minutes away.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Hersonissos",
+      hero: {
+        eyebrow: "Heraklion Airport → Hersonissos",
+        title: "Heraklion Airport to Hersonissos Transfer",
+        description: "A direct private transfer from Heraklion Airport to Hersonissos, one of Crete's largest and longest-established resort areas.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Hersonissos",
+        paragraphs: [
+          "Hersonissos sits east of Heraklion, roughly 25 minutes from the airport along the coastal road. It's one of the largest resort areas on Crete, with a long stretch of hotels, restaurants and beach clubs, and forms the western end of a near-continuous strip that runs through Stalis and into Malia.",
+          "A private transfer avoids relying on public transport with resort luggage, and can be timed around your actual flight arrival rather than a fixed schedule.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around 25 minutes, depending on traffic." },
+          { title: "Route", description: "East from the airport along Crete's north coast road." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Hotel Details", description: "Let us know your exact hotel when requesting a quote." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Beach Holiday Arrivals", description: "Head straight to your Hersonissos hotel after landing." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Hersonissos",
+        items: [
+          { label: "Hersonissos", href: "/destination/hersonissos/", description: "See our destination overview of Hersonissos." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Malia", href: "/route/heraklion-airport-to-malia/", description: "A slightly longer transfer further along the coast." },
+          { label: "Heraklion Airport to Creta Maris Resort", href: "/route/heraklion-airport-to-creta-maris/", description: "A dedicated transfer to this Hersonissos resort." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Heraklion Airport to Hersonissos take?", answer: "Typically around 25 minutes, depending on traffic." },
+          { question: "Can I be dropped directly at my hotel in Hersonissos?", answer: "Yes, mention your exact hotel when requesting a quote." },
+          { question: "Can you arrange a transfer for a family arriving on the same flight?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Hersonissos Transfer?",
+        description: "Tell us your flight details, hotel and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Χερσόνησος – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Ηρακλείου και Χερσονήσου, μίας από τις μεγαλύτερες περιοχές θερέτρων της Κρήτης, περίπου 25 λεπτά μακριά.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Χερσόνησο",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Χερσόνησος",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Χερσόνησος",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς τον Χερσόνησο, μία από τις μεγαλύτερες και πιο μακροχρόνιες περιοχές θερέτρων της Κρήτης.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς τον Χερσόνησο",
+        paragraphs: [
+          "Ο Χερσόνησος βρίσκεται ανατολικά του Ηρακλείου, περίπου 25 λεπτά από το αεροδρόμιο κατά μήκος του παράκτιου δρόμου. Είναι μία από τις μεγαλύτερες περιοχές θερέτρων της Κρήτης, με μια μεγάλη σειρά ξενοδοχείων, εστιατορίων και beach clubs, και σχηματίζει το δυτικό άκρο μιας σχεδόν συνεχούς ζώνης που περνά από τον Σταλίδα και καταλήγει στα Μάλια.",
+          "Μια ιδιωτική μεταφορά αποφεύγει την εξάρτηση από δημόσια μέσα με αποσκευές θέρετρου, και μπορεί να προγραμματιστεί σύμφωνα με την πραγματική άφιξη της πτήσης σας αντί για σταθερό ωράριο.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου 25 λεπτά, ανάλογα με την κίνηση." },
+          { title: "Διαδρομή", description: "Ανατολικά από το αεροδρόμιο κατά μήκος του βόρειου παράκτιου δρόμου της Κρήτης." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Στοιχεία Ξενοδοχείου", description: "Ενημερώστε μας για το ακριβές ξενοδοχείο σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις για Παραθαλάσσιες Διακοπές", description: "Κατευθυνθείτε απευθείας στο ξενοδοχείο σας στον Χερσόνησο μετά την προσγείωση." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τον Χερσόνησο",
+        items: [
+          { label: "Χερσόνησος", href: "/el/proorismos/chersonisos/", description: "Δείτε την επισκόπηση προορισμού μας για τον Χερσόνησο." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Μάλια", href: "/el/diadromi/aerodromio-irakleiou-malia/", description: "Μια λίγο μεγαλύτερη μεταφορά πιο μακριά στην ακτή." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Creta Maris Resort", href: "/el/diadromi/aerodromio-irakleiou-creta-maris/", description: "Ειδική μεταφορά προς αυτό το θέρετρο του Χερσονήσου." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Αεροδρόμιο Ηρακλείου στον Χερσόνησο;", answer: "Συνήθως περίπου 25 λεπτά, ανάλογα με την κίνηση." },
+          { question: "Μπορώ να παραδοθώ απευθείας στο ξενοδοχείο μου στον Χερσόνησο;", answer: "Ναι, αναφέρετε το ακριβές ξενοδοχείο σας κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για οικογένεια που φτάνει με την ίδια πτήση;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Χερσόνησος;",
+        description: "Πείτε μας τα στοιχεία πτήσης, το ξενοδοχείο και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportMalia: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Malia Transfer – Private Car",
+        description: "Book a private transfer between Heraklion Airport and Malia, one of Crete's best-known resort strips.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Malia",
+      hero: {
+        eyebrow: "Heraklion Airport → Malia",
+        title: "Heraklion Airport to Malia Transfer",
+        description: "A direct private transfer from Heraklion Airport to Malia, further along the coast from Hersonissos.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Malia",
+        paragraphs: [
+          "Malia sits east of Heraklion, adjoining Stalis and Hersonissos as part of a near-continuous resort strip, typically around 30–35 minutes from the airport. It's also close to the Malia Palace, one of Crete's Minoan archaeological sites.",
+          "A private transfer takes you directly to your hotel in Malia, avoiding the need to change vehicles or rely on public transport with resort luggage.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around 30–35 minutes, depending on traffic." },
+          { title: "Route", description: "East from the airport along Crete's north coast road, past Hersonissos." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Hotel Details", description: "Let us know your exact hotel when requesting a quote." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Beach Holiday Arrivals", description: "Head straight to your Malia hotel after landing." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Malia",
+        items: [
+          { label: "Malia", href: "/destination/malia/", description: "See our destination overview of Malia." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Hersonissos", href: "/route/heraklion-airport-to-hersonissos/", description: "A slightly shorter transfer along the same coast." },
+          { label: "Heraklion Airport to Alexander Beach Hotel & Village Resort", href: "/route/heraklion-airport-to-alexander-beach/", description: "A dedicated transfer near Stalis and Malia." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Heraklion Airport to Malia take?", answer: "Typically around 30–35 minutes, depending on traffic." },
+          { question: "Can I be dropped directly at my hotel in Malia?", answer: "Yes, mention your exact hotel when requesting a quote." },
+          { question: "Can you arrange a transfer for a family arriving on the same flight?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Malia Transfer?",
+        description: "Tell us your flight details, hotel and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Μάλια – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Ηρακλείου και Μαλίων, μίας από τις πιο γνωστές τουριστικές ζώνες της Κρήτης.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Μάλια",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Μάλια",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Μάλια",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς τα Μάλια, πιο μακριά στην ακτή από τον Χερσόνησο.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς τα Μάλια",
+        paragraphs: [
+          "Τα Μάλια βρίσκονται ανατολικά του Ηρακλείου, γειτονικά με τον Σταλίδα και τον Χερσόνησο ως μέρος μιας σχεδόν συνεχούς τουριστικής ζώνης, συνήθως περίπου 30-35 λεπτά από το αεροδρόμιο. Βρίσκονται επίσης κοντά στο Ανάκτορο της Μαλίας, έναν από τους μινωικούς αρχαιολογικούς χώρους της Κρήτης.",
+          "Μια ιδιωτική μεταφορά σας μεταφέρει απευθείας στο ξενοδοχείο σας στα Μάλια, αποφεύγοντας την ανάγκη αλλαγής οχήματος ή εξάρτησης από δημόσια μέσα με αποσκευές θέρετρου.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου 30-35 λεπτά, ανάλογα με την κίνηση." },
+          { title: "Διαδρομή", description: "Ανατολικά από το αεροδρόμιο κατά μήκος του βόρειου παράκτιου δρόμου της Κρήτης, περνώντας τον Χερσόνησο." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Στοιχεία Ξενοδοχείου", description: "Ενημερώστε μας για το ακριβές ξενοδοχείο σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις για Παραθαλάσσιες Διακοπές", description: "Κατευθυνθείτε απευθείας στο ξενοδοχείο σας στα Μάλια μετά την προσγείωση." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τα Μάλια",
+        items: [
+          { label: "Μάλια", href: "/el/proorismos/malia/", description: "Δείτε την επισκόπηση προορισμού μας για τα Μάλια." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Χερσόνησο", href: "/el/diadromi/aerodromio-irakleiou-chersonisos/", description: "Μια λίγο συντομότερη μεταφορά στην ίδια ακτή." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Alexander Beach Hotel & Village Resort", href: "/el/diadromi/aerodromio-irakleiou-alexander-beach/", description: "Ειδική μεταφορά κοντά στον Σταλίδα και τα Μάλια." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Αεροδρόμιο Ηρακλείου στα Μάλια;", answer: "Συνήθως περίπου 30-35 λεπτά, ανάλογα με την κίνηση." },
+          { question: "Μπορώ να παραδοθώ απευθείας στο ξενοδοχείο μου στα Μάλια;", answer: "Ναι, αναφέρετε το ακριβές ξενοδοχείο σας κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για οικογένεια που φτάνει με την ίδια πτήση;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Μάλια;",
+        description: "Πείτε μας τα στοιχεία πτήσης, το ξενοδοχείο και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportAgiosNikolaos: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Agios Nikolaos Transfer – Private Car",
+        description: "Book a private transfer between Heraklion Airport and Agios Nikolaos, the main town of eastern Crete.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Agios Nikolaos",
+      hero: {
+        eyebrow: "Heraklion Airport → Agios Nikolaos",
+        title: "Heraklion Airport to Agios Nikolaos Transfer",
+        description: "A direct private transfer from Heraklion Airport to Agios Nikolaos, the main town of eastern Crete.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Agios Nikolaos",
+        paragraphs: [
+          "Agios Nikolaos is roughly 60–70 minutes from Heraklion Airport, built around Voulismeni Lake on Mirabello Bay in eastern Crete. It's the largest town in the Lasithi region and a common base for exploring eastern Crete.",
+          "A private transfer takes you directly to your hotel or address in Agios Nikolaos, avoiding the need for a bus connection with luggage after your flight.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around 60–70 minutes, depending on traffic and your exact destination." },
+          { title: "Route", description: "East from the airport along Crete's north coast road, past Hersonissos and Malia." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Eastern Crete Arrivals", description: "Head directly to Agios Nikolaos without a stop in Heraklion." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-town or town-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Agios Nikolaos",
+        items: [
+          { label: "Agios Nikolaos", href: "/city/agios-nikolaos/", description: "See our overview of transfers across Agios Nikolaos." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Elounda", href: "/route/heraklion-airport-to-elounda/", description: "A slightly longer transfer to the nearby luxury resort area." },
+          { label: "Heraklion Airport to Minos Beach Art Hotel", href: "/route/heraklion-airport-to-minos-beach-art/", description: "A dedicated transfer to this Agios Nikolaos hotel." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Heraklion Airport to Agios Nikolaos take?", answer: "Typically around 60–70 minutes, depending on traffic and your exact destination." },
+          { question: "Is Agios Nikolaos close to Elounda?", answer: "Yes, Elounda is a short drive north of Agios Nikolaos town." },
+          { question: "Can you arrange a transfer for a group arriving on the same flight?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Agios Nikolaos Transfer?",
+        description: "Tell us your flight details, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Άγιος Νικόλαος – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Ηρακλείου και Αγίου Νικολάου, της κύριας πόλης της ανατολικής Κρήτης.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Άγιο Νικόλαο",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Άγιος Νικόλαος",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Άγιος Νικόλαος",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς τον Άγιο Νικόλαο, την κύρια πόλη της ανατολικής Κρήτης.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς τον Άγιο Νικόλαο",
+        paragraphs: [
+          "Ο Άγιος Νικόλαος απέχει περίπου 60-70 λεπτά από το Αεροδρόμιο Ηρακλείου, χτισμένος γύρω από τη λίμνη Βουλισμένη στον κόλπο του Μιραμπέλλου στην ανατολική Κρήτη. Είναι η μεγαλύτερη πόλη του νομού Λασιθίου και συνηθισμένη βάση για εξερεύνηση της ανατολικής Κρήτης.",
+          "Μια ιδιωτική μεταφορά σας μεταφέρει απευθείας στο ξενοδοχείο ή τη διεύθυνσή σας στον Άγιο Νικόλαο, αποφεύγοντας την ανάγκη σύνδεσης με λεωφορείο με αποσκευές μετά την πτήση σας.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου 60-70 λεπτά, ανάλογα με την κίνηση και τον ακριβή προορισμό σας." },
+          { title: "Διαδρομή", description: "Ανατολικά από το αεροδρόμιο κατά μήκος του βόρειου παράκτιου δρόμου της Κρήτης, περνώντας τον Χερσόνησο και τα Μάλια." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις στην Ανατολική Κρήτη", description: "Κατευθυνθείτε απευθείας στον Άγιο Νικόλαο χωρίς στάση στο Ηράκλειο." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς πόλη ή πόλη προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τον Άγιο Νικόλαο",
+        items: [
+          { label: "Άγιος Νικόλαος", href: "/el/poli/agios-nikolaos/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλο τον Άγιο Νικόλαο." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Ελούντα", href: "/el/diadromi/aerodromio-irakleiou-elounda/", description: "Μια λίγο μεγαλύτερη μεταφορά προς την κοντινή περιοχή πολυτελών θερέτρων." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Minos Beach Art Hotel", href: "/el/diadromi/aerodromio-irakleiou-minos-beach-art/", description: "Ειδική μεταφορά προς αυτό το ξενοδοχείο του Αγίου Νικολάου." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Αεροδρόμιο Ηρακλείου στον Άγιο Νικόλαο;", answer: "Συνήθως περίπου 60-70 λεπτά, ανάλογα με την κίνηση και τον ακριβή προορισμό σας." },
+          { question: "Είναι ο Άγιος Νικόλαος κοντά στην Ελούντα;", answer: "Ναι, η Ελούντα βρίσκεται λίγα λεπτά βόρεια της πόλης του Αγίου Νικολάου." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που φτάνει με την ίδια πτήση;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Άγιος Νικόλαος;",
+        description: "Πείτε μας τα στοιχεία πτήσης, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportElounda: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Elounda Transfer – Private Car",
+        description: "Book a private transfer between Heraklion Airport and Elounda, Crete's luxury resort enclave in the east.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Elounda",
+      hero: {
+        eyebrow: "Heraklion Airport → Elounda",
+        title: "Heraklion Airport to Elounda Transfer",
+        description: "A direct private transfer from Heraklion Airport to Elounda, roughly an hour to an hour and a quarter away.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Elounda",
+        paragraphs: [
+          "Elounda is a luxury resort village on Mirabello Bay, a short distance north of Agios Nikolaos, typically reached in around an hour to an hour and a quarter from Heraklion Airport. It's known for a cluster of long-established luxury hotels along its waterfront.",
+          "Given the resort's profile, most visitors arrange a direct private transfer from the airport rather than a shared or public transport connection, particularly when travelling with resort luggage.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around an hour to an hour and a quarter, depending on traffic." },
+          { title: "Route", description: "East from the airport along Crete's north coast road, via Agios Nikolaos." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Resort Details", description: "Let us know your exact hotel when requesting a quote." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Luxury Resort Arrivals", description: "Head directly to your Elounda resort after landing." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-resort or resort-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Elounda",
+        items: [
+          { label: "Elounda", href: "/destination/elounda/", description: "See our destination overview of Elounda." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Elounda Bay Palace", href: "/route/heraklion-airport-to-elounda-bay-palace/", description: "A dedicated transfer to this Elounda resort." },
+          { label: "Heraklion Airport to Agios Nikolaos", href: "/route/heraklion-airport-to-agios-nikolaos/", description: "A slightly shorter transfer to the nearby town." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Heraklion Airport to Elounda take?", answer: "Typically around an hour to an hour and a quarter, depending on traffic." },
+          { question: "Can I be dropped directly at my resort in Elounda?", answer: "Yes, mention your exact hotel when requesting a quote." },
+          { question: "Can you arrange a transfer for a family arriving on the same flight?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Elounda Transfer?",
+        description: "Tell us your flight details, resort and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Ελούντα – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Ηρακλείου και Ελούντας, του θύλακα πολυτελών θερέτρων της Κρήτης στα ανατολικά.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Ελούντα",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Ελούντα",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Ελούντα",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς την Ελούντα, περίπου μία ώρα έως μία ώρα και τέταρτο μακριά.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς την Ελούντα",
+        paragraphs: [
+          "Η Ελούντα είναι ένα χωριό πολυτελών θερέτρων στον κόλπο του Μιραμπέλλου, σε μικρή απόσταση βόρεια του Αγίου Νικολάου, που συνήθως προσεγγίζεται σε περίπου μία ώρα έως μία ώρα και τέταρτο από το Αεροδρόμιο Ηρακλείου. Είναι γνωστή για μια ομάδα μακροχρόνιων πολυτελών ξενοδοχείων κατά μήκος της παραλιακής της.",
+          "Δεδομένου του προφίλ του θέρετρου, οι περισσότεροι επισκέπτες οργανώνουν απευθείας ιδιωτική μεταφορά από το αεροδρόμιο αντί για κοινή ή δημόσια σύνδεση, ιδιαίτερα όταν ταξιδεύουν με αποσκευές θέρετρου.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου μία ώρα έως μία ώρα και τέταρτο, ανάλογα με την κίνηση." },
+          { title: "Διαδρομή", description: "Ανατολικά από το αεροδρόμιο κατά μήκος του βόρειου παράκτιου δρόμου της Κρήτης, μέσω Αγίου Νικολάου." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Στοιχεία Θέρετρου", description: "Ενημερώστε μας για το ακριβές ξενοδοχείο σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις σε Πολυτελές Θέρετρο", description: "Κατευθυνθείτε απευθείας στο θέρετρό σας στην Ελούντα μετά την προσγείωση." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς θέρετρο ή θέρετρο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε την Ελούντα",
+        items: [
+          { label: "Ελούντα", href: "/el/proorismos/elounda/", description: "Δείτε την επισκόπηση προορισμού μας για την Ελούντα." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Elounda Bay Palace", href: "/el/diadromi/aerodromio-irakleiou-elounda-bay-palace/", description: "Ειδική μεταφορά προς αυτό το θέρετρο της Ελούντας." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Άγιο Νικόλαο", href: "/el/diadromi/aerodromio-irakleiou-agios-nikolaos/", description: "Μια λίγο συντομότερη μεταφορά προς την κοντινή πόλη." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Αεροδρόμιο Ηρακλείου στην Ελούντα;", answer: "Συνήθως περίπου μία ώρα έως μία ώρα και τέταρτο, ανάλογα με την κίνηση." },
+          { question: "Μπορώ να παραδοθώ απευθείας στο θέρετρό μου στην Ελούντα;", answer: "Ναι, αναφέρετε το ακριβές ξενοδοχείο σας κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για οικογένεια που φτάνει με την ίδια πτήση;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Ελούντα;",
+        description: "Πείτε μας τα στοιχεία πτήσης, το θέρετρο και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportRethymno: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Rethymno Transfer – Private Car",
+        description: "Book a private transfer between Heraklion Airport and Rethymno, roughly midway to Chania on Crete's north coast.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Rethymno",
+      hero: {
+        eyebrow: "Heraklion Airport → Rethymno",
+        title: "Heraklion Airport to Rethymno Transfer",
+        description: "A direct private transfer from Heraklion Airport to Rethymno, Crete's third-largest town.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Rethymno",
+        paragraphs: [
+          "Rethymno sits roughly midway between Heraklion and Chania on Crete's north coast, typically around 80–90 km and 66–90 minutes from Heraklion Airport depending on traffic. It doesn't have its own airport, so most visitors arrive by private transfer from either Cretan airport.",
+          "A private transfer takes you directly to your hotel or address in Rethymno's old town or nearby resort areas, without a change of vehicle.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around 66–90 minutes, depending on traffic." },
+          { title: "Route", description: "West from the airport along Crete's north coast highway (VOAK/A90)." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Rethymno-Based Stays", description: "Head directly to Rethymno without a stop in Heraklion city." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-town or town-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Rethymno",
+        items: [
+          { label: "Rethymno", href: "/city/rethymno/", description: "See our overview of transfers across Rethymno." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Chania Airport to Rethymno", href: "/route/chania-airport-to-rethymno/", description: "The equivalent route from Crete's western airport." },
+          { label: "Heraklion Airport to Chania", href: "/route/heraklion-airport-to-chania/", description: "Continue further west to Chania." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Heraklion Airport to Rethymno take?", answer: "Typically around 66–90 minutes, depending on traffic." },
+          { question: "Is Heraklion or Chania Airport closer to Rethymno?", answer: "Both airports are broadly similar distances from Rethymno, since it sits roughly midway between them." },
+          { question: "Can you arrange a transfer for a group arriving on the same flight?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Rethymno Transfer?",
+        description: "Tell us your flight details, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Ρέθυμνο – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Ηρακλείου και Ρεθύμνου, περίπου στη μέση της διαδρομής προς τα Χανιά.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Ρέθυμνο",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Ρέθυμνο",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Ρέθυμνο",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Ρέθυμνο, την τρίτη μεγαλύτερη πόλη της Κρήτης.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς το Ρέθυμνο",
+        paragraphs: [
+          "Το Ρέθυμνο βρίσκεται περίπου στη μέση της διαδρομής μεταξύ Ηρακλείου και Χανίων στη βόρεια ακτή της Κρήτης, συνήθως περίπου 80-90 χλμ και 66-90 λεπτά από το Αεροδρόμιο Ηρακλείου ανάλογα με την κίνηση. Δεν διαθέτει δικό του αεροδρόμιο, οπότε οι περισσότεροι επισκέπτες φτάνουν με ιδιωτική μεταφορά από οποιοδήποτε από τα δύο αεροδρόμια της Κρήτης.",
+          "Μια ιδιωτική μεταφορά σας μεταφέρει απευθείας στο ξενοδοχείο ή τη διεύθυνσή σας στην παλιά πόλη του Ρεθύμνου ή σε κοντινές περιοχές θερέτρων, χωρίς αλλαγή οχήματος.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου 66-90 λεπτά, ανάλογα με την κίνηση." },
+          { title: "Διαδρομή", description: "Δυτικά από το αεροδρόμιο κατά μήκος του βόρειου οδικού άξονα της Κρήτης (ΒΟΑΚ/Α90)." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Διαμονή στο Ρέθυμνο", description: "Κατευθυνθείτε απευθείας στο Ρέθυμνο χωρίς στάση στην πόλη του Ηρακλείου." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς πόλη ή πόλη προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε το Ρέθυμνο",
+        items: [
+          { label: "Ρέθυμνο", href: "/el/poli/rethymno/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλο το Ρέθυμνο." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Χανίων προς Ρέθυμνο", href: "/el/diadromi/aerodromio-chanion-rethymno/", description: "Η αντίστοιχη διαδρομή από το δυτικό αεροδρόμιο της Κρήτης." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Χανιά", href: "/el/diadromi/aerodromio-irakleiou-chania/", description: "Συνεχίστε περαιτέρω δυτικά προς τα Χανιά." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Αεροδρόμιο Ηρακλείου στο Ρέθυμνο;", answer: "Συνήθως περίπου 66-90 λεπτά, ανάλογα με την κίνηση." },
+          { question: "Ποιο αεροδρόμιο είναι πιο κοντά στο Ρέθυμνο, το Ηράκλειο ή τα Χανιά;", answer: "Και τα δύο αεροδρόμια βρίσκονται σε γενικά παρόμοια απόσταση από το Ρέθυμνο, καθώς βρίσκεται περίπου στη μέση μεταξύ τους." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που φτάνει με την ίδια πτήση;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Ρέθυμνο;",
+        description: "Πείτε μας τα στοιχεία πτήσης, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportChania: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Chania Transfer – Private Car",
+        description: "Book a private transfer between Heraklion Airport and Chania, along Crete's north coast highway.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Chania",
+      hero: {
+        eyebrow: "Heraklion Airport → Chania",
+        title: "Heraklion Airport to Chania Transfer",
+        description: "A direct private transfer from Heraklion Airport to Chania, bypassing central Heraklion.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Chania",
+        paragraphs: [
+          "Heraklion Airport and Chania are roughly 140–150 km apart, connected by the Northern Highway of Crete (VOAK/A90), typically around 2 to 2.5 hours by road. Since the airport sits east of Heraklion city, this route doesn't need to pass through the city centre.",
+          "This is a common choice for visitors flying into Heraklion but staying in or near Chania, avoiding the need to change airports or add an extra leg through the city.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around 2 to 2.5 hours, depending on traffic and road conditions." },
+          { title: "Route", description: "Via the Northern Highway of Crete (VOAK/A90), passing Rethymno roughly halfway." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Cross-Island Travel", description: "Fly into Heraklion and travel directly to accommodation near Chania." },
+          { title: "Multi-Stop Crete Itineraries", description: "Combine both halves of the island in a single trip." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the long drive." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Crete",
+        items: [
+          { label: "Chania", href: "/city/chania/", description: "See our overview of transfers across Chania." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion to Chania", href: "/route/heraklion-to-chania/", description: "The equivalent route starting from central Heraklion." },
+          { label: "Heraklion Airport to Rethymno", href: "/route/heraklion-airport-to-rethymno/", description: "A shorter transfer roughly halfway to Chania." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Heraklion Airport to Chania take?", answer: "Typically around 2 to 2.5 hours, depending on traffic and road conditions." },
+          { question: "Does this route pass through central Heraklion?", answer: "No, it heads directly from the airport along the north coast highway toward Chania." },
+          { question: "Can you arrange a transfer for a group arriving on the same flight?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Chania Transfer?",
+        description: "Tell us your flight details, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Χανιά – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Ηρακλείου και Χανίων, κατά μήκος του βόρειου οδικού άξονα της Κρήτης.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Χανιά",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Χανιά",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Χανιά",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς τα Χανιά, παρακάμπτοντας το κέντρο του Ηρακλείου.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς τα Χανιά",
+        paragraphs: [
+          "Το Αεροδρόμιο Ηρακλείου και τα Χανιά απέχουν περίπου 140-150 χλμ, συνδεδεμένα μέσω του Βόρειου Οδικού Άξονα της Κρήτης (ΒΟΑΚ/Α90), συνήθως περίπου 2 έως 2,5 ώρες οδικώς. Καθώς το αεροδρόμιο βρίσκεται ανατολικά της πόλης του Ηρακλείου, αυτή η διαδρομή δεν χρειάζεται να περάσει από το κέντρο της πόλης.",
+          "Αυτή είναι συνηθισμένη επιλογή για επισκέπτες που πετούν προς το Ηράκλειο αλλά μένουν στα ή κοντά στα Χανιά, αποφεύγοντας την ανάγκη αλλαγής αεροδρομίου ή προσθήκης επιπλέον διαδρομής μέσω της πόλης.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου 2 έως 2,5 ώρες, ανάλογα με την κίνηση και τις συνθήκες του δρόμου." },
+          { title: "Διαδρομή", description: "Μέσω του Βόρειου Οδικού Άξονα της Κρήτης (ΒΟΑΚ/Α90), περνώντας το Ρέθυμνο περίπου στη μέση." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Ταξίδι σε Όλο το Νησί", description: "Πετάξτε προς το Ηράκλειο και ταξιδέψτε απευθείας προς κατάλυμα κοντά στα Χανιά." },
+          { title: "Ταξίδια με Πολλαπλές Στάσεις στην Κρήτη", description: "Συνδυάστε και τα δύο μισά του νησιού σε ένα ταξίδι." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για τη μεγάλη διαδρομή." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε την Κρήτη",
+        items: [
+          { label: "Χανιά", href: "/el/poli/chania/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλα τα Χανιά." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Ηράκλειο προς Χανιά", href: "/el/diadromi/irakleio-chania/", description: "Η αντίστοιχη διαδρομή με αφετηρία το κέντρο του Ηρακλείου." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Ρέθυμνο", href: "/el/diadromi/aerodromio-irakleiou-rethymno/", description: "Μια συντομότερη μεταφορά περίπου στη μέση της διαδρομής προς τα Χανιά." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Αεροδρόμιο Ηρακλείου στα Χανιά;", answer: "Συνήθως περίπου 2 έως 2,5 ώρες, ανάλογα με την κίνηση και τις συνθήκες του δρόμου." },
+          { question: "Περνάει αυτή η διαδρομή από το κέντρο του Ηρακλείου;", answer: "Όχι, κατευθύνεται απευθείας από το αεροδρόμιο κατά μήκος του βόρειου οδικού άξονα προς τα Χανιά." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που φτάνει με την ίδια πτήση;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Χανιά;",
+        description: "Πείτε μας τα στοιχεία πτήσης, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportPort: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Port Transfer – Private Car",
+        description: "Book a private transfer between Heraklion Airport and Heraklion Port, useful for cruise and ferry connections.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Port",
+      hero: {
+        eyebrow: "Heraklion Airport → Port",
+        title: "Heraklion Airport to Port Transfer",
+        description: "A short private transfer between Heraklion Airport and Heraklion Port, for cruise and ferry connections.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to the Port",
+        paragraphs: [
+          "Heraklion Airport and Heraklion Port sit close together on the same side of the city, making this one of the shorter transfers on our Crete network. It's a common connection for travellers flying in before a ferry to Piraeus, or disembarking and continuing on a flight.",
+          "Sharing your flight and ferry or cruise details when requesting a quote helps your pickup be planned around both ends of the journey.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A short, direct transfer given the port and airport's close proximity." },
+          { title: "Route", description: "Within Heraklion, between the airport and the port area." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Ferry or Cruise Details", description: "Share your sailing time so the transfer can be timed accordingly." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Ferry Embarkation", description: "Fly in and head directly to the port for your ferry to Piraeus." },
+          { title: "Ferry Disembarkation", description: "Head straight from the port to the airport for your onward flight." },
+          { title: "Groups & Families", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Heraklion",
+        items: [
+          { label: "Heraklion Port", href: "/port/heraklion/", description: "See our dedicated port transfer information." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion to Chania", href: "/route/heraklion-to-chania/", description: "For onward travel across the island." },
+          { label: "Heraklion Airport to Hersonissos", href: "/route/heraklion-airport-to-hersonissos/", description: "For onward travel to a nearby resort area." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "Can I book a transfer from Heraklion Airport to the port for a ferry?", answer: "Yes, share your flight and ferry details when requesting a quote so your pickup can be timed accordingly." },
+          { question: "Can I travel from the port to the airport after disembarking?", answer: "Yes, this transfer works in both directions — mention your onward flight when requesting a quote." },
+          { question: "How long does the transfer between the airport and port take?", answer: "It's a short, direct journey given how close the two are to each other." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Port Transfer?",
+        description: "Tell us your flight and sailing details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Λιμάνι – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Ηρακλείου και Λιμανιού Ηρακλείου, χρήσιμη για συνδέσεις κρουαζιέρας και ferry.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Λιμάνι",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Λιμάνι",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Λιμάνι",
+        description: "Μια σύντομη ιδιωτική μεταφορά μεταξύ του Αεροδρομίου Ηρακλείου και του Λιμανιού Ηρακλείου, για συνδέσεις κρουαζιέρας και ferry.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς το Λιμάνι",
+        paragraphs: [
+          "Το Αεροδρόμιο Ηρακλείου και το Λιμάνι Ηρακλείου βρίσκονται κοντά, στην ίδια πλευρά της πόλης, καθιστώντας αυτή μία από τις συντομότερες μεταφορές στο δίκτυό μας στην Κρήτη. Είναι συνηθισμένη σύνδεση για ταξιδιώτες που πετούν πριν από ferry προς τον Πειραιά, ή αποβιβάζονται και συνεχίζουν με πτήση.",
+          "Η αναφορά των στοιχείων πτήσης και ferry ή κρουαζιέρας σας κατά την αίτηση προσφοράς βοηθά η παραλαβή σας να σχεδιαστεί γύρω από και τις δύο πλευρές του ταξιδιού.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια σύντομη, απευθείας μεταφορά δεδομένης της κοντινής απόστασης μεταξύ λιμανιού και αεροδρομίου." },
+          { title: "Διαδρομή", description: "Εντός του Ηρακλείου, μεταξύ του αεροδρομίου και της περιοχής του λιμανιού." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Στοιχεία Ferry ή Κρουαζιέρας", description: "Δώστε μας την ώρα απόπλου σας ώστε η μεταφορά να προγραμματιστεί ανάλογα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Επιβίβαση σε Ferry", description: "Πετάξτε και κατευθυνθείτε απευθείας στο λιμάνι για το ferry σας προς τον Πειραιά." },
+          { title: "Αποβίβαση από Ferry", description: "Κατευθυνθείτε απευθείας από το λιμάνι στο αεροδρόμιο για την πτήση επιστροφής σας." },
+          { title: "Ομάδες & Οικογένειες", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε το Ηράκλειο",
+        items: [
+          { label: "Λιμάνι Ηρακλείου", href: "/el/limani/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς λιμανιού." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Ηράκλειο προς Χανιά", href: "/el/diadromi/irakleio-chania/", description: "Για περαιτέρω ταξίδι σε όλο το νησί." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Χερσόνησο", href: "/el/diadromi/aerodromio-irakleiou-chersonisos/", description: "Για περαιτέρω ταξίδι προς κοντινή περιοχή θερέτρου." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Μπορώ να κλείσω μεταφορά από το Αεροδρόμιο Ηρακλείου προς το λιμάνι για ferry;", answer: "Ναι, δώστε μας τα στοιχεία πτήσης και ferry κατά την αίτηση προσφοράς ώστε η παραλαβή σας να προγραμματιστεί ανάλογα." },
+          { question: "Μπορώ να ταξιδέψω από το λιμάνι προς το αεροδρόμιο μετά την αποβίβαση;", answer: "Ναι, αυτή η μεταφορά λειτουργεί και προς τις δύο κατευθύνσεις — αναφέρετε την πτήση επιστροφής σας κατά την αίτηση προσφοράς." },
+          { question: "Πόσο διαρκεί η μεταφορά μεταξύ αεροδρομίου και λιμανιού;", answer: "Είναι σύντομο, απευθείας ταξίδι δεδομένης της κοντινής απόστασης μεταξύ τους." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Λιμάνι;",
+        description: "Πείτε μας τα στοιχεία πτήσης και απόπλου σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeChaniaAirportRethymno: {
+    en: {
+      meta: {
+        title: "Chania Airport to Rethymno Transfer – Private Car",
+        description: "Book a private transfer between Chania Airport and Rethymno, roughly 66-68 km east along Crete's north coast.",
+      },
+      breadcrumbLabel: "Chania Airport to Rethymno",
+      hero: {
+        eyebrow: "Chania Airport → Rethymno",
+        title: "Chania Airport to Rethymno Transfer",
+        description: "A direct private transfer from Chania Airport to Rethymno, typically around an hour along the north coast.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Chania Airport to Rethymno",
+        paragraphs: [
+          "Rethymno sits roughly 66–68 km east of Chania Airport, typically around an hour to an hour and ten minutes by road. It's Crete's third-largest town, known for its Venetian old town and fortress.",
+          "A private transfer takes you directly to your hotel or address in Rethymno, without needing to change vehicles after your flight.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around an hour to an hour and ten minutes, depending on traffic." },
+          { title: "Route", description: "East from the airport along Crete's north coast road toward Rethymno." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Rethymno-Based Stays", description: "Head directly to Rethymno after landing at Chania Airport." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-town or town-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Rethymno",
+        items: [
+          { label: "Rethymno", href: "/city/rethymno/", description: "See our overview of transfers across Rethymno." },
+          { label: "Chania Airport", href: "/airport/chania-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Rethymno", href: "/route/heraklion-airport-to-rethymno/", description: "The equivalent route from Crete's eastern airport." },
+          { label: "Chania Airport to Georgioupolis", href: "/route/chania-airport-to-georgioupolis/", description: "A shorter transfer roughly halfway to Rethymno." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Chania Airport to Rethymno take?", answer: "Typically around an hour to an hour and ten minutes, depending on traffic." },
+          { question: "Is Chania or Heraklion Airport closer to Rethymno?", answer: "Both airports are broadly similar distances from Rethymno, since it sits roughly midway between them." },
+          { question: "Can you arrange a transfer for a group arriving on the same flight?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Rethymno Transfer?",
+        description: "Tell us your flight details, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Χανίων – Ρέθυμνο – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Χανίων και Ρεθύμνου, περίπου 66-68 χλμ ανατολικά κατά μήκος της βόρειας ακτής της Κρήτης.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Χανίων προς Ρέθυμνο",
+      hero: {
+        eyebrow: "Αεροδρόμιο Χανίων → Ρέθυμνο",
+        title: "Μεταφορά Αεροδρόμιο Χανίων – Ρέθυμνο",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Χανίων προς το Ρέθυμνο, συνήθως περίπου μία ώρα κατά μήκος της βόρειας ακτής.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Χανίων προς το Ρέθυμνο",
+        paragraphs: [
+          "Το Ρέθυμνο βρίσκεται περίπου 66-68 χλμ ανατολικά του Αεροδρομίου Χανίων, συνήθως περίπου μία ώρα έως μία ώρα και δέκα λεπτά οδικώς. Είναι η τρίτη μεγαλύτερη πόλη της Κρήτης, γνωστή για την Ενετική παλιά πόλη και το φρούριό της.",
+          "Μια ιδιωτική μεταφορά σας μεταφέρει απευθείας στο ξενοδοχείο ή τη διεύθυνσή σας στο Ρέθυμνο, χωρίς να χρειάζεται αλλαγή οχήματος μετά την πτήση σας.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου μία ώρα έως μία ώρα και δέκα λεπτά, ανάλογα με την κίνηση." },
+          { title: "Διαδρομή", description: "Ανατολικά από το αεροδρόμιο κατά μήκος του βόρειου παράκτιου δρόμου της Κρήτης προς το Ρέθυμνο." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Διαμονή στο Ρέθυμνο", description: "Κατευθυνθείτε απευθείας στο Ρέθυμνο μετά την προσγείωση στο Αεροδρόμιο Χανίων." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς πόλη ή πόλη προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε το Ρέθυμνο",
+        items: [
+          { label: "Ρέθυμνο", href: "/el/poli/rethymno/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλο το Ρέθυμνο." },
+          { label: "Αεροδρόμιο Χανίων", href: "/el/aerodromio/chania/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Ρέθυμνο", href: "/el/diadromi/aerodromio-irakleiou-rethymno/", description: "Η αντίστοιχη διαδρομή από το ανατολικό αεροδρόμιο της Κρήτης." },
+          { label: "Αεροδρόμιο Χανίων προς Γεωργιούπολη", href: "/el/diadromi/aerodromio-chanion-georgioupolis/", description: "Μια συντομότερη μεταφορά περίπου στη μέση της διαδρομής προς το Ρέθυμνο." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Αεροδρόμιο Χανίων στο Ρέθυμνο;", answer: "Συνήθως περίπου μία ώρα έως μία ώρα και δέκα λεπτά, ανάλογα με την κίνηση." },
+          { question: "Ποιο αεροδρόμιο είναι πιο κοντά στο Ρέθυμνο, τα Χανιά ή το Ηράκλειο;", answer: "Και τα δύο αεροδρόμια βρίσκονται σε γενικά παρόμοια απόσταση από το Ρέθυμνο, καθώς βρίσκεται περίπου στη μέση μεταξύ τους." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που φτάνει με την ίδια πτήση;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Ρέθυμνο;",
+        description: "Πείτε μας τα στοιχεία πτήσης, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeChaniaAirportPlatanias: {
+    en: {
+      meta: {
+        title: "Chania Airport to Platanias Transfer – Private Car",
+        description: "Book a private transfer between Chania Airport and Platanias, the resort strip west of Chania town.",
+      },
+      breadcrumbLabel: "Chania Airport to Platanias",
+      hero: {
+        eyebrow: "Chania Airport → Platanias",
+        title: "Chania Airport to Platanias Transfer",
+        description: "A direct private transfer from Chania Airport to Platanias, roughly 25-30 minutes away.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Chania Airport to Platanias",
+        paragraphs: [
+          "Platanias sits around 26 km from Chania Airport, typically around 25–30 minutes by road via Chania town. It's part of a resort strip west of Chania with several neighbouring beach villages along the same stretch of coast.",
+          "A private transfer takes you directly to your hotel in Platanias, avoiding the need to arrange local transport with resort luggage.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around 25–30 minutes, depending on traffic." },
+          { title: "Route", description: "From the airport via Chania town, then west along the coast." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Hotel Details", description: "Let us know your exact hotel when requesting a quote." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Beach Holiday Arrivals", description: "Head straight to your Platanias hotel after landing." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Platanias",
+        items: [
+          { label: "Platanias", href: "/destination/platanias/", description: "See our destination overview of Platanias." },
+          { label: "Chania Airport", href: "/airport/chania-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Chania Airport to Georgioupolis", href: "/route/chania-airport-to-georgioupolis/", description: "A longer transfer further east along the coast." },
+          { label: "Chania to Elafonissi", href: "/route/chania-to-elafonissi/", description: "A day trip further along the western coastline." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Chania Airport to Platanias take?", answer: "Typically around 25–30 minutes, depending on traffic." },
+          { question: "Is Platanias close to Chania's old town?", answer: "Yes, Platanias is around 11 km from Chania town itself." },
+          { question: "Can you arrange a transfer for a family arriving on the same flight?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Platanias Transfer?",
+        description: "Tell us your flight details, hotel and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Χανίων – Πλατανιάς – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Χανίων και Πλατανιά, της τουριστικής ζώνης δυτικά της πόλης των Χανίων.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Χανίων προς Πλατανιά",
+      hero: {
+        eyebrow: "Αεροδρόμιο Χανίων → Πλατανιάς",
+        title: "Μεταφορά Αεροδρόμιο Χανίων – Πλατανιάς",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Χανίων προς τον Πλατανιά, περίπου 25-30 λεπτά μακριά.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Χανίων προς τον Πλατανιά",
+        paragraphs: [
+          "Ο Πλατανιάς βρίσκεται περίπου 26 χλμ από το Αεροδρόμιο Χανίων, συνήθως περίπου 25-30 λεπτά οδικώς μέσω της πόλης των Χανίων. Είναι μέρος μιας τουριστικής ζώνης δυτικά των Χανίων με αρκετά γειτονικά παραθαλάσσια χωριά κατά μήκος της ίδιας ακτής.",
+          "Μια ιδιωτική μεταφορά σας μεταφέρει απευθείας στο ξενοδοχείο σας στον Πλατανιά, αποφεύγοντας την ανάγκη οργάνωσης τοπικής μεταφοράς με αποσκευές θέρετρου.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου 25-30 λεπτά, ανάλογα με την κίνηση." },
+          { title: "Διαδρομή", description: "Από το αεροδρόμιο μέσω της πόλης των Χανίων, στη συνέχεια δυτικά κατά μήκος της ακτής." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Στοιχεία Ξενοδοχείου", description: "Ενημερώστε μας για το ακριβές ξενοδοχείο σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις για Παραθαλάσσιες Διακοπές", description: "Κατευθυνθείτε απευθείας στο ξενοδοχείο σας στον Πλατανιά μετά την προσγείωση." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τον Πλατανιά",
+        items: [
+          { label: "Πλατανιάς", href: "/el/proorismos/platanias/", description: "Δείτε την επισκόπηση προορισμού μας για τον Πλατανιά." },
+          { label: "Αεροδρόμιο Χανίων", href: "/el/aerodromio/chania/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Χανίων προς Γεωργιούπολη", href: "/el/diadromi/aerodromio-chanion-georgioupolis/", description: "Μια μεγαλύτερη μεταφορά πιο ανατολικά κατά μήκος της ακτής." },
+          { label: "Χανιά προς Ελαφονήσι", href: "/el/diadromi/chania-elafonisi/", description: "Μια εκδρομή πιο μακριά κατά μήκος της δυτικής ακτογραμμής." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Αεροδρόμιο Χανίων στον Πλατανιά;", answer: "Συνήθως περίπου 25-30 λεπτά, ανάλογα με την κίνηση." },
+          { question: "Είναι ο Πλατανιάς κοντά στην παλιά πόλη των Χανίων;", answer: "Ναι, ο Πλατανιάς απέχει περίπου 11 χλμ από την ίδια την πόλη των Χανίων." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για οικογένεια που φτάνει με την ίδια πτήση;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Πλατανιάς;",
+        description: "Πείτε μας τα στοιχεία πτήσης, το ξενοδοχείο και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeChaniaAirportGeorgioupolis: {
+    en: {
+      meta: {
+        title: "Chania Airport to Georgioupolis Transfer – Private Car",
+        description: "Book a private transfer between Chania Airport and Georgioupolis, a coastal resort town toward Rethymno.",
+      },
+      breadcrumbLabel: "Chania Airport to Georgioupolis",
+      hero: {
+        eyebrow: "Chania Airport → Georgioupolis",
+        title: "Chania Airport to Georgioupolis Transfer",
+        description: "A direct private transfer from Chania Airport to Georgioupolis, roughly 50 minutes away.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Chania Airport to Georgioupolis",
+        paragraphs: [
+          "Georgioupolis sits around 47 km from Chania Airport, typically around 50 minutes by road, roughly midway between Chania and Rethymno. It's known for a long sandy beach and a eucalyptus-lined town square.",
+          "A private transfer takes you directly to your hotel in Georgioupolis, a straightforward journey along the north coast road.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around 50 minutes, depending on traffic." },
+          { title: "Route", description: "East from the airport via Chania town, along the north coast road." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Hotel Details", description: "Let us know your exact hotel when requesting a quote." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Beach Holiday Arrivals", description: "Head straight to your Georgioupolis hotel after landing." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Georgioupolis",
+        items: [
+          { label: "Georgioupolis", href: "/destination/georgioupolis/", description: "See our destination overview of Georgioupolis." },
+          { label: "Chania Airport", href: "/airport/chania-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Chania Airport to Rethymno", href: "/route/chania-airport-to-rethymno/", description: "Continue further east to Rethymno." },
+          { label: "Chania Airport to Platanias", href: "/route/chania-airport-to-platanias/", description: "A shorter transfer in the opposite direction." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Chania Airport to Georgioupolis take?", answer: "Typically around 50 minutes, depending on traffic." },
+          { question: "Can I reach Georgioupolis from Heraklion Airport instead?", answer: "Yes, mention this when requesting a quote — Chania Airport is generally the closer option." },
+          { question: "Can you arrange a transfer for a family arriving on the same flight?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Georgioupolis Transfer?",
+        description: "Tell us your flight details, hotel and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Χανίων – Γεωργιούπολη – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά μεταξύ Αεροδρομίου Χανίων και Γεωργιούπολης, μιας παράκτιας πόλης θερέτρου προς το Ρέθυμνο.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Χανίων προς Γεωργιούπολη",
+      hero: {
+        eyebrow: "Αεροδρόμιο Χανίων → Γεωργιούπολη",
+        title: "Μεταφορά Αεροδρόμιο Χανίων – Γεωργιούπολη",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Χανίων προς τη Γεωργιούπολη, περίπου 50 λεπτά μακριά.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Χανίων προς τη Γεωργιούπολη",
+        paragraphs: [
+          "Η Γεωργιούπολη βρίσκεται περίπου 47 χλμ από το Αεροδρόμιο Χανίων, συνήθως περίπου 50 λεπτά οδικώς, περίπου στη μέση της διαδρομής μεταξύ Χανίων και Ρεθύμνου. Είναι γνωστή για μια μακριά αμμώδη παραλία και μια πλατεία με ευκαλύπτους.",
+          "Μια ιδιωτική μεταφορά σας μεταφέρει απευθείας στο ξενοδοχείο σας στη Γεωργιούπολη, ένα απλό ταξίδι κατά μήκος του βόρειου παράκτιου δρόμου.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου 50 λεπτά, ανάλογα με την κίνηση." },
+          { title: "Διαδρομή", description: "Ανατολικά από το αεροδρόμιο μέσω της πόλης των Χανίων, κατά μήκος του βόρειου παράκτιου δρόμου." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Στοιχεία Ξενοδοχείου", description: "Ενημερώστε μας για το ακριβές ξενοδοχείο σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις για Παραθαλάσσιες Διακοπές", description: "Κατευθυνθείτε απευθείας στο ξενοδοχείο σας στη Γεωργιούπολη μετά την προσγείωση." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Γεωργιούπολη",
+        items: [
+          { label: "Γεωργιούπολη", href: "/el/proorismos/georgioupolis/", description: "Δείτε την επισκόπηση προορισμού μας για τη Γεωργιούπολη." },
+          { label: "Αεροδρόμιο Χανίων", href: "/el/aerodromio/chania/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Χανίων προς Ρέθυμνο", href: "/el/diadromi/aerodromio-chanion-rethymno/", description: "Συνεχίστε περαιτέρω ανατολικά προς το Ρέθυμνο." },
+          { label: "Αεροδρόμιο Χανίων προς Πλατανιά", href: "/el/diadromi/aerodromio-chanion-platanias/", description: "Μια συντομότερη μεταφορά προς την αντίθετη κατεύθυνση." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Αεροδρόμιο Χανίων στη Γεωργιούπολη;", answer: "Συνήθως περίπου 50 λεπτά, ανάλογα με την κίνηση." },
+          { question: "Μπορώ να φτάσω στη Γεωργιούπολη από το Αεροδρόμιο Ηρακλείου αντί;", answer: "Ναι, αναφέρετέ το κατά την αίτηση προσφοράς — το Αεροδρόμιο Χανίων είναι γενικά η πλησιέστερη επιλογή." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για οικογένεια που φτάνει με την ίδια πτήση;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Γεωργιούπολη;",
+        description: "Πείτε μας τα στοιχεία πτήσης, το ξενοδοχείο και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionKnossos: {
+    en: {
+      meta: {
+        title: "Heraklion to Knossos Private Transfer & Day Trip",
+        description: "Book a private transfer or day trip from Heraklion to the Minoan palace site of Knossos, Crete's most visited archaeological attraction.",
+      },
+      breadcrumbLabel: "Heraklion to Knossos",
+      hero: {
+        eyebrow: "Heraklion → Knossos",
+        title: "Heraklion to Knossos Private Transfer",
+        description: "A private transfer from Heraklion to Knossos, the Minoan palace site around 6–7 km southeast of the city.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion to Knossos",
+        paragraphs: [
+          "Knossos is around 6–7 km southeast of Heraklion, typically reached in 15–20 minutes by road — one of the shortest and simplest transfers on our Crete network. It's Crete's most visited archaeological site, associated with the Minoan civilisation.",
+          "This can be booked as a straightforward one-way transfer, or as a day trip with the vehicle and driver waiting while you explore the site before returning to Heraklion or continuing elsewhere.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around 15–20 minutes, one of the shortest routes we cover." },
+          { title: "Route", description: "A short drive southeast from Heraklion." },
+          { title: "One-Way or Day Trip", description: "Let us know whether you need a one-way transfer or a return day trip." },
+          { title: "Pickup Point", description: "Share your hotel or address in Heraklion when requesting a quote." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Half-Day Visitors", description: "See Knossos and return to Heraklion the same morning or afternoon." },
+          { title: "Cruise & Port Stopovers", description: "A short, well-timed visit for travellers with limited time in Heraklion." },
+          { title: "Families & Groups", description: "A private vehicle keeps your group together for the visit." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Heraklion",
+        items: [
+          { label: "Heraklion", href: "/city/heraklion/", description: "See our overview of transfers across Heraklion." },
+          { label: "Crete Day Trips", href: "/crete-day-trips/", description: "See our full range of private day trips across Crete." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Port", href: "/route/heraklion-airport-to-port/", description: "For travellers connecting between the airport and the ferry port." },
+          { label: "Heraklion to Chania", href: "/route/heraklion-to-chania/", description: "For onward travel across the island." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Heraklion to Knossos take?", answer: "Typically around 15–20 minutes, one of the shortest routes on our Crete network." },
+          { question: "Can this be booked as a day trip with a return journey?", answer: "Yes, mention that you'd like a return day trip when requesting a quote." },
+          { question: "Can you arrange a transfer for a group visiting Knossos?", answer: "Yes, mention your total passenger numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Heraklion to Knossos Transfer?",
+        description: "Tell us your pickup point, timing and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτική Μεταφορά & Εκδρομή Ηράκλειο – Κνωσός",
+        description: "Κλείστε ιδιωτική μεταφορά ή εκδρομή από το Ηράκλειο προς τον μινωικό αρχαιολογικό χώρο της Κνωσού, το πιο επισκέψιμο αξιοθέατο της Κρήτης.",
+      },
+      breadcrumbLabel: "Ηράκλειο προς Κνωσό",
+      hero: {
+        eyebrow: "Ηράκλειο → Κνωσός",
+        title: "Ιδιωτική Μεταφορά Ηράκλειο – Κνωσός",
+        description: "Μια ιδιωτική μεταφορά από το Ηράκλειο προς την Κνωσό, τον μινωικό αρχαιολογικό χώρο περίπου 6-7 χλμ νοτιοανατολικά της πόλης.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Ηράκλειο προς την Κνωσό",
+        paragraphs: [
+          "Η Κνωσός βρίσκεται περίπου 6-7 χλμ νοτιοανατολικά του Ηρακλείου, συνήθως προσεγγίζεται σε 15-20 λεπτά οδικώς — μία από τις συντομότερες και απλούστερες μεταφορές στο δίκτυό μας στην Κρήτη. Είναι ο πιο επισκέψιμος αρχαιολογικός χώρος της Κρήτης, συνδεδεμένος με τον μινωικό πολιτισμό.",
+          "Αυτή μπορεί να κλειστεί ως απλή μονόδρομη μεταφορά, ή ως εκδρομή με το όχημα και τον οδηγό να περιμένουν όσο εξερευνάτε τον χώρο πριν την επιστροφή στο Ηράκλειο ή τη συνέχεια αλλού.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου 15-20 λεπτά, μία από τις συντομότερες διαδρομές που καλύπτουμε." },
+          { title: "Διαδρομή", description: "Μια σύντομη διαδρομή νοτιοανατολικά από το Ηράκλειο." },
+          { title: "Μονόδρομη ή Εκδρομή", description: "Ενημερώστε μας αν χρειάζεστε μονόδρομη μεταφορά ή εκδρομή με επιστροφή." },
+          { title: "Σημείο Παραλαβής", description: "Αναφέρετε το ξενοδοχείο ή τη διεύθυνσή σας στο Ηράκλειο κατά την αίτηση προσφοράς." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Επισκέπτες Μισής Ημέρας", description: "Δείτε την Κνωσό και επιστρέψτε στο Ηράκλειο το ίδιο πρωί ή απόγευμα." },
+          { title: "Στάσεις Κρουαζιέρας & Λιμανιού", description: "Μια σύντομη, καλά χρονομετρημένη επίσκεψη για ταξιδιώτες με περιορισμένο χρόνο στο Ηράκλειο." },
+          { title: "Οικογένειες & Ομάδες", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα σας μαζί για την επίσκεψη." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε το Ηράκλειο",
+        items: [
+          { label: "Ηράκλειο", href: "/el/poli/irakleio/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλο το Ηράκλειο." },
+          { label: "Ιδιωτικές Εκδρομές στην Κρήτη", href: "/el/idiotikes-ekdromes-kriti/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας σε όλη την Κρήτη." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Λιμάνι", href: "/el/diadromi/aerodromio-irakleiou-limani/", description: "Για ταξιδιώτες που συνδέονται μεταξύ αεροδρομίου και λιμανιού ferry." },
+          { label: "Ηράκλειο προς Χανιά", href: "/el/diadromi/irakleio-chania/", description: "Για περαιτέρω ταξίδι σε όλο το νησί." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από το Ηράκλειο στην Κνωσό;", answer: "Συνήθως περίπου 15-20 λεπτά, μία από τις συντομότερες διαδρομές στο δίκτυό μας στην Κρήτη." },
+          { question: "Μπορεί αυτό να κλειστεί ως εκδρομή με επιστροφή;", answer: "Ναι, αναφέρετε ότι θέλετε εκδρομή με επιστροφή κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που επισκέπτεται την Κνωσό;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Ηράκλειο – Κνωσός;",
+        description: "Πείτε μας το σημείο παραλαβής, τον χρονισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeChaniaElafonissi: {
+    en: {
+      meta: {
+        title: "Chania to Elafonissi Private Day Trip Transfer",
+        description: "Book a private day-trip transfer from Chania to Elafonissi beach, one of Crete's best-known beaches, around 75 km away.",
+      },
+      breadcrumbLabel: "Chania to Elafonissi",
+      hero: {
+        eyebrow: "Chania → Elafonissi",
+        title: "Chania to Elafonissi Private Transfer",
+        description: "A private day-trip transfer from Chania to Elafonissi, around 75 km away on Crete's southwestern coast.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Chania to Elafonissi",
+        paragraphs: [
+          "Elafonissi is around 75 km from Chania, typically 1.5–2 hours by road via winding mountain routes including the Topolia Gorge. It's one of Crete's best-known beaches, reachable entirely by road, unlike some of the island's other well-known beaches.",
+          "Given the distance, most visitors book this as a full day trip, with the vehicle and driver either waiting at the beach or returning at an agreed time.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around 1.5–2 hours each way, via winding mountain roads." },
+          { title: "Route", description: "Southwest from Chania via the Topolia Gorge area." },
+          { title: "Day-Trip Timing", description: "Let us know how much time you'd like at the beach when requesting a quote." },
+          { title: "Return Timing", description: "The vehicle waits or returns at an agreed time to bring you back to Chania." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Beach Day Trips", description: "A full day at one of Crete's most photographed beaches." },
+          { title: "Families & Groups", description: "A private vehicle keeps your group together for the whole day." },
+          { title: "Flexible Itineraries", description: "Choose your own timing at the beach rather than a fixed tour schedule." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Western Crete",
+        items: [
+          { label: "Chania", href: "/city/chania/", description: "See our overview of transfers across Chania." },
+          { label: "Crete Day Trips", href: "/crete-day-trips/", description: "See our full range of private day trips across Crete." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Chania to Balos", href: "/route/chania-to-balos/", description: "Another well-known beach, requiring a 4x4 or boat for the final approach." },
+          { label: "Chania to Samaria Gorge", href: "/route/chania-to-samaria-gorge/", description: "A hiking day trip further into the White Mountains." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How long does the transfer from Chania to Elafonissi take?", answer: "Typically around 1.5–2 hours each way, via winding mountain roads." },
+          { question: "Can I get to Elafonissi entirely by road?", answer: "Yes, unlike some of Crete's other well-known beaches, Elafonissi is reachable entirely by car." },
+          { question: "Can you arrange this for a group?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Chania to Elafonissi Day Trip?",
+        description: "Tell us your preferred timing and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτική Εκδρομή Χανιά – Ελαφονήσι",
+        description: "Κλείστε ιδιωτική μεταφορά εκδρομής από τα Χανιά προς την παραλία Ελαφονήσι, μία από τις πιο γνωστές παραλίες της Κρήτης, περίπου 75 χλμ μακριά.",
+      },
+      breadcrumbLabel: "Χανιά προς Ελαφονήσι",
+      hero: {
+        eyebrow: "Χανιά → Ελαφονήσι",
+        title: "Ιδιωτική Μεταφορά Χανιά – Ελαφονήσι",
+        description: "Μια ιδιωτική μεταφορά εκδρομής από τα Χανιά προς το Ελαφονήσι, περίπου 75 χλμ μακριά στη νοτιοδυτική ακτή της Κρήτης.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από τα Χανιά προς το Ελαφονήσι",
+        paragraphs: [
+          "Το Ελαφονήσι βρίσκεται περίπου 75 χλμ από τα Χανιά, συνήθως 1,5-2 ώρες οδικώς μέσω ελικοειδών ορεινών διαδρομών, συμπεριλαμβανομένου του Φαραγγίου της Τοπόλιας. Είναι μία από τις πιο γνωστές παραλίες της Κρήτης, προσβάσιμη εξ ολοκλήρου οδικώς, σε αντίθεση με ορισμένες άλλες γνωστές παραλίες του νησιού.",
+          "Δεδομένης της απόστασης, οι περισσότεροι επισκέπτες κλείνουν αυτό ως ολοήμερη εκδρομή, με το όχημα και τον οδηγό είτε να περιμένουν στην παραλία είτε να επιστρέφουν σε συμφωνημένη ώρα.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου 1,5-2 ώρες κάθε διαδρομή, μέσω ελικοειδών ορεινών δρόμων." },
+          { title: "Διαδρομή", description: "Νοτιοδυτικά από τα Χανιά μέσω της περιοχής του Φαραγγίου της Τοπόλιας." },
+          { title: "Χρονισμός Εκδρομής", description: "Ενημερώστε μας πόσο χρόνο θα θέλατε στην παραλία κατά την αίτηση προσφοράς." },
+          { title: "Χρονισμός Επιστροφής", description: "Το όχημα περιμένει ή επιστρέφει σε συμφωνημένη ώρα για να σας φέρει πίσω στα Χανιά." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Ημερήσιες Εκδρομές σε Παραλία", description: "Μια ολόκληρη μέρα σε μία από τις πιο φωτογραφημένες παραλίες της Κρήτης." },
+          { title: "Οικογένειες & Ομάδες", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα σας μαζί για ολόκληρη τη μέρα." },
+          { title: "Ευέλικτο Πρόγραμμα", description: "Επιλέξτε τον δικό σας χρονισμό στην παραλία αντί για σταθερό πρόγραμμα εκδρομής." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Δυτική Κρήτη",
+        items: [
+          { label: "Χανιά", href: "/el/poli/chania/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλα τα Χανιά." },
+          { label: "Ιδιωτικές Εκδρομές στην Κρήτη", href: "/el/idiotikes-ekdromes-kriti/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας σε όλη την Κρήτη." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Χανιά προς Μπάλο", href: "/el/diadromi/chania-balos/", description: "Μια άλλη γνωστή παραλία, που απαιτεί 4x4 ή βάρκα για την τελική προσέγγιση." },
+          { label: "Χανιά προς Φαράγγι Σαμαριάς", href: "/el/diadromi/chania-farangi-samarias/", description: "Μια εκδρομή πεζοπορίας πιο μέσα στα Λευκά Όρη." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πόσο διαρκεί η μεταφορά από τα Χανιά στο Ελαφονήσι;", answer: "Συνήθως περίπου 1,5-2 ώρες κάθε διαδρομή, μέσω ελικοειδών ορεινών δρόμων." },
+          { question: "Μπορώ να φτάσω στο Ελαφονήσι εξ ολοκλήρου οδικώς;", answer: "Ναι, σε αντίθεση με ορισμένες άλλες γνωστές παραλίες της Κρήτης, το Ελαφονήσι είναι προσβάσιμο εξ ολοκλήρου με αυτοκίνητο." },
+          { question: "Μπορείτε να το οργανώσετε για ομάδα;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε την Εκδρομή σας Χανιά – Ελαφονήσι;",
+        description: "Πείτε μας τον προτιμώμενο χρονισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeChaniaBalos: {
+    en: {
+      meta: {
+        title: "Chania to Balos Private Transfer – Book Your Day Trip",
+        description: "Book a private transfer from Chania toward the Balos lagoon, with a 4x4 track or boat needed for the final approach.",
+      },
+      breadcrumbLabel: "Chania to Balos",
+      hero: {
+        eyebrow: "Chania → Balos",
+        title: "Chania to Balos Private Transfer",
+        description: "A private day-trip transfer from Chania toward Balos, one of Crete's most photographed lagoons.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Chania to Balos",
+        paragraphs: [
+          "Balos is a lagoon on Crete's northwestern tip, near Kissamos, that isn't reachable by a standard car all the way to the water. The final approach requires either a 4x4 track from the village of Kaliviani followed by a walk down to the lagoon, or a boat tour departing from Kastelli Kissamos, Chania's Old Port, or Kolymbari.",
+          "We can arrange your private transfer to the relevant starting point for whichever option you choose — mention your preference when requesting a quote so we can describe exactly what's involved.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "The drive to Kaliviani or a boat departure point takes roughly an hour to an hour and a half from Chania." },
+          { title: "Final Approach", description: "A 4x4 track and walk from Kaliviani, or a boat tour — a standard car cannot reach the lagoon itself." },
+          { title: "Which Option", description: "Let us know whether you're planning the 4x4/walking route or a boat tour when requesting a quote." },
+          { title: "Day-Trip Timing", description: "Mention how much time you'd like at Balos when requesting a quote." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Beach Day Trips", description: "For visitors planning ahead for the extra logistics Balos involves." },
+          { title: "Active Travellers", description: "Suited to those comfortable with a walk down to the lagoon on the 4x4 route." },
+          { title: "Families & Groups", description: "A private vehicle keeps your group together for the drive to the starting point." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Western Crete",
+        items: [
+          { label: "Chania", href: "/city/chania/", description: "See our overview of transfers across Chania." },
+          { label: "Crete Day Trips", href: "/crete-day-trips/", description: "See our full range of private day trips across Crete." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Chania to Elafonissi", href: "/route/chania-to-elafonissi/", description: "A beach reachable entirely by road, without the extra logistics." },
+          { label: "Chania to Samaria Gorge", href: "/route/chania-to-samaria-gorge/", description: "Another day trip with its own specific logistics." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "Can you take me all the way to the Balos lagoon?", answer: "The final approach requires a 4x4 track and a walk, or a boat tour — a standard car cannot reach the lagoon itself. We can arrange your transfer to the relevant starting point." },
+          { question: "Is a boat tour or the 4x4 route better?", answer: "This depends on your preference — mention which you'd like when requesting a quote and we can describe what's involved." },
+          { question: "How long should I plan for this day trip?", answer: "Allow for a full day given the driving and the additional 4x4 or boat leg." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Chania to Balos Transfer?",
+        description: "Tell us which option you're planning and your passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτική Μεταφορά Χανιά – Μπάλος – Κλείστε την Εκδρομή σας",
+        description: "Κλείστε ιδιωτική μεταφορά από τα Χανιά προς τη λιμνοθάλασσα του Μπάλου, με χωμάτινο δρόμο 4x4 ή βάρκα απαραίτητα για την τελική προσέγγιση.",
+      },
+      breadcrumbLabel: "Χανιά προς Μπάλο",
+      hero: {
+        eyebrow: "Χανιά → Μπάλος",
+        title: "Ιδιωτική Μεταφορά Χανιά – Μπάλος",
+        description: "Μια ιδιωτική μεταφορά εκδρομής από τα Χανιά προς τον Μπάλο, μία από τις πιο φωτογραφημένες λιμνοθάλασσες της Κρήτης.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από τα Χανιά προς τον Μπάλο",
+        paragraphs: [
+          "Ο Μπάλος είναι μια λιμνοθάλασσα στο βορειοδυτικό άκρο της Κρήτης, κοντά στην Καστέλι Κισσάμου, που δεν είναι προσβάσιμη με κανονικό αυτοκίνητο μέχρι το νερό. Η τελική προσέγγιση απαιτεί είτε χωμάτινο δρόμο με 4x4 από το χωριό Καλυβιανή και στη συνέχεια πεζοπορία μέχρι τη λιμνοθάλασσα, είτε βαρκάδα από την Καστέλι Κισσάμου, το Παλιό Λιμάνι των Χανίων, ή το Κολυμπάρι.",
+          "Μπορούμε να οργανώσουμε την ιδιωτική σας μεταφορά προς το σχετικό σημείο εκκίνησης για όποια επιλογή διαλέξετε — αναφέρετε την προτίμησή σας κατά την αίτηση προσφοράς ώστε να σας εξηγήσουμε ακριβώς τι περιλαμβάνει.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Η διαδρομή προς την Καλυβιανή ή σημείο αναχώρησης βάρκας διαρκεί περίπου μία ώρα έως μία ώρα και μισή από τα Χανιά." },
+          { title: "Τελική Προσέγγιση", description: "Χωμάτινος δρόμος 4x4 και πεζοπορία από την Καλυβιανή, ή βαρκάδα — ένα κανονικό αυτοκίνητο δεν μπορεί να φτάσει στην ίδια τη λιμνοθάλασσα." },
+          { title: "Ποια Επιλογή", description: "Ενημερώστε μας αν σχεδιάζετε τη διαδρομή 4x4/πεζοπορίας ή βαρκάδα κατά την αίτηση προσφοράς." },
+          { title: "Χρονισμός Εκδρομής", description: "Αναφέρετε πόσο χρόνο θα θέλατε στον Μπάλο κατά την αίτηση προσφοράς." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Ημερήσιες Εκδρομές σε Παραλία", description: "Για επισκέπτες που σχεδιάζουν εκ των προτέρων για τα επιπλέον λογιστικά που περιλαμβάνει ο Μπάλος." },
+          { title: "Ενεργοί Ταξιδιώτες", description: "Κατάλληλο για όσους αισθάνονται άνετα με πεζοπορία μέχρι τη λιμνοθάλασσα στη διαδρομή 4x4." },
+          { title: "Οικογένειες & Ομάδες", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα σας μαζί για τη διαδρομή προς το σημείο εκκίνησης." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Δυτική Κρήτη",
+        items: [
+          { label: "Χανιά", href: "/el/poli/chania/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλα τα Χανιά." },
+          { label: "Ιδιωτικές Εκδρομές στην Κρήτη", href: "/el/idiotikes-ekdromes-kriti/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας σε όλη την Κρήτη." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Χανιά προς Ελαφονήσι", href: "/el/diadromi/chania-elafonisi/", description: "Μια παραλία προσβάσιμη εξ ολοκλήρου οδικώς, χωρίς τα επιπλέον λογιστικά." },
+          { label: "Χανιά προς Φαράγγι Σαμαριάς", href: "/el/diadromi/chania-farangi-samarias/", description: "Μια άλλη εκδρομή με τα δικά της ειδικά λογιστικά." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Μπορείτε να με πάτε μέχρι τη λιμνοθάλασσα του Μπάλου;", answer: "Η τελική προσέγγιση απαιτεί χωμάτινο δρόμο με 4x4 και πεζοπορία, ή βαρκάδα — ένα κανονικό αυτοκίνητο δεν μπορεί να φτάσει στην ίδια τη λιμνοθάλασσα. Μπορούμε να οργανώσουμε τη μεταφορά σας προς το σχετικό σημείο εκκίνησης." },
+          { question: "Είναι καλύτερη η βαρκάδα ή η διαδρομή 4x4;", answer: "Αυτό εξαρτάται από την προτίμησή σας — αναφέρετε ποια θα θέλατε κατά την αίτηση προσφοράς και θα σας εξηγήσουμε τι περιλαμβάνει." },
+          { question: "Πόσο χρόνο πρέπει να προγραμματίσω για αυτή την εκδρομή;", answer: "Προγραμματίστε ολόκληρη μέρα δεδομένης της οδήγησης και του επιπλέον σκέλους με 4x4 ή βάρκα." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Χανιά – Μπάλος;",
+        description: "Πείτε μας ποια επιλογή σχεδιάζετε και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeChaniaSamariaGorge: {
+    en: {
+      meta: {
+        title: "Chania to Samaria Gorge Private Transfer",
+        description: "Book a private transfer from Chania to the start of the Samaria Gorge hiking trail. A one-way hike ending at a different village.",
+      },
+      breadcrumbLabel: "Chania to Samaria Gorge",
+      hero: {
+        eyebrow: "Chania → Samaria Gorge",
+        title: "Chania to Samaria Gorge Private Transfer",
+        description: "A private transfer from Chania to Xyloskalo near Omalos, the start of Crete's most famous hiking trail.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Chania to the Samaria Gorge",
+        paragraphs: [
+          "The Samaria Gorge is a one-way hike of around 16 km, typically taking 5–7 hours, starting at Xyloskalo near Omalos — reachable by road from Chania — and ending at Agia Roumeli on the south coast, a village with no road access at all. Most hikers continue from Agia Roumeli by ferry to Sougia or Chora Sfakion, then by bus back to Chania.",
+          "Because this isn't a simple there-and-back trip, we arrange a private transfer to the trailhead at the start, and can also arrange a pickup back in Chania once you've completed the ferry-and-bus leg. Describe your plans when requesting a quote so we can plan accordingly.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time to Trailhead", description: "Roughly an hour from Chania to Xyloskalo/Omalos." },
+          { title: "The Hike Itself", description: "A one-way trail of around 16 km, typically 5–7 hours, ending at Agia Roumeli." },
+          { title: "Getting Back", description: "Most hikers take a ferry from Agia Roumeli to Sougia or Chora Sfakion, then a bus back to Chania." },
+          { title: "Timing", description: "Share your planned start time so your drop-off can be arranged accordingly." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Serious Hikers", description: "For visitors planning a full-day hike through one of Europe's longest gorges." },
+          { title: "Early Starts", description: "A private transfer to the trailhead at whatever time you need to begin." },
+          { title: "Groups", description: "A private vehicle keeps your group together for the drive to the start." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Western Crete",
+        items: [
+          { label: "Chania", href: "/city/chania/", description: "See our overview of transfers across Chania." },
+          { label: "Crete Day Trips", href: "/crete-day-trips/", description: "See our full range of private day trips across Crete." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Chania to Elafonissi", href: "/route/chania-to-elafonissi/", description: "A beach day trip reachable entirely by road." },
+          { label: "Chania to Balos", href: "/route/chania-to-balos/", description: "Another day trip with its own specific logistics." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "Does the Samaria Gorge trip bring me back to the same place?", answer: "No, the gorge is a one-way hike ending at Agia Roumeli, a village with no road access — most hikers return by ferry and bus." },
+          { question: "Can you pick me up after I finish the hike?", answer: "Yes, describe your plans when requesting a quote — we can arrange a pickup in Chania once you've completed the ferry-and-bus leg back." },
+          { question: "How long does the hike itself take?", answer: "Typically around 5–7 hours for the roughly 16 km trail, depending on your pace." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Chania to Samaria Gorge Transfer?",
+        description: "Tell us your planned start time and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτική Μεταφορά Χανιά – Φαράγγι Σαμαριάς",
+        description: "Κλείστε ιδιωτική μεταφορά από τα Χανιά προς την αρχή του μονοπατιού του Φαραγγίου της Σαμαριάς. Μονόδρομη πεζοπορία που καταλήγει σε διαφορετικό χωριό.",
+      },
+      breadcrumbLabel: "Χανιά προς Φαράγγι Σαμαριάς",
+      hero: {
+        eyebrow: "Χανιά → Φαράγγι Σαμαριάς",
+        title: "Ιδιωτική Μεταφορά Χανιά – Φαράγγι Σαμαριάς",
+        description: "Μια ιδιωτική μεταφορά από τα Χανιά προς το Ξυλόσκαλο κοντά στον Ομαλό, την αρχή του πιο γνωστού μονοπατιού πεζοπορίας της Κρήτης.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από τα Χανιά προς το Φαράγγι της Σαμαριάς",
+        paragraphs: [
+          "Το Φαράγγι της Σαμαριάς είναι μονόδρομη πεζοπορία περίπου 16 χλμ, που συνήθως διαρκεί 5-7 ώρες, ξεκινώντας από το Ξυλόσκαλο κοντά στον Ομαλό — προσβάσιμο οδικώς από τα Χανιά — και καταλήγοντας στην Αγία Ρουμέλη στη νότια ακτή, ένα χωριό χωρίς καθόλου οδική πρόσβαση. Οι περισσότεροι πεζοπόροι συνεχίζουν από την Αγία Ρουμέλη με ferry προς τη Σούγια ή τη Χώρα Σφακίων, και στη συνέχεια με λεωφορείο πίσω στα Χανιά.",
+          "Επειδή αυτό δεν είναι απλό ταξίδι με επιστροφή στο ίδιο σημείο, οργανώνουμε ιδιωτική μεταφορά προς την αρχή του μονοπατιού, και μπορούμε επίσης να οργανώσουμε παραλαβή πίσω στα Χανιά μόλις ολοκληρώσετε το σκέλος με ferry και λεωφορείο. Περιγράψτε τα σχέδιά σας κατά την αίτηση προσφοράς ώστε να σχεδιάσουμε ανάλογα.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού προς την Αρχή", description: "Περίπου μία ώρα από τα Χανιά προς το Ξυλόσκαλο/Ομαλό." },
+          { title: "Η Ίδια η Πεζοπορία", description: "Μονόδρομο μονοπάτι περίπου 16 χλμ, συνήθως 5-7 ώρες, που καταλήγει στην Αγία Ρουμέλη." },
+          { title: "Επιστροφή", description: "Οι περισσότεροι πεζοπόροι παίρνουν ferry από την Αγία Ρουμέλη προς τη Σούγια ή τη Χώρα Σφακίων, και στη συνέχεια λεωφορείο πίσω στα Χανιά." },
+          { title: "Χρονισμός", description: "Δώστε μας την προγραμματισμένη ώρα εκκίνησής σας ώστε να οργανωθεί ανάλογα η παράδοσή σας." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Σοβαροί Πεζοπόροι", description: "Για επισκέπτες που σχεδιάζουν ολοήμερη πεζοπορία σε ένα από τα μεγαλύτερα φαράγγια της Ευρώπης." },
+          { title: "Πρωινή Εκκίνηση", description: "Ιδιωτική μεταφορά προς την αρχή του μονοπατιού όποια ώρα χρειάζεστε να ξεκινήσετε." },
+          { title: "Ομάδες", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα σας μαζί για τη διαδρομή προς την αρχή." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τη Δυτική Κρήτη",
+        items: [
+          { label: "Χανιά", href: "/el/poli/chania/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλα τα Χανιά." },
+          { label: "Ιδιωτικές Εκδρομές στην Κρήτη", href: "/el/idiotikes-ekdromes-kriti/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας σε όλη την Κρήτη." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Χανιά προς Ελαφονήσι", href: "/el/diadromi/chania-elafonisi/", description: "Μια ημερήσια εκδρομή σε παραλία προσβάσιμη εξ ολοκλήρου οδικώς." },
+          { label: "Χανιά προς Μπάλο", href: "/el/diadromi/chania-balos/", description: "Μια άλλη εκδρομή με τα δικά της ειδικά λογιστικά." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Η εκδρομή στο Φαράγγι της Σαμαριάς με φέρνει πίσω στο ίδιο σημείο;", answer: "Όχι, το φαράγγι είναι μονόδρομη πεζοπορία που καταλήγει στην Αγία Ρουμέλη, ένα χωριό χωρίς οδική πρόσβαση — οι περισσότεροι πεζοπόροι επιστρέφουν με ferry και λεωφορείο." },
+          { question: "Μπορείτε να με παραλάβετε μετά την πεζοπορία;", answer: "Ναι, περιγράψτε τα σχέδιά σας κατά την αίτηση προσφοράς — μπορούμε να οργανώσουμε παραλαβή στα Χανιά μόλις ολοκληρώσετε το σκέλος με ferry και λεωφορείο." },
+          { question: "Πόσο διαρκεί η ίδια η πεζοπορία;", answer: "Συνήθως περίπου 5-7 ώρες για το μονοπάτι των περίπου 16 χλμ, ανάλογα με τον ρυθμό σας." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Χανιά – Φαράγγι Σαμαριάς;",
+        description: "Πείτε μας την προγραμματισμένη ώρα εκκίνησης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportGdmMegaron: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to GDM Megaron Transfer – Private Car",
+        description: "Book a private transfer from Heraklion Airport to GDM Megaron, a historic hotel overlooking the Venetian port.",
+      },
+      breadcrumbLabel: "Heraklion Airport to GDM Megaron",
+      hero: {
+        eyebrow: "Heraklion Airport → GDM Megaron",
+        title: "Heraklion Airport to GDM Megaron Transfer",
+        description: "A direct private transfer from Heraklion Airport to GDM Megaron, in a historic building overlooking the Venetian port.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to GDM Megaron",
+        paragraphs: [
+          "GDM Megaron occupies a 1925 building classified as a historical monument, overlooking Heraklion's Venetian port in the heart of the city. It's a genuinely different character from the resort hotels further along the coast, appealing to visitors who want a central, heritage-building stay.",
+          "A private transfer from the airport takes you directly to the hotel, a short journey given Heraklion's compact size.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A short, direct transfer from the airport into central Heraklion." },
+          { title: "Drop-Off", description: "Directly at the hotel, overlooking the Venetian port." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Heritage-Building Stays", description: "For visitors who want a historic building in the city centre rather than a resort." },
+          { title: "Venetian Port Views", description: "A hotel overlooking one of Heraklion's most recognisable landmarks." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Heraklion",
+        items: [
+          { label: "Heraklion", href: "/city/heraklion/", description: "See our overview of transfers across Heraklion." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Aquila Atlantis Hotel", href: "/route/heraklion-airport-to-aquila-atlantis/", description: "Another central Heraklion hotel transfer." },
+          { label: "Heraklion Airport to Olive Green Hotel", href: "/route/heraklion-airport-to-olive-green/", description: "A boutique eco-focused hotel transfer." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to GDM Megaron?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Is GDM Megaron in a historic building?", answer: "Yes, it occupies a 1925 building classified as a historical monument, overlooking the Venetian port." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — hotel to airport as well as airport to hotel." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to GDM Megaron Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – GDM Megaron – Ιδιωτικό Όχημα",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το GDM Megaron, ένα ιστορικό ξενοδοχείο με θέα στο Ενετικό λιμάνι.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς GDM Megaron",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → GDM Megaron",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – GDM Megaron",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το GDM Megaron, σε ιστορικό κτίριο με θέα στο Ενετικό λιμάνι.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς το GDM Megaron",
+        paragraphs: [
+          "Το GDM Megaron στεγάζεται σε κτίριο του 1925 χαρακτηρισμένο ως ιστορικό μνημείο, με θέα στο Ενετικό λιμάνι του Ηρακλείου στην καρδιά της πόλης. Είναι πραγματικά διαφορετικός χαρακτήρας από τα ξενοδοχεία θερέτρων πιο μακριά στην ακτή, ελκυστικό για επισκέπτες που θέλουν κεντρική διαμονή σε ιστορικό κτίριο.",
+          "Μια ιδιωτική μεταφορά από το αεροδρόμιο σας μεταφέρει απευθείας στο ξενοδοχείο, ένα σύντομο ταξίδι δεδομένου του συμπαγούς μεγέθους του Ηρακλείου.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια σύντομη, απευθείας μεταφορά από το αεροδρόμιο προς το κέντρο του Ηρακλείου." },
+          { title: "Παράδοση", description: "Απευθείας στο ξενοδοχείο, με θέα στο Ενετικό λιμάνι." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Διαμονή σε Ιστορικό Κτίριο", description: "Για επισκέπτες που θέλουν ιστορικό κτίριο στο κέντρο της πόλης αντί για θέρετρο." },
+          { title: "Θέα στο Ενετικό Λιμάνι", description: "Ένα ξενοδοχείο με θέα σε ένα από τα πιο αναγνωρίσιμα αξιοθέατα του Ηρακλείου." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε το Ηράκλειο",
+        items: [
+          { label: "Ηράκλειο", href: "/el/poli/irakleio/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλο το Ηράκλειο." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Aquila Atlantis Hotel", href: "/el/diadromi/aerodromio-irakleiou-aquila-atlantis/", description: "Άλλη κεντρική μεταφορά ξενοδοχείου του Ηρακλείου." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Olive Green Hotel", href: "/el/diadromi/aerodromio-irakleiou-olive-green/", description: "Μια boutique οικολογική μεταφορά ξενοδοχείου." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στο GDM Megaron;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Είναι το GDM Megaron σε ιστορικό κτίριο;", answer: "Ναι, στεγάζεται σε κτίριο του 1925 χαρακτηρισμένο ως ιστορικό μνημείο, με θέα στο Ενετικό λιμάνι." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – GDM Megaron;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportGalaxyIraklio: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Galaxy Iraklio Hotel Transfer",
+        description: "Book a private transfer from Heraklion Airport to Galaxy Iraklio Hotel, just outside central Heraklion.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Galaxy Iraklio",
+      hero: {
+        eyebrow: "Heraklion Airport → Galaxy Iraklio",
+        title: "Heraklion Airport to Galaxy Iraklio Hotel Transfer",
+        description: "A direct private transfer from Heraklion Airport to Galaxy Iraklio Hotel, just outside the city centre.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Galaxy Iraklio Hotel",
+        paragraphs: [
+          "Galaxy Iraklio Hotel sits just outside Heraklion's immediate city centre, around a 10-minute walk in, and is known for a large freshwater pool and its own 24-hour wellness club. It suits visitors who want a slightly quieter setting without being far from the centre.",
+          "A private transfer from the airport takes you directly to the hotel, avoiding the need to navigate the city with luggage.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A direct transfer from the airport, similar in length to the central Heraklion hotel transfers." },
+          { title: "Drop-Off", description: "Directly at the hotel entrance." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Wellness-Focused Stays", description: "For visitors who want a hotel with its own wellness club and large pool." },
+          { title: "Quieter Surroundings", description: "Slightly removed from the busiest part of central Heraklion." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Heraklion",
+        items: [
+          { label: "Heraklion", href: "/city/heraklion/", description: "See our overview of transfers across Heraklion." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to GDM Megaron", href: "/route/heraklion-airport-to-gdm-megaron/", description: "A historic-building hotel in the city centre." },
+          { label: "Heraklion Airport to Legacy Gastro Suites", href: "/route/heraklion-airport-to-legacy-gastro-suites/", description: "A gastronomy-themed boutique hotel." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to Galaxy Iraklio Hotel?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Is Galaxy Iraklio Hotel in central Heraklion?", answer: "It sits just outside the immediate centre, around a 10-minute walk in." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — hotel to airport as well as airport to hotel." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Galaxy Iraklio Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Galaxy Iraklio Hotel",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Galaxy Iraklio Hotel, λίγο έξω από το κέντρο του Ηρακλείου.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Galaxy Iraklio",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Galaxy Iraklio",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Galaxy Iraklio Hotel",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Galaxy Iraklio Hotel, λίγο έξω από το κέντρο της πόλης.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς το Galaxy Iraklio Hotel",
+        paragraphs: [
+          "Το Galaxy Iraklio Hotel βρίσκεται λίγο έξω από το άμεσο κέντρο του Ηρακλείου, περίπου 10 λεπτά με τα πόδια, και είναι γνωστό για τη μεγάλη πισίνα γλυκού νερού και το δικό του wellness club 24 ωρών. Ταιριάζει σε επισκέπτες που θέλουν λίγο πιο ήσυχο περιβάλλον χωρίς να είναι μακριά από το κέντρο.",
+          "Μια ιδιωτική μεταφορά από το αεροδρόμιο σας μεταφέρει απευθείας στο ξενοδοχείο, αποφεύγοντας την ανάγκη πλοήγησης στην πόλη με αποσκευές.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια απευθείας μεταφορά από το αεροδρόμιο, παρόμοιας διάρκειας με τις κεντρικές μεταφορές ξενοδοχείων του Ηρακλείου." },
+          { title: "Παράδοση", description: "Απευθείας στην είσοδο του ξενοδοχείου." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Διαμονή με Έμφαση στην Ευεξία", description: "Για επισκέπτες που θέλουν ξενοδοχείο με δικό του wellness club και μεγάλη πισίνα." },
+          { title: "Πιο Ήσυχο Περιβάλλον", description: "Λίγο απομακρυσμένο από το πιο πολυσύχναστο τμήμα του κέντρου του Ηρακλείου." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε το Ηράκλειο",
+        items: [
+          { label: "Ηράκλειο", href: "/el/poli/irakleio/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλο το Ηράκλειο." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς GDM Megaron", href: "/el/diadromi/aerodromio-irakleiou-gdm-megaron/", description: "Ένα ξενοδοχείο σε ιστορικό κτίριο στο κέντρο της πόλης." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Legacy Gastro Suites", href: "/el/diadromi/aerodromio-irakleiou-legacy-gastro-suites/", description: "Ένα boutique ξενοδοχείο με γαστρονομικό θέμα." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στο Galaxy Iraklio Hotel;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Είναι το Galaxy Iraklio Hotel στο κέντρο του Ηρακλείου;", answer: "Βρίσκεται λίγο έξω από το άμεσο κέντρο, περίπου 10 λεπτά με τα πόδια." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Galaxy Iraklio;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportAquilaAtlantis: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Aquila Atlantis Hotel Transfer",
+        description: "Book a private transfer from Heraklion Airport to Aquila Atlantis Hotel, near the Archaeological Museum in central Heraklion.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Aquila Atlantis",
+      hero: {
+        eyebrow: "Heraklion Airport → Aquila Atlantis",
+        title: "Heraklion Airport to Aquila Atlantis Hotel Transfer",
+        description: "A direct private transfer from Heraklion Airport to Aquila Atlantis Hotel, near the Archaeological Museum.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Aquila Atlantis Hotel",
+        paragraphs: [
+          "Aquila Atlantis Hotel sits in central Heraklion, a short walk from the Archaeological Museum and the Venetian Walls, with substantial conference and event capacity that gives it a stronger business-hotel character than some of the city's other central properties.",
+          "A private transfer from the airport takes you directly to the hotel, avoiding the need to navigate the city centre with luggage after your flight.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A direct transfer from the airport into central Heraklion." },
+          { title: "Drop-Off", description: "Directly at the hotel, near the Archaeological Museum." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Business & Conference Travellers", description: "For visitors attending events at the hotel's own conference spaces." },
+          { title: "Museum & Culture Visitors", description: "A short walk from the Archaeological Museum and Venetian Walls." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Heraklion",
+        items: [
+          { label: "Heraklion", href: "/city/heraklion/", description: "See our overview of transfers across Heraklion." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to GDM Megaron", href: "/route/heraklion-airport-to-gdm-megaron/", description: "A historic-building hotel near the Venetian port." },
+          { label: "Heraklion Airport to Olive Green Hotel", href: "/route/heraklion-airport-to-olive-green/", description: "A boutique eco-focused hotel transfer." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to Aquila Atlantis Hotel?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Is Aquila Atlantis Hotel suitable for business travel?", answer: "Yes, it has substantial conference and event capacity, giving it a stronger business-hotel character than some other central Heraklion properties." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — hotel to airport as well as airport to hotel." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Aquila Atlantis Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Aquila Atlantis Hotel",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Aquila Atlantis Hotel, κοντά στο Αρχαιολογικό Μουσείο στο κέντρο του Ηρακλείου.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Aquila Atlantis",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Aquila Atlantis",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Aquila Atlantis Hotel",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Aquila Atlantis Hotel, κοντά στο Αρχαιολογικό Μουσείο.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς το Aquila Atlantis Hotel",
+        paragraphs: [
+          "Το Aquila Atlantis Hotel βρίσκεται στο κέντρο του Ηρακλείου, σε μικρή απόσταση με τα πόδια από το Αρχαιολογικό Μουσείο και τα Ενετικά Τείχη, με σημαντική χωρητικότητα συνεδρίων και εκδηλώσεων που του δίνει πιο επαγγελματικό χαρακτήρα από άλλα κεντρικά ξενοδοχεία της πόλης.",
+          "Μια ιδιωτική μεταφορά από το αεροδρόμιο σας μεταφέρει απευθείας στο ξενοδοχείο, αποφεύγοντας την ανάγκη πλοήγησης στο κέντρο της πόλης με αποσκευές μετά την πτήση σας.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια απευθείας μεταφορά από το αεροδρόμιο προς το κέντρο του Ηρακλείου." },
+          { title: "Παράδοση", description: "Απευθείας στο ξενοδοχείο, κοντά στο Αρχαιολογικό Μουσείο." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Επαγγελματικοί & Συνεδριακοί Ταξιδιώτες", description: "Για επισκέπτες που παρακολουθούν εκδηλώσεις στους δικούς του συνεδριακούς χώρους." },
+          { title: "Επισκέπτες Μουσείων & Πολιτισμού", description: "Σε μικρή απόσταση με τα πόδια από το Αρχαιολογικό Μουσείο και τα Ενετικά Τείχη." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε το Ηράκλειο",
+        items: [
+          { label: "Ηράκλειο", href: "/el/poli/irakleio/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλο το Ηράκλειο." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς GDM Megaron", href: "/el/diadromi/aerodromio-irakleiou-gdm-megaron/", description: "Ένα ξενοδοχείο σε ιστορικό κτίριο κοντά στο Ενετικό λιμάνι." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Olive Green Hotel", href: "/el/diadromi/aerodromio-irakleiou-olive-green/", description: "Μια boutique οικολογική μεταφορά ξενοδοχείου." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στο Aquila Atlantis Hotel;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Είναι το Aquila Atlantis Hotel κατάλληλο για επαγγελματικά ταξίδια;", answer: "Ναι, διαθέτει σημαντική χωρητικότητα συνεδρίων και εκδηλώσεων, δίνοντάς του πιο επαγγελματικό χαρακτήρα από άλλα κεντρικά ξενοδοχεία του Ηρακλείου." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Aquila Atlantis;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportOliveGreen: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Olive Green Hotel Transfer",
+        description: "Book a private transfer from Heraklion Airport to Olive Green Hotel, an eco-focused boutique hotel near Eleftherias Square.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Olive Green",
+      hero: {
+        eyebrow: "Heraklion Airport → Olive Green",
+        title: "Heraklion Airport to Olive Green Hotel Transfer",
+        description: "A direct private transfer from Heraklion Airport to Olive Green Hotel, near Eleftherias Square.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Olive Green Hotel",
+        paragraphs: [
+          "Olive Green Hotel sits in central Heraklion near Eleftherias Square and the Morosini Fountain, marketed explicitly as an eco-friendly, smart-technology boutique hotel — a genuinely different positioning from the city's more traditional properties.",
+          "A private transfer from the airport takes you directly to the hotel, avoiding the need to navigate the city centre with luggage after your flight.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A direct transfer from the airport into central Heraklion." },
+          { title: "Drop-Off", description: "Directly at the hotel, near Eleftherias Square." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Eco-Conscious Stays", description: "For visitors who prefer an eco-friendly, smart-technology hotel concept." },
+          { title: "Central Heraklion Access", description: "Near Eleftherias Square and the Morosini Fountain." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Heraklion",
+        items: [
+          { label: "Heraklion", href: "/city/heraklion/", description: "See our overview of transfers across Heraklion." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Legacy Gastro Suites", href: "/route/heraklion-airport-to-legacy-gastro-suites/", description: "Another boutique hotel on Eleftherias Square." },
+          { label: "Heraklion Airport to GDM Megaron", href: "/route/heraklion-airport-to-gdm-megaron/", description: "A historic-building hotel near the Venetian port." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to Olive Green Hotel?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "What makes Olive Green Hotel different from other Heraklion hotels?", answer: "It's marketed explicitly as an eco-friendly, smart-technology boutique hotel." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — hotel to airport as well as airport to hotel." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Olive Green Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Olive Green Hotel",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Olive Green Hotel, ένα οικολογικό boutique ξενοδοχείο κοντά στην Πλατεία Ελευθερίας.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Olive Green",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Olive Green",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Olive Green Hotel",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Olive Green Hotel, κοντά στην Πλατεία Ελευθερίας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς το Olive Green Hotel",
+        paragraphs: [
+          "Το Olive Green Hotel βρίσκεται στο κέντρο του Ηρακλείου κοντά στην Πλατεία Ελευθερίας και το Σιντριβάνι Μοροζίνι, διαφημιζόμενο ρητά ως οικολογικό boutique ξενοδοχείο έξυπνης τεχνολογίας — μια πραγματικά διαφορετική τοποθέτηση από τα πιο παραδοσιακά ξενοδοχεία της πόλης.",
+          "Μια ιδιωτική μεταφορά από το αεροδρόμιο σας μεταφέρει απευθείας στο ξενοδοχείο, αποφεύγοντας την ανάγκη πλοήγησης στο κέντρο της πόλης με αποσκευές μετά την πτήση σας.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια απευθείας μεταφορά από το αεροδρόμιο προς το κέντρο του Ηρακλείου." },
+          { title: "Παράδοση", description: "Απευθείας στο ξενοδοχείο, κοντά στην Πλατεία Ελευθερίας." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Οικολογική Διαμονή", description: "Για επισκέπτες που προτιμούν οικολογική ξενοδοχειακή αντίληψη με έξυπνη τεχνολογία." },
+          { title: "Πρόσβαση στο Κέντρο του Ηρακλείου", description: "Κοντά στην Πλατεία Ελευθερίας και το Σιντριβάνι Μοροζίνι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε το Ηράκλειο",
+        items: [
+          { label: "Ηράκλειο", href: "/el/poli/irakleio/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλο το Ηράκλειο." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Legacy Gastro Suites", href: "/el/diadromi/aerodromio-irakleiou-legacy-gastro-suites/", description: "Άλλο boutique ξενοδοχείο στην Πλατεία Ελευθερίας." },
+          { label: "Αεροδρόμιο Ηρακλείου προς GDM Megaron", href: "/el/diadromi/aerodromio-irakleiou-gdm-megaron/", description: "Ένα ξενοδοχείο σε ιστορικό κτίριο κοντά στο Ενετικό λιμάνι." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στο Olive Green Hotel;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Τι κάνει το Olive Green Hotel διαφορετικό από άλλα ξενοδοχεία του Ηρακλείου;", answer: "Διαφημίζεται ρητά ως οικολογικό boutique ξενοδοχείο έξυπνης τεχνολογίας." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Olive Green;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportLegacyGastroSuites: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Legacy Gastro Suites Transfer",
+        description: "Book a private transfer from Heraklion Airport to Legacy Gastro Suites, a gastronomy-themed hotel on Eleftherias Square.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Legacy Gastro Suites",
+      hero: {
+        eyebrow: "Heraklion Airport → Legacy Gastro Suites",
+        title: "Heraklion Airport to Legacy Gastro Suites Transfer",
+        description: "A direct private transfer from Heraklion Airport to Legacy Gastro Suites, on Eleftherias Square.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Legacy Gastro Suites",
+        paragraphs: [
+          "Legacy Gastro Suites is a newly opened hotel in a renovated 1950s building on Eleftherias Square, built around a gastronomy theme — each of its suites is themed after a Cretan artist, with a food and wine station in-room, a genuinely distinctive concept in central Heraklion.",
+          "A private transfer from the airport takes you directly to the hotel, avoiding the need to navigate the city centre with luggage after your flight.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "A direct transfer from the airport into central Heraklion." },
+          { title: "Drop-Off", description: "Directly at the hotel, on Eleftherias Square." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Food & Wine Enthusiasts", description: "For visitors drawn to the hotel's gastronomy-themed suites." },
+          { title: "Central Heraklion Access", description: "On Eleftherias Square, in the heart of the city." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Heraklion",
+        items: [
+          { label: "Heraklion", href: "/city/heraklion/", description: "See our overview of transfers across Heraklion." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Olive Green Hotel", href: "/route/heraklion-airport-to-olive-green/", description: "Another boutique hotel near Eleftherias Square." },
+          { label: "Heraklion Airport to GDM Megaron", href: "/route/heraklion-airport-to-gdm-megaron/", description: "A historic-building hotel near the Venetian port." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to Legacy Gastro Suites?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "What is the gastronomy theme at Legacy Gastro Suites?", answer: "Each suite is themed after a Cretan artist, with a food and wine station in-room." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — hotel to airport as well as airport to hotel." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Legacy Gastro Suites Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Legacy Gastro Suites",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Legacy Gastro Suites, ένα ξενοδοχείο με γαστρονομικό θέμα στην Πλατεία Ελευθερίας.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Legacy Gastro Suites",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Legacy Gastro Suites",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Legacy Gastro Suites",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Legacy Gastro Suites, στην Πλατεία Ελευθερίας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς το Legacy Gastro Suites",
+        paragraphs: [
+          "Το Legacy Gastro Suites είναι ένα νεοανοιγμένο ξενοδοχείο σε ανακαινισμένο κτίριο της δεκαετίας του 1950 στην Πλατεία Ελευθερίας, χτισμένο γύρω από γαστρονομικό θέμα — κάθε σουίτα έχει θέμα έναν κρητικό καλλιτέχνη, με σταθμό φαγητού και κρασιού μέσα στο δωμάτιο, μια πραγματικά διαφορετική αντίληψη στο κέντρο του Ηρακλείου.",
+          "Μια ιδιωτική μεταφορά από το αεροδρόμιο σας μεταφέρει απευθείας στο ξενοδοχείο, αποφεύγοντας την ανάγκη πλοήγησης στο κέντρο της πόλης με αποσκευές μετά την πτήση σας.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Μια απευθείας μεταφορά από το αεροδρόμιο προς το κέντρο του Ηρακλείου." },
+          { title: "Παράδοση", description: "Απευθείας στο ξενοδοχείο, στην Πλατεία Ελευθερίας." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Λάτρεις Φαγητού & Κρασιού", description: "Για επισκέπτες που ελκύονται από τις γαστρονομικές σουίτες του ξενοδοχείου." },
+          { title: "Πρόσβαση στο Κέντρο του Ηρακλείου", description: "Στην Πλατεία Ελευθερίας, στην καρδιά της πόλης." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε το Ηράκλειο",
+        items: [
+          { label: "Ηράκλειο", href: "/el/poli/irakleio/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλο το Ηράκλειο." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Olive Green Hotel", href: "/el/diadromi/aerodromio-irakleiou-olive-green/", description: "Άλλο boutique ξενοδοχείο κοντά στην Πλατεία Ελευθερίας." },
+          { label: "Αεροδρόμιο Ηρακλείου προς GDM Megaron", href: "/el/diadromi/aerodromio-irakleiou-gdm-megaron/", description: "Ένα ξενοδοχείο σε ιστορικό κτίριο κοντά στο Ενετικό λιμάνι." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στο Legacy Gastro Suites;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Ποιο είναι το γαστρονομικό θέμα στο Legacy Gastro Suites;", answer: "Κάθε σουίτα έχει θέμα έναν κρητικό καλλιτέχνη, με σταθμό φαγητού και κρασιού μέσα στο δωμάτιο." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Legacy Gastro Suites;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportCretaMaris: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Creta Maris Resort Transfer",
+        description: "Book a private transfer from Heraklion Airport to Creta Maris Resort, a large all-inclusive resort in Hersonissos.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Creta Maris",
+      hero: {
+        eyebrow: "Heraklion Airport → Creta Maris",
+        title: "Heraklion Airport to Creta Maris Resort Transfer",
+        description: "A direct private transfer from Heraklion Airport to Creta Maris Resort in Hersonissos.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Creta Maris Resort",
+        paragraphs: [
+          "Creta Maris Resort is a large all-inclusive complex in Hersonissos, around 25 minutes from Heraklion Airport, with extensive grounds including multiple pools and a waterpark. It's a common choice for families and groups on a resort-based holiday.",
+          "A private transfer takes you directly to the resort entrance, avoiding the need for a shared shuttle or public transport with luggage.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around 25 minutes, similar to other Hersonissos transfers." },
+          { title: "Drop-Off", description: "Directly at the resort entrance in Hersonissos." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Family All-Inclusive Stays", description: "For visitors heading to a large family-oriented resort." },
+          { title: "Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-resort or resort-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Hersonissos",
+        items: [
+          { label: "Hersonissos", href: "/destination/hersonissos/", description: "See our destination overview of Hersonissos." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Nana Princess", href: "/route/heraklion-airport-to-nana-princess/", description: "An adults-only alternative in the same area." },
+          { label: "Heraklion Airport to Hersonissos", href: "/route/heraklion-airport-to-hersonissos/", description: "Our general transfer route to the Hersonissos area." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to Creta Maris Resort?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Is Creta Maris Resort family-friendly?", answer: "Yes, it's a large all-inclusive complex with extensive grounds including multiple pools and a waterpark." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — resort to airport as well as airport to resort." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Creta Maris Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Creta Maris Resort",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Creta Maris Resort, ένα μεγάλο all-inclusive θέρετρο στον Χερσόνησο.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Creta Maris",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Creta Maris",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Creta Maris Resort",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Creta Maris Resort στον Χερσόνησο.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς το Creta Maris Resort",
+        paragraphs: [
+          "Το Creta Maris Resort είναι ένα μεγάλο all-inclusive συγκρότημα στον Χερσόνησο, περίπου 25 λεπτά από το Αεροδρόμιο Ηρακλείου, με εκτεταμένους χώρους που περιλαμβάνουν πολλαπλές πισίνες και υδάτινο πάρκο. Είναι συνηθισμένη επιλογή για οικογένειες και ομάδες σε διακοπές θέρετρου.",
+          "Μια ιδιωτική μεταφορά σας μεταφέρει απευθείας στην είσοδο του θέρετρου, αποφεύγοντας την ανάγκη κοινού shuttle ή δημόσιων μέσων με αποσκευές.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου 25 λεπτά, παρόμοια με άλλες μεταφορές προς τον Χερσόνησο." },
+          { title: "Παράδοση", description: "Απευθείας στην είσοδο του θέρετρου στον Χερσόνησο." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Οικογενειακή Διαμονή All-Inclusive", description: "Για επισκέπτες που κατευθύνονται σε μεγάλο θέρετρο προσανατολισμένο σε οικογένειες." },
+          { title: "Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς θέρετρο ή θέρετρο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τον Χερσόνησο",
+        items: [
+          { label: "Χερσόνησος", href: "/el/proorismos/chersonisos/", description: "Δείτε την επισκόπηση προορισμού μας για τον Χερσόνησο." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Nana Princess", href: "/el/diadromi/aerodromio-irakleiou-nana-princess/", description: "Μια εναλλακτική μόνο για ενήλικες στην ίδια περιοχή." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Χερσόνησο", href: "/el/diadromi/aerodromio-irakleiou-chersonisos/", description: "Η γενική μας διαδρομή μεταφοράς προς την περιοχή του Χερσονήσου." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στο Creta Maris Resort;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Είναι το Creta Maris Resort φιλικό για οικογένειες;", answer: "Ναι, είναι μεγάλο all-inclusive συγκρότημα με εκτεταμένους χώρους που περιλαμβάνουν πολλαπλές πισίνες και υδάτινο πάρκο." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Creta Maris;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportNanaPrincess: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Nana Princess Transfer",
+        description: "Book a private transfer from Heraklion Airport to Nana Princess, an adults-only luxury resort in Hersonissos.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Nana Princess",
+      hero: {
+        eyebrow: "Heraklion Airport → Nana Princess",
+        title: "Heraklion Airport to Nana Princess Transfer",
+        description: "A direct private transfer from Heraklion Airport to Nana Princess, an adults-only resort in Hersonissos.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Nana Princess",
+        paragraphs: [
+          "Nana Princess is an adults-only luxury resort in Hersonissos, built around suites and villas with private pools, a different concept from the larger family all-inclusive resorts nearby. It's typically around 25–30 minutes from Heraklion Airport.",
+          "A private transfer takes you directly to the resort, avoiding the need for a shared shuttle with luggage.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around 25–30 minutes, similar to other Hersonissos transfers." },
+          { title: "Drop-Off", description: "Directly at the resort entrance." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Adults-Only & Couples Stays", description: "For visitors heading to a resort designed for couples and adults." },
+          { title: "Private Pool Suites", description: "Suites and villas with their own private pools." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-resort or resort-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Hersonissos",
+        items: [
+          { label: "Hersonissos", href: "/destination/hersonissos/", description: "See our destination overview of Hersonissos." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Creta Maris Resort", href: "/route/heraklion-airport-to-creta-maris/", description: "A larger family all-inclusive alternative in the same area." },
+          { label: "Heraklion Airport to Malia", href: "/route/heraklion-airport-to-malia/", description: "Continue further along the coast." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to Nana Princess?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Is Nana Princess suitable for families with children?", answer: "It's positioned as an adults-only resort — check directly with the resort for their current policy." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — resort to airport as well as airport to resort." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Nana Princess Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Nana Princess",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Nana Princess, ένα πολυτελές θέρετρο μόνο για ενήλικες στον Χερσόνησο.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Nana Princess",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Nana Princess",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Nana Princess",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Nana Princess, ένα θέρετρο μόνο για ενήλικες στον Χερσόνησο.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς το Nana Princess",
+        paragraphs: [
+          "Το Nana Princess είναι ένα πολυτελές θέρετρο μόνο για ενήλικες στον Χερσόνησο, χτισμένο γύρω από σουίτες και βίλες με ιδιωτικές πισίνες, μια διαφορετική αντίληψη από τα μεγαλύτερα οικογενειακά all-inclusive θέρετρα εκεί κοντά. Βρίσκεται συνήθως περίπου 25-30 λεπτά από το Αεροδρόμιο Ηρακλείου.",
+          "Μια ιδιωτική μεταφορά σας μεταφέρει απευθείας στο θέρετρο, αποφεύγοντας την ανάγκη κοινού shuttle με αποσκευές.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου 25-30 λεπτά, παρόμοια με άλλες μεταφορές προς τον Χερσόνησο." },
+          { title: "Παράδοση", description: "Απευθείας στην είσοδο του θέρετρου." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Διαμονή Μόνο για Ενήλικες & Ζευγάρια", description: "Για επισκέπτες που κατευθύνονται σε θέρετρο σχεδιασμένο για ζευγάρια και ενήλικες." },
+          { title: "Σουίτες με Ιδιωτική Πισίνα", description: "Σουίτες και βίλες με δικές τους ιδιωτικές πισίνες." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς θέρετρο ή θέρετρο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τον Χερσόνησο",
+        items: [
+          { label: "Χερσόνησος", href: "/el/proorismos/chersonisos/", description: "Δείτε την επισκόπηση προορισμού μας για τον Χερσόνησο." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Creta Maris Resort", href: "/el/diadromi/aerodromio-irakleiou-creta-maris/", description: "Μια μεγαλύτερη οικογενειακή εναλλακτική στην ίδια περιοχή." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Μάλια", href: "/el/diadromi/aerodromio-irakleiou-malia/", description: "Συνεχίστε περαιτέρω κατά μήκος της ακτής." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στο Nana Princess;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Είναι το Nana Princess κατάλληλο για οικογένειες με παιδιά;", answer: "Είναι τοποθετημένο ως θέρετρο μόνο για ενήλικες — επιβεβαιώστε απευθείας με το θέρετρο την τρέχουσα πολιτική τους." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Nana Princess;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportAlexanderBeach: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Alexander Beach Hotel & Village Resort",
+        description: "Book a private transfer from Heraklion Airport to Alexander Beach Hotel & Village Resort, near Stalis and Malia.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Alexander Beach",
+      hero: {
+        eyebrow: "Heraklion Airport → Alexander Beach",
+        title: "Heraklion Airport to Alexander Beach Hotel & Village Resort",
+        description: "A direct private transfer from Heraklion Airport to Alexander Beach Hotel & Village Resort, near the Stalis and Malia border.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Alexander Beach Hotel & Village Resort",
+        paragraphs: [
+          "Alexander Beach Hotel & Village Resort sits near the border of Stalis and Malia, designed with a traditional Cretan village styling that gives it a different character from the larger modern resort blocks nearby. It's typically around 30–35 minutes from Heraklion Airport.",
+          "A private transfer takes you directly to the resort, avoiding the need for a shared shuttle with luggage.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around 30–35 minutes, similar to other Malia-area transfers." },
+          { title: "Drop-Off", description: "Directly at the resort entrance near Stalis and Malia." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Traditional-Style Resort Stays", description: "For visitors who prefer a Cretan village-styled resort." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-resort or resort-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Malia",
+        items: [
+          { label: "Malia", href: "/destination/malia/", description: "See our destination overview of Malia." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Malia", href: "/route/heraklion-airport-to-malia/", description: "Our general transfer route to Malia." },
+          { label: "Heraklion Airport to Hersonissos", href: "/route/heraklion-airport-to-hersonissos/", description: "A shorter transfer closer to the airport." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to Alexander Beach Hotel & Village Resort?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "What makes this resort different from others in the area?", answer: "It's designed with a traditional Cretan village styling, distinct from the larger modern resort blocks nearby." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — resort to airport as well as airport to resort." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Alexander Beach Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Alexander Beach Hotel & Village Resort",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Alexander Beach Hotel & Village Resort, κοντά στον Σταλίδα και τα Μάλια.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Alexander Beach",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Alexander Beach",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Alexander Beach Hotel & Village Resort",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Alexander Beach Hotel & Village Resort, κοντά στα σύνορα Σταλίδα και Μαλίων.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς το Alexander Beach Hotel & Village Resort",
+        paragraphs: [
+          "Το Alexander Beach Hotel & Village Resort βρίσκεται κοντά στα σύνορα του Σταλίδα και των Μαλίων, σχεδιασμένο σε παραδοσιακό κρητικό χωριό στυλ που του δίνει διαφορετικό χαρακτήρα από τα μεγαλύτερα σύγχρονα συγκροτήματα θερέτρων εκεί κοντά. Βρίσκεται συνήθως περίπου 30-35 λεπτά από το Αεροδρόμιο Ηρακλείου.",
+          "Μια ιδιωτική μεταφορά σας μεταφέρει απευθείας στο θέρετρο, αποφεύγοντας την ανάγκη κοινού shuttle με αποσκευές.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου 30-35 λεπτά, παρόμοια με άλλες μεταφορές στην περιοχή των Μαλίων." },
+          { title: "Παράδοση", description: "Απευθείας στην είσοδο του θέρετρου κοντά στον Σταλίδα και τα Μάλια." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Διαμονή σε Παραδοσιακό Στυλ", description: "Για επισκέπτες που προτιμούν θέρετρο σε κρητικό χωριό στυλ." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς θέρετρο ή θέρετρο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τα Μάλια",
+        items: [
+          { label: "Μάλια", href: "/el/proorismos/malia/", description: "Δείτε την επισκόπηση προορισμού μας για τα Μάλια." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Μάλια", href: "/el/diadromi/aerodromio-irakleiou-malia/", description: "Η γενική μας διαδρομή μεταφοράς προς τα Μάλια." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Χερσόνησο", href: "/el/diadromi/aerodromio-irakleiou-chersonisos/", description: "Μια συντομότερη μεταφορά πιο κοντά στο αεροδρόμιο." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στο Alexander Beach Hotel & Village Resort;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Τι κάνει αυτό το θέρετρο διαφορετικό από άλλα στην περιοχή;", answer: "Είναι σχεδιασμένο σε παραδοσιακό κρητικό χωριό στυλ, διαφορετικό από τα μεγαλύτερα σύγχρονα συγκροτήματα θερέτρων εκεί κοντά." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Alexander Beach;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportEloundaBayPalace: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Elounda Bay Palace Transfer",
+        description: "Book a private transfer from Heraklion Airport to Elounda Bay Palace, a luxury resort on Mirabello Bay.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Elounda Bay Palace",
+      hero: {
+        eyebrow: "Heraklion Airport → Elounda Bay Palace",
+        title: "Heraklion Airport to Elounda Bay Palace Transfer",
+        description: "A direct private transfer from Heraklion Airport to Elounda Bay Palace, on Mirabello Bay near Elounda.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Elounda Bay Palace",
+        paragraphs: [
+          "Elounda Bay Palace sits around 2 km from Elounda village and 7 km from Agios Nikolaos, set across 20 acres of landscaped grounds with two private beaches on Mirabello Bay. It's typically around an hour to an hour and a quarter from Heraklion Airport.",
+          "Given the resort's profile, most visitors arrange a direct private transfer rather than a shared or public transport connection, particularly when travelling with resort luggage.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around an hour to an hour and a quarter, depending on traffic." },
+          { title: "Drop-Off", description: "Directly at the resort entrance near Elounda." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Luxury Resort Arrivals", description: "Head directly to Elounda Bay Palace after landing." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-resort or resort-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Elounda",
+        items: [
+          { label: "Elounda", href: "/destination/elounda/", description: "See our destination overview of Elounda." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Elounda Beach Hotel & Villas", href: "/route/heraklion-airport-to-elounda-beach/", description: "Another long-established Elounda luxury resort." },
+          { label: "Heraklion Airport to Minos Beach Art Hotel", href: "/route/heraklion-airport-to-minos-beach-art/", description: "A design-focused hotel in nearby Agios Nikolaos." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to Elounda Bay Palace?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Does Elounda Bay Palace have its own beach?", answer: "Yes, it has two private beaches within its grounds on Mirabello Bay." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — resort to airport as well as airport to resort." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Elounda Bay Palace Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Elounda Bay Palace",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Elounda Bay Palace, ένα πολυτελές θέρετρο στον κόλπο του Μιραμπέλλου.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Elounda Bay Palace",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Elounda Bay Palace",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Elounda Bay Palace",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Elounda Bay Palace, στον κόλπο του Μιραμπέλλου κοντά στην Ελούντα.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς το Elounda Bay Palace",
+        paragraphs: [
+          "Το Elounda Bay Palace βρίσκεται περίπου 2 χλμ από το χωριό της Ελούντας και 7 χλμ από τον Άγιο Νικόλαο, σε έκταση 20 στρεμμάτων διαμορφωμένων κήπων με δύο ιδιωτικές παραλίες στον κόλπο του Μιραμπέλλου. Βρίσκεται συνήθως περίπου μία ώρα έως μία ώρα και τέταρτο από το Αεροδρόμιο Ηρακλείου.",
+          "Δεδομένου του προφίλ του θέρετρου, οι περισσότεροι επισκέπτες οργανώνουν απευθείας ιδιωτική μεταφορά αντί για κοινή ή δημόσια σύνδεση, ιδιαίτερα όταν ταξιδεύουν με αποσκευές θέρετρου.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου μία ώρα έως μία ώρα και τέταρτο, ανάλογα με την κίνηση." },
+          { title: "Παράδοση", description: "Απευθείας στην είσοδο του θέρετρου κοντά στην Ελούντα." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις σε Πολυτελές Θέρετρο", description: "Κατευθυνθείτε απευθείας στο Elounda Bay Palace μετά την προσγείωση." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς θέρετρο ή θέρετρο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε την Ελούντα",
+        items: [
+          { label: "Ελούντα", href: "/el/proorismos/elounda/", description: "Δείτε την επισκόπηση προορισμού μας για την Ελούντα." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Elounda Beach Hotel & Villas", href: "/el/diadromi/aerodromio-irakleiou-elounda-beach/", description: "Άλλο μακρόχρονο πολυτελές θέρετρο της Ελούντας." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Minos Beach Art Hotel", href: "/el/diadromi/aerodromio-irakleiou-minos-beach-art/", description: "Ένα ξενοδοχείο design στον κοντινό Άγιο Νικόλαο." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στο Elounda Bay Palace;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Έχει το Elounda Bay Palace δική του παραλία;", answer: "Ναι, διαθέτει δύο ιδιωτικές παραλίες εντός των χώρων του στον κόλπο του Μιραμπέλλου." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Elounda Bay Palace;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportEloundaBeach: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Elounda Beach Hotel & Villas Transfer",
+        description: "Book a private transfer from Heraklion Airport to Elounda Beach Hotel & Villas, one of Elounda's original luxury resorts.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Elounda Beach",
+      hero: {
+        eyebrow: "Heraklion Airport → Elounda Beach",
+        title: "Heraklion Airport to Elounda Beach Hotel & Villas Transfer",
+        description: "A direct private transfer from Heraklion Airport to Elounda Beach Hotel & Villas, in Elounda village itself.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Elounda Beach Hotel & Villas",
+        paragraphs: [
+          "Elounda Beach Hotel & Villas sits within Elounda village itself, one of the original luxury pioneers of the area, set across 40 acres on Mirabello Bay. Spinalonga island is visible from much of the resort, with boats departing nearby at Plaka.",
+          "Given the resort's profile, most visitors arrange a direct private transfer rather than a shared or public transport connection, typically around an hour to an hour and a quarter from Heraklion Airport.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around an hour to an hour and a quarter, depending on traffic." },
+          { title: "Drop-Off", description: "Directly at the resort entrance in Elounda village." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Luxury Resort Arrivals", description: "Head directly to Elounda Beach Hotel & Villas after landing." },
+          { title: "Families & Groups with Luggage", description: "A private vehicle keeps your group and luggage together for the whole journey." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-resort or resort-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Elounda",
+        items: [
+          { label: "Elounda", href: "/destination/elounda/", description: "See our destination overview of Elounda." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Elounda Bay Palace", href: "/route/heraklion-airport-to-elounda-bay-palace/", description: "Another luxury resort near Elounda." },
+          { label: "Heraklion Airport to Agios Nikolaos", href: "/route/heraklion-airport-to-agios-nikolaos/", description: "A slightly shorter transfer to the nearby town." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to Elounda Beach Hotel & Villas?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Can I see Spinalonga from Elounda Beach Hotel & Villas?", answer: "Yes, the island is visible from much of the resort, with boats departing nearby at Plaka." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — resort to airport as well as airport to resort." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Elounda Beach Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Elounda Beach Hotel & Villas",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Elounda Beach Hotel & Villas, ένα από τα πρώτα πολυτελή θέρετρα της Ελούντας.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Elounda Beach",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Elounda Beach",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Elounda Beach Hotel & Villas",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Elounda Beach Hotel & Villas, στο ίδιο το χωριό της Ελούντας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς το Elounda Beach Hotel & Villas",
+        paragraphs: [
+          "Το Elounda Beach Hotel & Villas βρίσκεται μέσα στο ίδιο το χωριό της Ελούντας, ένα από τα πρώτα πολυτελή θέρετρα-πρωτοπόρους της περιοχής, σε έκταση 40 στρεμμάτων στον κόλπο του Μιραμπέλλου. Το νησί της Σπιναλόγκας είναι ορατό από μεγάλο μέρος του θέρετρου, με βάρκες που αναχωρούν εκεί κοντά στην Πλάκα.",
+          "Δεδομένου του προφίλ του θέρετρου, οι περισσότεροι επισκέπτες οργανώνουν απευθείας ιδιωτική μεταφορά αντί για κοινή ή δημόσια σύνδεση, συνήθως περίπου μία ώρα έως μία ώρα και τέταρτο από το Αεροδρόμιο Ηρακλείου.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου μία ώρα έως μία ώρα και τέταρτο, ανάλογα με την κίνηση." },
+          { title: "Παράδοση", description: "Απευθείας στην είσοδο του θέρετρου στο χωριό της Ελούντας." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Αφίξεις σε Πολυτελές Θέρετρο", description: "Κατευθυνθείτε απευθείας στο Elounda Beach Hotel & Villas μετά την προσγείωση." },
+          { title: "Οικογένειες & Ομάδες με Αποσκευές", description: "Ένα ιδιωτικό όχημα κρατά την ομάδα και τις αποσκευές σας μαζί για ολόκληρο το ταξίδι." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς θέρετρο ή θέρετρο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε την Ελούντα",
+        items: [
+          { label: "Ελούντα", href: "/el/proorismos/elounda/", description: "Δείτε την επισκόπηση προορισμού μας για την Ελούντα." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Elounda Bay Palace", href: "/el/diadromi/aerodromio-irakleiou-elounda-bay-palace/", description: "Άλλο πολυτελές θέρετρο κοντά στην Ελούντα." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Άγιο Νικόλαο", href: "/el/diadromi/aerodromio-irakleiou-agios-nikolaos/", description: "Μια λίγο συντομότερη μεταφορά προς την κοντινή πόλη." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στο Elounda Beach Hotel & Villas;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Μπορώ να δω τη Σπιναλόγκα από το Elounda Beach Hotel & Villas;", answer: "Ναι, το νησί είναι ορατό από μεγάλο μέρος του θέρετρου, με βάρκες που αναχωρούν εκεί κοντά στην Πλάκα." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Elounda Beach;",
+        description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  routeHeraklionAirportMinosBeachArt: {
+    en: {
+      meta: {
+        title: "Heraklion Airport to Minos Beach Art Hotel Transfer",
+        description: "Book a private transfer from Heraklion Airport to Minos Beach Art Hotel, a design-focused waterfront hotel in Agios Nikolaos.",
+      },
+      breadcrumbLabel: "Heraklion Airport to Minos Beach Art Hotel",
+      hero: {
+        eyebrow: "Heraklion Airport → Minos Beach Art Hotel",
+        title: "Heraklion Airport to Minos Beach Art Hotel Transfer",
+        description: "A direct private transfer from Heraklion Airport to Minos Beach Art Hotel, in Agios Nikolaos town itself.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+      overview: {
+        eyebrow: "Route Overview",
+        title: "Travelling from Heraklion Airport to Minos Beach Art Hotel",
+        paragraphs: [
+          "Minos Beach Art Hotel sits in Agios Nikolaos town itself, around half a mile from the centre, with a design-hotel and art-focused concept and bungalow-style waterfront rooms — a genuinely different character from the larger resorts further north in Elounda.",
+          "A private transfer from the airport takes you directly to the hotel, typically around 60–70 minutes depending on traffic.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Journey Planning",
+        title: "What to Expect on This Route",
+        items: [
+          { title: "Journey Time", description: "Typically around 60–70 minutes, similar to other Agios Nikolaos transfers." },
+          { title: "Drop-Off", description: "Directly at the hotel in Agios Nikolaos town." },
+          { title: "Flight Details", description: "Share your flight number and arrival time so pickup can be planned around it." },
+          { title: "Luggage Space", description: "Let us know your luggage when requesting a quote so a suitably sized vehicle can be arranged." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Who This Route Suits",
+        title: "Ideal for These Journeys",
+        items: [
+          { title: "Design-Focused Stays", description: "For visitors who want a design and art-focused hotel concept." },
+          { title: "Town-Centre Access", description: "In Agios Nikolaos town itself, rather than further out in Elounda." },
+          { title: "Both Directions", description: "This transfer can be booked airport-to-hotel or hotel-to-airport." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Related Pages",
+        title: "Explore Agios Nikolaos",
+        items: [
+          { label: "Agios Nikolaos", href: "/city/agios-nikolaos/", description: "See our overview of transfers across Agios Nikolaos." },
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "See our dedicated airport transfer information." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Other Routes",
+        title: "Other Routes You Might Consider",
+        items: [
+          { label: "Heraklion Airport to Elounda Bay Palace", href: "/route/heraklion-airport-to-elounda-bay-palace/", description: "A luxury resort a short drive north in Elounda." },
+          { label: "Heraklion Airport to Agios Nikolaos", href: "/route/heraklion-airport-to-agios-nikolaos/", description: "Our general transfer route to Agios Nikolaos." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to Minos Beach Art Hotel?", answer: "Book a direct private transfer — see this page for journey details." },
+          { question: "Is Minos Beach Art Hotel in Elounda or Agios Nikolaos?", answer: "It's in Agios Nikolaos town itself, distinct from the Elounda resort area a few kilometres north." },
+          { question: "Can this transfer also be booked for the return journey?", answer: "Yes, this route works in both directions — hotel to airport as well as airport to hotel." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Airport to Minos Beach Art Hotel Transfer?",
+        description: "Tell us your flight details and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book This Route",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Minos Beach Art Hotel",
+        description: "Κλείστε ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Minos Beach Art Hotel, ένα παραθαλάσσιο ξενοδοχείο design στον Άγιο Νικόλαο.",
+      },
+      breadcrumbLabel: "Αεροδρόμιο Ηρακλείου προς Minos Beach Art Hotel",
+      hero: {
+        eyebrow: "Αεροδρόμιο Ηρακλείου → Minos Beach Art Hotel",
+        title: "Μεταφορά Αεροδρόμιο Ηρακλείου – Minos Beach Art Hotel",
+        description: "Μια απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το Minos Beach Art Hotel, στην ίδια την πόλη του Αγίου Νικολάου.",
+        primaryLabel: "Κλείστε αυτή τη Διαδρομή",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      overview: {
+        eyebrow: "Επισκόπηση Διαδρομής",
+        title: "Ταξίδι από το Αεροδρόμιο Ηρακλείου προς το Minos Beach Art Hotel",
+        paragraphs: [
+          "Το Minos Beach Art Hotel βρίσκεται στην ίδια την πόλη του Αγίου Νικολάου, περίπου μισό μίλι από το κέντρο, με αντίληψη design ξενοδοχείου με έμφαση στην τέχνη και δωμάτια waterfront σε στυλ bungalow — πραγματικά διαφορετικός χαρακτήρας από τα μεγαλύτερα θέρετρα πιο βόρεια στην Ελούντα.",
+          "Μια ιδιωτική μεταφορά από το αεροδρόμιο σας μεταφέρει απευθείας στο ξενοδοχείο, συνήθως περίπου 60-70 λεπτά ανάλογα με την κίνηση.",
+        ],
+      },
+      journeyPlanning: {
+        eyebrow: "Σχεδιασμός Ταξιδιού",
+        title: "Τι να Περιμένετε σε Αυτή τη Διαδρομή",
+        items: [
+          { title: "Διάρκεια Ταξιδιού", description: "Συνήθως περίπου 60-70 λεπτά, παρόμοια με άλλες μεταφορές προς τον Άγιο Νικόλαο." },
+          { title: "Παράδοση", description: "Απευθείας στο ξενοδοχείο στην πόλη του Αγίου Νικολάου." },
+          { title: "Στοιχεία Πτήσης", description: "Ενημερώστε μας για τον αριθμό πτήσης και την ώρα άφιξης ώστε να προγραμματιστεί η παραλαβή." },
+          { title: "Χώρος Αποσκευών", description: "Ενημερώστε μας για τις αποσκευές σας κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      whoItSuits: {
+        eyebrow: "Σε Ποιους Ταιριάζει",
+        title: "Ιδανικό για Αυτά τα Ταξίδια",
+        items: [
+          { title: "Διαμονή με Έμφαση στο Design", description: "Για επισκέπτες που θέλουν αντίληψη ξενοδοχείου design με έμφαση στην τέχνη." },
+          { title: "Πρόσβαση στο Κέντρο της Πόλης", description: "Στην ίδια την πόλη του Αγίου Νικολάου, αντί για πιο έξω στην Ελούντα." },
+          { title: "Και οι Δύο Κατευθύνσεις", description: "Αυτή η μεταφορά μπορεί να κλειστεί αεροδρόμιο προς ξενοδοχείο ή ξενοδοχείο προς αεροδρόμιο." },
+        ],
+      },
+      relatedLinks: {
+        eyebrow: "Σχετικές Σελίδες",
+        title: "Εξερευνήστε τον Άγιο Νικόλαο",
+        items: [
+          { label: "Άγιος Νικόλαος", href: "/el/poli/agios-nikolaos/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλο τον Άγιο Νικόλαο." },
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Δείτε τις ειδικές πληροφορίες μεταφοράς αεροδρομίου." },
+        ],
+      },
+      relatedRoutes: {
+        eyebrow: "Άλλες Διαδρομές",
+        title: "Άλλες Διαδρομές που Μπορεί να Εξετάσετε",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Elounda Bay Palace", href: "/el/diadromi/aerodromio-irakleiou-elounda-bay-palace/", description: "Ένα πολυτελές θέρετρο λίγα λεπτά βόρεια στην Ελούντα." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Άγιο Νικόλαο", href: "/el/diadromi/aerodromio-irakleiou-agios-nikolaos/", description: "Η γενική μας διαδρομή μεταφοράς προς τον Άγιο Νικόλαο." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στο Minos Beach Art Hotel;", answer: "Κλείστε απευθείας ιδιωτική μεταφορά — δείτε αυτή τη σελίδα για λεπτομέρειες ταξιδιού." },
+          { question: "Είναι το Minos Beach Art Hotel στην Ελούντα ή στον Άγιο Νικόλαο;", answer: "Βρίσκεται στην ίδια την πόλη του Αγίου Νικολάου, διαφορετικό από την περιοχή θερέτρων της Ελούντας λίγα χιλιόμετρα βόρεια." },
+          { question: "Μπορεί αυτή η μεταφορά να κλειστεί και για την επιστροφή;", answer: "Ναι, αυτή η διαδρομή λειτουργεί και προς τις δύο κατευθύνσεις." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας Αεροδρόμιο – Minos Beach Art Hotel;",
         description: "Πείτε μας τα στοιχεία πτήσης και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
         primaryLabel: "Κλείστε αυτή τη Διαδρομή",
         secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",

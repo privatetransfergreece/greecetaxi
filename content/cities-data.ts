@@ -3,7 +3,14 @@ import type { HeroContent } from "@/components/location/hero"
 import type { IconTextSection } from "@/content/service-hubs"
 import type { RelatedLinkItem } from "@/components/location/related-links"
 
-export type CitySlug = "cityAthens" | "cityThessaloniki" | "cityKalamata"
+export type CitySlug =
+  | "cityAthens"
+  | "cityThessaloniki"
+  | "cityKalamata"
+  | "cityHeraklion"
+  | "cityChania"
+  | "cityRethymno"
+  | "cityAgiosNikolaos"
 
 export type LinkSection = { eyebrow: string; title: string; items: Omit<RelatedLinkItem, "icon">[] }
 export type ProseSection = { eyebrow: string; title: string; paragraphs: string[] }
@@ -35,6 +42,13 @@ export const cityImages: Partial<Record<CitySlug, { src: string; alt: Record<Loc
     alt: {
       en: "The White Tower and waterfront promenade in Thessaloniki, Greece",
       el: "Ο Λευκός Πύργος και η παραλιακή προμενάδα της Θεσσαλονίκης, Ελλάδα",
+    },
+  },
+  cityHeraklion: {
+    src: "/destinations/heraklion.webp",
+    alt: {
+      en: "Harbourfront of Heraklion illuminated at night, Crete's largest city, Greece",
+      el: "Το λιμάνι του Ηρακλείου φωτισμένο τη νύχτα, η μεγαλύτερη πόλη της Κρήτης, Ελλάδα",
     },
   },
 }
@@ -506,6 +520,604 @@ export const cityContent: Record<CitySlug, Record<Locale, CityPageContent>> = {
       },
       cta: {
         heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στην Καλαμάτα;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  cityHeraklion: {
+    en: {
+      meta: {
+        title: "Private Transfers in Heraklion – Crete Taxi & Chauffeur",
+        description:
+          "Book a private transfer in Heraklion for airport, port and resort journeys across Crete. Comfortable door-to-door travel. Get a quote.",
+      },
+      breadcrumbLabel: "Heraklion",
+      hero: {
+        eyebrow: "Heraklion, Crete",
+        title: "Private Transfers in Heraklion",
+        description: "Book a private transfer for airport, port and resort journeys across Crete's largest city and main gateway.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Heraklion",
+        title: "Heraklion as Crete's Main Hub",
+        paragraphs: [
+          "Heraklion is Crete's largest city and main commercial centre, home to the island's busiest airport and its principal ferry port. Most visitors arriving on Crete from abroad land here, whether they're staying in the city itself or continuing to a resort area further along the coast.",
+          "Private transportation in Heraklion generally covers airport transfers, port transfers, transfers within the city, and onward journeys to resort areas such as Hersonissos, Malia and Elounda, as well as to Rethymno and Chania further west.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To and From Heraklion",
+        title: "Airport and Port Connections",
+        items: [
+          { label: "Heraklion Airport", href: "/airport/heraklion-airport/", description: "Private transfers between Heraklion Airport and the city." },
+          { label: "Heraklion Port", href: "/port/heraklion/", description: "Connect between the city and Crete's main ferry port for travel to Piraeus." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Transfer Options",
+        title: "Private Transportation in Heraklion",
+        items: [
+          { title: "Airport Transfers", description: "Direct transfers between Heraklion Airport and your hotel or address." },
+          { title: "Private Transfers", description: "A door-to-door vehicle for any journey within the city or beyond." },
+          { title: "Resort & Intercity Transfers", description: "Long-distance transfers connecting Heraklion with resort areas and other Cretan towns." },
+          { title: "Group Transfers", description: "Larger vehicles for families and groups travelling together." },
+        ],
+      },
+      popularRoutes: {
+        eyebrow: "Popular Routes",
+        title: "Popular Transfers From Heraklion",
+        items: [
+          { label: "Heraklion to Chania", href: "/route/heraklion-to-chania/", description: "A private transfer along Crete's north coast highway." },
+          { label: "Heraklion to Knossos", href: "/route/heraklion-to-knossos/", description: "A short transfer to the Minoan palace site of Knossos." },
+        ],
+      },
+      nearbyDestinations: {
+        eyebrow: "Nearby Destinations",
+        title: "Destinations Reachable From Heraklion",
+        items: [
+          { label: "Hersonissos", href: "/destination/hersonissos/", description: "One of Crete's largest resort areas, east of Heraklion." },
+          { label: "Elounda", href: "/destination/elounda/", description: "A luxury resort area near Agios Nikolaos in eastern Crete." },
+          { label: "Crete Day Trips", href: "/crete-day-trips/", description: "See our full range of private day trips across Crete." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "Can I book a private transfer from Heraklion Airport to my hotel?", answer: "Yes, airport-to-hotel transfers in Heraklion are one of our most common requests." },
+          { question: "Can I travel from Heraklion directly to Chania?", answer: "Yes, this is one of our most requested cross-island routes, along the north coast highway." },
+          { question: "Can I book a transfer from Heraklion to a resort area like Hersonissos or Elounda?", answer: "Yes, direct transfers to Crete's main resort areas can be arranged — describe your journey when requesting a quote." },
+          { question: "Can you arrange a transfer for a group visiting Heraklion?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote so a suitable vehicle can be arranged." },
+          { question: "What information do I need to provide when booking a transfer in Heraklion?", answer: "Your pickup location, destination, travel date and time, and passenger and luggage numbers." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Heraklion Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στο Ηράκλειο – Ταξί & Σοφέρ στην Κρήτη",
+        description:
+          "Κλείστε ιδιωτική μεταφορά στο Ηράκλειο για αεροδρόμιο, λιμάνι και ταξίδια προς θέρετρα σε όλη την Κρήτη. Άνετη μεταφορά από πόρτα σε πόρτα.",
+      },
+      breadcrumbLabel: "Ηράκλειο",
+      hero: {
+        eyebrow: "Ηράκλειο, Κρήτη",
+        title: "Ιδιωτικές Μεταφορές στο Ηράκλειο",
+        description: "Κλείστε ιδιωτική μεταφορά για αεροδρόμιο, λιμάνι και ταξίδια προς θέρετρα σε όλη την Κρήτη από τη μεγαλύτερη πόλη της.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με το Ηράκλειο",
+        title: "Το Ηράκλειο ως Κύριος Κόμβος της Κρήτης",
+        paragraphs: [
+          "Το Ηράκλειο είναι η μεγαλύτερη πόλη της Κρήτης και το κύριο εμπορικό κέντρο του νησιού, όπου βρίσκεται το πολυσύχναστο αεροδρόμιο και το κύριο λιμάνι ferry του νησιού. Οι περισσότεροι επισκέπτες που φτάνουν στην Κρήτη από το εξωτερικό προσγειώνονται εδώ, είτε μένουν στην ίδια την πόλη είτε συνεχίζουν προς θέρετρο πιο μακριά στην ακτή.",
+          "Η ιδιωτική μεταφορά στο Ηράκλειο καλύπτει γενικά μεταφορές αεροδρομίου, μεταφορές λιμανιού, μεταφορές εντός της πόλης, και ταξίδια συνέχειας προς περιοχές θερέτρων όπως ο Χερσόνησος, τα Μάλια και η Ελούντα, καθώς και προς το Ρέθυμνο και τα Χανιά πιο δυτικά.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στο Ηράκλειο",
+        title: "Συνδέσεις με Αεροδρόμιο και Λιμάνι",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου", href: "/el/aerodromio/irakleio/", description: "Ιδιωτικές μεταφορές μεταξύ του Αεροδρομίου Ηρακλείου και της πόλης." },
+          { label: "Λιμάνι Ηρακλείου", href: "/el/limani/irakleio/", description: "Σύνδεση μεταξύ της πόλης και του κύριου λιμανιού ferry της Κρήτης για ταξίδι προς τον Πειραιά." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Επιλογές Μεταφοράς",
+        title: "Ιδιωτική Μεταφορά στο Ηράκλειο",
+        items: [
+          { title: "Μεταφορές Αεροδρομίου", description: "Απευθείας μεταφορές μεταξύ του Αεροδρομίου Ηρακλείου και του ξενοδοχείου ή της διεύθυνσής σας." },
+          { title: "Ιδιωτικές Μεταφορές", description: "Ένα όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή εντός ή εκτός της πόλης." },
+          { title: "Μεταφορές σε Θέρετρα & Μεταξύ Πόλεων", description: "Μεταφορές μεγάλων αποστάσεων που συνδέουν το Ηράκλειο με περιοχές θερέτρων και άλλες πόλεις της Κρήτης." },
+          { title: "Ομαδικές Μεταφορές", description: "Μεγαλύτερα οχήματα για οικογένειες και ομάδες που ταξιδεύουν μαζί." },
+        ],
+      },
+      popularRoutes: {
+        eyebrow: "Δημοφιλείς Διαδρομές",
+        title: "Δημοφιλείς Μεταφορές από το Ηράκλειο",
+        items: [
+          { label: "Ηράκλειο προς Χανιά", href: "/el/diadromi/irakleio-chania/", description: "Ιδιωτική μεταφορά κατά μήκος του βόρειου οδικού άξονα της Κρήτης." },
+          { label: "Ηράκλειο προς Κνωσό", href: "/el/diadromi/irakleio-knosos/", description: "Μια σύντομη μεταφορά προς τον μινωικό αρχαιολογικό χώρο της Κνωσού." },
+        ],
+      },
+      nearbyDestinations: {
+        eyebrow: "Κοντινοί Προορισμοί",
+        title: "Προορισμοί Προσβάσιμοι από το Ηράκλειο",
+        items: [
+          { label: "Χερσόνησος", href: "/el/proorismos/chersonisos/", description: "Μία από τις μεγαλύτερες περιοχές θερέτρων της Κρήτης, ανατολικά του Ηρακλείου." },
+          { label: "Ελούντα", href: "/el/proorismos/elounda/", description: "Μια περιοχή πολυτελών θερέτρων κοντά στον Άγιο Νικόλαο στην ανατολική Κρήτη." },
+          { label: "Ιδιωτικές Εκδρομές στην Κρήτη", href: "/el/idiotikes-ekdromes-kriti/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας σε όλη την Κρήτη." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Μπορώ να κλείσω ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου προς το ξενοδοχείο μου;", answer: "Ναι, οι μεταφορές από το αεροδρόμιο προς το ξενοδοχείο στο Ηράκλειο είναι από τα πιο συνηθισμένα αιτήματά μας." },
+          { question: "Μπορώ να ταξιδέψω από το Ηράκλειο απευθείας προς τα Χανιά;", answer: "Ναι, είναι μία από τις πιο ζητημένες διαδρομές μας εντός του νησιού, κατά μήκος του βόρειου οδικού άξονα." },
+          { question: "Μπορώ να κλείσω μεταφορά από το Ηράκλειο προς θέρετρο όπως ο Χερσόνησος ή η Ελούντα;", answer: "Ναι, μπορούν να οργανωθούν απευθείας μεταφορές προς τις κύριες περιοχές θερέτρων της Κρήτης — περιγράψτε το ταξίδι σας κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που επισκέπτεται το Ηράκλειο;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+          { question: "Ποιες πληροφορίες χρειάζεται να δώσω για μια μεταφορά στο Ηράκλειο;", answer: "Το σημείο παραλαβής, τον προορισμό, την ημερομηνία και ώρα ταξιδιού, και τον αριθμό επιβατών και αποσκευών." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στο Ηράκλειο;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  cityChania: {
+    en: {
+      meta: {
+        title: "Private Transfers in Chania – Western Crete Taxi & Chauffeur",
+        description:
+          "Book a private transfer in Chania for airport, port and resort journeys across western Crete. Comfortable door-to-door travel. Get a quote.",
+      },
+      breadcrumbLabel: "Chania",
+      hero: {
+        eyebrow: "Chania, Crete",
+        title: "Private Transfers in Chania",
+        description: "Book a private transfer for airport, port and resort journeys across western Crete.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Chania",
+        title: "Chania as Western Crete's Main Hub",
+        paragraphs: [
+          "Chania is the main town of western Crete, known for its Venetian harbour and old town, with its own international airport and the nearby port of Souda. It's a common base for visitors exploring western and southwestern Crete, including the resort strip toward Platanias and beaches such as Elafonissi and Balos.",
+          "Private transportation in Chania generally covers airport transfers, port transfers, transfers within the town, and onward journeys to resort areas and day-trip destinations across western Crete.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To and From Chania",
+        title: "Airport and Port Connections",
+        items: [
+          { label: "Chania Airport", href: "/airport/chania-airport/", description: "Private transfers between Chania Airport and the town." },
+          { label: "Souda Port", href: "/port/souda/", description: "Connect between Chania and the port serving western Crete." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Transfer Options",
+        title: "Private Transportation in Chania",
+        items: [
+          { title: "Airport Transfers", description: "Direct transfers between Chania Airport and your hotel or address." },
+          { title: "Private Transfers", description: "A door-to-door vehicle for any journey within the town or beyond." },
+          { title: "Resort & Day-Trip Transfers", description: "Transfers connecting Chania with nearby resorts and day-trip destinations." },
+          { title: "Group Transfers", description: "Larger vehicles for families and groups travelling together." },
+        ],
+      },
+      popularRoutes: {
+        eyebrow: "Popular Routes",
+        title: "Popular Transfers From Chania",
+        items: [
+          { label: "Chania to Elafonissi", href: "/route/chania-to-elafonissi/", description: "A private day-trip transfer to one of Crete's best-known beaches." },
+          { label: "Chania to Samaria Gorge", href: "/route/chania-to-samaria-gorge/", description: "A transfer to the start of Crete's most famous hiking trail." },
+        ],
+      },
+      nearbyDestinations: {
+        eyebrow: "Nearby Destinations",
+        title: "Destinations Reachable From Chania",
+        items: [
+          { label: "Platanias", href: "/destination/platanias/", description: "The resort strip west of Chania town." },
+          { label: "Georgioupolis", href: "/destination/georgioupolis/", description: "A coastal resort town between Chania and Rethymno." },
+          { label: "Crete Day Trips", href: "/crete-day-trips/", description: "See our full range of private day trips across Crete." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "Can I book a private transfer from Chania Airport to my hotel?", answer: "Yes, airport-to-hotel transfers in Chania are one of our most common requests." },
+          { question: "Can I book a day trip to Elafonissi or Balos from Chania?", answer: "Yes, private transfers to both beaches can be arranged — see our dedicated route pages for details." },
+          { question: "Can I book a transfer to the Samaria Gorge from Chania?", answer: "Yes, describe your plans when requesting a quote, including whether you need a one-way drop-off." },
+          { question: "Can you arrange a transfer for a group visiting Chania?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote so a suitable vehicle can be arranged." },
+          { question: "What information do I need to provide when booking a transfer in Chania?", answer: "Your pickup location, destination, travel date and time, and passenger and luggage numbers." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Chania Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στα Χανιά – Ταξί & Σοφέρ στη Δυτική Κρήτη",
+        description:
+          "Κλείστε ιδιωτική μεταφορά στα Χανιά για αεροδρόμιο, λιμάνι και ταξίδια προς θέρετρα στη δυτική Κρήτη. Άνετη μεταφορά από πόρτα σε πόρτα.",
+      },
+      breadcrumbLabel: "Χανιά",
+      hero: {
+        eyebrow: "Χανιά, Κρήτη",
+        title: "Ιδιωτικές Μεταφορές στα Χανιά",
+        description: "Κλείστε ιδιωτική μεταφορά για αεροδρόμιο, λιμάνι και ταξίδια προς θέρετρα σε όλη τη δυτική Κρήτη.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τα Χανιά",
+        title: "Τα Χανιά ως Κύριος Κόμβος της Δυτικής Κρήτης",
+        paragraphs: [
+          "Τα Χανιά είναι η κύρια πόλη της δυτικής Κρήτης, γνωστή για το Ενετικό λιμάνι και την παλιά πόλη της, με δικό της διεθνές αεροδρόμιο και το κοντινό λιμάνι της Σούδας. Αποτελούν συνηθισμένη βάση για επισκέπτες που εξερευνούν τη δυτική και νοτιοδυτική Κρήτη, συμπεριλαμβανομένης της τουριστικής ζώνης προς τον Πλατανιά και παραλιών όπως το Ελαφονήσι και ο Μπάλος.",
+          "Η ιδιωτική μεταφορά στα Χανιά καλύπτει γενικά μεταφορές αεροδρομίου, μεταφορές λιμανιού, μεταφορές εντός της πόλης, και ταξίδια συνέχειας προς περιοχές θερέτρων και προορισμούς εκδρομών σε όλη τη δυτική Κρήτη.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στα Χανιά",
+        title: "Συνδέσεις με Αεροδρόμιο και Λιμάνι",
+        items: [
+          { label: "Αεροδρόμιο Χανίων", href: "/el/aerodromio/chania/", description: "Ιδιωτικές μεταφορές μεταξύ του Αεροδρομίου Χανίων και της πόλης." },
+          { label: "Λιμάνι Σούδας", href: "/el/limani/souda/", description: "Σύνδεση μεταξύ των Χανίων και του λιμανιού που εξυπηρετεί τη δυτική Κρήτη." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Επιλογές Μεταφοράς",
+        title: "Ιδιωτική Μεταφορά στα Χανιά",
+        items: [
+          { title: "Μεταφορές Αεροδρομίου", description: "Απευθείας μεταφορές μεταξύ του Αεροδρομίου Χανίων και του ξενοδοχείου ή της διεύθυνσής σας." },
+          { title: "Ιδιωτικές Μεταφορές", description: "Ένα όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή εντός ή εκτός της πόλης." },
+          { title: "Μεταφορές σε Θέρετρα & Εκδρομές", description: "Μεταφορές που συνδέουν τα Χανιά με κοντινά θέρετρα και προορισμούς εκδρομών." },
+          { title: "Ομαδικές Μεταφορές", description: "Μεγαλύτερα οχήματα για οικογένειες και ομάδες που ταξιδεύουν μαζί." },
+        ],
+      },
+      popularRoutes: {
+        eyebrow: "Δημοφιλείς Διαδρομές",
+        title: "Δημοφιλείς Μεταφορές από τα Χανιά",
+        items: [
+          { label: "Χανιά προς Ελαφονήσι", href: "/el/diadromi/chania-elafonisi/", description: "Μια ιδιωτική μεταφορά εκδρομής προς μία από τις πιο γνωστές παραλίες της Κρήτης." },
+          { label: "Χανιά προς Φαράγγι Σαμαριάς", href: "/el/diadromi/chania-farangi-samarias/", description: "Μια μεταφορά προς την αρχή του πιο γνωστού μονοπατιού πεζοπορίας της Κρήτης." },
+        ],
+      },
+      nearbyDestinations: {
+        eyebrow: "Κοντινοί Προορισμοί",
+        title: "Προορισμοί Προσβάσιμοι από τα Χανιά",
+        items: [
+          { label: "Πλατανιάς", href: "/el/proorismos/platanias/", description: "Η τουριστική ζώνη δυτικά της πόλης των Χανίων." },
+          { label: "Γεωργιούπολη", href: "/el/proorismos/georgioupolis/", description: "Μια παράκτια πόλη θερέτρου μεταξύ Χανίων και Ρεθύμνου." },
+          { label: "Ιδιωτικές Εκδρομές στην Κρήτη", href: "/el/idiotikes-ekdromes-kriti/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας σε όλη την Κρήτη." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Μπορώ να κλείσω ιδιωτική μεταφορά από το Αεροδρόμιο Χανίων προς το ξενοδοχείο μου;", answer: "Ναι, οι μεταφορές από το αεροδρόμιο προς το ξενοδοχείο στα Χανιά είναι από τα πιο συνηθισμένα αιτήματά μας." },
+          { question: "Μπορώ να κλείσω εκδρομή προς το Ελαφονήσι ή τον Μπάλο από τα Χανιά;", answer: "Ναι, ιδιωτικές μεταφορές προς και τις δύο παραλίες μπορούν να οργανωθούν — δείτε τις ειδικές μας σελίδες διαδρομής για λεπτομέρειες." },
+          { question: "Μπορώ να κλείσω μεταφορά προς το Φαράγγι της Σαμαριάς από τα Χανιά;", answer: "Ναι, περιγράψτε τα σχέδιά σας κατά την αίτηση προσφοράς, συμπεριλαμβανομένου αν χρειάζεστε μονόδρομη παράδοση." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που επισκέπτεται τα Χανιά;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+          { question: "Ποιες πληροφορίες χρειάζεται να δώσω για μια μεταφορά στα Χανιά;", answer: "Το σημείο παραλαβής, τον προορισμό, την ημερομηνία και ώρα ταξιδιού, και τον αριθμό επιβατών και αποσκευών." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στα Χανιά;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  cityRethymno: {
+    en: {
+      meta: {
+        title: "Private Transfers in Rethymno – Crete Taxi & Chauffeur",
+        description:
+          "Book a private transfer in Rethymno from either of Crete's airports. Comfortable door-to-door travel to Crete's third-largest town.",
+      },
+      breadcrumbLabel: "Rethymno",
+      hero: {
+        eyebrow: "Rethymno, Crete",
+        title: "Private Transfers in Rethymno",
+        description: "Book a private transfer to or from Rethymno, roughly midway between Heraklion and Chania on Crete's north coast.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Rethymno",
+        title: "Rethymno on Crete's North Coast",
+        paragraphs: [
+          "Rethymno is Crete's third-largest town, known for its Venetian old town and fortress, sitting roughly midway between Heraklion and Chania. It doesn't have its own airport, so visitors typically arrive via a private transfer from either Heraklion Airport or Chania Airport.",
+          "Because Rethymno sits between the island's two main gateways, it's a practical base for visitors who want reasonable access to both halves of the island without committing to a resort area further east or west.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To Rethymno",
+        title: "Airport Connections",
+        items: [
+          { label: "Heraklion Airport to Rethymno", href: "/route/heraklion-airport-to-rethymno/", description: "A direct transfer from Crete's busier eastern airport." },
+          { label: "Chania Airport to Rethymno", href: "/route/chania-airport-to-rethymno/", description: "A direct transfer from Crete's western airport." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Transfer Options",
+        title: "Private Transportation in Rethymno",
+        items: [
+          { title: "Airport Transfers", description: "Direct transfers from either Heraklion or Chania Airport to your hotel or address." },
+          { title: "Private Transfers", description: "A door-to-door vehicle for any journey within Rethymno or beyond." },
+          { title: "Intercity Transfers", description: "Onward transfers to Heraklion, Chania and other parts of Crete." },
+          { title: "Group Transfers", description: "Larger vehicles for families and groups travelling together." },
+        ],
+      },
+      popularRoutes: {
+        eyebrow: "Popular Routes",
+        title: "Popular Transfers To and From Rethymno",
+        items: [
+          { label: "Heraklion Airport to Rethymno", href: "/route/heraklion-airport-to-rethymno/", description: "A direct transfer from the eastern airport." },
+          { label: "Chania Airport to Rethymno", href: "/route/chania-airport-to-rethymno/", description: "A direct transfer from the western airport." },
+        ],
+      },
+      nearbyDestinations: {
+        eyebrow: "Nearby Destinations",
+        title: "Destinations Reachable From Rethymno",
+        items: [
+          { label: "Georgioupolis", href: "/destination/georgioupolis/", description: "A coastal resort town between Rethymno and Chania." },
+          { label: "Crete Day Trips", href: "/crete-day-trips/", description: "See our full range of private day trips across Crete." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "Does Rethymno have its own airport?", answer: "No, Rethymno is reached by private transfer from either Heraklion Airport or Chania Airport." },
+          { question: "Which airport is closer to Rethymno?", answer: "Both airports are broadly similar distances from Rethymno, since it sits roughly midway between Heraklion and Chania." },
+          { question: "Can I book a transfer from Rethymno onward to Chania or Heraklion?", answer: "Yes, describe your journey when requesting a quote." },
+          { question: "Can you arrange a transfer for a group visiting Rethymno?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote so a suitable vehicle can be arranged." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Rethymno Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στο Ρέθυμνο – Ταξί & Σοφέρ στην Κρήτη",
+        description:
+          "Κλείστε ιδιωτική μεταφορά στο Ρέθυμνο από οποιοδήποτε από τα δύο αεροδρόμια της Κρήτης. Άνετη μεταφορά από πόρτα σε πόρτα.",
+      },
+      breadcrumbLabel: "Ρέθυμνο",
+      hero: {
+        eyebrow: "Ρέθυμνο, Κρήτη",
+        title: "Ιδιωτικές Μεταφορές στο Ρέθυμνο",
+        description: "Κλείστε ιδιωτική μεταφορά από ή προς το Ρέθυμνο, περίπου στη μέση της διαδρομής μεταξύ Ηρακλείου και Χανίων στη βόρεια ακτή της Κρήτης.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με το Ρέθυμνο",
+        title: "Το Ρέθυμνο στη Βόρεια Ακτή της Κρήτης",
+        paragraphs: [
+          "Το Ρέθυμνο είναι η τρίτη μεγαλύτερη πόλη της Κρήτης, γνωστή για την Ενετική παλιά πόλη και το φρούριό της, βρίσκεται περίπου στη μέση της διαδρομής μεταξύ Ηρακλείου και Χανίων. Δεν διαθέτει δικό του αεροδρόμιο, οπότε οι επισκέπτες συνήθως φτάνουν με ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου ή το Αεροδρόμιο Χανίων.",
+          "Επειδή το Ρέθυμνο βρίσκεται μεταξύ των δύο κύριων πυλών του νησιού, αποτελεί πρακτική βάση για επισκέπτες που θέλουν λογική πρόσβαση και στα δύο μισά του νησιού χωρίς να δεσμευτούν σε περιοχή θερέτρου πιο ανατολικά ή δυτικά.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στο Ρέθυμνο",
+        title: "Συνδέσεις με Αεροδρόμια",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Ρέθυμνο", href: "/el/diadromi/aerodromio-irakleiou-rethymno/", description: "Απευθείας μεταφορά από το πολυσύχναστο ανατολικό αεροδρόμιο της Κρήτης." },
+          { label: "Αεροδρόμιο Χανίων προς Ρέθυμνο", href: "/el/diadromi/aerodromio-chanion-rethymno/", description: "Απευθείας μεταφορά από το δυτικό αεροδρόμιο της Κρήτης." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Επιλογές Μεταφοράς",
+        title: "Ιδιωτική Μεταφορά στο Ρέθυμνο",
+        items: [
+          { title: "Μεταφορές Αεροδρομίου", description: "Απευθείας μεταφορές από το Αεροδρόμιο Ηρακλείου ή Χανίων προς το ξενοδοχείο ή τη διεύθυνσή σας." },
+          { title: "Ιδιωτικές Μεταφορές", description: "Ένα όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή εντός ή εκτός του Ρεθύμνου." },
+          { title: "Μεταφορές Μεταξύ Πόλεων", description: "Μεταφορές συνέχειας προς το Ηράκλειο, τα Χανιά και άλλα μέρη της Κρήτης." },
+          { title: "Ομαδικές Μεταφορές", description: "Μεγαλύτερα οχήματα για οικογένειες και ομάδες που ταξιδεύουν μαζί." },
+        ],
+      },
+      popularRoutes: {
+        eyebrow: "Δημοφιλείς Διαδρομές",
+        title: "Δημοφιλείς Μεταφορές Από και Προς το Ρέθυμνο",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Ρέθυμνο", href: "/el/diadromi/aerodromio-irakleiou-rethymno/", description: "Απευθείας μεταφορά από το ανατολικό αεροδρόμιο." },
+          { label: "Αεροδρόμιο Χανίων προς Ρέθυμνο", href: "/el/diadromi/aerodromio-chanion-rethymno/", description: "Απευθείας μεταφορά από το δυτικό αεροδρόμιο." },
+        ],
+      },
+      nearbyDestinations: {
+        eyebrow: "Κοντινοί Προορισμοί",
+        title: "Προορισμοί Προσβάσιμοι από το Ρέθυμνο",
+        items: [
+          { label: "Γεωργιούπολη", href: "/el/proorismos/georgioupolis/", description: "Μια παράκτια πόλη θερέτρου μεταξύ Ρεθύμνου και Χανίων." },
+          { label: "Ιδιωτικές Εκδρομές στην Κρήτη", href: "/el/idiotikes-ekdromes-kriti/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας σε όλη την Κρήτη." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Έχει το Ρέθυμνο δικό του αεροδρόμιο;", answer: "Όχι, το Ρέθυμνο προσεγγίζεται με ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου ή το Αεροδρόμιο Χανίων." },
+          { question: "Ποιο αεροδρόμιο είναι πιο κοντά στο Ρέθυμνο;", answer: "Και τα δύο αεροδρόμια βρίσκονται σε γενικά παρόμοια απόσταση από το Ρέθυμνο, καθώς βρίσκεται περίπου στη μέση μεταξύ Ηρακλείου και Χανίων." },
+          { question: "Μπορώ να κλείσω μεταφορά από το Ρέθυμνο προς τα Χανιά ή το Ηράκλειο;", answer: "Ναι, περιγράψτε το ταξίδι σας κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που επισκέπτεται το Ρέθυμνο;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στο Ρέθυμνο;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  cityAgiosNikolaos: {
+    en: {
+      meta: {
+        title: "Private Transfers in Agios Nikolaos – Crete Taxi & Chauffeur",
+        description:
+          "Book a private transfer in Agios Nikolaos from Heraklion Airport. Comfortable door-to-door travel to eastern Crete's main town.",
+      },
+      breadcrumbLabel: "Agios Nikolaos",
+      hero: {
+        eyebrow: "Agios Nikolaos, Crete",
+        title: "Private Transfers in Agios Nikolaos",
+        description: "Book a private transfer to or from Agios Nikolaos, the main town of eastern Crete, built around Voulismeni Lake.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Agios Nikolaos",
+        title: "Agios Nikolaos in Eastern Crete",
+        paragraphs: [
+          "Agios Nikolaos is the main town of eastern Crete and the capital of the Lasithi region, built around Voulismeni Lake on Mirabello Bay. It's a common base for visitors exploring eastern Crete, and sits close to the luxury resort area of Elounda a short drive north.",
+          "Most visitors reach Agios Nikolaos by private transfer from Heraklion Airport, the closest airport to eastern Crete.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To Agios Nikolaos",
+        title: "Airport Connections",
+        items: [
+          { label: "Heraklion Airport to Agios Nikolaos", href: "/route/heraklion-airport-to-agios-nikolaos/", description: "A direct transfer from Crete's main airport." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Transfer Options",
+        title: "Private Transportation in Agios Nikolaos",
+        items: [
+          { title: "Airport Transfers", description: "Direct transfers from Heraklion Airport to your hotel or address." },
+          { title: "Private Transfers", description: "A door-to-door vehicle for any journey within Agios Nikolaos or beyond." },
+          { title: "Resort Transfers", description: "Onward transfers to Elounda and other nearby resort areas." },
+          { title: "Group Transfers", description: "Larger vehicles for families and groups travelling together." },
+        ],
+      },
+      popularRoutes: {
+        eyebrow: "Popular Routes",
+        title: "Popular Transfers To and From Agios Nikolaos",
+        items: [
+          { label: "Heraklion Airport to Agios Nikolaos", href: "/route/heraklion-airport-to-agios-nikolaos/", description: "A direct transfer from Heraklion Airport." },
+        ],
+      },
+      nearbyDestinations: {
+        eyebrow: "Nearby Destinations",
+        title: "Destinations Reachable From Agios Nikolaos",
+        items: [
+          { label: "Elounda", href: "/destination/elounda/", description: "A luxury resort area a short drive north of Agios Nikolaos." },
+          { label: "Crete Day Trips", href: "/crete-day-trips/", description: "See our full range of private day trips across Crete." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "Which airport serves Agios Nikolaos?", answer: "Heraklion Airport is the closest airport to Agios Nikolaos, reached by a direct private transfer." },
+          { question: "Is Agios Nikolaos close to Elounda?", answer: "Yes, Elounda is a short drive north of Agios Nikolaos town." },
+          { question: "Can you arrange a transfer for a group visiting Agios Nikolaos?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote so a suitable vehicle can be arranged." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Agios Nikolaos Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στον Άγιο Νικόλαο – Ταξί & Σοφέρ στην Κρήτη",
+        description:
+          "Κλείστε ιδιωτική μεταφορά στον Άγιο Νικόλαο από το Αεροδρόμιο Ηρακλείου. Άνετη μεταφορά από πόρτα σε πόρτα στην κύρια πόλη της ανατολικής Κρήτης.",
+      },
+      breadcrumbLabel: "Άγιος Νικόλαος",
+      hero: {
+        eyebrow: "Άγιος Νικόλαος, Κρήτη",
+        title: "Ιδιωτικές Μεταφορές στον Άγιο Νικόλαο",
+        description: "Κλείστε ιδιωτική μεταφορά από ή προς τον Άγιο Νικόλαο, την κύρια πόλη της ανατολικής Κρήτης, χτισμένη γύρω από τη λίμνη Βουλισμένη.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τον Άγιο Νικόλαο",
+        title: "Ο Άγιος Νικόλαος στην Ανατολική Κρήτη",
+        paragraphs: [
+          "Ο Άγιος Νικόλαος είναι η κύρια πόλη της ανατολικής Κρήτης και πρωτεύουσα του νομού Λασιθίου, χτισμένη γύρω από τη λίμνη Βουλισμένη στον κόλπο του Μιραμπέλλου. Αποτελεί συνηθισμένη βάση για επισκέπτες που εξερευνούν την ανατολική Κρήτη, και βρίσκεται κοντά στην περιοχή πολυτελών θερέτρων της Ελούντας, λίγα λεπτά βόρεια.",
+          "Οι περισσότεροι επισκέπτες φτάνουν στον Άγιο Νικόλαο με ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου, το πλησιέστερο αεροδρόμιο στην ανατολική Κρήτη.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στον Άγιο Νικόλαο",
+        title: "Συνδέσεις με Αεροδρόμιο",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Άγιο Νικόλαο", href: "/el/diadromi/aerodromio-irakleiou-agios-nikolaos/", description: "Απευθείας μεταφορά από το κύριο αεροδρόμιο της Κρήτης." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Επιλογές Μεταφοράς",
+        title: "Ιδιωτική Μεταφορά στον Άγιο Νικόλαο",
+        items: [
+          { title: "Μεταφορές Αεροδρομίου", description: "Απευθείας μεταφορές από το Αεροδρόμιο Ηρακλείου προς το ξενοδοχείο ή τη διεύθυνσή σας." },
+          { title: "Ιδιωτικές Μεταφορές", description: "Ένα όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή εντός ή εκτός του Αγίου Νικολάου." },
+          { title: "Μεταφορές σε Θέρετρα", description: "Μεταφορές συνέχειας προς την Ελούντα και άλλες κοντινές περιοχές θερέτρων." },
+          { title: "Ομαδικές Μεταφορές", description: "Μεγαλύτερα οχήματα για οικογένειες και ομάδες που ταξιδεύουν μαζί." },
+        ],
+      },
+      popularRoutes: {
+        eyebrow: "Δημοφιλείς Διαδρομές",
+        title: "Δημοφιλείς Μεταφορές Από και Προς τον Άγιο Νικόλαο",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Άγιο Νικόλαο", href: "/el/diadromi/aerodromio-irakleiou-agios-nikolaos/", description: "Απευθείας μεταφορά από το Αεροδρόμιο Ηρακλείου." },
+        ],
+      },
+      nearbyDestinations: {
+        eyebrow: "Κοντινοί Προορισμοί",
+        title: "Προορισμοί Προσβάσιμοι από τον Άγιο Νικόλαο",
+        items: [
+          { label: "Ελούντα", href: "/el/proorismos/elounda/", description: "Μια περιοχή πολυτελών θερέτρων λίγα λεπτά βόρεια του Αγίου Νικολάου." },
+          { label: "Ιδιωτικές Εκδρομές στην Κρήτη", href: "/el/idiotikes-ekdromes-kriti/", description: "Δείτε το πλήρες φάσμα ιδιωτικών εκδρομών μας σε όλη την Κρήτη." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Ποιο αεροδρόμιο εξυπηρετεί τον Άγιο Νικόλαο;", answer: "Το Αεροδρόμιο Ηρακλείου είναι το πλησιέστερο αεροδρόμιο στον Άγιο Νικόλαο, προσβάσιμο με απευθείας ιδιωτική μεταφορά." },
+          { question: "Είναι ο Άγιος Νικόλαος κοντά στην Ελούντα;", answer: "Ναι, η Ελούντα βρίσκεται λίγα λεπτά βόρεια της πόλης του Αγίου Νικολάου." },
+          { question: "Μπορείτε να οργανώσετε μεταφορά για ομάδα που επισκέπτεται τον Άγιο Νικόλαο;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στον Άγιο Νικόλαο;",
         description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
         primaryLabel: "Κλείστε τη Μεταφορά σας",
         secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",

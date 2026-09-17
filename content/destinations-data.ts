@@ -20,6 +20,12 @@ export type DestinationSlug =
   | "destinationSithonia"
   | "destinationNeaMoudania"
   | "thessalonikiDayTrips"
+  | "destinationElounda"
+  | "destinationHersonissos"
+  | "destinationMalia"
+  | "destinationPlatanias"
+  | "destinationGeorgioupolis"
+  | "creteDayTrips"
 
 export type LinkSection = { eyebrow: string; title: string; items: Omit<RelatedLinkItem, "icon">[] }
 export type ProseSection = { eyebrow: string; title: string; paragraphs: string[] }
@@ -1984,6 +1990,678 @@ export const destinationContent: Record<DestinationSlug, Record<Locale, Destinat
       },
       cta: {
         heading: "Έτοιμοι να Κλείσετε την Εκδρομή σας από τη Θεσσαλονίκη;",
+        description: "Πείτε μας ποιος προορισμός σας ενδιαφέρει και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής εκδρομής σας.",
+        primaryLabel: "Κλείστε την Εκδρομή σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  destinationHersonissos: {
+    en: {
+      meta: {
+        title: "Private Transfers to Hersonissos – Crete",
+        description:
+          "Book a private transfer to Hersonissos, one of Crete's largest resort areas, from Heraklion Airport. Comfortable door-to-door travel.",
+      },
+      breadcrumbLabel: "Hersonissos",
+      hero: {
+        eyebrow: "Hersonissos, Crete",
+        title: "Private Transfers to Hersonissos",
+        description: "Book a private transfer to Hersonissos, one of Crete's largest and longest-established resort areas.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Hersonissos",
+        title: "Hersonissos on Crete's North Coast",
+        paragraphs: [
+          "Hersonissos is one of Crete's largest resort areas, east of Heraklion, with a long stretch of hotels, restaurants and beach clubs along the coast. It sits at the western end of a near-continuous strip of resort development that runs through Stalis and into neighbouring Malia.",
+          "Most visitors arrive by private transfer from Heraklion Airport, roughly 25 minutes away — a straightforward journey that avoids relying on public transport with resort luggage.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To Hersonissos",
+        title: "Arriving in Hersonissos",
+        items: [
+          { label: "Heraklion Airport to Hersonissos", href: "/route/heraklion-airport-to-hersonissos/", description: "A direct private transfer from the airport." },
+          { label: "Explore Crete", href: "/region/crete/", description: "See our regional overview of transportation across Crete." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Malia", href: "/destination/malia/", description: "Continue further along the coast to the neighbouring resort strip of Malia." },
+          { label: "Private Transfers", href: "/private-transfers/", description: "A private, door-to-door vehicle for any journey in Hersonissos." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to Hersonissos?", answer: "See our dedicated Heraklion Airport to Hersonissos route page for journey details." },
+          { question: "Is Hersonissos close to Malia and Stalis?", answer: "Yes, Hersonissos, Stalis and Malia form a near-continuous stretch of resort development along the coast." },
+          { question: "Can I be dropped directly at my hotel in Hersonissos?", answer: "Yes, mention your exact hotel when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Hersonissos Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στον Χερσόνησο – Κρήτη",
+        description:
+          "Κλείστε ιδιωτική μεταφορά προς τον Χερσόνησο, μία από τις μεγαλύτερες περιοχές θερέτρων της Κρήτης, από το Αεροδρόμιο Ηρακλείου.",
+      },
+      breadcrumbLabel: "Χερσόνησος",
+      hero: {
+        eyebrow: "Χερσόνησος, Κρήτη",
+        title: "Ιδιωτικές Μεταφορές στον Χερσόνησο",
+        description: "Κλείστε ιδιωτική μεταφορά προς τον Χερσόνησο, μία από τις μεγαλύτερες και πιο μακροχρόνιες περιοχές θερέτρων της Κρήτης.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τον Χερσόνησο",
+        title: "Ο Χερσόνησος στη Βόρεια Ακτή της Κρήτης",
+        paragraphs: [
+          "Ο Χερσόνησος είναι μία από τις μεγαλύτερες περιοχές θερέτρων της Κρήτης, ανατολικά του Ηρακλείου, με μια μεγάλη σειρά ξενοδοχείων, εστιατορίων και beach clubs κατά μήκος της ακτής. Βρίσκεται στο δυτικό άκρο μιας σχεδόν συνεχούς ζώνης τουριστικής ανάπτυξης που περνά από τον Σταλίδα και καταλήγει στα γειτονικά Μάλια.",
+          "Οι περισσότεροι επισκέπτες φτάνουν με ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου, περίπου 25 λεπτά μακριά — ένα απλό ταξίδι που αποφεύγει την εξάρτηση από δημόσια μέσα με αποσκευές θέρετρου.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στον Χερσόνησο",
+        title: "Άφιξη στον Χερσόνησο",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Χερσόνησο", href: "/el/diadromi/aerodromio-irakleiou-chersonisos/", description: "Απευθείας ιδιωτική μεταφορά από το αεροδρόμιο." },
+          { label: "Εξερευνήστε την Κρήτη", href: "/el/periochi/kriti/", description: "Δείτε την γενική μας επισκόπηση μεταφορών σε όλη την Κρήτη." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Μάλια", href: "/el/proorismos/malia/", description: "Συνεχίστε περαιτέρω κατά μήκος της ακτής προς τη γειτονική τουριστική ζώνη των Μαλίων." },
+          { label: "Ιδιωτικές Μεταφορές", href: "/el/idiotikes-metafores/", description: "Ένα ιδιωτικό όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή στον Χερσόνησο." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στον Χερσόνησο;", answer: "Δείτε την ειδική μας σελίδα διαδρομής Αεροδρόμιο Ηρακλείου προς Χερσόνησο για λεπτομέρειες." },
+          { question: "Είναι ο Χερσόνησος κοντά στον Σταλίδα και τα Μάλια;", answer: "Ναι, ο Χερσόνησος, ο Σταλίδα και τα Μάλια σχηματίζουν μια σχεδόν συνεχή ζώνη τουριστικής ανάπτυξης κατά μήκος της ακτής." },
+          { question: "Μπορώ να παραδοθώ απευθείας στο ξενοδοχείο μου στον Χερσόνησο;", answer: "Ναι, αναφέρετε το ακριβές ξενοδοχείο σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στον Χερσόνησο;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  destinationMalia: {
+    en: {
+      meta: {
+        title: "Private Transfers to Malia – Crete",
+        description:
+          "Book a private transfer to Malia from Heraklion Airport. Comfortable door-to-door travel to one of Crete's best-known resort strips.",
+      },
+      breadcrumbLabel: "Malia",
+      hero: {
+        eyebrow: "Malia, Crete",
+        title: "Private Transfers to Malia",
+        description: "Book a private transfer to Malia, further along the coast from Hersonissos.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Malia",
+        title: "Malia on Crete's North Coast",
+        paragraphs: [
+          "Malia is a resort town east of Heraklion, adjoining Stalis and Hersonissos as part of a near-continuous coastal resort strip. It's also close to the Malia Palace, one of Crete's Minoan archaeological sites, a short distance from the modern resort itself.",
+          "A private transfer from Heraklion Airport takes you directly to your hotel in Malia, typically a little longer than the journey to Hersonissos given its position slightly further east.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To Malia",
+        title: "Arriving in Malia",
+        items: [
+          { label: "Heraklion Airport to Malia", href: "/route/heraklion-airport-to-malia/", description: "A direct private transfer from the airport." },
+          { label: "Explore Crete", href: "/region/crete/", description: "See our regional overview of transportation across Crete." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Hersonissos", href: "/destination/hersonissos/", description: "Explore Hersonissos, closer to the airport along the same coast." },
+          { label: "Private Transfers", href: "/private-transfers/", description: "A private, door-to-door vehicle for any journey in Malia." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to Malia?", answer: "See our dedicated Heraklion Airport to Malia route page for journey details." },
+          { question: "Is Malia further from the airport than Hersonissos?", answer: "Yes, Malia sits a little further east along the coast than Hersonissos, so the journey takes slightly longer." },
+          { question: "Can I be dropped directly at my hotel in Malia?", answer: "Yes, mention your exact hotel when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Malia Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στα Μάλια – Κρήτη",
+        description:
+          "Κλείστε ιδιωτική μεταφορά προς τα Μάλια από το Αεροδρόμιο Ηρακλείου. Άνετη μεταφορά από πόρτα σε πόρτα προς μία από τις πιο γνωστές τουριστικές ζώνες της Κρήτης.",
+      },
+      breadcrumbLabel: "Μάλια",
+      hero: {
+        eyebrow: "Μάλια, Κρήτη",
+        title: "Ιδιωτικές Μεταφορές στα Μάλια",
+        description: "Κλείστε ιδιωτική μεταφορά προς τα Μάλια, πιο μακριά στην ακτή από τον Χερσόνησο.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τα Μάλια",
+        title: "Τα Μάλια στη Βόρεια Ακτή της Κρήτης",
+        paragraphs: [
+          "Τα Μάλια είναι μια πόλη θερέτρου ανατολικά του Ηρακλείου, γειτονική με τον Σταλίδα και τον Χερσόνησο ως μέρος μιας σχεδόν συνεχούς παράκτιας τουριστικής ζώνης. Βρίσκονται επίσης κοντά στο Ανάκτορο της Μαλίας, έναν από τους μινωικούς αρχαιολογικούς χώρους της Κρήτης, σε μικρή απόσταση από το σύγχρονο θέρετρο.",
+          "Μια ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου σας μεταφέρει απευθείας στο ξενοδοχείο σας στα Μάλια, συνήθως λίγο πιο μακρόχρονη από το ταξίδι προς τον Χερσόνησο δεδομένης της θέσης τους λίγο πιο ανατολικά.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στα Μάλια",
+        title: "Άφιξη στα Μάλια",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Μάλια", href: "/el/diadromi/aerodromio-irakleiou-malia/", description: "Απευθείας ιδιωτική μεταφορά από το αεροδρόμιο." },
+          { label: "Εξερευνήστε την Κρήτη", href: "/el/periochi/kriti/", description: "Δείτε την γενική μας επισκόπηση μεταφορών σε όλη την Κρήτη." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Χερσόνησος", href: "/el/proorismos/chersonisos/", description: "Εξερευνήστε τον Χερσόνησο, πιο κοντά στο αεροδρόμιο στην ίδια ακτή." },
+          { label: "Ιδιωτικές Μεταφορές", href: "/el/idiotikes-metafores/", description: "Ένα ιδιωτικό όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή στα Μάλια." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στα Μάλια;", answer: "Δείτε την ειδική μας σελίδα διαδρομής Αεροδρόμιο Ηρακλείου προς Μάλια για λεπτομέρειες." },
+          { question: "Είναι τα Μάλια πιο μακριά από το αεροδρόμιο σε σχέση με τον Χερσόνησο;", answer: "Ναι, τα Μάλια βρίσκονται λίγο πιο ανατολικά στην ακτή από τον Χερσόνησο, οπότε το ταξίδι διαρκεί λίγο περισσότερο." },
+          { question: "Μπορώ να παραδοθώ απευθείας στο ξενοδοχείο μου στα Μάλια;", answer: "Ναι, αναφέρετε το ακριβές ξενοδοχείο σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στα Μάλια;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  destinationElounda: {
+    en: {
+      meta: {
+        title: "Private Transfers to Elounda – Crete's Luxury Resort Area",
+        description:
+          "Book a private transfer to Elounda from Heraklion Airport. Comfortable door-to-door travel to Crete's luxury resort enclave in the east.",
+      },
+      breadcrumbLabel: "Elounda",
+      hero: {
+        eyebrow: "Elounda, Crete",
+        title: "Private Transfers to Elounda",
+        description: "Book a private transfer to Elounda, a luxury resort area on Mirabello Bay in eastern Crete.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Elounda",
+        title: "Elounda on Mirabello Bay",
+        paragraphs: [
+          "Elounda is a resort village on Mirabello Bay in eastern Crete, a short distance north of Agios Nikolaos, known for a cluster of long-established luxury hotels along its waterfront. It's also the usual departure point for boat trips to the nearby island of Spinalonga, visible from much of the town and reached by a short crossing rather than a road — boats run from Elounda itself and from the smaller landing at Plaka nearby.",
+          "Because it's a well-known luxury destination, most visitors arrange a direct private transfer from Heraklion Airport, roughly an hour to an hour and a quarter away, rather than a shared or public transport connection.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To Elounda",
+        title: "Arriving in Elounda",
+        items: [
+          { label: "Heraklion Airport to Elounda", href: "/route/heraklion-airport-to-elounda/", description: "A direct private transfer from Crete's main airport." },
+          { label: "Agios Nikolaos", href: "/city/agios-nikolaos/", description: "The nearby main town of eastern Crete." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Heraklion Airport to Elounda Bay Palace", href: "/route/heraklion-airport-to-elounda-bay-palace/", description: "A dedicated transfer to this Elounda resort." },
+          { label: "Heraklion Airport to Elounda Beach Hotel & Villas", href: "/route/heraklion-airport-to-elounda-beach/", description: "A dedicated transfer to this Elounda resort." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Heraklion Airport to Elounda?", answer: "See our dedicated Heraklion Airport to Elounda route page for journey details." },
+          { question: "Can I visit Spinalonga from Elounda?", answer: "Yes, Spinalonga is a short boat crossing from Elounda or the nearby landing at Plaka — it has no road access, so this is a boat trip rather than a road transfer." },
+          { question: "Can I be dropped directly at my resort in Elounda?", answer: "Yes, mention your exact hotel when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Elounda Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στην Ελούντα – Πολυτελή Θέρετρα της Κρήτης",
+        description:
+          "Κλείστε ιδιωτική μεταφορά προς την Ελούντα από το Αεροδρόμιο Ηρακλείου. Άνετη μεταφορά από πόρτα σε πόρτα προς τον θύλακα πολυτελών θερέτρων της Κρήτης.",
+      },
+      breadcrumbLabel: "Ελούντα",
+      hero: {
+        eyebrow: "Ελούντα, Κρήτη",
+        title: "Ιδιωτικές Μεταφορές στην Ελούντα",
+        description: "Κλείστε ιδιωτική μεταφορά προς την Ελούντα, μια περιοχή πολυτελών θερέτρων στον κόλπο του Μιραμπέλλου στην ανατολική Κρήτη.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με την Ελούντα",
+        title: "Η Ελούντα στον Κόλπο του Μιραμπέλλου",
+        paragraphs: [
+          "Η Ελούντα είναι ένα χωριό θερέτρου στον κόλπο του Μιραμπέλλου στην ανατολική Κρήτη, σε μικρή απόσταση βόρεια του Αγίου Νικολάου, γνωστό για μια ομάδα μακροχρόνιων πολυτελών ξενοδοχείων κατά μήκος της παραλιακής του. Είναι επίσης το συνήθες σημείο αναχώρησης για βαρκάδες προς το κοντινό νησί της Σπιναλόγκας, ορατό από μεγάλο μέρος της πόλης και προσβάσιμο με μια σύντομη διαδρομή με βάρκα και όχι με δρόμο — οι βάρκες αναχωρούν από την ίδια την Ελούντα και από τον μικρότερο σκάλο στην κοντινή Πλάκα.",
+          "Επειδή είναι γνωστός προορισμός πολυτέλειας, οι περισσότεροι επισκέπτες οργανώνουν απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Ηρακλείου, περίπου μία ώρα έως μία ώρα και τέταρτο μακριά, αντί για κοινή ή δημόσια σύνδεση.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στην Ελούντα",
+        title: "Άφιξη στην Ελούντα",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Ελούντα", href: "/el/diadromi/aerodromio-irakleiou-elounda/", description: "Απευθείας ιδιωτική μεταφορά από το κύριο αεροδρόμιο της Κρήτης." },
+          { label: "Άγιος Νικόλαος", href: "/el/poli/agios-nikolaos/", description: "Η κοντινή κύρια πόλη της ανατολικής Κρήτης." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Αεροδρόμιο Ηρακλείου προς Elounda Bay Palace", href: "/el/diadromi/aerodromio-irakleiou-elounda-bay-palace/", description: "Ειδική μεταφορά προς αυτό το θέρετρο της Ελούντας." },
+          { label: "Αεροδρόμιο Ηρακλείου προς Elounda Beach Hotel & Villas", href: "/el/diadromi/aerodromio-irakleiou-elounda-beach/", description: "Ειδική μεταφορά προς αυτό το θέρετρο της Ελούντας." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Ηρακλείου στην Ελούντα;", answer: "Δείτε την ειδική μας σελίδα διαδρομής Αεροδρόμιο Ηρακλείου προς Ελούντα για λεπτομέρειες." },
+          { question: "Μπορώ να επισκεφθώ τη Σπιναλόγκα από την Ελούντα;", answer: "Ναι, η Σπιναλόγκα απέχει μια σύντομη διαδρομή με βάρκα από την Ελούντα ή τον κοντινό σκάλο στην Πλάκα — δεν έχει οδική πρόσβαση, οπότε πρόκειται για βαρκάδα και όχι για οδική μεταφορά." },
+          { question: "Μπορώ να παραδοθώ απευθείας στο θέρετρό μου στην Ελούντα;", answer: "Ναι, αναφέρετε το ακριβές ξενοδοχείο σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στην Ελούντα;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  destinationPlatanias: {
+    en: {
+      meta: {
+        title: "Private Transfers to Platanias – Chania, Crete",
+        description:
+          "Book a private transfer to Platanias from Chania Airport. Comfortable door-to-door travel to the resort strip west of Chania.",
+      },
+      breadcrumbLabel: "Platanias",
+      hero: {
+        eyebrow: "Platanias, Crete",
+        title: "Private Transfers to Platanias",
+        description: "Book a private transfer to Platanias, the resort strip west of Chania town.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Platanias",
+        title: "Platanias West of Chania",
+        paragraphs: [
+          "Platanias is a coastal village around 11 km west of Chania town, part of a resort strip that includes several neighbouring beach villages along the same stretch of coast. It's a popular base for visitors who want beach-resort surroundings within easy reach of Chania's old town.",
+          "A private transfer from Chania Airport takes you directly to your hotel in Platanias, a short journey given the airport's position on the Akrotiri peninsula northeast of Chania.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To Platanias",
+        title: "Arriving in Platanias",
+        items: [
+          { label: "Chania Airport to Platanias", href: "/route/chania-airport-to-platanias/", description: "A direct private transfer from the airport." },
+          { label: "Chania", href: "/city/chania/", description: "See our overview of transfers across Chania." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Private Transfers", href: "/private-transfers/", description: "A private, door-to-door vehicle for any journey in Platanias." },
+          { label: "Group Transfers", href: "/group-transfers/", description: "Private transportation for families and larger groups." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Chania Airport to Platanias?", answer: "See our dedicated Chania Airport to Platanias route page for journey details." },
+          { question: "Is Platanias close to Chania's old town?", answer: "Yes, Platanias is around 11 km from Chania town, a short private transfer away." },
+          { question: "Can I be dropped directly at my hotel in Platanias?", answer: "Yes, mention your exact hotel when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Platanias Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στον Πλατανιά – Χανιά, Κρήτη",
+        description:
+          "Κλείστε ιδιωτική μεταφορά προς τον Πλατανιά από το Αεροδρόμιο Χανίων. Άνετη μεταφορά από πόρτα σε πόρτα προς τη τουριστική ζώνη δυτικά των Χανίων.",
+      },
+      breadcrumbLabel: "Πλατανιάς",
+      hero: {
+        eyebrow: "Πλατανιάς, Κρήτη",
+        title: "Ιδιωτικές Μεταφορές στον Πλατανιά",
+        description: "Κλείστε ιδιωτική μεταφορά προς τον Πλατανιά, τη τουριστική ζώνη δυτικά της πόλης των Χανίων.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τον Πλατανιά",
+        title: "Ο Πλατανιάς Δυτικά των Χανίων",
+        paragraphs: [
+          "Ο Πλατανιάς είναι ένα παράκτιο χωριό περίπου 11 χλμ δυτικά της πόλης των Χανίων, μέρος μιας τουριστικής ζώνης που περιλαμβάνει αρκετά γειτονικά παραθαλάσσια χωριά κατά μήκος της ίδιας ακτής. Είναι δημοφιλής βάση για επισκέπτες που θέλουν περιβάλλον παραθαλάσσιου θερέτρου σε εύκολη απόσταση από την παλιά πόλη των Χανίων.",
+          "Μια ιδιωτική μεταφορά από το Αεροδρόμιο Χανίων σας μεταφέρει απευθείας στο ξενοδοχείο σας στον Πλατανιά, ένα σύντομο ταξίδι δεδομένης της θέσης του αεροδρομίου στη χερσόνησο του Ακρωτηρίου βορειοανατολικά των Χανίων.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στον Πλατανιά",
+        title: "Άφιξη στον Πλατανιά",
+        items: [
+          { label: "Αεροδρόμιο Χανίων προς Πλατανιά", href: "/el/diadromi/aerodromio-chanion-platanias/", description: "Απευθείας ιδιωτική μεταφορά από το αεροδρόμιο." },
+          { label: "Χανιά", href: "/el/poli/chania/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλα τα Χανιά." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Ιδιωτικές Μεταφορές", href: "/el/idiotikes-metafores/", description: "Ένα ιδιωτικό όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή στον Πλατανιά." },
+          { label: "Ομαδικές Μεταφορές", href: "/el/omadikes-metafores/", description: "Ιδιωτική μεταφορά για οικογένειες και μεγαλύτερες ομάδες." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Χανίων στον Πλατανιά;", answer: "Δείτε την ειδική μας σελίδα διαδρομής Αεροδρόμιο Χανίων προς Πλατανιά για λεπτομέρειες." },
+          { question: "Είναι ο Πλατανιάς κοντά στην παλιά πόλη των Χανίων;", answer: "Ναι, ο Πλατανιάς απέχει περίπου 11 χλμ από την πόλη των Χανίων, μια σύντομη ιδιωτική μεταφορά." },
+          { question: "Μπορώ να παραδοθώ απευθείας στο ξενοδοχείο μου στον Πλατανιά;", answer: "Ναι, αναφέρετε το ακριβές ξενοδοχείο σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στον Πλατανιά;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  destinationGeorgioupolis: {
+    en: {
+      meta: {
+        title: "Private Transfers to Georgioupolis – Crete",
+        description:
+          "Book a private transfer to Georgioupolis from either Chania or Heraklion Airport. Comfortable door-to-door travel between Chania and Rethymno.",
+      },
+      breadcrumbLabel: "Georgioupolis",
+      hero: {
+        eyebrow: "Georgioupolis, Crete",
+        title: "Private Transfers to Georgioupolis",
+        description: "Book a private transfer to Georgioupolis, a coastal resort town between Chania and Rethymno.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Georgioupolis",
+        title: "Georgioupolis Between Chania and Rethymno",
+        paragraphs: [
+          "Georgioupolis is a coastal resort town on Crete's north coast, roughly midway between Chania and Rethymno, known for a long sandy beach and a eucalyptus-lined town square. Its position makes it reachable from either of the two western airports.",
+          "Most visitors arrange a direct private transfer from Chania Airport, the closer of the two, though a transfer from Heraklion Airport can also be arranged for those arriving from the east.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Getting To Georgioupolis",
+        title: "Arriving in Georgioupolis",
+        items: [
+          { label: "Chania Airport to Georgioupolis", href: "/route/chania-airport-to-georgioupolis/", description: "A direct private transfer from the closer of Crete's two western airports." },
+          { label: "Chania", href: "/city/chania/", description: "See our overview of transfers across Chania." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Rethymno", href: "/city/rethymno/", description: "Continue east toward Rethymno, the other nearby town." },
+          { label: "Private Transfers", href: "/private-transfers/", description: "A private, door-to-door vehicle for any journey in Georgioupolis." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "How do I get from Chania Airport to Georgioupolis?", answer: "See our dedicated Chania Airport to Georgioupolis route page for journey details." },
+          { question: "Can I reach Georgioupolis from Heraklion Airport instead?", answer: "Yes, mention this when requesting a quote — Georgioupolis is reachable from either airport, though Chania is generally closer." },
+          { question: "Can I be dropped directly at my hotel in Georgioupolis?", answer: "Yes, mention your exact hotel when requesting a quote." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Georgioupolis Transfer?",
+        description: "Tell us your pickup, destination and passenger details, and request your private transfer quote.",
+        primaryLabel: "Book Your Transfer",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Μεταφορές στη Γεωργιούπολη – Κρήτη",
+        description:
+          "Κλείστε ιδιωτική μεταφορά προς τη Γεωργιούπολη από το Αεροδρόμιο Χανίων ή Ηρακλείου. Άνετη μεταφορά από πόρτα σε πόρτα μεταξύ Χανίων και Ρεθύμνου.",
+      },
+      breadcrumbLabel: "Γεωργιούπολη",
+      hero: {
+        eyebrow: "Γεωργιούπολη, Κρήτη",
+        title: "Ιδιωτικές Μεταφορές στη Γεωργιούπολη",
+        description: "Κλείστε ιδιωτική μεταφορά προς τη Γεωργιούπολη, μια παράκτια πόλη θερέτρου μεταξύ Χανίων και Ρεθύμνου.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τη Γεωργιούπολη",
+        title: "Η Γεωργιούπολη Μεταξύ Χανίων και Ρεθύμνου",
+        paragraphs: [
+          "Η Γεωργιούπολη είναι μια παράκτια πόλη θερέτρου στη βόρεια ακτή της Κρήτης, περίπου στη μέση της διαδρομής μεταξύ Χανίων και Ρεθύμνου, γνωστή για μια μακριά αμμώδη παραλία και μια πλατεία με ευκαλύπτους. Η θέση της την καθιστά προσβάσιμη από οποιοδήποτε από τα δύο δυτικά αεροδρόμια.",
+          "Οι περισσότεροι επισκέπτες οργανώνουν απευθείας ιδιωτική μεταφορά από το Αεροδρόμιο Χανίων, το πλησιέστερο από τα δύο, αν και μεταφορά από το Αεροδρόμιο Ηρακλείου μπορεί επίσης να οργανωθεί για όσους φτάνουν από τα ανατολικά.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Πρόσβαση στη Γεωργιούπολη",
+        title: "Άφιξη στη Γεωργιούπολη",
+        items: [
+          { label: "Αεροδρόμιο Χανίων προς Γεωργιούπολη", href: "/el/diadromi/aerodromio-chanion-georgioupolis/", description: "Απευθείας ιδιωτική μεταφορά από το πλησιέστερο από τα δύο δυτικά αεροδρόμια της Κρήτης." },
+          { label: "Χανιά", href: "/el/poli/chania/", description: "Δείτε την επισκόπησή μας για μεταφορές σε όλα τα Χανιά." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Ρέθυμνο", href: "/el/poli/rethymno/", description: "Συνεχίστε ανατολικά προς το Ρέθυμνο, την άλλη κοντινή πόλη." },
+          { label: "Ιδιωτικές Μεταφορές", href: "/el/idiotikes-metafores/", description: "Ένα ιδιωτικό όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή στη Γεωργιούπολη." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Πώς φτάνω από το Αεροδρόμιο Χανίων στη Γεωργιούπολη;", answer: "Δείτε την ειδική μας σελίδα διαδρομής Αεροδρόμιο Χανίων προς Γεωργιούπολη για λεπτομέρειες." },
+          { question: "Μπορώ να φτάσω στη Γεωργιούπολη από το Αεροδρόμιο Ηρακλείου αντί;", answer: "Ναι, αναφέρετέ το κατά την αίτηση προσφοράς — η Γεωργιούπολη είναι προσβάσιμη από οποιοδήποτε αεροδρόμιο, αν και τα Χανιά είναι γενικά πιο κοντά." },
+          { question: "Μπορώ να παραδοθώ απευθείας στο ξενοδοχείο μου στη Γεωργιούπολη;", answer: "Ναι, αναφέρετε το ακριβές ξενοδοχείο σας κατά την αίτηση προσφοράς." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε τη Μεταφορά σας στη Γεωργιούπολη;",
+        description: "Πείτε μας το σημείο παραλαβής, τον προορισμό και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής μεταφοράς σας.",
+        primaryLabel: "Κλείστε τη Μεταφορά σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+    },
+  },
+
+  creteDayTrips: {
+    en: {
+      meta: {
+        title: "Private Day Trips in Crete – Book Your Excursion",
+        description:
+          "Explore private day trips across Crete to Knossos, Elafonissi, Balos and Samaria Gorge. Private vehicle, flexible itinerary. Get a quote.",
+      },
+      breadcrumbLabel: "Day Trips",
+      hero: {
+        eyebrow: "Private Day Trips",
+        title: "Private Day Trips Across Crete",
+        description: "A private vehicle and driver for a day trip across Crete, with a flexible itinerary and return journey included where relevant.",
+        primaryLabel: "Book Your Day Trip",
+        secondaryLabel: "Get a Free Quote",
+      },
+      intro: {
+        eyebrow: "About Our Day Trips",
+        title: "How a Private Day Trip Works",
+        paragraphs: [
+          "A private day trip is different from a one-way transfer: it includes your pickup, private transportation to the destination, and — where the destination allows it — a return journey, typically with the same vehicle and driver waiting or returning at an agreed time.",
+          "Crete's day-trip destinations vary considerably in character: Knossos near Heraklion is a short, simple drive; Elafonissi is a longer coastal drive from Chania; and both Balos and the Samaria Gorge involve additional logistics — a 4x4 or boat for the final approach to Balos, and a one-way hike ending at a different village for Samaria — so it's worth understanding what each trip actually involves before booking.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Popular Day Trips",
+        title: "Choose Your Day Trip",
+        items: [
+          { label: "Heraklion to Knossos", href: "/route/heraklion-to-knossos/", description: "A short transfer to the Minoan palace site, Crete's most visited archaeological attraction." },
+          { label: "Chania to Elafonissi", href: "/route/chania-to-elafonissi/", description: "A longer day trip to one of Crete's best-known beaches." },
+          { label: "Chania to Balos", href: "/route/chania-to-balos/", description: "A day trip toward the Balos lagoon, with a 4x4 or boat needed for the final approach." },
+          { label: "Chania to Samaria Gorge", href: "/route/chania-to-samaria-gorge/", description: "A transfer to the start of Crete's most famous hiking trail." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Related Services",
+        title: "Other Ways to Travel With Us",
+        items: [
+          { label: "Private Transfers", href: "/private-transfers/", description: "A private, door-to-door vehicle for any journey, including day trips." },
+          { label: "Group Transfers", href: "/group-transfers/", description: "Private transportation for families and larger groups on a day trip." },
+        ],
+      },
+      faq: {
+        eyebrow: "Questions & Answers",
+        title: "Frequently Asked Questions",
+        items: [
+          { question: "What's the difference between a day trip and a one-way transfer?", answer: "A day trip includes time at the destination and a return journey where relevant, with the vehicle waiting or returning for you, rather than a single one-way journey." },
+          { question: "Can you take me all the way to the Balos lagoon?", answer: "The final approach to Balos requires a 4x4 track or a boat — we can arrange the transfer to the relevant starting point, but mention this when requesting a quote so we can describe exactly what's involved." },
+          { question: "Does the Samaria Gorge trip bring me back to the same place?", answer: "No, the gorge is a one-way hike ending at Agia Roumeli, a village with no road access — most hikers return by ferry and bus. Describe your plans when requesting a quote." },
+          { question: "Can you arrange a day trip for a group?", answer: "Yes, mention your total passenger and luggage numbers when requesting a quote so a suitable vehicle can be arranged." },
+        ],
+      },
+      cta: {
+        heading: "Ready to Book Your Crete Day Trip?",
+        description: "Tell us which destination interests you and your passenger details, and request your private day trip quote.",
+        primaryLabel: "Book Your Day Trip",
+        secondaryLabel: "Get a Free Quote",
+      },
+    },
+    el: {
+      meta: {
+        title: "Ιδιωτικές Ημερήσιες Εκδρομές στην Κρήτη – Κλείστε Τώρα",
+        description:
+          "Εξερευνήστε ιδιωτικές ημερήσιες εκδρομές στην Κρήτη προς Κνωσό, Ελαφονήσι, Μπάλο και Φαράγγι Σαμαριάς. Ιδιωτικό όχημα, ευέλικτο πρόγραμμα.",
+      },
+      breadcrumbLabel: "Ημερήσιες Εκδρομές",
+      hero: {
+        eyebrow: "Ιδιωτικές Εκδρομές",
+        title: "Ιδιωτικές Ημερήσιες Εκδρομές σε Όλη την Κρήτη",
+        description: "Ένα ιδιωτικό όχημα και οδηγός για μια ημερήσια εκδρομή στην Κρήτη, με ευέλικτο πρόγραμμα και την επιστροφή σας συμπεριλαμβανόμενη όπου ισχύει.",
+        primaryLabel: "Κλείστε την Εκδρομή σας",
+        secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",
+      },
+      intro: {
+        eyebrow: "Σχετικά με τις Εκδρομές μας",
+        title: "Πώς Λειτουργεί μια Ιδιωτική Ημερήσια Εκδρομή",
+        paragraphs: [
+          "Μια ιδιωτική ημερήσια εκδρομή διαφέρει από μια απλή μεταφορά: περιλαμβάνει την παραλαβή σας, ιδιωτική μεταφορά προς τον προορισμό, και — όπου το επιτρέπει ο προορισμός — την επιστροφή σας, συνήθως με το ίδιο όχημα και οδηγό που περιμένει ή επιστρέφει σε συμφωνημένη ώρα.",
+          "Οι προορισμοί ημερήσιων εκδρομών της Κρήτης διαφέρουν σημαντικά ως χαρακτήρα: η Κνωσός κοντά στο Ηράκλειο είναι μια σύντομη, απλή διαδρομή· το Ελαφονήσι είναι μια μεγαλύτερη παράκτια διαδρομή από τα Χανιά· και τόσο ο Μπάλος όσο και το Φαράγγι της Σαμαριάς περιλαμβάνουν επιπλέον λογιστικά ζητήματα — 4x4 ή βάρκα για την τελική προσέγγιση στον Μπάλο, και μονόδρομη πεζοπορία που καταλήγει σε διαφορετικό χωριό για τη Σαμαριά — οπότε αξίζει να κατανοήσετε τι περιλαμβάνει ακριβώς κάθε εκδρομή πριν την κράτηση.",
+        ],
+      },
+      gettingHere: {
+        eyebrow: "Δημοφιλείς Εκδρομές",
+        title: "Επιλέξτε την Εκδρομή σας",
+        items: [
+          { label: "Ηράκλειο προς Κνωσό", href: "/el/diadromi/irakleio-knosos/", description: "Μια σύντομη μεταφορά προς τον μινωικό αρχαιολογικό χώρο, το πιο επισκέψιμο αξιοθέατο της Κρήτης." },
+          { label: "Χανιά προς Ελαφονήσι", href: "/el/diadromi/chania-elafonisi/", description: "Μια μεγαλύτερη ημερήσια εκδρομή προς μία από τις πιο γνωστές παραλίες της Κρήτης." },
+          { label: "Χανιά προς Μπάλο", href: "/el/diadromi/chania-balos/", description: "Μια εκδρομή προς τη λιμνοθάλασσα του Μπάλου, με 4x4 ή βάρκα απαραίτητα για την τελική προσέγγιση." },
+          { label: "Χανιά προς Φαράγγι Σαμαριάς", href: "/el/diadromi/chania-farangi-samarias/", description: "Μια μεταφορά προς την αρχή του πιο γνωστού μονοπατιού πεζοπορίας της Κρήτης." },
+        ],
+      },
+      transferOptions: {
+        eyebrow: "Σχετικές Υπηρεσίες",
+        title: "Άλλοι Τρόποι να Ταξιδέψετε Μαζί μας",
+        items: [
+          { label: "Ιδιωτικές Μεταφορές", href: "/el/idiotikes-metafores/", description: "Ένα ιδιωτικό όχημα από πόρτα σε πόρτα για οποιαδήποτε διαδρομή, συμπεριλαμβανομένων εκδρομών." },
+          { label: "Ομαδικές Μεταφορές", href: "/el/omadikes-metafores/", description: "Ιδιωτική μεταφορά για οικογένειες και μεγαλύτερες ομάδες σε ημερήσια εκδρομή." },
+        ],
+      },
+      faq: {
+        eyebrow: "Ερωτήσεις & Απαντήσεις",
+        title: "Συχνές Ερωτήσεις",
+        items: [
+          { question: "Ποια είναι η διαφορά μεταξύ ημερήσιας εκδρομής και απλής μεταφοράς;", answer: "Μια ημερήσια εκδρομή περιλαμβάνει χρόνο στον προορισμό και επιστροφή όπου ισχύει, με το όχημα να περιμένει ή να επιστρέφει για εσάς, αντί για ένα απλό μονόδρομο ταξίδι." },
+          { question: "Μπορείτε να με πάτε μέχρι τη λιμνοθάλασσα του Μπάλου;", answer: "Η τελική προσέγγιση στον Μπάλο απαιτεί χωμάτινο δρόμο με 4x4 ή βάρκα — μπορούμε να οργανώσουμε τη μεταφορά προς το σχετικό σημείο εκκίνησης, αλλά αναφέρετέ το κατά την αίτηση προσφοράς ώστε να σας εξηγήσουμε ακριβώς τι περιλαμβάνει." },
+          { question: "Η εκδρομή στο Φαράγγι της Σαμαριάς με φέρνει πίσω στο ίδιο σημείο;", answer: "Όχι, το φαράγγι είναι μονόδρομη πεζοπορία που καταλήγει στην Αγία Ρουμέλη, ένα χωριό χωρίς οδική πρόσβαση — οι περισσότεροι πεζοπόροι επιστρέφουν με ferry και λεωφορείο. Περιγράψτε τα σχέδιά σας κατά την αίτηση προσφοράς." },
+          { question: "Μπορείτε να οργανώσετε εκδρομή για ομάδα;", answer: "Ναι, αναφέρετε τον συνολικό αριθμό επιβατών και αποσκευών κατά την αίτηση προσφοράς ώστε να οριστεί κατάλληλο όχημα." },
+        ],
+      },
+      cta: {
+        heading: "Έτοιμοι να Κλείσετε την Εκδρομή σας στην Κρήτη;",
         description: "Πείτε μας ποιος προορισμός σας ενδιαφέρει και τα στοιχεία επιβατών σας, και ζητήστε την προσφορά ιδιωτικής εκδρομής σας.",
         primaryLabel: "Κλείστε την Εκδρομή σας",
         secondaryLabel: "Ζητήστε Δωρεάν Προσφορά",

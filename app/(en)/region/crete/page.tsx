@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Anchor, Car, PlaneTakeoff, Route, Users } from "lucide-react";
+import { Anchor, Building2, Car, MapPin, PlaneTakeoff, Route, Users } from "lucide-react";
 
 import { LocationPage } from "@/components/location/location-page";
 import { LocationPhotoHero } from "@/components/location/hero";
 import { ServiceOverview } from "@/components/service-hub/overview";
 import { RelatedLinks } from "@/components/location/related-links";
+import { ServiceHowItWorks } from "@/components/service-hub/how-it-works";
 import { ServiceFaq } from "@/components/service-hub/faq";
 import { regionContent, regionImages } from "@/content/regions-data";
 import { localizedAlternates, absoluteUrl, pathFor } from "@/lib/i18n/routes";
@@ -42,9 +43,14 @@ export default function CreteRegionPage() {
     >
       <ServiceOverview content={content.intro} />
       <RelatedLinks eyebrow={content.airports.eyebrow} title={content.airports.title} items={content.airports.items.map((item, i) => ({ ...item, icon: [PlaneTakeoff, PlaneTakeoff][i] }))} />
-      <RelatedLinks eyebrow={content.ports.eyebrow} title={content.ports.title} items={content.ports.items.map((item, i) => ({ ...item, icon: [Anchor][i] }))} />
-      <RelatedLinks eyebrow={content.cities.eyebrow} title={content.cities.title} items={content.cities.items.map((item, i) => ({ ...item, icon: [Route][i] }))} />
-      <RelatedLinks eyebrow={content.services.eyebrow} title={content.services.title} items={content.services.items.map((item, i) => ({ ...item, icon: [Car, Users][i] }))} />
+      <RelatedLinks eyebrow={content.ports.eyebrow} title={content.ports.title} items={content.ports.items.map((item) => ({ ...item, icon: Anchor }))} />
+      <RelatedLinks eyebrow={content.cities.eyebrow} title={content.cities.title} items={content.cities.items.map((item) => ({ ...item, icon: MapPin }))} />
+      <RelatedLinks eyebrow={content.routes.eyebrow} title={content.routes.title} items={content.routes.items.map((item) => ({ ...item, icon: Route }))} />
+      {content.hotelTransfers && (
+        <RelatedLinks eyebrow={content.hotelTransfers.eyebrow} title={content.hotelTransfers.title} description={content.hotelTransfers.description} items={content.hotelTransfers.items.map((item) => ({ ...item, icon: Building2 }))} />
+      )}
+      <RelatedLinks eyebrow={content.services.eyebrow} title={content.services.title} description={content.services.description} items={content.services.items.map((item, i) => ({ ...item, icon: [Car, Users][i] }))} />
+      {content.howItWorks && <ServiceHowItWorks content={content.howItWorks} />}
       <ServiceFaq content={content.faq} />
     </LocationPage>
   );

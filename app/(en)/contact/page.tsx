@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Mail } from "lucide-react";
+import { CalendarClock, Mail, MapPin, Navigation, Users } from "lucide-react";
 
 import { LocationPage } from "@/components/location/location-page";
 import { LocationBandHero } from "@/components/location/hero";
 import { ServiceOverview } from "@/components/service-hub/overview";
+import { ServiceFeatures } from "@/components/service-hub/features";
+import { ServiceHowItWorks } from "@/components/service-hub/how-it-works";
 import { ServiceFaq } from "@/components/service-hub/faq";
 import { Container } from "@/components/container";
 import { contactContent } from "@/content/contact";
@@ -35,6 +37,8 @@ export default function ContactPage() {
       cta={{ heading: content.cta.heading, description: content.cta.description, primaryLabel: content.cta.primaryLabel, secondaryLabel: content.cta.secondaryLabel, secondaryHref: pathFor("services", "en") }}
     >
       <ServiceOverview content={content.intro} />
+      <ServiceFeatures content={content.requestDetails} icons={[MapPin, Navigation, CalendarClock, Users]} />
+      <ServiceHowItWorks content={content.howItWorks} />
       <section className="bg-ivory py-16 sm:py-20">
         <Container className="flex max-w-2xl flex-col gap-6">
           <h2 className="font-heading text-xl font-semibold text-charcoal sm:text-2xl">

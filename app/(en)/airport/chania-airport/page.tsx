@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import {
+  Building2,
   Car,
   CalendarClock,
   CalendarCheck,
@@ -57,8 +58,8 @@ export default function ChaniaAirportPage() {
     >
       <ServiceOverview content={content.overview} />
       <ServiceFeatures content={content.transferService} icons={[DoorOpen, CalendarCheck, Repeat, Luggage]} />
-      <RelatedLinks eyebrow={content.destinations.eyebrow} title={content.destinations.title} items={content.destinations.items.map((item, i) => ({ ...item, icon: [Route, Route][i] }))} />
-      <RelatedLinks eyebrow={content.connections.eyebrow} title={content.connections.title} items={content.connections.items.map((item, i) => ({ ...item, icon: [PlaneTakeoff, Ship][i] }))} />
+      <RelatedLinks eyebrow={content.destinations.eyebrow} title={content.destinations.title} items={content.destinations.items.map((item) => ({ ...item, icon: Route }))} />
+      <RelatedLinks eyebrow={content.connections.eyebrow} title={content.connections.title} items={content.connections.items.map((item, i) => ({ ...item, icon: [Building2, Ship, PlaneTakeoff][i] }))} />
       <ServiceHowItWorks content={content.howPickupWorks} />
       <ServiceFeatures content={content.travelPlanning} icons={[CalendarClock, PlaneTakeoff, Route, MessageCircle]} />
       <ServiceFeatures content={content.vehicleConsiderations} icons={[Users, Users, Luggage, Clock]} />
